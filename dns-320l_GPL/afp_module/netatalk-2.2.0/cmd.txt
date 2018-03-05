@@ -1,0 +1,31 @@
+./configure --host=arm-linux --prefix=$PWD/_install --libdir=$PWD/../../lib --with-bdb=$PWD/../db-4.7.25/build_unix/install --enable-cups=no --enable-force-uidgid --enable-afp3 --enable-quota --with-ssl-dir=$PWD/../../openssl-0.9.7 --with-libgcrypt-dir=$PWD/../../libgcrypt-1.5.0-beta1/xinst --with-pam=$PWD/../Linux-PAM-1.1.3/_install/ --enable-quota=yes --with-ldap=no --with-acls=no --with-shadow --with-cnid-cdb-backend --with-cnid-dbd-backend host_alias=arm-linux CC=arm-none-linux-gnueabi-gcc CXX=arm-none-linux-gnueabi-g++
+
+
+
+
+./configure --host=arm-linux --prefix=/home/bing/project/GPL_320_325-2011-08-04/afp_module/netatalk-2.2.0/_install --libdir=/home/bing/project/GPL_320_325-2011-08-04/afp_module/netatalk-2.2.0/../../lib --with-bdb=/home/bing/project/GPL_320_325-2011-08-04/afp_module/netatalk-2.2.0/../db-4.7.25/build_unix/install --with-libgcrypt-dir=/home/bing/project/GPL_320_325-2011-08-04/afp_module/netatalk-2.2.0/../libgcrypt-1.5.0/xinst --enable-cups=no --enable-force-uidgid --enable-afp3 --enable-quota --with-ldap=no --with-acls=no --enable-debug1 --enable-debug --with-ssl-dir=/home/bing/project/GPL_320_325-2011-08-04/afp_module/netatalk-2.2.0/../../openssl-0.9.7 --enable-quota=yes --with-shadow --with-cnid-cdb-backend --with-cnid-dbd-backend host_alias=arm-linux CC=arm-none-linux-gnueabi-gcc CXX=arm-none-linux-gnueabi-g++
+
+
+
+
+./configure --host=arm-linux --prefix=/home/bing/project/DNS-345_GPL-2011-04-12/afp_module/netatalk-2.2.0/_install --libdir=/home/bing/project/DNS-345_GPL-2011-04-12/afp_module/netatalk-2.2.0/../../lib --with-bdb=/home/bing/project/DNS-345_GPL-2011-04-12/afp_module/netatalk-2.2.0/../db-4.7.25/build_unix/install --enable-cups=no --enable-force-uidgid --enable-afp3 --enable-quota --with-ssl-dir=/home/bing/project/DNS-345_GPL-2011-04-12/afp_module/netatalk-2.2.0/../../openssl-0.9.7 --with-pam=/home/bing/project/DNS-345_GPL-2011-04-12/ADS/Linux-PAM-1.1.3/_install --with-libgcrypt-dir=/home/bing/project/DNS-345_GPL-2011-04-12/afp_module/netatalk-2.2.0/../../libgcrypt-1.4.6 --enable-quota=yes --with-ldap=yes --with-acl=yes --with-shadow --with-cnid-cdb-backend --with-cnid-dbd-backend --enable-krbV-uam host_alias=arm-linux CC=arm-mv5sft-linux-gnueabi-gcc CXX=arm-mv5sft-linux-gnueabi-g++
+
+
+
+./configure --build=i386-linux --host=arm-none-linux-gnueabi --prefix=$PWD/_install
+make install
+
+
+
+
+
+./configure --build=i386-linux --host=arm-none-linux-gnueabi --prefix=$PWD/_install
+
+./configure --build=i386-linux --host=arm-mv5sft-linux-gnueabi --prefix=$PWD/_install
+
+
+
+
+./configure --build=i386-linux --host=arm-none-linux-gnueabi --prefix=$PWD/_install build_alias=i386-linux host_alias=arm-none-linux-gnueabi CC=arm-none-linux-gnueabi-gcc --no-create --no-recursion
+
+mknod /dev/random c 1 8

@@ -1,0 +1,67 @@
+# Translators, if you are not familiar with the PO format, gettext
+# documentation is worth reading, especially sections dedicated to
+# this format, e.g. by running:
+# info -n '(gettext)PO Files'
+# info -n '(gettext)Header Entry'
+# Some information specific to po-debconf are available at
+# /usr/share/doc/po-debconf/README-trans
+# or http://www.debian.org/intl/l10n/po-debconf/README-trans
+# Developers do not need to manually edit POT or PO files.
+#  <>, 2005.
+# Original translator: Stephane Fombonne <s.fombonne@laposte.net>
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: portmap\n"
+"Report-Msgid-Bugs-To: anibal@debian.org\n"
+"POT-Creation-Date: 2006-02-25 23:17+0100\n"
+"PO-Revision-Date: 2006-03-25 20:34+0100\n"
+"Last-Translator: Jean-Christophe Champarnaud <jc.champarnaud@free.fr>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid "Should portmap be bound to the loopback address?"
+msgstr "Portmap doit-il se limiter à l'adresse de bouclage 127.0.0.1 ?"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid ""
+"Portmap by default listens to all IP addresses. However, if you are not "
+"providing network RPC services to remote clients (you are if you are setting "
+"up a NFS or NIS server) you can safely bind it to the loopback  IP address "
+"(127.0.0.1)"
+msgstr ""
+"Par défaut, portmap écoute toutes les adresses IP. Cependant, si vous "
+"n'utilisez pas les services RPC se connectant sur des serveurs distants "
+"(comme NFS ou NIS), vous pouvez le restreindre en toute sécurité à l'adresse "
+"de bouclage 127.0.0.1."
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid ""
+"This will allow RPC local services (like FAM) to work properly, while "
+"preventing remote systems from accessing your RPC services."
+msgstr ""
+"Ceci permettra aux services RPC locaux (comme FAM) de fonctionner "
+"correctement, tout en empêchant les systèmes distants d'accéder à vos "
+"services RPC."
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid ""
+"You can also change this configuration by editing the OPTIONS line in the /"
+"etc/default/portmap file. If you just don't specify the -i option it will "
+"bind to all interfaces."
+msgstr ""
+"Vous pouvez également changer cette configuration en modifiant la ligne "
+"OPTIONS dans le fichier /etc/default/portmap. Si vous ne précisez pas -i "
+"comme option, portmap sera lié à toutes les interfaces."
+

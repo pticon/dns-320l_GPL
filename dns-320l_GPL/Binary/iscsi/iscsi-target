@@ -1,0 +1,122 @@
+#!/bin/sh
+#
+# chkconfig: - 39 35
+# description: Starts and stops the iSCSI target
+#
+# pidfile: /var/run/ietd.pid
+# config:  /etc/ietd.conf
+
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+OPTIONS=""
+
+
+if [ -f /etc/sysconfig/iscsi-target ]; then
+  . /etc/sysconfig/iscsi-target
+fi
+
+RETVAL=0
+
+
+
+start()
+{
+	echo -n "Starting iSCSI Target: "
+	PMOD=$(lsmod | grep iscsi_trgt)
+	if [ "$PMOD" == "" ]; then
+		insmod /usr/local/modules/iscsi/iscsi_trgt.ko
+	fi
+	/usr/bin/ietd $OPTIONS
+	RETVAL=$?
+	if [ $RETVAL -eq 0 ]; then
+		echo success
+	else
+		echo failure
+	fi
+	echo
+	return $RETVAL
+}
+
+stop()
+{
+	echo -n "Stopping iSCSI Target: "
+	ietadm --op delete
+	killall ietd
+	RETVAL=$?
+	if [ $RETVAL -eq 0 ]; then
+		rm -rf /var/run/ietd.pid
+		echo success
+	else
+		echo failure
+	fi
+	echo
+	return $RETVAL
+}
+
+restart()
+{
+	stop
+	sleep 1
+	start
+}
+
+condrestart()
+{
+	PID=`pidof ietd`
+	if [ $PID ]; then
+        	restart
+	fi
+}
+
+status()
+{
+	PID=`pidof ietd`
+	if [ ! $PID ]; then
+		echo "iSCSI Target stopped"
+		exit 1
+	else
+		echo "iSCSI Target (pid $PID) is running..."
+	fi
+}
+
+init()
+{
+	mkdir -p /etc/iet/
+	mkdir -p /etc/rc.d/init.d/
+	cp -s /usr/local/config/ietd.conf /etc/iet/ 2>/dev/null
+	cp -f /usr/local/config/initiators.allow /etc/iet/ 2>/dev/null
+	cp -f /usr/local/config/targets.allow /etc/iet/ 2>/dev/null
+	ln -s /usr/local/modules/iscsi/iscsi-target /etc/rc.d/init.d/iscsi-target
+	ln -s /usr/local/modules/iscsi/ietd /usr/bin/ietd
+	ln -s /usr/local/modules/iscsi/ietadm /usr/bin/ietadm
+	ln -s /usr/local/modules/iscsi/ietchk /usr/bin/ietchk
+	ISCSI_ENABLE=$(xmldbc -g "/system_mgr/iscsi/enable")
+	if [ "$ISCSI_ENABLE" == "1" ]; then
+		start
+	fi	
+}
+
+case "$1" in
+  init)
+  		init
+  		;;	
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+  restart)
+	restart
+        ;;
+  condrestart)
+        condrestart
+        ;;
+  status)
+        status
+        ;;
+  *)
+        echo $"Usage: $0 {init|start|stop|restart|condrestart|status}"
+        exit 1
+esac
+
+exit 0

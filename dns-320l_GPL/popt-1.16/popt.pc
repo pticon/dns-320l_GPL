@@ -1,0 +1,10 @@
+prefix=/home/roy/git_home/DNS-345_GPL/popt-1.16/_install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: popt
+Version: 1.16
+Description: popt library.
+Libs: -L${libdir} -lpopt
+Cflags: -I${includedir}

@@ -1,0 +1,79 @@
+# Vietnamese translation for TCP Wrappers.
+# Copyright © 2007 Free Software Foundation, Inc.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2007.
+# 
+msgid ""
+""
+msgstr "Project-Id-Version: tcp-wrappers 7.6.dbs-14\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2007-05-30 17:42+0930\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.6.3b1\n"
+
+#.Type: boolean
+#.description
+#: ../tcpd.templates:1001
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr "Có nên dùng thiết lập rất cẩn thận trong hai tập tin « hosts.allow » (cho phép "
+"máy) và « hosts.deny » (từ chối máy) không?"
+
+#.Type: boolean
+#.description
+#: ../tcpd.templates:1001
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr "Tập tin « /etc/hosts.allow » và « /etc/hosts.deny » mới cho những chương trình bao bọc TCP (tcpd) và thư viện libwrap sẽ được tạo, vì chưa có."
+
+#.Type: boolean
+#.description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr "Bạn có thể chọn hoặc cấu hình chung cho phép bất cứ kết nối gửi đến nào, hoặc cấu hình rất cẩn thận không cho phép kết nối từ xa bất chấp gốc. Cấu hình rất cẩn thận là bảo mật hơn, nhưng cũng chặn toàn bộ giao thông, gồm (thí dụ) việc quản trị từ xa."
+
+#.Type: boolean
+#.description
+#: ../tcpd.templates:1001
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr "Để thích hợp cho yêu cầu của bạn, cũng có thể sửa đổi mỗi tập tin, như được giải thích trên trang hướng dẫn hosts_access(5). Thiết lập hiện thời chỉ có tác động tới dịch vụ mạng có phải sử dụng thư viện libwrap. Cũng có thể giới hạn dịch vụ khác bằng cách dùng chỉ thị đặc trưng cho gói hay quy tắc bức tường lửa."
+
+#~ msgid ""
+#~ "The second option, even if more secure, will block out all communication, "
+#~ "including, for example, remote administration. So if you need this don't "
+#~ "choose it."
+#~ msgstr "Mặc dù tùy chọn thứ hai là bảo mật hơn, nó ngăn cản mọi cách truyền, gồm "
+#~ "(lấy thí dụ) quản lý từ xa. Nếu bạn cần khả năng này thì đừng chọn tùy "
+#~ "chọn thứ hai."
+
+#~ msgid ""
+#~ "Regardless of which option you select you can always manually edit both  "
+#~ "files to suit your needs, for this, review the hosts_access(5) manpage.  "
+#~ "This might include giving remote access of services to legitimate hosts."
+#~ msgstr "Tất nhiên, bạn vẫn còn có thể sửa đổi mỗi tập tin theo sự cần của bạn. "
+#~ "Hãy xem trang hướng dẫn (man) « hosts_access(5) » để tìm cách sửa đổi, "
+#~ "thí dụ cách cho phép máy nào đó truy cập dịch vụ."
+
+#~ msgid ""
+#~ "Notice this only applies to internet services that use the libwrap "
+#~ "library. Remote connections will still be possible to services that do "
+#~ "not use this library, consider using firewall rules to block access to "
+#~ "these."
+#~ msgstr "Hãy ghi chú rằng thông tin này áp dụng chỉ vào dịch vụ dùng thư viên « "
+#~ "libwrap » thôi. Dịch vụ không dùng thư viên này sẽ vẫn còn có thể kết nối "
+#~ "từ xa: bạn hãy sử dụng quy tắc loại bức tường lửa để từ chối chúng."

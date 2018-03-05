@@ -1,0 +1,27 @@
+--- #YAML:1.0
+name:               AnyEvent
+version:            5.31
+abstract:           ~
+author:  []
+license:            unknown
+distribution_type:  module
+configure_requires:
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
+requires:  {}
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.56
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
+recommends:
+    Async::Interrupt:  1
+    EV:                4
+    Guard:             1.02
+    JSON:              2.09
+    JSON::XS:          2.2
+    Net::SSLeay:       1.33

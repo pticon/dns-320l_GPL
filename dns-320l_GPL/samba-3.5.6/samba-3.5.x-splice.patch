@@ -1,0 +1,81 @@
+diff -Nru orig//source3/lib/recvfile.c new//source3/lib/recvfile.c
+--- orig//source3/lib/recvfile.c	2010-10-07 18:41:16.000000000 +0200
++++ new//source3/lib/recvfile.c	2011-02-01 21:23:29.397671003 +0200
+@@ -47,6 +47,10 @@
+ #define TRANSFER_BUF_SIZE (128*1024)
+ #endif
+ 
++#define SPLICE_F_COPY 0
++#define MAX_ITERATIONS 4
++#define RECEIVE_BUF_SIZE 131072
++
+ static ssize_t default_sys_recvfile(int fromfd,
+ 			int tofd,
+ 			SMB_OFF_T offset,
+@@ -145,9 +149,9 @@
+ 			SMB_OFF_T offset,
+ 			size_t count)
+ {
+-	static int pipefd[2] = { -1, -1 };
+-	static bool try_splice_call = false;
++	static bool try_splice_call = true;
+ 	size_t total_written = 0;
++	size_t current_count;
+ 	loff_t splice_offset = offset;
+ 
+ 	DEBUG(10,("sys_recvfile: from = %d, to = %d, "
+@@ -173,20 +177,22 @@
+ 				count);
+ 	}
+ 
+-	if ((pipefd[0] == -1) && (pipe(pipefd) == -1)) {
+-		try_splice_call = false;
+-		return default_sys_recvfile(fromfd, tofd, offset, count);
+-	}
+-
+ 	while (count > 0) {
+-		int nread, to_write;
++		int nread, try_again;
++
++		if (count > RECEIVE_BUF_SIZE){
++			current_count=RECEIVE_BUF_SIZE;
++		} else {
++			current_count=count;
++		}
++		try_again = MAX_ITERATIONS;
++		do {
++			nread = splice(fromfd, NULL, tofd, &offset, current_count, SPLICE_F_COPY);
++			if (nread == -1)
++				try_again--;	
++		} while(nread ==-1 && try_again);
+ 
+-		nread = splice(fromfd, NULL, pipefd[1], NULL,
+-			       MIN(count, 16384), SPLICE_F_MOVE);
+ 		if (nread == -1) {
+-			if (errno == EINTR) {
+-				continue;
+-			}
+ 			if (total_written == 0 &&
+ 			    (errno == EBADF || errno == EINVAL)) {
+ 				try_splice_call = false;
+@@ -195,19 +201,7 @@
+ 			}
+ 			break;
+ 		}
+-
+-		to_write = nread;
+-		while (to_write > 0) {
+-			int thistime;
+-			thistime = splice(pipefd[0], NULL, tofd,
+-					  &splice_offset, to_write,
+-					  SPLICE_F_MOVE);
+-			if (thistime == -1) {
+-				goto done;
+-			}
+-			to_write -= thistime;
+-		}
+-
++		
+ 		total_written += nread;
+ 		count -= nread;
+ 	}

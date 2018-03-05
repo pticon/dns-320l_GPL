@@ -1,0 +1,30 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 002-Missing_pthread_link_on_libulockmgr
+## by Petr Salinger <Petr.Salinger@seznam.cz>
+##
+## DP: See patch title
+
+@DPATCH@
+diff -Nur fuse-2.7.4.orig/lib/Makefile.am fuse-2.7.4/lib/Makefile.am
+--- fuse-2.7.4.orig/lib/Makefile.am	2008-07-25 20:17:21.000000000 +0200
++++ fuse-2.7.4/lib/Makefile.am	2009-07-03 23:43:04.933014527 +0200
+@@ -38,6 +38,6 @@
+ 	-Wl,--version-script,$(srcdir)/fuse_versionscript
+ 
+ libulockmgr_la_SOURCES = ulockmgr.c
+-libulockmgr_la_LDFLAGS = -version-number 1:0:1
++libulockmgr_la_LDFLAGS = -pthread -version-number 1:0:1
+ 
+ EXTRA_DIST = fuse_versionscript
+diff -Nur fuse-2.7.4.orig/lib/Makefile.in fuse-2.7.4/lib/Makefile.in
+--- fuse-2.7.4.orig/lib/Makefile.in	2008-07-25 20:19:22.000000000 +0200
++++ fuse-2.7.4/lib/Makefile.in	2009-07-03 23:42:52.247000319 +0200
+@@ -234,7 +234,7 @@
+ 	-Wl,--version-script,$(srcdir)/fuse_versionscript
+ 
+ libulockmgr_la_SOURCES = ulockmgr.c
+-libulockmgr_la_LDFLAGS = -version-number 1:0:1
++libulockmgr_la_LDFLAGS = -pthread -version-number 1:0:1
+ EXTRA_DIST = fuse_versionscript
+ all: all-am
+ 

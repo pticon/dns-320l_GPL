@@ -1,0 +1,59 @@
+#!/bin/sh
+
+start() {
+  echo "Starting AFP services:"
+  /usr/sbin/afpd
+  echo $?
+	while [ 1 ]; do
+   	result=`ps | grep afpd`
+  	echo $result
+	  if [ -n "$result" ]; then
+      echo "Start Success"
+	    break
+	  else
+	    echo 2
+	    sleep 1
+	  fi
+	done
+}
+
+stop() {
+	echo "Shutting down AFP services:"
+	kill -9 `pidof afpd`
+	echo $?
+	while [ 1 ]; do
+   	result=`ps | grep afpd`
+  	echo $result
+	  if [ -n "$result" ]; then
+	    echo 1
+	    sleep 1
+	  else
+	    echo "Stop Success"
+	    break
+	  fi
+	done
+}
+
+restart() {
+	stop
+	echo
+	start
+	echo
+}
+
+case "$1" in
+    start)
+	start
+	;;
+    stop)
+	stop
+	;;
+    restart)
+	restart
+	;;
+    *)
+	echo $"Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit 0

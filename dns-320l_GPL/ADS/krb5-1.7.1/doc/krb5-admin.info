@@ -1,0 +1,126 @@
+This is krb5-admin.info, produced by makeinfo version 4.5 from
+admin.texinfo.
+
+INFO-DIR-SECTION Kerberos
+START-INFO-DIR-ENTRY
+* krb5-admin: (krb5-admin).             Kerberos V5 Administrator's Guide
+END-INFO-DIR-ENTRY
+
+
+Indirect:
+krb5-admin.info-1: 220
+krb5-admin.info-2: 47027
+krb5-admin.info-3: 96530
+krb5-admin.info-4: 144954
+krb5-admin.info-5: 190096
+krb5-admin.info-6: 239921
+
+Tag Table:
+(Indirect)
+Node: Top220
+Node: Copyright648
+Node: Introduction26523
+Node: Why Should I use Kerberos?26753
+Node: Documentation for Kerberos V527366
+Node: Overview of This Guide28559
+Node: How Kerberos Works29356
+Node: Network Services and Their Client Programs30376
+Node: Kerberos Tickets30960
+Node: The Kerberos Database31772
+Node: Kerberos Realms32256
+Node: The Ticket-Granting Ticket33161
+Node: Network Services and the Master Database34066
+Node: The Keytab File35461
+Ref: The Keytab File-Footnote-136248
+Node: The User/Kerberos Interaction36299
+Node: Definitions39064
+Node: Configuration Files41502
+Node: Supported Encryption Types41729
+Node: Salts43635
+Node: krb5.conf44417
+Node: libdefaults47027
+Node: appdefaults54681
+Node: login56034
+Node: realms (krb5.conf)56743
+Node: domain_realm62045
+Node: logging63294
+Node: capaths65886
+Node: dbdefaults68898
+Node: dbmodules71660
+Node: pkinit client options73757
+Node: pkinit identity syntax74880
+Node: pkinit krb5.conf options78314
+Node: Sample krb5.conf File84356
+Node: kdc.conf86566
+Node: kdcdefaults87611
+Node: realms (kdc.conf)88699
+Node: pkinit kdc options96530
+Node: pkinit kdc.conf options97349
+Node: Sample kdc.conf File100613
+Node: Using DNS101279
+Node: Mapping Hostnames onto Kerberos Realms101502
+Node: Hostnames for KDCs103579
+Node: Administrating the Kerberos Database108054
+Node: Kadmin Options110674
+Node: Date Format113778
+Node: Principals115419
+Node: Retrieving Information About a Principal115871
+Node: Attributes116144
+Node: Retrieving a List of Principals117898
+Node: Privileges118748
+Node: Adding or Modifying Principals122999
+Ref: Adding or Modifying Principals-Footnote-1134055
+Node: Deleting Principals134190
+Node: Changing Passwords134959
+Node: Policies136632
+Node: Retrieving Policies137172
+Node: Retrieving the List of Policies138160
+Node: Adding or Modifying Policies138958
+Node: Deleting Policies140190
+Node: Global Operations on the Kerberos Database140894
+Node: Dumping a Kerberos Database to a File142272
+Node: Restoring a Kerberos Database from a Dump File144954
+Node: Creating a Stash File146697
+Node: Creating and Destroying a Kerberos Database147580
+Node: Global Operations on the Kerberos LDAP Database149333
+Node: Creating a Kerberos Realm150978
+Node: eDirectory Options (Creating a Kerberos Realm)157835
+Node: Modifying a Kerberos Realm158955
+Node: eDirectory Options (Modifying a Kerberos Realm)164585
+Node: Retrieving Information about a Kerberos Realm166137
+Node: Destroying a Kerberos Realm167101
+Node: Listing available Kerberos Realms168004
+Node: Stashing Service Object's Password168559
+Node: Creating and Modifying a Ticket Policy169576
+Node: Retrieving Information About a Ticket Policy174587
+Node: Destroying a Ticket Policy175618
+Node: Listing available Ticket Policies176778
+Node: Creating a Service Object (eDirectory)177544
+Node: Modifying a Service Object (eDirectory)179821
+Node: Retrieving Service Object Information (eDirectory)182091
+Node: Destroying a Service Object (eDirectory)182998
+Node: Listing Available Service Objects (eDirectory)184192
+Node: Passwords for Service Objects (eDirectory)185337
+Node: Cross-realm Authentication186948
+Node: Changing the krbtgt Key188660
+Node: Configuring Kerberos with OpenLDAP back-end190096
+Node: Application Servers196748
+Node: Keytabs197484
+Node: Adding Principals to Keytabs198309
+Node: Removing Principals from Keytabs200484
+Node: Clock Skew201684
+Node: Getting DNS Information Correct202746
+Node: Configuring Your Firewall to Work With Kerberos V5204488
+Node: Backups of Secure Hosts208665
+Node: Backing Up the Kerberos Database209494
+Node: Bug Reporting210689
+Node: Appendix215470
+Node: Errors215606
+Node: Kerberos V5 Library Error Codes215931
+Node: Kerberos V5 Database Library Error Codes230591
+Node: Kerberos V5 Magic Numbers Error Codes232986
+Node: ASN.1 Error Codes237075
+Node: GSSAPI Error Codes238012
+Node: kadmin Time Zones239921
+
+End Tag Table

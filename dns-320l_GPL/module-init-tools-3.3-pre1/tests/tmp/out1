@@ -1,0 +1,1 @@
+/home/rusty/devel/kernel/module-init-tools-current/tests/modprobe: line 5: 10461 Killed                  valgrind -q --num-callers=8 --suppressions=tests/vg-suppressions --log-fd=3 `basename $0` "$@" 3>/tmp/valgrind

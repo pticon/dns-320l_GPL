@@ -1,0 +1,198 @@
+NAME
+    Class::Accessor::Grouped - Lets you build groups of accessors
+
+SYNOPSIS
+DESCRIPTION
+    This class lets you build groups of accessors that will call different
+    getters and setters.
+
+METHODS
+  mk_group_accessors
+    Arguments: $group, @fieldspec
+        Returns: none
+
+    Creates a set of accessors in a given group.
+
+    $group is the name of the accessor group for the generated accessors;
+    they will call get_$group($field) on get and set_$group($field, $value)
+    on set.
+
+    If you want to mimic Class::Accessor's mk_accessors $group has to be
+    'simple' to tell Class::Accessor::Grouped to use its own get_simple and
+    set_simple methods.
+
+    @fieldspec is a list of field/accessor names; if a fieldspec is a scalar
+    this is used as both field and accessor name, if a listref it is
+    expected to be of the form [ $accessor, $field ].
+
+  mk_group_ro_accessors
+    Arguments: $group, @fieldspec
+        Returns: none
+
+    Creates a set of read only accessors in a given group. Identical to
+    "mk_group_accessors" but accessors will throw an error if passed a value
+    rather than setting the value.
+
+  mk_group_wo_accessors
+    Arguments: $group, @fieldspec
+        Returns: none
+
+    Creates a set of write only accessors in a given group. Identical to
+    "mk_group_accessors" but accessors will throw an error if not passed a
+    value rather than getting the value.
+
+  make_group_accessor
+    Arguments: $group, $field, $method
+        Returns: \&accessor_coderef ?
+
+    Called by mk_group_accessors for each entry in @fieldspec. Either
+    returns a coderef which will be installed at "&__PACKAGE__::$method", or
+    returns "undef" if it elects to install the coderef on its own.
+
+  make_group_ro_accessor
+    Arguments: $group, $field, $method
+        Returns: \&accessor_coderef ?
+
+    Called by mk_group_ro_accessors for each entry in @fieldspec. Either
+    returns a coderef which will be installed at "&__PACKAGE__::$method", or
+    returns "undef" if it elects to install the coderef on its own.
+
+  make_group_wo_accessor
+    Arguments: $group, $field, $method
+        Returns: \&accessor_coderef ?
+
+    Called by mk_group_wo_accessors for each entry in @fieldspec. Either
+    returns a coderef which will be installed at "&__PACKAGE__::$method", or
+    returns "undef" if it elects to install the coderef on its own.
+
+  get_simple
+    Arguments: $field
+        Returns: $value
+
+    Simple getter for hash-based objects which returns the value for the
+    field name passed as an argument.
+
+  set_simple
+    Arguments: $field, $new_value
+        Returns: $new_value
+
+    Simple setter for hash-based objects which sets and then returns the
+    value for the field name passed as an argument.
+
+  get_inherited
+    Arguments: $field
+        Returns: $value
+
+    Simple getter for Classes and hash-based objects which returns the value
+    for the field name passed as an argument. This behaves much like
+    Class::Data::Accessor where the field can be set in a base class,
+    inherited and changed in subclasses, and inherited and changed for
+    object instances.
+
+  set_inherited
+    Arguments: $field, $new_value
+        Returns: $new_value
+
+    Simple setter for Classes and hash-based objects which sets and then
+    returns the value for the field name passed as an argument. When called
+    on a hash-based object it will set the appropriate hash key value. When
+    called on a class, it will set a class level variable.
+
+    Note:: This method will die if you try to set an object variable on a
+    non hash-based object.
+
+  get_component_class
+    Arguments: $field
+        Returns: $value
+
+    Gets the value of the specified component class.
+
+        __PACKAGE__->mk_group_accessors('component_class' => 'result_class');
+
+        $self->result_class->method();
+
+        ## same as
+        $self->get_component_class('result_class')->method();
+
+  set_component_class
+    Arguments: $field, $class
+        Returns: $new_value
+
+    Inherited accessor that automatically loads the specified class before
+    setting it. This method will die if the specified class could not be
+    loaded.
+
+        __PACKAGE__->mk_group_accessors('component_class' => 'result_class');
+        __PACKAGE__->result_class('MyClass');
+
+        $self->result_class->method();
+
+  get_super_paths
+    Returns a list of 'parent' or 'super' class names that the current class
+    inherited from.
+
+PERFORMANCE
+    To provide total flexibility Class::Accessor::Grouped calls methods
+    internally while performing get/set actions, which makes it noticeably
+    slower than similar modules. To compensate, this module will
+    automatically use the insanely fast Class::XSAccessor to generate the
+    "simple"-group accessors if this module is available on your system.
+
+  Benchmark
+    This is the result of a set/get/set loop benchmark on perl 5.12.1 with
+    thread support, showcasing most popular accessor builders: Moose, Mouse,
+    Moo, CAF, CAF_XS, XSA, and CAF_XSA:
+
+               Rate  CAG moOse  CAF moUse  moo HANDMADE CAF_XS moUse_XS moo_XS CAF_XSA  XSA CAG_XS
+     CAG      169/s   --  -21% -24%  -32% -32%     -34%   -59%     -63%   -67%    -67% -67%   -67%
+     moOse    215/s  27%    --  -3%  -13% -13%     -15%   -48%     -53%   -58%    -58% -58%   -58%
+     CAF      222/s  31%    3%   --  -10% -10%     -13%   -46%     -52%   -57%    -57% -57%   -57%
+     moUse    248/s  46%   15%  11%    --  -0%      -3%   -40%     -46%   -52%    -52% -52%   -52%
+     moo      248/s  46%   15%  11%    0%   --      -3%   -40%     -46%   -52%    -52% -52%   -52%
+     HANDMADE 255/s  50%   18%  14%    3%   3%       --   -38%     -45%   -50%    -51% -51%   -51%
+     CAF_XS   411/s 143%   91%  85%   66%  66%      61%     --     -11%   -20%    -20% -21%   -21%
+     moUse_XS 461/s 172%  114% 107%   86%  86%      81%    12%       --   -10%    -11% -11%   -11%
+     moo_XS   514/s 204%  139% 131%  107% 107%     102%    25%      12%     --     -0%  -1%    -1%
+     CAF_XSA  516/s 205%  140% 132%  108% 108%     103%    26%      12%     0%      --  -0%    -0%
+     XSA      519/s 206%  141% 133%  109% 109%     104%    26%      13%     1%      0%   --    -0%
+     CAG_XS   519/s 206%  141% 133%  109% 109%     104%    26%      13%     1%      0%   0%     --
+
+    Benchmark program is available in the root of the repository
+    <http://search.cpan.org/dist/Class-Accessor-Grouped/>:
+
+  Notes on Class::XSAccessor
+    You can force (or disable) the use of Class::XSAccessor before creating
+    a particular "simple" accessor by either manipulating the global
+    variable $Class::Accessor::Grouped::USE_XS to true or false (preferably
+    with localization, or you can do so before runtime via the "CAG_USE_XS"
+    environment variable.
+
+    Since Class::XSAccessor has no knowledge of "get_simple" and
+    "set_simple" this module does its best to detect if you are overriding
+    one of these methods and will fall back to using the perl version of the
+    accessor in order to maintain consistency. However be aware that if you
+    enable use of "Class::XSAccessor" (automatically or explicitly), create
+    an object, invoke a simple accessor on that object, and then manipulate
+    the symbol table to install a "get/set_simple" override - you get to
+    keep all the pieces.
+
+AUTHORS
+    Matt S. Trout <mst@shadowcatsystems.co.uk>
+
+    Christopher H. Laco <claco@chrislaco.com>
+
+CONTRIBUTORS
+    Caelum: Rafael Kitover <rkitover@cpan.org>
+
+    groditi: Guillermo Roditi <groditi@cpan.org>
+
+    Jason Plum <jason.plum@bmmsi.com>
+
+    ribasushi: Peter Rabbitson <ribasushi@cpan.org>
+
+COPYRIGHT & LICENSE
+    Copyright (c) 2006-2010 Matt S. Trout <mst@shadowcatsystems.co.uk>
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as perl itself.
+

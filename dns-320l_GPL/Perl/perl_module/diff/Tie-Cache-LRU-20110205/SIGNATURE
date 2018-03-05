@@ -1,0 +1,41 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 2f2625803a6a876ae0068107d3a9672ca19d2f13 Changes
+SHA1 e6e7737aca007f0463b46dd0d83a13c10c12b605 INSTALL
+SHA1 ad7ee635490e2a4f4d3070d65689445ad948bb1f MANIFEST
+SHA1 471873bcc1902e9a1be3811154bc44006a7c0c47 META.yml
+SHA1 b944e7e85358e66119ef057d23073b091dd7fc16 Makefile.PL
+SHA1 b78cd5e6bd9bb9591ff5bc80c9d6cca66d8cb50e README
+SHA1 835a42d102a8fb63cef187a9c9fa99d716a65653 bench/big_test_data
+SHA1 e2328dabb74c0e8625e9ae3d3b5471246b727259 bench/read
+SHA1 1b319edfbe4f7d298f178da4a6e19356f2b2e9a2 bench/time
+SHA1 71537b626676938e6076ad740074b7c063f7c51a lib/Tie/Cache/LRU.pm
+SHA1 d75c4dde1483fa78b1e9c398b1980090058c5492 lib/Tie/Cache/LRU/Array.pm
+SHA1 2c7739e9c3beff13860529df91db226a528ed43f lib/Tie/Cache/LRU/LinkedList.pm
+SHA1 88cc909d9005440693198604a7de4f9535a0bd53 lib/Tie/Cache/LRU/Virtual.pm
+SHA1 c68a257407e9d621de3f0b8da9ee8f98337dab9a t/0_Array.t
+SHA1 b7b82ca822d95203030e29ddd76f83878973f71f t/0_LinkedList.t
+SHA1 3b66e75647341ef214dc5ea6e8b90fb24d557b7c t/LRU.t
+SHA1 e6a25d406a1ed586bceadef6c64d0b5408e41974 t/Virtual.t
+SHA1 aab27f3884be269323cd06ca93b7ab08f5ca6cc1 t/each_loop.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.16 (Darwin)
+
+iEYEARECAAYFAk1My9EACgkQWMohlhD1QyeQxQCfakxCL+nbEJ80cSqBsdJVqenp
+T7gAn1wJyJ+Hie1WHdyISoUkwvmxRIR5
+=AIcT
+-----END PGP SIGNATURE-----

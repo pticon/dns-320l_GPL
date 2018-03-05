@@ -1,0 +1,109 @@
+=head1 NAME
+
+AnyEvent::FAQ - frequently asked questions
+
+The newest version of this document can be found at
+L<http://pod.tst.eu/http://cvs.schmorp.de/AnyEvent/lib/AnyEvent/FAQ.pod>.
+
+=head2 My program exits before doing anything, what's going on?
+
+Programmers new to event-based programming often forget that you can
+actually do other stuff while "waiting" for an event to occur and
+therefore forget to actually wait when they do not, in fact, have anything
+else to do.
+
+Here is an example:
+
+   use AnyEvent;
+
+   my $timer = AnyEvent->timer (after => 5, cb => sub { say "hi" });
+
+The expectation might be for the program to print "hi" after 5 seconds
+and then probably to exit. However, if you run this, your program will
+exit almost instantly: Creating the timer does not wait for it, instead
+the C<timer> method returns immediately and perl executes the rest of the
+program. But there is nothing left to execute, so perl exits.
+
+To force AnyEvent to wait for something, use a condvar:
+
+   use AnyEvent;
+
+   my $quit_program = AnyEvent->condvar;
+   my $timer = AnyEvent->timer (after => 5, cb => sub { $quit_program->send });
+
+   $quit_program->recv;
+
+Here the program doesn't immediately exit, because it first waits for
+the "quit_program" condition.
+
+In most cases, your main program should call the event library "loop"
+function directly:
+
+   use EV;
+   use AnyEvent;
+
+   ...
+
+   EV::loop;
+
+=head2 Why is my C<tcp_connect> callback never called?
+
+Tricky: C<tcp_connect> (and a few other functions in L<AnyEvent::Socket>)
+is critically sensitive to the caller context.
+
+In void context, it will just do it's thing and eventually call the
+callback. In any other context, however, it will return a special "guard"
+object - when it is destroyed (e.g. when you don't store it but throw it
+away), tcp_connect will no longer try to connect or call any callbacks.
+
+Often this happens when the C<tcp_connect> call is at the end of a function:
+
+   sub do_connect {
+      tcp_connect "www.example.com", 80, sub {
+         ... lengthy code
+      };
+   }
+
+Then the caller decides whether there is a void context or not. One can
+avoid these cases by explicitly returning nothing:
+
+   sub do_connect {
+      tcp_connect "www.example.com", 80, sub {
+         ... lengthy code
+      };
+
+      () # return nothing
+   }
+
+=head2 Why do some backends use a lot of CPU in C<< AE::cv->recv >>?
+
+Many people try out this simple program, or it's equivalent:
+
+   AnyEvent->condvar->recv;
+
+They are then shocked to see that this basically idles with the Perl
+backend, but uses 100% CPU with the EV backend, which is supposed to be
+sooo efficient.
+
+The key to understand this is to understand that the above program is
+actually buggy: Nothing calls C<< ->send >> on the condvar, ever. Worse,
+there are no event watchers whatsoever. Basically, it creates a deadlock:
+there is no way to make progress.
+
+Some backends handle this by freezing, some by idling, and some do a 100%
+cpu loop.
+
+Since this program is nonsensical (and behaves as documented with all
+backends, as AnyEvent makes no CPU tikme guarantees), this shouldn't be a
+big deal - as soon as your program actually implements something sensible,
+CPU usage will be normal.
+
+=head2 Why does this FAQ not deal with L<AnyEvent::Handle> questions?
+
+Because L<AnyEvent::Handle> has a NONFAQ on it's own that already deals
+with common issues.
+
+=head1 Authors
+
+Marc Lehmann <schmorp@schmorp.de>.
+

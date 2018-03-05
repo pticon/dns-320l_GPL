@@ -1,0 +1,134 @@
+./configure --host=arm-linux --prefix=/home/tim/openssh-5.0p1/.install/ --with-cflags --with-labs CFLAGS=-Wall
+-O2 -march=armv5 -s LIBS=-lz
+
+`configure' configures OpenSSH Portable to adapt to many kinds of systems.
+
+Usage: ./configure [OPTION]... [VAR=VALUE]...
+
+To assign environment variables (e.g., CC, CFLAGS...), specify them as
+VAR=VALUE.  See below for descriptions of some of the useful variables.
+
+Defaults for the options are specified in brackets.
+
+Configuration:
+  -h, --help              display this help and exit
+      --help=short        display options specific to this package
+      --help=recursive    display the short help of all the included packages
+  -V, --version           display version information and exit
+  -q, --quiet, --silent   do not print `checking...' messages
+      --cache-file=FILE   cache test results in FILE [disabled]
+  -C, --config-cache      alias for `--cache-file=config.cache'
+  -n, --no-create         do not create output files
+      --srcdir=DIR        find the sources in DIR [configure dir or `..']
+
+Installation directories:
+  --prefix=PREFIX         install architecture-independent files in PREFIX
+			  [/usr/local]
+  --exec-prefix=EPREFIX   install architecture-dependent files in EPREFIX
+			  [PREFIX]
+
+By default, `make install' will install all the files in
+`/usr/local/bin', `/usr/local/lib' etc.  You can specify
+an installation prefix other than `/usr/local' using `--prefix',
+for instance `--prefix=$HOME'.
+
+For better control, use the options below.
+
+Fine tuning of the installation directories:
+  --bindir=DIR           user executables [EPREFIX/bin]
+  --sbindir=DIR          system admin executables [EPREFIX/sbin]
+  --libexecdir=DIR       program executables [EPREFIX/libexec]
+  --sysconfdir=DIR       read-only single-machine data [PREFIX/etc]
+  --sharedstatedir=DIR   modifiable architecture-independent data [PREFIX/com]
+  --localstatedir=DIR    modifiable single-machine data [PREFIX/var]
+  --libdir=DIR           object code libraries [EPREFIX/lib]
+  --includedir=DIR       C header files [PREFIX/include]
+  --oldincludedir=DIR    C header files for non-gcc [/usr/include]
+  --datarootdir=DIR      read-only arch.-independent data root [PREFIX/share]
+  --datadir=DIR          read-only architecture-independent data [DATAROOTDIR]
+  --infodir=DIR          info documentation [DATAROOTDIR/info]
+  --localedir=DIR        locale-dependent data [DATAROOTDIR/locale]
+  --mandir=DIR           man documentation [DATAROOTDIR/man]
+  --docdir=DIR           documentation root [DATAROOTDIR/doc/openssh]
+  --htmldir=DIR          html documentation [DOCDIR]
+  --dvidir=DIR           dvi documentation [DOCDIR]
+  --pdfdir=DIR           pdf documentation [DOCDIR]
+  --psdir=DIR            ps documentation [DOCDIR]
+
+System types:
+  --build=BUILD     configure for building on BUILD [guessed]
+  --host=HOST       cross-compile to build programs to run on HOST [BUILD]
+
+Optional Features:
+  --disable-FEATURE       do not include FEATURE (same as --enable-FEATURE=no)
+  --enable-FEATURE[=ARG]  include FEATURE [ARG=yes]
+  --disable-largefile     omit support for large files
+  --disable-strip         Disable calling strip(1) on install
+  --disable-etc-default-login Disable using PATH from /etc/default/login no
+  --disable-lastlog       disable use of lastlog even if detected no
+  --disable-utmp          disable use of utmp even if detected no
+  --disable-utmpx         disable use of utmpx even if detected no
+  --disable-wtmp          disable use of wtmp even if detected no
+  --disable-wtmpx         disable use of wtmpx even if detected no
+  --disable-libutil       disable use of libutil (login() etc.) no
+  --disable-pututline     disable use of pututline() etc. (uwtmp) no
+  --disable-pututxline    disable use of pututxline() etc. (uwtmpx) no
+
+Optional Packages:
+  --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
+  --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
+  --without-stackprotect  Don't use compiler's stack protection
+  --without-rpath         Disable auto-added -R linker paths
+  --with-cflags           Specify additional flags to pass to compiler
+  --with-cppflags         Specify additional flags to pass to preprocessor
+  --with-ldflags          Specify additional flags to pass to linker
+  --with-libs             Specify additional libraries to link with
+  --with-Werror           Build main code with -Werror
+  --with-solaris-contracts Enable Solaris process contracts (experimental)
+  --with-osfsia           Enable Digital Unix SIA
+  --with-zlib=PATH        Use zlib in PATH
+  --without-zlib-version-check Disable zlib version check
+  --with-skey[=PATH]      Enable S/Key support (optionally in PATH)
+  --with-tcp-wrappers[=PATH] Enable tcpwrappers support (optionally in PATH)
+  --with-libedit[=PATH]   Enable libedit support for sftp
+  --with-audit=module     Enable EXPERIMENTAL audit support (modules=debug,bsm)
+  --with-ssl-dir=PATH     Specify path to OpenSSL installation
+  --without-openssl-header-check Disable OpenSSL version consistency check
+  --with-ssl-engine       Enable OpenSSL (hardware) ENGINE support
+  --with-pam              Enable PAM support
+  --with-rand-helper      Use subprocess to gather strong randomness
+  --with-prngd-port=PORT  read entropy from PRNGD/EGD TCP localhost:PORT
+  --with-prngd-socket=FILE read entropy from PRNGD/EGD socket FILE (default=/var/run/egd-pool)
+  --with-entropy-timeout  Specify entropy gathering command timeout (msec)
+  --with-privsep-user=user Specify non-privileged user for privilege separation
+  --with-sectok           Enable smartcard support using libsectok
+  --with-opensc[=PFX]     Enable smartcard support using OpenSC (optionally in PATH)
+  --with-selinux          Enable SELinux support
+  --with-kerberos5=PATH   Enable Kerberos 5 support
+  --with-privsep-path=xxx Path for privilege separation chroot (default=/var/empty)
+  --with-xauth=PATH       Specify path to xauth program
+  --with-mantype=man|cat|doc  Set man page type
+  --with-md5-passwords    Enable use of MD5 passwords
+  --without-shadow        Disable shadow password support
+  --with-ipaddr-display   Use ip address instead of hostname in \$DISPLAY
+  --with-default-path=    Specify default \$PATH environment for server
+  --with-superuser-path=  Specify different path for super-user
+  --with-4in6             Check for and convert IPv4 in IPv6 mapped addresses
+  --with-bsd-auth         Enable BSD auth support
+  --with-pid-dir=PATH     Specify location of ssh.pid file
+  --with-lastlog=FILE|DIR specify lastlog location common locations
+
+Some influential environment variables:
+  CC          C compiler command
+  CFLAGS      C compiler flags
+  LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
+              nonstandard directory <lib dir>
+  LIBS        libraries to pass to the linker, e.g. -l<library>
+  CPPFLAGS    C/C++/Objective C preprocessor flags, e.g. -I<include dir> if
+              you have headers in a nonstandard directory <include dir>
+  CPP         C preprocessor
+
+Use these variables to override the choices made by `configure' or to help
+it to find libraries and programs with nonstandard names/locations.
+
+Report bugs to <openssh-unix-dev@mindrot.org>.

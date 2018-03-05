@@ -1,0 +1,11 @@
+/////////////////////////////////////////////////////////////////////////////
+// Name:        data.cpp
+// Purpose:     Various data
+// Author:      AUTHOR
+// Modified by:
+// Created:     ??/??/98
+// RCS-ID:      $Id: data.cpp,v 1.1.1.1 2009/10/09 02:58:56 jack Exp $
+// Copyright:   (c) AUTHOR
+// Licence:   	wxWindows licence
+/////////////////////////////////////////////////////////////////////////////
+

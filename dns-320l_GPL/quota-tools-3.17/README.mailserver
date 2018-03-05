@@ -1,0 +1,14 @@
+Mail server support by James Bourne <jbourne@hardrock.org>
+
+If you are running warnquota on a mail server you need to be able to tell
+warnquota not to send mail when the users quota is either over the hard
+limit or past the grace period.  So, to do this add the value:
+MAILDEV = any
+into /etc/warnquota.conf and warnquota will not send mail to those users.
+
+If you have only a single partition you wish to apply this rule to, use the
+device name as the argument to the MAILSERV configuration variable list
+this:
+MAILDEV = /dev/sdb1
+Please note that specifying checking of mail device may slow down things
+considerably...

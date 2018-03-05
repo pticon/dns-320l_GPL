@@ -1,0 +1,64 @@
+# Portuguese translation for tcp-wrappers
+# Luís Matos <gass@otiliamatos.ath.cx>, 2005
+# Luís Matos <gass@otiliamatos.ath.cx>, 2007
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers 7.6.dbs-8\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2007-05-21 19:37+0100\n"
+"Last-Translator: Luis Matos <gass@otiliamatos.ath.cx>\n"
+"Language-Team: Portuguese <traduz@debianpt.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr "Utilizar definições paranoícas no hosts.allow e hosts.deny?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+"Serão criados novos ficheiros /etc/hosts.allow e /etc/hosts.deny para os programas do "
+"daemon TCP wrappers (tcpd) e da biblioteca libwrap pois eles não existem."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"Pode escolher entre uma configuraçao genérica e uma configuração permissiva "
+"que permitirão a chegada de uma ligação ou uma configuração paranoíca que "
+"não permitirá ligações remotas independentemente da sua origem. A última, "
+"ainda que mais segura, bloqueará qualquer comunicação, inluíndo, por "
+"exemplo, administração remota."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+"Ambos os ficheiros podem ser modificados posteriormente para servir as suas "
+"necessidades como explicado na manpage hosts_access(5). Estas definições "
+"apenas afectrão os serviços de rede que usem a biblioteca libwrap. "
+"As definições para outros serviçoes devem ser definidas utilizando directivas de "
+"configurações específicas de cada pacote ou regras de firewall."
+

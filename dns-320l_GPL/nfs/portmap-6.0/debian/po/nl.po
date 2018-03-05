@@ -1,0 +1,54 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: portmap 5-19\n"
+"Report-Msgid-Bugs-To: anibal@debian.org\n"
+"POT-Creation-Date: 2006-02-25 23:17+0100\n"
+"PO-Revision-Date: 2006-05-04 04:38+0100\n"
+"Last-Translator: Vincent Zweije <zweije@xs4all.nl>\n"
+"Language-Team: Debian-Dutch <debian-l10n-dutch@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid "Should portmap be bound to the loopback address?"
+msgstr "Moet portmap op het loopback-interface luisteren?"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid ""
+"Portmap by default listens to all IP addresses. However, if you are not "
+"providing network RPC services to remote clients (you are if you are setting "
+"up a NFS or NIS server) you can safely bind it to the loopback  IP address "
+"(127.0.0.1)"
+msgstr ""
+"Standaard luistert portmap op alle interfaces. Als u echter geen "
+"RPC-diensten aanbiedt aan andere servers, zoals NFS- of NIS-diensten, "
+"dan kunt u portmap zonder problemen beperken tot het loopback-interface "
+"op adres 127.0.0.1."
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid ""
+"This will allow RPC local services (like FAM) to work properly, while "
+"preventing remote systems from accessing your RPC services."
+msgstr ""
+"Hierdoor kunnen lokale RPC-diensten, zoals FAM, goed werken, terwijl "
+"wordt voorkomen dat andere systemen verbinding maken met uw RPC-diensten."
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid ""
+"You can also change this configuration by editing the OPTIONS line in the /"
+"etc/default/portmap file. If you just don't specify the -i option it will "
+"bind to all interfaces."
+msgstr ""
+"U kunt deze instelling ook aanpassen door de OPTIONS regel in "
+"/etc/default/portmap te wijzigen. Als u de -i optie weglaat, dan luistert "
+"portmap op alle interfaces."

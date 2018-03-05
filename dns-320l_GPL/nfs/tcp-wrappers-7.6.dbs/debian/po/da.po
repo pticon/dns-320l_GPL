@@ -1,0 +1,102 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
+#    Developers do not need to manually edit POT or PO files.
+#
+# Claus Hindsgaul <claus_h@image.dk>, 2004.
+# Claus Hindsgaul <claus.hindsgaul@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: da\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2007-05-30 23:17+0200\n"
+"Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
+"Language-Team: Danish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr "Benyt paranoide indstillinger i hosts.allow og hosts.access op?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+"Der vil blive oprettet nye /etc/hosts.allow og /etc/hosts.deny til TCP-indpakningsprogrammerne "
+"(tcpd) ligesom biblioteket bliver oprettet, da ingen af dem eksister."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"Du kan vælge mellem en som udgangspunkt eftergivende opsætning, der vil tillade "
+"alle indkommende forbindelser, eller en paranoid opsætning, der ikke vil tillade "
+"forbindelser udefra uanset hvorfra de stammer. Den sidstenævnte vil, selvom den "
+"er mere sikker, udelukke al kommunikation, herunder f.eks. fjernadministration."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+"Begge filer kan tilrettes senere, så de svarer til dine behov, som forklaret "
+"på manualsiden hosts_access(5). Disse indstillinger vil kun påvirke de "
+"netværksservices, der benytter biblioteket libwrap: restriktioner for andre "
+"services kan etableres med pakke-specifik opsætning eller brandmurs-regler."
+
+#~ msgid ""
+#~ "The second option, even if more secure, will block out all communication, "
+#~ "including, for example, remote administration. So if you need this don't "
+#~ "choose it."
+#~ msgstr ""
+#~ "Selvom den sidste mulighed er den sikreste, vil den blokere for al "
+#~ "kommunikation som f.eks. fjernadministration. Så hvis du har brug for "
+#~ "fjernadministration o.lign. skal du ikke vælge den."
+
+#~ msgid ""
+#~ "Regardless of which option you select you can always manually edit both  "
+#~ "files to suit your needs, for this, review the hosts_access(5) manpage.  "
+#~ "This might include giving remote access of services to legitimate hosts."
+#~ msgstr ""
+#~ "Uanset hvilken indstilling du vælger, kan du altid redigere begge filer "
+#~ "efter behov. Se manualsiden hosts_access(5) for oplysninger om dette. Her "
+#~ "kan du give fjernadgang til bestemte services fra bestemte maskiner."
+
+#~ msgid ""
+#~ "Notice this only applies to internet services that use the libwrap "
+#~ "library. Remote connections will still be possible to services that do "
+#~ "not use this library, consider using firewall rules to block access to "
+#~ "these."
+#~ msgstr ""
+#~ "Bemærk at dette kun gælder internet-services, der benytter libwrap-"
+#~ "biblioteket. Forbindelser udefra til services, der ikke benytter dette "
+#~ "bibliotek, vil stadig kunne lade sig gøre. Du bør overveje at benytte en "
+#~ "brandmur til at blokere adgangen til sådanne services."
+

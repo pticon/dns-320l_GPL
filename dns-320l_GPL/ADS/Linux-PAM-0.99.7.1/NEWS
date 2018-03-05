@@ -1,0 +1,125 @@
+Linux-PAM NEWS -- history of user-visible changes.
+
+
+Release 0.99.7.1
+
+* Security fix for pam_unix.so (CVE-2007-0003).
+
+
+Release 0.99.7.0
+
+* Add manual page for pam_unix.so.
+* Add pam_faildelay module to set pam_fail_delay() value.
+* Fix possible seg.fault in libpam/pam_set_data().
+* Cleanup of configure options.
+* Update hungarian translation, fix german translation.
+
+
+Release 0.99.6.3
+
+* pam_loginuid: New PAM module.
+* pam_access, pam_succeed_if: Support passwd and session services.
+
+
+Release 0.99.6.2
+
+* pam_lastlog: Don't refuse login if lastlog file got lost.
+* pam_cracklib: Fix a user triggerable crash.
+* documentation: Regenerate with fixed docbook stylesheet.
+
+
+Release 0.99.6.1
+
+* Fix bootstrapping problems.
+* Bug fixes: pam_keyinit, pam_umask
+
+
+Release 0.99.6.0
+
+* pam_namespace: Code cleanup, add init script to tar archive.
+* pam_succeed_if: Add support for service match.
+* Add xtests (to run after installation).
+* Documentation: Convert sgml guides to XML, unify documentation
+  for PAM functions and modules.
+
+
+Release 0.99.5.0
+
+* pam_tally: Fix support for large UIDs
+* Fixed all problems found by Coverity
+* Add support for Intel C Compiler
+* Add manual page for pam_mkhomedir, pam_umask, pam_filter,
+  pam_issue, pam_ftp, pam_group, pam_lastlog, pam_listfile,
+  pam_localuser, pam_mail, pam_motd, pam_nologin, pam_permit,
+  pam_rootok, pam_securetty, pam_shells, pam_userdb, pam_warn,
+  pam_time, pam_limits, pam_debug, pam_tally
+* The libpam memory debug code was removed
+* pam_keyinit: New module to initialise kernel session keyring.
+* pam_namespace: New module to configure private namespace for a session.
+* pam_rhosts: New module which replaces pam_rhosts_auth, now IPv6 capable.
+* pam_rhosts_auth: This module is now deprecated.
+
+
+Release 0.99.4.0
+
+* Add test suite
+* Fix building of static variants of libpam, libpamc and libpam_misc
+* pam_listfile: Add support for password and session management
+* pam_exec: New PAM module to execute arbitary commands
+* Fix building of a static libpam including all PAM modules
+* New/updated translations for: nl, pt, pl, fi, km, tr, uk, fr
+* pam_access: Add network(address) / netmask and IPv6 support
+* Add manual pages for pam_cracklib, pam_deny and pam_access
+* pam_pwdb: This deprecated module was removed
+* Manual pages: Major rewrite/cleanup
+
+
+Release 0.99.3.0
+
+* Fix NULL pointer checks in libpam.so
+* pam_succeed_if, pam_group, pam_time: Support netgroup matching
+* New translations for: nb, hu, fi, de, es, fr, it, ja, pt_BR, zh_CN, zh_TW
+* Audit PAM calls if Linux Audit is available
+* Compile upperLOWER and unix_chkpwd as PIE binaries
+
+
+Release 0.99.2.1
+
+* Fix install of PS, PDF, TXT and HTML files
+* pam_mail: Update README
+* Use %m consistent
+* pam_modutil_getlogin: Fix parsing of PAM_TTY variable
+
+
+Release 0.99.2.0
+
+* Fix parsing of full path tty name in various modules
+* pam_xauth: Look for xauth executable in multiple places
+* pam_unix: Disable user check in unix_chkpwd only if real uid
+  is 0 (CVE-2005-2977). Log failed password check attempt.
+* pam_env: Support /etc/environment again, but don't treat it as
+  error if it is missing.
+* pam_userdb: Fix memory leak.
+
+
+Release 0.99.1.0
+
+* Use autoconf/automake/libtool
+* Add gettext support
+* Add translations for cs, de, es, fr, hu, it, ja, nb, pa, pt_BR,
+  pt, zh_CN and zh_TW
+* libpam: Remove pam_authenticate_secondary stub
+* libpam: Add pam_prompt,pam_vprompt,pam_error,pam_verror,pam_info
+  and pam_vinfo functions for use by modules as extension
+* libpam: Add pam_syslog function for unified syslog messages from
+  PAM modules
+* libpam: Moved functions from pammodutil to libpam
+* pam_umask: New module for setting umask from GECOS field, /etc/login.defs
+  or /etc/default/login
+* pam_echo: New PAM module for message output
+* pam_userdb: Fix regression (crash when crypt param not specified)
+* pam_limits: Fix regression from RLIMIT_NICE support (wrong limit
+  values for other limits are applied)
+* pam_access: Support for NULL tty - matches ALL and NONE keywords
+* pam_lastlog: Enable log to wtmp by default.  Add "nowtmp" option
+* pam_radius: This module was removed

@@ -1,0 +1,106 @@
+NAME
+    Tie::RegexpHash - Use regular expressions as hash keys
+
+REQUIREMENTS
+    Tie::RegexpHash is written for and tested on Perl 5.6.0, but should run
+    with Perl 5.005. (Because it uses Regexp variables it cannot run on
+    earlier versions of Perl.)
+
+    It uses only standard modules. Serialization is supported through
+    Storable, but Storable is not required for normal operation.
+
+  Installation
+
+    Installation can be done using the traditional Makefile.PL or the newer
+    Build.PL methods.
+
+    Using Makefile.PL:
+
+      perl Makefile.PL
+      make test
+      make install
+
+    (On Windows platforms you should use `nmake' instead.)
+
+    Using Build.PL (if you have Module::Build installed):
+
+      perl Build.PL
+      perl Build test
+      perl Build install
+
+SYNOPSIS
+      use Tie::RegexpHash;
+
+      my %hash;
+
+      tie %hash, 'Tie::RegexpHash';
+
+      $hash{ qr/^5(\s+|-)?gal(\.|lons?)?/i } = '5-GAL';
+
+      $hash{'5 gal'};     # returns "5-GAL"
+      $hash{'5GAL'};      # returns "5-GAL"
+      $hash{'5  gallon'}; # also returns "5-GAL"
+
+      my $rehash = Tie::RegexpHash->new();
+
+      $rehash->add( qr/\d+(\.\d+)?/, "contains a number" );
+      $rehash->add( qr/s$/,          "ends with an \`s\'" );
+
+      $rehash->match( "foo 123" );  # returns "contains a number"
+      $rehash->match( "examples" ); # returns "ends with an `s'"
+
+DESCRIPTION
+    This module allows one to use regular expressions for hash keys, so that
+    values can be associated with anything that matches the key.
+
+    Hashes can be operated on using the standard tied hash interface in
+    Perl, or using an object-oriented interface described below.
+
+REVISION HISTORY
+    A brief list of changes since the previous release:
+
+    0.15    11 Feb 2006
+            - updated notes on Storable use in documentation
+            - support serialization with Storable, but do not require
+              Storable
+            - skip serialization tests if Storable is not available
+    
+    0.14_03 10 Feb 2006
+            - noted use of Storable in documentation
+            - fix for MANIFEST
+    
+    0.14_02 10 Feb 2006
+            - fix for freeze subroutine (from Russell Harrison)
+            - tests for serialization hooks (from Russell Harrison)
+    
+    0.14_01 9 Feb 2006
+            - updated test suite to use Test::More
+            - added serialization hooks with Storable
+              (patch from Russell Harrison)
+            - README built with Pod::Readme
+
+    For a detailed history see the Changes file included in this
+    distribution.
+
+AUTHOR
+    Robert Rothenberg <rrwo at cpan.org>
+
+LICENSE
+    Copyright (c) 2001-2002, 2005-2006 Robert Rothenberg. All rights
+    reserved.
+
+    Portions Copyright (c) 2006 Russell Harrison. All rights reserved.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+SEE ALSO
+    Tie::Hash::Regex is a module with a complimentary function. Rather than
+    a hash with Regexps as keys that match against fetches, it has standard
+    keys that are matched by Regexps in fetches.
+
+    Regexp::Match::Any matches many Regexps against a variable.
+
+    Regexp::Match::List is similar, but supports callbacks and various
+    optimizations.
+

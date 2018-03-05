@@ -1,0 +1,14 @@
+prefix=/etc/samba
+exec_prefix=${prefix}
+libdir=/lib
+includedir=${prefix}/include
+
+Name: Samba libsmbsharemodes
+Description: A library
+Version: 0
+URL: http://www.samba.org/
+#Libs: -L/lib -lsmbsharemodes
+Libs: -lsmbsharemodes
+Libs.private: -lsmbsharemodes -L/home/roy/git_home/DNS-345_GPL/ADS/krb5-1.7.1/src/_install/lib -Wl,-rpath -Wl,/home/roy/git_home/DNS-345_GPL/ADS/krb5-1.7.1/src/_install/lib -L/home/roy/git_home/DNS-345_GPL/ADS/krb5-1.7.1/src/_install/lib -Wl,-rpath -Wl,/home/roy/git_home/DNS-345_GPL/ADS/krb5-1.7.1/src/_install/lib -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lresolv -ldl -lldap -llber  -lresolv -lnsl -ldl -liconv
+Cflags: -I${prefix}/include
+

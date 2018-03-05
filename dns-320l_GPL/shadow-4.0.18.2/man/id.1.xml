@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry id='id.1'>
+  <!-- $Id: id.1.xml,v 1.1.1.1 2009/10/09 02:52:19 jack Exp $ -->
+  <refmeta>
+    <refentrytitle>id</refentrytitle>
+    <manvolnum>1</manvolnum>
+    <refmiscinfo class="sectdesc">User Commands</refmiscinfo>
+  </refmeta>
+  <refnamediv id='name'>
+    <refname>id</refname>
+    <refpurpose>display current user and group ID names</refpurpose>
+  </refnamediv>
+
+  <refsynopsisdiv id='synopsis'>
+    <cmdsynopsis>
+      <command>id</command>    <arg choice='opt'>-a </arg>
+    </cmdsynopsis>
+  </refsynopsisdiv>
+
+  <refsect1 id='description'>
+    <title>DESCRIPTION</title>
+    <para>
+      The <command>id</command> command displays the current real and
+      effective user and group ID names or values. If the value does not
+      have a corresponding entry in <filename>/etc/passwd</filename> or
+      <filename>/etc/group</filename>, the value will be displayed without
+      the corresponding name. The optional <option>-a</option> flag will
+      display the group set on systems which support multiple concurrent
+      group membership.
+    </para>
+  </refsect1>
+
+  <refsect1 id='files'>
+    <title>FILES</title>
+    <variablelist>
+      <varlistentry>
+	<term><filename>/etc/group</filename></term>
+	<listitem>
+	  <para>Group account information.</para>
+	</listitem>
+      </varlistentry>
+      <varlistentry>
+	<term><filename>/etc/passwd</filename></term>
+	<listitem>
+	  <para>User account information.</para>
+	</listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+
+  <refsect1 id='see_also'>
+    <title>SEE ALSO</title>
+    <para>
+      <citerefentry>
+	<refentrytitle>getgid</refentrytitle><manvolnum>2</manvolnum>
+      </citerefentry>,
+      <citerefentry>
+	<refentrytitle>getgroups</refentrytitle><manvolnum>2</manvolnum>
+      </citerefentry>,
+      <citerefentry>
+	<refentrytitle>getuid</refentrytitle><manvolnum>2</manvolnum>
+      </citerefentry>
+    </para>
+  </refsect1>
+</refentry>

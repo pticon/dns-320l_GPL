@@ -1,0 +1,47 @@
+Source: fuse
+Section: libs
+Priority: optional
+Maintainer: Bartosz Fenski <fenio@debian.org>
+Uploaders: Adam Cécile (Le_Vert) <gandalf@le-vert.net>
+Build-Depends: debhelper (>= 5.0.37), autotools-dev, dpatch, lsb-base (>= 3.0-6), bzip2, libselinux1-dev [!kfreebsd-amd64 !kfreebsd-i386] | libselinux-dev [!kfreebsd-amd64 !kfreebsd-i386]
+Homepage: http://fuse.sourceforge.net/
+Standards-Version: 3.8.2
+
+Package: fuse-utils
+Section: utils
+Depends: ${shlibs:Depends}, ${misc:Depends}, libfuse2 (= ${binary:Version}), sed (>= 4), adduser, udev | makedev (>= 2.3.1-80) 
+Architecture: avr32 alpha amd64 armel hppa i386 ia64 lpia m68k mips mipsel powerpc ppc64 s390 s390x sh4 sparc sparc64
+Description: Filesystem in USErspace (utilities)
+ Simple interface for userspace programs to export a virtual
+ filesystem to the Linux kernel.
+ .
+ This package contains the fusermount utility which is necessary to
+ mount fuse filesystems.
+ .
+ This utility is setuid by default. Use dpkg-statoverride if you want
+ to change that.
+
+Package: libfuse-dev
+Section: libdevel
+Architecture: any
+Depends: libfuse2 (= ${binary:Version}), ${misc:Depends}, libselinux1-dev [!kfreebsd-amd64 !kfreebsd-i386] | libselinux-dev [!kfreebsd-amd64 !kfreebsd-i386]
+Suggests: fuse-utils
+Description: Filesystem in USErspace (development files)
+ Simple interface for userspace programs to export a virtual
+ filesystem to the Linux kernel.
+ .
+ This package contains the files necessary to write applications in C
+ or C++ using fuse.
+
+Package: libfuse2
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: fuse-utils (<< ${binary:Version})
+Suggests: fuse-utils
+Description: Filesystem in USErspace library
+ Simple interface for userspace programs to export a virtual
+ filesystem to the Linux kernel.
+ .
+ This package contains the files necessary to write applications in C
+ or C++ using fuse.

@@ -1,0 +1,51 @@
+#! /bin/sh
+set -e
+
+action=$1
+version=$2
+CONFFILE=/etc/default/portmap
+
+create_config() {
+        cat <<EOF > $CONFFILE
+# Portmap configuration file
+#
+# Note: if you manually edit this configuration file,
+# portmap configuration scripts will avoid modifying it
+# (for example, by running 'dpkg-reconfigure portmap').
+
+# If you want portmap to listen only to the loopback
+# interface, uncomment the following line (it will be
+# uncommented automatically if you configure this
+# through debconf).
+#OPTIONS="-i 127.0.0.1"
+EOF
+        chmod 0644 $CONFFILE
+}
+
+# TBD: should be based on a given version
+if [ "$action" = "upgrade" ] && [ -e /etc/portmap.conf ] \
+   && dpkg --compare-versions "$version" gt 5-10 \
+   && dpkg --compare-versions "$version" lt 5-13 ; then
+	# get rid of /etc/portmap.conf if it did not change from the default?
+	# Move to the "new" conffile location, let the user handle
+	# the change (if needed)
+		[ -e $CONFFILE ] && mv $CONFFILE $CONFFILE.dpkg-old
+		mv /etc/portmap.conf $CONFFILE
+fi
+
+
+# On install only, create the config file if it does not exist
+# 
+if [ ! -e $CONFFILE ] ; then
+	if  [ -z "$version" ] ; then
+		create_config
+	elif [ -n "$version" ] && [ "$action" = "upgrade" ] && \
+	     dpkg --compare-versions "$version" lt 5-6; then
+# or if upgrading from version older than 5-6 (which provided the file)
+	     create_config
+	fi
+fi
+
+#DEBHELPER#
+
+exit 0

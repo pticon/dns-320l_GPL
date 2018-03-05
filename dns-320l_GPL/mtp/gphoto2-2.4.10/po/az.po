@@ -1,0 +1,1694 @@
+# Translation of 'gphoto' messages to Azerbaijani.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# This file is put in the public domain.
+# Mətin Əmirov <metin@karegen.com>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gphoto2-2.1.2\n"
+"Report-Msgid-Bugs-To: gphoto-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2010-08-15 15:12+0200\n"
+"PO-Revision-Date: 2004-03-20 20:58+0200\n"
+"Last-Translator: Metin Amiroff <metin@karegen.com>\n"
+"Language-Team: Azerbaijani <translation-team-az@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: gphoto2/actions.c:168
+#, c-format
+msgid "Number of files in folder '%s': %i\n"
+msgstr ""
+
+#: gphoto2/actions.c:188
+#, fuzzy, c-format
+msgid "There is %d folder in folder '%s'.\n"
+msgid_plural "There are %d folders in folder '%s'.\n"
+msgstr[0] "Qovluqdakı qovluqları göstər"
+msgstr[1] "Qovluqdakı qovluqları göstər"
+
+#: gphoto2/actions.c:228
+#, fuzzy, c-format
+msgid "There is no file in folder '%s'.\n"
+msgstr "Qovluqdakı faylları göstər"
+
+#: gphoto2/actions.c:231
+#, fuzzy, c-format
+msgid "There is %d file in folder '%s'.\n"
+msgid_plural "There are %d files in folder '%s'.\n"
+msgstr[0] "Qovluqdakı faylları göstər"
+msgstr[1] "Qovluqdakı faylları göstər"
+
+#: gphoto2/actions.c:252
+#, c-format
+msgid "Information on file '%s' (folder '%s'):\n"
+msgstr ""
+
+#: gphoto2/actions.c:254
+#, c-format
+msgid "File:\n"
+msgstr ""
+
+#: gphoto2/actions.c:256 gphoto2/actions.c:290 gphoto2/actions.c:306
+#, c-format
+msgid "  None available.\n"
+msgstr ""
+
+#: gphoto2/actions.c:259
+#, c-format
+msgid "  Name:        '%s'\n"
+msgstr ""
+
+#: gphoto2/actions.c:261 gphoto2/actions.c:293
+#, c-format
+msgid "  Mime type:   '%s'\n"
+msgstr ""
+
+#: gphoto2/actions.c:263 gphoto2/actions.c:295
+#, c-format
+msgid "  Size:        %lu byte(s)\n"
+msgstr ""
+
+#: gphoto2/actions.c:265 gphoto2/actions.c:297
+#, c-format
+msgid "  Width:       %i pixel(s)\n"
+msgstr ""
+
+#: gphoto2/actions.c:267 gphoto2/actions.c:299
+#, c-format
+msgid "  Height:      %i pixel(s)\n"
+msgstr ""
+
+#: gphoto2/actions.c:269 gphoto2/actions.c:301
+#, c-format
+msgid "  Downloaded:  %s\n"
+msgstr ""
+
+#: gphoto2/actions.c:270 gphoto2/actions.c:302 gphoto2/actions.c:314
+#: gphoto2/actions.c:664 gphoto2/actions.c:666 gphoto2/actions.c:694
+#: gphoto2/actions.c:697 gphoto2/actions.c:700 gphoto2/actions.c:703
+#: gphoto2/actions.c:706 gphoto2/actions.c:1656 gphoto2/actions.c:1881
+msgid "yes"
+msgstr "bəli"
+
+#: gphoto2/actions.c:270 gphoto2/actions.c:302 gphoto2/actions.c:314
+#: gphoto2/actions.c:664 gphoto2/actions.c:666 gphoto2/actions.c:694
+#: gphoto2/actions.c:697 gphoto2/actions.c:700 gphoto2/actions.c:703
+#: gphoto2/actions.c:706 gphoto2/actions.c:1650 gphoto2/actions.c:1875
+msgid "no"
+msgstr "xeyir"
+
+#: gphoto2/actions.c:272
+#, c-format
+msgid "  Permissions: "
+msgstr ""
+
+#: gphoto2/actions.c:275
+#, c-format
+msgid "read/delete"
+msgstr ""
+
+#: gphoto2/actions.c:277
+#, c-format
+msgid "read"
+msgstr ""
+
+#: gphoto2/actions.c:279
+#, c-format
+msgid "delete"
+msgstr "sil"
+
+#: gphoto2/actions.c:281
+#, c-format
+msgid "none"
+msgstr "heç biri"
+
+#: gphoto2/actions.c:285
+#, c-format
+msgid "  Time:        %s"
+msgstr ""
+
+#: gphoto2/actions.c:288
+#, c-format
+msgid "Thumbnail:\n"
+msgstr ""
+
+#: gphoto2/actions.c:304
+#, c-format
+msgid "Audio data:\n"
+msgstr ""
+
+#: gphoto2/actions.c:309
+#, c-format
+msgid "  Mime type:  '%s'\n"
+msgstr ""
+
+#: gphoto2/actions.c:311
+#, c-format
+msgid "  Size:       %lu byte(s)\n"
+msgstr ""
+
+#: gphoto2/actions.c:313
+#, c-format
+msgid "  Downloaded: %s\n"
+msgstr ""
+
+#: gphoto2/actions.c:489
+msgid "Could not parse EXIF data."
+msgstr ""
+
+#: gphoto2/actions.c:493
+#, c-format
+msgid "EXIF tags:"
+msgstr ""
+
+#: gphoto2/actions.c:496
+msgid "Tag"
+msgstr "Təq"
+
+#: gphoto2/actions.c:498
+msgid "Value"
+msgstr "Qiymət"
+
+#: gphoto2/actions.c:519
+#, c-format
+msgid "EXIF data contains a thumbnail (%i bytes)."
+msgstr ""
+
+#: gphoto2/actions.c:528
+msgid "gphoto2 has been compiled without EXIF support."
+msgstr ""
+
+#: gphoto2/actions.c:546
+#, c-format
+msgid "Number of supported cameras: %i\n"
+msgstr ""
+
+#: gphoto2/actions.c:547
+#, c-format
+msgid "Supported cameras:\n"
+msgstr ""
+
+#: gphoto2/actions.c:560
+#, c-format
+msgid "\t\"%s\" (TESTING)\n"
+msgstr ""
+
+#: gphoto2/actions.c:563
+#, c-format
+msgid "\t\"%s\" (EXPERIMENTAL)\n"
+msgstr ""
+
+#: gphoto2/actions.c:568
+#, c-format
+msgid "\t\"%s\"\n"
+msgstr "\t\"%s\"\n"
+
+#: gphoto2/actions.c:612
+#, c-format
+msgid "Devices found: %i\n"
+msgstr ""
+
+#: gphoto2/actions.c:613
+#, c-format
+msgid ""
+"Path                             Description\n"
+"--------------------------------------------------------------\n"
+msgstr ""
+
+#: gphoto2/actions.c:643 gphoto2/actions.c:648
+#, c-format
+msgid "%-30s %-16s\n"
+msgstr "%-30s %-16s\n"
+
+#: gphoto2/actions.c:643
+msgid "Model"
+msgstr "Model"
+
+#: gphoto2/actions.c:643
+msgid "Port"
+msgstr "Port"
+
+#: gphoto2/actions.c:644
+#, c-format
+msgid "----------------------------------------------------------\n"
+msgstr "----------------------------------------------------------\n"
+
+#: gphoto2/actions.c:662
+#, c-format
+msgid "Abilities for camera             : %s\n"
+msgstr ""
+
+#: gphoto2/actions.c:663
+#, c-format
+msgid "Serial port support              : %s\n"
+msgstr ""
+
+#: gphoto2/actions.c:665
+#, c-format
+msgid "USB support                      : %s\n"
+msgstr ""
+
+#: gphoto2/actions.c:668
+#, c-format
+msgid "Transfer speeds supported        :\n"
+msgstr ""
+
+#: gphoto2/actions.c:670
+#, c-format
+msgid "                                 : %i\n"
+msgstr ""
+
+#: gphoto2/actions.c:673
+#, c-format
+msgid "Capture choices                  :\n"
+msgstr ""
+
+#: gphoto2/actions.c:675
+#, c-format
+msgid "                                 : Image\n"
+msgstr ""
+
+#: gphoto2/actions.c:679
+#, c-format
+msgid "                                 : Video\n"
+msgstr ""
+
+#: gphoto2/actions.c:683
+#, c-format
+msgid "                                 : Audio\n"
+msgstr ""
+
+#: gphoto2/actions.c:687
+#, c-format
+msgid "                                 : Preview\n"
+msgstr ""
+
+#: gphoto2/actions.c:691
+#, c-format
+msgid ""
+"                                 : Capture not supported by the driver\n"
+msgstr ""
+
+#: gphoto2/actions.c:693
+#, c-format
+msgid "Configuration support            : %s\n"
+msgstr ""
+
+#: gphoto2/actions.c:695
+#, c-format
+msgid "Delete selected files on camera  : %s\n"
+msgstr ""
+
+#: gphoto2/actions.c:698
+#, fuzzy, c-format
+msgid "Delete all files on camera       : %s\n"
+msgstr "Qovluqdakı bütün faylları sil"
+
+#: gphoto2/actions.c:701
+#, c-format
+msgid "File preview (thumbnail) support : %s\n"
+msgstr ""
+
+#: gphoto2/actions.c:704
+#, c-format
+msgid "File upload support              : %s\n"
+msgstr ""
+
+#: gphoto2/actions.c:720
+#, c-format
+msgid ""
+"Ports must look like 'serial:/dev/ttyS0' or 'usb:', but '%s' is missing a "
+"colon so I am going to guess what you mean."
+msgstr ""
+
+#: gphoto2/actions.c:754
+#, c-format
+msgid ""
+"The port you specified ('%s') can not be found. Please specify one of the "
+"ports found by 'gphoto2 --list-ports' and make sure the spelling is correct "
+"(i.e. with prefix 'serial:' or 'usb:')."
+msgstr ""
+
+#: gphoto2/actions.c:786
+#, c-format
+msgid "About the camera driver:"
+msgstr ""
+
+#: gphoto2/actions.c:799
+#, c-format
+msgid "Camera summary:"
+msgstr ""
+
+#: gphoto2/actions.c:812
+#, c-format
+msgid "Camera manual:"
+msgstr ""
+
+#: gphoto2/actions.c:827
+#, c-format
+msgid "You can only specify speeds for serial ports."
+msgstr ""
+
+#: gphoto2/actions.c:877
+msgid "OS/2 port by Bart van Leeuwen\n"
+msgstr ""
+
+#: gphoto2/actions.c:881
+#, c-format
+msgid ""
+"gphoto2 %s\n"
+"\n"
+"Copyright (c) 2000-%d Lutz Mueller and others\n"
+"%s\n"
+"gphoto2 comes with NO WARRANTY, to the extent permitted by law. You may\n"
+"redistribute copies of gphoto2 under the terms of the GNU General Public\n"
+"License. For more information about these matters, see the files named "
+"COPYING.\n"
+"\n"
+"This version of gphoto2 is using the following software versions and "
+"options:\n"
+msgstr ""
+
+#: gphoto2/actions.c:980
+msgid "Could not open 'movie.mjpg'."
+msgstr ""
+
+#: gphoto2/actions.c:987
+#, c-format
+msgid "Capturing preview frames as movie to '%s'. Press Ctrl-C to abort.\n"
+msgstr ""
+
+#: gphoto2/actions.c:991
+#, c-format
+msgid "Capturing preview frames as movie to '%s' for %d seconds.\n"
+msgstr ""
+
+#: gphoto2/actions.c:996
+#, c-format
+msgid "Capturing %d preview frames as movie to '%s'.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1005
+msgid "Movie capture error... Exiting."
+msgstr ""
+
+#: gphoto2/actions.c:1010
+#, c-format
+msgid "Movie capture error... Unhandled MIME type '%s'."
+msgstr ""
+
+#: gphoto2/actions.c:1015
+#, c-format
+msgid "Ctrl-C pressed ... Exiting.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1099 gphoto2/main.c:650
+#, fuzzy
+msgid "Could not set folder."
+msgstr "Quraşdırma seçilə bilmədi:"
+
+#: gphoto2/actions.c:1105 gphoto2/main.c:657
+#, fuzzy
+msgid "Could not get image."
+msgstr "Quraşdırma seçilə bilmədi:"
+
+#: gphoto2/actions.c:1112 gphoto2/main.c:664
+msgid "Buggy libcanon.so?"
+msgstr ""
+
+#: gphoto2/actions.c:1121 gphoto2/main.c:675
+msgid "Could not delete image."
+msgstr ""
+
+#: gphoto2/actions.c:1144
+#, c-format
+msgid "Getting storage information not supported for this camera.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1159
+#, c-format
+msgid "Read-Write"
+msgstr ""
+
+#: gphoto2/actions.c:1162
+#, c-format
+msgid "Read-Only"
+msgstr ""
+
+#: gphoto2/actions.c:1165
+#, c-format
+msgid "Read-only with delete"
+msgstr ""
+
+#: gphoto2/actions.c:1168 gphoto2/actions.c:1178
+#, c-format
+msgid "Unknown"
+msgstr ""
+
+#: gphoto2/actions.c:1181
+#, c-format
+msgid "Fixed ROM"
+msgstr ""
+
+#: gphoto2/actions.c:1184
+#, c-format
+msgid "Removable ROM"
+msgstr ""
+
+#: gphoto2/actions.c:1187
+#, c-format
+msgid "Fixed RAM"
+msgstr ""
+
+#: gphoto2/actions.c:1190
+#, c-format
+msgid "Removable RAM"
+msgstr ""
+
+#: gphoto2/actions.c:1200
+#, c-format
+msgid "Undefined"
+msgstr ""
+
+#: gphoto2/actions.c:1203
+#, c-format
+msgid "Generic Flat"
+msgstr ""
+
+#: gphoto2/actions.c:1206
+#, c-format
+msgid "Generic Hierarchical"
+msgstr ""
+
+#: gphoto2/actions.c:1209
+#, c-format
+msgid "Camera layout (DCIM)"
+msgstr ""
+
+#: gphoto2/actions.c:1247
+#, c-format
+msgid "Overriding USB vendor/product id 0x%x/0x%x with 0x%x/0x%x"
+msgstr ""
+
+#: gphoto2/actions.c:1311
+msgid ""
+"ALWAYS INCLUDE THE FOLLOWING LINES WHEN SENDING DEBUG MESSAGES TO THE "
+"MAILING LIST:"
+msgstr ""
+
+#: gphoto2/actions.c:1326
+#, c-format
+msgid "%s has been compiled with the following options:"
+msgstr ""
+
+#: gphoto2/actions.c:1444
+#, fuzzy, c-format
+msgid "%s not found in configuration tree."
+msgstr "Quraşdırma seçilə bilmədi:"
+
+#: gphoto2/actions.c:1504
+#, c-format
+msgid "Failed to retrieve value of text widget %s."
+msgstr ""
+
+#: gphoto2/actions.c:1521
+#, c-format
+msgid "Failed to retrieve values of range widget %s."
+msgstr ""
+
+#: gphoto2/actions.c:1533
+#, c-format
+msgid "Failed to retrieve values of toggle widget %s."
+msgstr ""
+
+#: gphoto2/actions.c:1545
+#, c-format
+msgid "Failed to retrieve values of date/time widget %s."
+msgstr ""
+
+#: gphoto2/actions.c:1575
+#, c-format
+msgid "Failed to retrieve values of radio widget %s."
+msgstr ""
+
+#: gphoto2/actions.c:1606
+#, c-format
+msgid "Property %s is read only."
+msgstr ""
+
+#: gphoto2/actions.c:1620 gphoto2/actions.c:1845
+#, c-format
+msgid "Failed to set the value of text widget %s to %s."
+msgstr ""
+
+#: gphoto2/actions.c:1630 gphoto2/actions.c:1855
+#, c-format
+msgid "The passed value %s is not a floating point value."
+msgstr ""
+
+#: gphoto2/actions.c:1635 gphoto2/actions.c:1860
+#, c-format
+msgid "The passed value %f is not within the expected range %f - %f."
+msgstr ""
+
+#: gphoto2/actions.c:1641 gphoto2/actions.c:1866
+#, c-format
+msgid "Failed to set the value of range widget %s to %f."
+msgstr ""
+
+#: gphoto2/actions.c:1650 gphoto2/actions.c:1875
+msgid "off"
+msgstr ""
+
+#: gphoto2/actions.c:1651 gphoto2/actions.c:1876
+#, fuzzy
+msgid "false"
+msgstr "Qiymət"
+
+#: gphoto2/actions.c:1656 gphoto2/actions.c:1881
+#, fuzzy
+msgid "on"
+msgstr "Bze"
+
+#: gphoto2/actions.c:1657 gphoto2/actions.c:1882
+msgid "true"
+msgstr ""
+
+#: gphoto2/actions.c:1662 gphoto2/actions.c:1887
+#, c-format
+msgid "The passed value %s is not a valid toggle value."
+msgstr ""
+
+#: gphoto2/actions.c:1668 gphoto2/actions.c:1893
+#, c-format
+msgid "Failed to set values %s of toggle widget %s."
+msgstr ""
+
+#: gphoto2/actions.c:1681 gphoto2/actions.c:1906
+#, c-format
+msgid "The passed value %s is neither a valid time nor an integer."
+msgstr ""
+
+#: gphoto2/actions.c:1688 gphoto2/actions.c:1913
+#, c-format
+msgid "Failed to set new time of date/time widget %s to %s."
+msgstr ""
+
+#: gphoto2/actions.c:1735 gphoto2/actions.c:1799 gphoto2/actions.c:1943
+#, c-format
+msgid "Choice %s not found within list of choices."
+msgstr ""
+
+#: gphoto2/actions.c:1743 gphoto2/actions.c:1951
+#, c-format
+msgid "The %s widget is not configurable."
+msgstr ""
+
+#: gphoto2/actions.c:1750 gphoto2/actions.c:1818 gphoto2/actions.c:1958
+#, c-format
+msgid "Failed to set new configuration value %s for configuration entry %s."
+msgstr ""
+
+#: gphoto2/actions.c:1811
+#, c-format
+msgid ""
+"The %s widget has no indexed list of choices. Use --set-config-value instead."
+msgstr ""
+
+#: gphoto2/foreach.c:254
+#, c-format
+msgid ""
+"Bad file number. You specified %i, but there are only %i files available in "
+"'%s' or its subfolders. Please obtain a valid file number from a file "
+"listing first."
+msgstr ""
+
+#: gphoto2/foreach.c:279
+#, c-format
+msgid "There are no files in folder '%s'."
+msgstr ""
+
+#: gphoto2/foreach.c:285
+#, c-format
+msgid ""
+"Bad file number. You specified %i, but there is only 1 file available in '%"
+"s'."
+msgstr ""
+
+#: gphoto2/foreach.c:293
+#, c-format
+msgid ""
+"Bad file number. You specified %i, but there are only %i files available in "
+"'%s'. Please obtain a valid file number from a file listing first."
+msgstr ""
+
+#: gphoto2/gp-params.c:70
+#, c-format
+msgid "*** Error ***              \n"
+msgstr "*** Xəta ***              \n"
+
+#: gphoto2/gp-params.c:253
+#, c-format
+msgid "Press any key to continue.\n"
+msgstr "Davam etmək üçün bir düyməyə basın.\n"
+
+#: gphoto2/gp-params.c:275
+#, c-format
+msgid "Not enough memory."
+msgstr "Yaddaş çatışmır."
+
+#: gphoto2/gphoto2-cmd-capture.c:211
+msgid "Operation cancelled"
+msgstr "Əməliyyat ləğv edildi"
+
+#: gphoto2/gphoto2-cmd-config.c:55
+msgid "</B/24>Continue"
+msgstr "</B/24>Davam Et"
+
+#: gphoto2/gphoto2-cmd-config.c:55
+msgid "</B16>Cancel"
+msgstr "</B16>Ləğv Et"
+
+#: gphoto2/gphoto2-cmd-config.c:61
+msgid "<C></5>Error"
+msgstr "<C></5>Xəta"
+
+#: gphoto2/gphoto2-cmd-config.c:63
+msgid "Could not set configuration:"
+msgstr "Quraşdırma seçilə bilmədi:"
+
+#: gphoto2/gphoto2-cmd-config.c:107
+msgid "Exit"
+msgstr "Çıx"
+
+#: gphoto2/gphoto2-cmd-config.c:109
+msgid "Back"
+msgstr "Geri"
+
+#: gphoto2/gphoto2-cmd-config.c:254
+msgid "Time: "
+msgstr "Saat: "
+
+#: gphoto2/gphoto2-cmd-config.c:313 gphoto2/gphoto2-cmd-config.c:341
+#: gphoto2/gphoto2-cmd-config.c:400 gphoto2/gphoto2-cmd-config.c:463
+msgid "Value: "
+msgstr "Qiymət: "
+
+#: gphoto2/gphoto2-cmd-config.c:362
+msgid "Yes"
+msgstr "Bəli"
+
+#: gphoto2/gphoto2-cmd-config.c:362
+msgid "No"
+msgstr "Xeyir"
+
+#: gphoto2/main.c:235
+#, c-format
+msgid "Zero padding numbers in file names is only possible with %%n."
+msgstr ""
+
+#: gphoto2/main.c:244
+#, c-format
+msgid "You cannot use %%n zero padding without a precision value!"
+msgstr ""
+
+#: gphoto2/main.c:260
+#, c-format
+msgid "You cannot use '%%n' in combination with non-persistent files!"
+msgstr ""
+
+#: gphoto2/main.c:291
+#, c-format
+msgid "The filename provided by the camera ('%s') does not contain a suffix!"
+msgstr ""
+
+#: gphoto2/main.c:346
+#, c-format
+msgid "Invalid format '%s' (error at position %i)."
+msgstr ""
+
+#: gphoto2/main.c:399
+#, c-format
+msgid "File %s exists. Overwrite? [y|n] "
+msgstr "%s faylı mövcuddur. Üstündən yazılsın? [b|x] "
+
+#: gphoto2/main.c:411
+#, c-format
+msgid "Specify new filename? [y|n] "
+msgstr "Yeni fayl adı seçilsin? [b|x] "
+
+#: gphoto2/main.c:421
+#, c-format
+msgid "Enter new filename: "
+msgstr "Yeni fayl adı bildirin: "
+
+#: gphoto2/main.c:427
+#, c-format
+msgid "Saving file as %s\n"
+msgstr "Fayl %s adı ilə qeyd edilir\n"
+
+#: gphoto2/main.c:641
+#, c-format
+msgid "New file is in location %s%s%s on the camera\n"
+msgstr "Yeni fayl kamerada %s%s%s mövqeyindədir\n"
+
+#: gphoto2/main.c:670
+#, fuzzy, c-format
+msgid "Deleting file %s%s%s on the camera\n"
+msgstr "Yeni fayl kamerada %s%s%s mövqeyindədir\n"
+
+#: gphoto2/main.c:708
+#, c-format
+msgid "Event FOLDER_ADDED %s/%s during wait, ignoring.\n"
+msgstr ""
+
+#: gphoto2/main.c:718
+#, c-format
+msgid "Event UNKNOWN %s during wait, ignoring.\n"
+msgstr ""
+
+#: gphoto2/main.c:724
+#, c-format
+msgid "Unknown event type %d during bulb wait, ignoring.\n"
+msgstr ""
+
+#: gphoto2/main.c:742
+#, fuzzy
+msgid "Could not get capabilities?"
+msgstr "Quraşdırma seçilə bilmədi:"
+
+#: gphoto2/main.c:750
+#, c-format
+msgid "Time-lapse mode enabled (interval: %ds).\n"
+msgstr ""
+
+#: gphoto2/main.c:753
+#, c-format
+msgid "Standing by waiting for SIGUSR1 to capture.\n"
+msgstr ""
+
+#: gphoto2/main.c:759
+#, c-format
+msgid "Bulb mode enabled (exposure time: %ds).\n"
+msgstr ""
+
+#: gphoto2/main.c:772
+#, c-format
+msgid "Capturing frame #%d...\n"
+msgstr ""
+
+#: gphoto2/main.c:774
+#, c-format
+msgid "Capturing frame #%d/%d...\n"
+msgstr ""
+
+#: gphoto2/main.c:784
+#, c-format
+msgid "Could not set bulb capture, result %d."
+msgstr ""
+
+#: gphoto2/main.c:798
+msgid "Could not end capture (bulb mode)."
+msgstr ""
+
+#: gphoto2/main.c:810
+msgid "Could not trigger image capture."
+msgstr ""
+
+#: gphoto2/main.c:819
+#, fuzzy
+msgid "Could not capture image."
+msgstr "Rəsm yaxala"
+
+#: gphoto2/main.c:827
+#, c-format
+msgid "Capture failed (auto-focus problem?)...\n"
+msgstr ""
+
+#: gphoto2/main.c:837
+msgid "Could not capture."
+msgstr ""
+
+#: gphoto2/main.c:862
+#, c-format
+msgid "Waiting for next capture slot %ld seconds...\n"
+msgstr ""
+
+#: gphoto2/main.c:871 gphoto2/main.c:915
+#, c-format
+msgid "Awakened by SIGUSR1...\n"
+msgstr ""
+
+#: gphoto2/main.c:887
+#, c-format
+msgid "not sleeping (%ld seconds behind schedule)\n"
+msgstr ""
+
+#: gphoto2/main.c:1018
+#, c-format
+msgid "ERROR: "
+msgstr "XƏTA: "
+
+#: gphoto2/main.c:1041
+#, c-format
+msgid ""
+"\n"
+"Aborting...\n"
+msgstr ""
+"\n"
+"Ləğv edilir...\n"
+
+#: gphoto2/main.c:1047
+#, c-format
+msgid "Aborted.\n"
+msgstr "Ləğv edildi.\n"
+
+#: gphoto2/main.c:1052
+#, c-format
+msgid ""
+"\n"
+"Cancelling...\n"
+msgstr ""
+"\n"
+"Ləğv edilir...\n"
+
+#: gphoto2/main.c:1194
+#, c-format
+msgid ""
+"Use the following syntax a:b=c:d to treat any USB device detected as a:b as "
+"c:d instead. a b c d should be hexadecimal numbers beginning with '0x'.\n"
+msgstr ""
+
+#: gphoto2/main.c:1351
+msgid "gphoto2 has been compiled without support for CDK."
+msgstr "gphoto2 CDK dəstəyi olmadan dərlənibdir."
+
+#: gphoto2/main.c:1518
+#, c-format
+msgid "Waiting for events from camera. Press Ctrl-C to abort.\n"
+msgstr ""
+
+#: gphoto2/main.c:1522
+#, c-format
+msgid "Waiting for %d seconds for events from camera. Press Ctrl-C to abort.\n"
+msgstr ""
+
+#: gphoto2/main.c:1525
+#, c-format
+msgid "Waiting for %d events from camera. Press Ctrl-C to abort.\n"
+msgstr ""
+
+#: gphoto2/main.c:1590
+#, c-format
+msgid "Operation cancelled.\n"
+msgstr "Əməliyyat ləğv edildi.\n"
+
+#: gphoto2/main.c:1594
+#, c-format
+msgid ""
+"*** Error: No camera found. ***\n"
+"\n"
+msgstr ""
+
+#: gphoto2/main.c:1596
+#, c-format
+msgid ""
+"*** Error (%i: '%s') ***       \n"
+"\n"
+msgstr ""
+"*** Xəta (%i: '%s') ***       \n"
+"\n"
+
+#: gphoto2/main.c:1601
+#, c-format
+msgid ""
+"For debugging messages, please use the --debug option.\n"
+"Debugging messages may help finding a solution to your problem.\n"
+"If you intend to send any error or debug messages to the gphoto\n"
+"developer mailing list <gphoto-devel@lists.sourceforge.net>, please run\n"
+"gphoto2 as follows:\n"
+"\n"
+msgstr ""
+
+#: gphoto2/main.c:1690
+msgid "Print complete help message on program usage"
+msgstr ""
+
+#: gphoto2/main.c:1692
+msgid "Print short message on program usage"
+msgstr ""
+
+#: gphoto2/main.c:1694
+msgid "Turn on debugging"
+msgstr "Xəta ayırmasını fəallaşdır"
+
+#: gphoto2/main.c:1696
+msgid "Name of file to write debug info to"
+msgstr ""
+
+#: gphoto2/main.c:1696 gphoto2/main.c:1701 gphoto2/main.c:1707
+#: gphoto2/main.c:1819
+msgid "FILENAME"
+msgstr ""
+
+#: gphoto2/main.c:1698
+msgid "Quiet output (default=verbose)"
+msgstr "Gizli yekun (ön qurğulusu=verbose)"
+
+#: gphoto2/main.c:1700
+msgid "Hook script to call after downloads, captures, etc."
+msgstr ""
+
+#: gphoto2/main.c:1707
+#, fuzzy
+msgid "Specify device port"
+msgstr "Port avadanlığını bildir"
+
+#: gphoto2/main.c:1709
+msgid "Specify serial transfer speed"
+msgstr "Serial transfer sür'ətini bildir"
+
+#: gphoto2/main.c:1709
+msgid "SPEED"
+msgstr ""
+
+#: gphoto2/main.c:1711
+msgid "Specify camera model"
+msgstr "Kamera modelini bildir"
+
+#: gphoto2/main.c:1711
+msgid "MODEL"
+msgstr ""
+
+#: gphoto2/main.c:1713
+msgid "(expert only) Override USB IDs"
+msgstr ""
+
+#: gphoto2/main.c:1713
+msgid "USBIDs"
+msgstr ""
+
+#: gphoto2/main.c:1719
+msgid "Display version and exit"
+msgstr "Buraxılışı göstər və çıx"
+
+#: gphoto2/main.c:1721
+msgid "List supported camera models"
+msgstr "DƏstəklənən kamera modellərini göstər"
+
+#: gphoto2/main.c:1723
+msgid "List supported port devices"
+msgstr "Dəstəklənən port avadanlıqlarını göstər"
+
+#: gphoto2/main.c:1725
+#, fuzzy
+msgid "Display camera/driver abilities"
+msgstr "Kamera bacarıqlarını göstər"
+
+#: gphoto2/main.c:1732
+msgid "Configure"
+msgstr "Quraşdır"
+
+#: gphoto2/main.c:1735
+#, fuzzy
+msgid "List configuration tree"
+msgstr "Quraşdırma seçilə bilmədi:"
+
+#: gphoto2/main.c:1737
+#, fuzzy
+msgid "Get configuration value"
+msgstr "Quraşdırma seçilə bilmədi:"
+
+#: gphoto2/main.c:1739
+msgid "Set configuration value or index in choices"
+msgstr ""
+
+#: gphoto2/main.c:1741
+msgid "Set configuration value index in choices"
+msgstr ""
+
+#: gphoto2/main.c:1743
+#, fuzzy
+msgid "Set configuration value"
+msgstr "Quraşdırma seçilə bilmədi:"
+
+#: gphoto2/main.c:1749
+msgid "Wait for event(s) from camera"
+msgstr ""
+
+#: gphoto2/main.c:1749 gphoto2/main.c:1751 gphoto2/main.c:1758
+#: gphoto2/main.c:1772
+msgid "COUNT"
+msgstr ""
+
+#: gphoto2/main.c:1751
+msgid "Wait for event(s) from the camera and download new images"
+msgstr ""
+
+#: gphoto2/main.c:1754
+msgid "Capture a quick preview"
+msgstr "Sür'ətli nümayiş yaxala"
+
+#: gphoto2/main.c:1756
+msgid "Set bulb exposure time in seconds"
+msgstr ""
+
+#: gphoto2/main.c:1756 gphoto2/main.c:1760
+msgid "SECONDS"
+msgstr ""
+
+#: gphoto2/main.c:1758
+msgid "Set number of frames to capture (default=infinite)"
+msgstr ""
+
+#: gphoto2/main.c:1760
+msgid "Set capture interval in seconds"
+msgstr ""
+
+#: gphoto2/main.c:1762
+msgid "Reset capture interval on signal (default=no)"
+msgstr ""
+
+#: gphoto2/main.c:1764
+msgid "Capture an image"
+msgstr "Rəsm yaxala"
+
+#: gphoto2/main.c:1766
+#, fuzzy
+msgid "Capture an image and download it"
+msgstr "Rəsm yaxala"
+
+#: gphoto2/main.c:1768
+msgid "Capture a movie"
+msgstr "Film yaxala"
+
+#: gphoto2/main.c:1768
+msgid "COUNT or SECONDS"
+msgstr ""
+
+#: gphoto2/main.c:1770
+msgid "Capture an audio clip"
+msgstr "Səs klipi yaxala"
+
+#: gphoto2/main.c:1772
+msgid "Wait for shutter release on the camera and download"
+msgstr ""
+
+#: gphoto2/main.c:1778
+msgid "List folders in folder"
+msgstr "Qovluqdakı qovluqları göstər"
+
+#: gphoto2/main.c:1780
+msgid "List files in folder"
+msgstr "Qovluqdakı faylları göstər"
+
+#: gphoto2/main.c:1782
+msgid "Create a directory"
+msgstr "Cərgə yarat"
+
+#: gphoto2/main.c:1782 gphoto2/main.c:1784
+msgid "DIRNAME"
+msgstr ""
+
+#: gphoto2/main.c:1784
+msgid "Remove a directory"
+msgstr "Cərgəni sil"
+
+#: gphoto2/main.c:1786
+msgid "Display number of files"
+msgstr "Fayl ədədini göstər"
+
+#: gphoto2/main.c:1788
+msgid "Get files given in range"
+msgstr "Verilən aralıqdakı faylları al"
+
+#: gphoto2/main.c:1788 gphoto2/main.c:1792 gphoto2/main.c:1797
+#: gphoto2/main.c:1804 gphoto2/main.c:1810 gphoto2/main.c:1815
+msgid "RANGE"
+msgstr ""
+
+#: gphoto2/main.c:1790
+msgid "Get all files from folder"
+msgstr "Qovluqdakı bütün faylları al"
+
+#: gphoto2/main.c:1792
+msgid "Get thumbnails given in range"
+msgstr "Verilən aralıqdakı dırnaq görünüşlərini al"
+
+#: gphoto2/main.c:1795
+msgid "Get all thumbnails from folder"
+msgstr "Qovluqdakı dırnaq görünüşlərini al"
+
+#: gphoto2/main.c:1797
+#, fuzzy
+msgid "Get metadata given in range"
+msgstr "Verilən aralıqdakı xam faylları al"
+
+#: gphoto2/main.c:1799
+#, fuzzy
+msgid "Get all metadata from folder"
+msgstr "Qovluqdakı bütün xam faylları al"
+
+#: gphoto2/main.c:1801
+msgid "Upload metadata for file"
+msgstr ""
+
+#: gphoto2/main.c:1804
+msgid "Get raw data given in range"
+msgstr "Verilən aralıqdakı xam faylları al"
+
+#: gphoto2/main.c:1807
+msgid "Get all raw data from folder"
+msgstr "Qovluqdakı bütün xam faylları al"
+
+#: gphoto2/main.c:1810
+msgid "Get audio data given in range"
+msgstr "Verilən aralıqdakı səs fayllarını al"
+
+#: gphoto2/main.c:1813
+msgid "Get all audio data from folder"
+msgstr "Qovluqdakı bütün səs fayllarını al"
+
+#: gphoto2/main.c:1815
+msgid "Delete files given in range"
+msgstr "Verilən aralıqdakı faylları sil"
+
+#: gphoto2/main.c:1817
+msgid "Delete all files in folder"
+msgstr "Qovluqdakı bütün faylları sil"
+
+#: gphoto2/main.c:1819
+msgid "Upload a file to camera"
+msgstr "Faylı kameraya yolla"
+
+#: gphoto2/main.c:1821
+#, fuzzy
+msgid "Specify a filename or filename pattern"
+msgstr "Fayl adı bildir"
+
+#: gphoto2/main.c:1821
+msgid "FILENAME_PATTERN"
+msgstr ""
+
+#: gphoto2/main.c:1823
+msgid "Specify camera folder (default=\"/\")"
+msgstr ""
+
+#: gphoto2/main.c:1823
+msgid "FOLDER"
+msgstr ""
+
+#: gphoto2/main.c:1825
+msgid "Recursion (default for download)"
+msgstr ""
+
+#: gphoto2/main.c:1827
+msgid "No recursion (default for deletion)"
+msgstr ""
+
+#: gphoto2/main.c:1829
+msgid "Process new files only"
+msgstr ""
+
+#: gphoto2/main.c:1831
+#, fuzzy
+msgid "Overwrite files without asking"
+msgstr "Məzmunu soruşmadan əvəz et"
+
+#: gphoto2/main.c:1837
+msgid "Send file to stdout"
+msgstr "Faylı stdout-a göndər"
+
+#: gphoto2/main.c:1839
+msgid "Print filesize before data"
+msgstr "Datadan əvvəl fayl böyüklüyünü göstər"
+
+#: gphoto2/main.c:1841
+msgid "List auto-detected cameras"
+msgstr "Avtomatik tapılan kameraları göstər"
+
+#: gphoto2/main.c:1845 gphoto2/shell.c:138
+msgid "Show EXIF information"
+msgstr "EXIF mə'lumatını göstər"
+
+#: gphoto2/main.c:1848 gphoto2/shell.c:132
+msgid "Show info"
+msgstr "Mə'lumatı göstər"
+
+#: gphoto2/main.c:1850
+msgid "Show summary"
+msgstr "İcmalı göstər"
+
+#: gphoto2/main.c:1852
+msgid "Show camera driver manual"
+msgstr "Kamera sürücüsü əl kitabını göstər"
+
+#: gphoto2/main.c:1854
+msgid "About the camera driver manual"
+msgstr "Kamera sürücüsü əl kitabı haqqında"
+
+#: gphoto2/main.c:1856
+#, fuzzy
+msgid "Show storage information"
+msgstr "EXIF mə'lumatını göstər"
+
+#: gphoto2/main.c:1858
+msgid "gPhoto shell"
+msgstr "gPhoto qabığı"
+
+#: gphoto2/main.c:1864
+msgid "Common options"
+msgstr ""
+
+#: gphoto2/main.c:1866
+msgid "Miscellaneous options (unsorted)"
+msgstr ""
+
+#: gphoto2/main.c:1868
+msgid "Get information on software and host system (not from the camera)"
+msgstr ""
+
+#: gphoto2/main.c:1870
+#, fuzzy
+msgid "Specify the camera to use"
+msgstr "Kamera modelini bildir"
+
+#: gphoto2/main.c:1872
+#, fuzzy
+msgid "Camera and software configuration"
+msgstr "Quraşdırma seçilə bilmədi:"
+
+#: gphoto2/main.c:1874
+#, fuzzy
+msgid "Capture an image from or on the camera"
+msgstr "Kameradakı cərgəyə keç"
+
+#: gphoto2/main.c:1876
+msgid "Downloading, uploading and manipulating files"
+msgstr ""
+
+#: gphoto2/range.c:104 gphoto2/range.c:158
+#, c-format
+msgid ""
+"%s\n"
+"Image IDs must be a number greater than zero."
+msgstr ""
+
+#: gphoto2/range.c:110 gphoto2/range.c:164
+#, c-format
+msgid ""
+"%s\n"
+"Image ID %i too high."
+msgstr ""
+
+#: gphoto2/range.c:126
+#, c-format
+msgid ""
+"%s\n"
+"Ranges must be separated by ','."
+msgstr ""
+
+#: gphoto2/range.c:140
+#, c-format
+msgid ""
+"%s\n"
+"Ranges need to start with a number."
+msgstr ""
+
+#: gphoto2/range.c:180
+#, c-format
+msgid ""
+"%s\n"
+"Unexpected character '%c'."
+msgstr ""
+
+#: gphoto2/range.c:204
+#, c-format
+msgid ""
+"%s\n"
+"Decreasing ranges are not allowed. You specified a range from %i to %i."
+msgstr ""
+
+#: gphoto2/shell.c:65
+#, c-format
+msgid "*** Error (%i: '%s') ***"
+msgstr "*** Xəta (%i: '%s') ***"
+
+#: gphoto2/shell.c:121
+msgid "Change to a directory on the camera"
+msgstr "Kameradakı cərgəyə keç"
+
+#: gphoto2/shell.c:122 gphoto2/shell.c:124 gphoto2/shell.c:135
+#: gphoto2/shell.c:136
+msgid "directory"
+msgstr "cərgə"
+
+#: gphoto2/shell.c:123
+msgid "Change to a directory on the local drive"
+msgstr "Yerli sürücüdəki cərgəyə keç"
+
+#: gphoto2/shell.c:125 gphoto2/shell.c:156 gphoto2/shell.c:157
+msgid "Exit the gPhoto shell"
+msgstr "gPhoto qabığından çıx"
+
+#: gphoto2/shell.c:126
+msgid "Download a file"
+msgstr "Faylı endir"
+
+#: gphoto2/shell.c:126 gphoto2/shell.c:127 gphoto2/shell.c:129
+#: gphoto2/shell.c:131 gphoto2/shell.c:133 gphoto2/shell.c:134
+#: gphoto2/shell.c:139
+msgid "[directory/]filename"
+msgstr "[cərgə/]fayladı"
+
+#: gphoto2/shell.c:127
+#, fuzzy
+msgid "Upload a file"
+msgstr "Faylı endir"
+
+#: gphoto2/shell.c:128
+msgid "Download a thumbnail"
+msgstr "Dırnaq görünüşünü endir"
+
+#: gphoto2/shell.c:130
+msgid "Download raw data"
+msgstr "Xam mə'lumatı endir"
+
+#: gphoto2/shell.c:134
+msgid "Delete"
+msgstr "Sil"
+
+#: gphoto2/shell.c:135
+#, fuzzy
+msgid "Create Directory"
+msgstr "Cərgə yarat"
+
+#: gphoto2/shell.c:136
+#, fuzzy
+msgid "Remove Directory"
+msgstr "Cərgəni sil"
+
+#: gphoto2/shell.c:141 gphoto2/shell.c:158
+msgid "Displays command usage"
+msgstr "Əmrin istifadə qaydasını göstər"
+
+#: gphoto2/shell.c:142 gphoto2/shell.c:158
+msgid "[command]"
+msgstr "[əmr]"
+
+#: gphoto2/shell.c:143
+msgid "List the contents of the current directory"
+msgstr "Hazırkı cərgənin məzmununu göstər"
+
+#: gphoto2/shell.c:144
+msgid "[directory/]"
+msgstr "[cərgə/]"
+
+#: gphoto2/shell.c:145
+msgid "List configuration variables"
+msgstr ""
+
+#: gphoto2/shell.c:146
+msgid "Get configuration variable"
+msgstr ""
+
+#: gphoto2/shell.c:146
+msgid "name"
+msgstr "ad"
+
+#: gphoto2/shell.c:147 gphoto2/shell.c:149
+msgid "Set configuration variable"
+msgstr ""
+
+#: gphoto2/shell.c:147 gphoto2/shell.c:149
+msgid "name=value"
+msgstr ""
+
+#: gphoto2/shell.c:148
+msgid "Set configuration variable index"
+msgstr ""
+
+#: gphoto2/shell.c:148
+msgid "name=valueindex"
+msgstr ""
+
+#: gphoto2/shell.c:150
+#, fuzzy
+msgid "Capture a single image"
+msgstr "Rəsm yaxala"
+
+#: gphoto2/shell.c:151
+msgid "Capture a single image and download it"
+msgstr ""
+
+#: gphoto2/shell.c:152
+#, fuzzy
+msgid "Capture a preview image"
+msgstr "Rəsm yaxala"
+
+#: gphoto2/shell.c:153
+msgid "Wait for an event"
+msgstr ""
+
+#: gphoto2/shell.c:153 gphoto2/shell.c:154 gphoto2/shell.c:155
+msgid "count or seconds"
+msgstr ""
+
+#: gphoto2/shell.c:154
+msgid "Wait for images to be captured and download it"
+msgstr ""
+
+#: gphoto2/shell.c:155
+msgid "Wait for events and images to be captured and download it"
+msgstr ""
+
+#: gphoto2/shell.c:480
+msgid "Invalid command."
+msgstr "Hökmsüz əmr."
+
+#: gphoto2/shell.c:489
+#, c-format
+msgid "The command '%s' requires an argument."
+msgstr "'%s' əmrinə arqument verilməlidir."
+
+#: gphoto2/shell.c:542
+msgid "Invalid path."
+msgstr "Hökmsüz cığır."
+
+#: gphoto2/shell.c:588
+msgid "Could not find home directory."
+msgstr ""
+
+#: gphoto2/shell.c:597
+#, c-format
+msgid "Could not change to local directory '%s'."
+msgstr ""
+
+#: gphoto2/shell.c:600
+#, c-format
+msgid "Local directory now '%s'."
+msgstr ""
+
+#: gphoto2/shell.c:638
+#, c-format
+msgid "Remote directory now '%s'."
+msgstr ""
+
+#: gphoto2/shell.c:854
+#, c-format
+msgid "set-config needs a second argument.\n"
+msgstr ""
+
+#: gphoto2/shell.c:875
+#, c-format
+msgid "set-config-value needs a second argument.\n"
+msgstr ""
+
+#: gphoto2/shell.c:896
+#, c-format
+msgid "set-config-index needs a second argument.\n"
+msgstr ""
+
+#: gphoto2/shell.c:962
+#, c-format
+msgid "Command '%s' not found. Use 'help' to get a list of available commands."
+msgstr ""
+
+#: gphoto2/shell.c:969
+#, c-format
+msgid "Help on \"%s\":"
+msgstr "\"%s\" yardımı:"
+
+#: gphoto2/shell.c:971
+#, c-format
+msgid "Usage:"
+msgstr "İstifadə qaydası:"
+
+#: gphoto2/shell.c:974
+#, c-format
+msgid "Description:"
+msgstr "İzahat:"
+
+#: gphoto2/shell.c:976
+#, c-format
+msgid "* Arguments in brackets [] are optional"
+msgstr ""
+
+#: gphoto2/shell.c:997
+#, c-format
+msgid "Available commands:"
+msgstr ""
+
+#: gphoto2/shell.c:1002
+#, c-format
+msgid "To get help on a particular command, type in 'help command-name'."
+msgstr ""
+
+#~ msgid "Displays this help screen"
+#~ msgstr "Bu yardım ekranını göstər"
+
+#~ msgid "Capture a movie "
+#~ msgstr "Film yaxala "
+
+#~ msgid "Summary of camera status"
+#~ msgstr "Kamera vəziyyətinin icmalı"
+
+#~ msgid "Camera driver manual"
+#~ msgstr "Kamera sürücüsü əl kitabı"
+
+#~ msgid "About the camera driver"
+#~ msgstr "Kamera sürücüsü haqqında"
+
+#~ msgid "Jan"
+#~ msgstr "Yan"
+
+#~ msgid "January"
+#~ msgstr "Yanvar"
+
+#~ msgid "Feb"
+#~ msgstr "Fev"
+
+#~ msgid "February"
+#~ msgstr "Fevral"
+
+#~ msgid "Mar"
+#~ msgstr "Mar"
+
+#~ msgid "March"
+#~ msgstr "Mart"
+
+#~ msgid "Apr"
+#~ msgstr "Apr"
+
+#~ msgid "April"
+#~ msgstr "Aprel"
+
+#~ msgid "May"
+#~ msgstr "May"
+
+#~ msgid "Jun"
+#~ msgstr "İyn"
+
+#~ msgid "June"
+#~ msgstr "İyun"
+
+#~ msgid "Jul"
+#~ msgstr "İyl"
+
+#~ msgid "July"
+#~ msgstr "İyul"
+
+#~ msgid "Aug"
+#~ msgstr "Avq"
+
+#~ msgid "August"
+#~ msgstr "Avqust"
+
+#~ msgid "Sep"
+#~ msgstr "Sen"
+
+#~ msgid "September"
+#~ msgstr "Sentyabr"
+
+#~ msgid "Oct"
+#~ msgstr "Okt"
+
+#~ msgid "October"
+#~ msgstr "Oktyabr"
+
+#~ msgid "Nov"
+#~ msgstr "Noy"
+
+#~ msgid "November"
+#~ msgstr "Noyabr"
+
+#~ msgid "Dec"
+#~ msgstr "Dek"
+
+#~ msgid "December"
+#~ msgstr "Dekabr"
+
+#~ msgid "Sun"
+#~ msgstr "Baz"
+
+#~ msgid "Sunday"
+#~ msgstr "Bazar"
+
+#~ msgid "Monday"
+#~ msgstr "Bazar ertəsi"
+
+#~ msgid "Tue"
+#~ msgstr "Çax"
+
+#~ msgid "Tuesday"
+#~ msgstr "Çərşənbə axşamı"
+
+#~ msgid "Wed"
+#~ msgstr "Çrş"
+
+#~ msgid "Wednesday"
+#~ msgstr "Çərşənbə"
+
+#~ msgid "Thu"
+#~ msgstr "Cax"
+
+#~ msgid "Thursday"
+#~ msgstr "Cümə axşamı"
+
+#~ msgid "Fri"
+#~ msgstr "Cüm"
+
+#~ msgid "Friday"
+#~ msgstr "Cümə"
+
+#~ msgid "Sat"
+#~ msgstr "Şnb"
+
+#~ msgid "Saturday"
+#~ msgstr "Şənbə"
+
+#~ msgid "path"
+#~ msgstr "cığır"
+
+#~ msgid "speed"
+#~ msgstr "sür'ət"
+
+#~ msgid "model"
+#~ msgstr "model"
+
+#~ msgid "filename"
+#~ msgstr "fayl adı"
+
+#~ msgid "usbid"
+#~ msgstr "usbid"
+
+#~ msgid "folder"
+#~ msgstr "qovluq"
+
+#~ msgid "Usage:\n"
+#~ msgstr "İstifadə qaydası:\n"
+
+#~ msgid "%-38s %s\n"
+#~ msgstr "%-38s %s\n"

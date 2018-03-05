@@ -1,0 +1,330 @@
+
+
+
+
+
+
+
+
+
+                       DDiisscc QQuuoottaass iinn aa UUNNIIXX** EEnnvviirroonnmmeenntt
+
+                                   _R_o_b_e_r_t _E_l_z
+                         Department of Computer Science
+                            University of Melbourne,
+                                   Parkville,
+                                   Victoria,
+                                   Australia.
+
+
+                                    _A_B_S_T_R_A_C_T
+
+
+
+                    In most computing environments, disc space is
+               not infinite.  The disc quota  system  provides  a
+               mechanism  to  control  usage of disc space, on an
+               individual basis.
+
+                    Quotas may be set for each  individual  user,
+               on any, or all filesystems.
+
+                    The  quota  system  will warn users when they
+               exceed their allotted limit, but allow some  extra
+               space for current work.  Repeatedly remaining over
+               quota at logout, will cause  a  fatal  over  quota
+               condition eventually.
+
+                    The  quota system is an optional part of VMU-
+               NIX that may be included when the system  is  con-
+               figured.
+
+
+          11..  UUsseerrss'' vviieeww ooff ddiisscc qquuoottaass
+
+               To  most  users,  disc quotas will either be of no con-
+          cern, or a  fact  of  life  that  cannot  be  avoided.   The
+          _q_u_o_t_a(1) command will provide information on any disc quotas
+          that may have been imposed upon a user.
+
+               There are two individual possible quotas  that  may  be
+          imposed,  usually  if  one is, both will be.  A limit can be
+          set on the amount of space a user can occupy, and there  may
+          be a limit on the number of files (inodes) he can own.
+
+               _Q_u_o_t_a provides information on the quotas that have been
+          set by the system administrators, in each  of  these  areas,
+          and current usage.
+
+          -----------
+          * UNIX is a trademark of Bell Laboratories.
+
+
+
+
+
+
+
+
+
+          SMM:4-2                    Disc Quotas in a UNIX Environment
+
+
+               There  are  four  numbers  for  each limit, the current
+          usage, soft limit (quota), hard limit, and number of remain-
+          ing  login  warnings.   The  soft  limit is the number of 1K
+          blocks (or files) that the user is expected to remain below.
+          Each  time the user's usage goes past this limit, he will be
+          warned.  The hard limit cannot be  exceeded.   If  a  user's
+          usage  reaches  this  number, further requests for space (or
+          attempts to create a file) will fail with an  EDQUOT  error,
+          and the first time this occurs, a message will be written to
+          the user's terminal.  Only one message will be output, until
+          space  occupied  is  reduced below the limit, and reaches it
+          again, in order to avoid continual noise from those programs
+          that ignore write errors.
+
+               Whenever  a  user logs in with a usage greater than his
+          soft limit, he will be warned, and his login  warning  count
+          decremented.   When  he  logs in under quota, the counter is
+          reset to its maximum value (which is a system  configuration
+          parameter,  that  is  typically  3).   If  the warning count
+          should ever reach zero (caused by  three  successive  logins
+          over  quota),  the  particular  limit that has been exceeded
+          will be treated as if the hard limit has been  reached,  and
+          no  more  resources will be allocated to the user.  The oonnllyy
+          way to reset this condition is to reduce usage below  quota,
+          then log in again.
+
+          11..11..  SSuurrvviivviinngg wwhheenn qquuoottaa lliimmiitt iiss rreeaacchheedd
+
+               In  most cases, the only way to recover from over quota
+          conditions, is to abort whatever activity was in progress on
+          the filesystem that has reached its limit, remove sufficient
+          files to bring the limit back below  quota,  and  retry  the
+          failed program.
+
+               However,  if  you  are  in the editor and a write fails
+          because of an over quota situation, that is not  a  suitable
+          course  of  action,  as  it  is  most  likely that initially
+          attempting to write the file will have truncated its  previ-
+          ous  contents,  so should the editor be aborted without cor-
+          rectly writing the file not only will the recent changes  be
+          lost,  but possibly much, or even all, of the data that pre-
+          viously existed.
+
+               There are several possible safe exits for a user caught
+          in  this  situation.   He  may use the editor !! shell escape
+          command to examine his file space, and remove surplus files.
+          Alternatively,  using _c_s_h, he may suspend the editor, remove
+          some files, then resume it.   A  third  possibility,  is  to
+          write  the  file to some other filesystem (perhaps to a file
+          on /tmp) where the user's quota has not been exceeded.  Then
+          after  rectifying the quota situation, the file can be moved
+          back to the filesystem it belongs on.
+
+
+
+
+
+
+
+
+
+
+
+          Disc Quotas in a UNIX Environment                    SMM:4-3
+
+
+          22..  AAddmmiinniisstteerriinngg tthhee qquuoottaa ssyysstteemm
+
+               To set up and establish the disc  quota  system,  there
+          are  several  steps  necessary to be performed by the system
+          administrator.
+
+               First, the system must be  configured  to  include  the
+          disc quota sub-system.  This is done by including the line:
+
+               options   QUOTA
+
+          in  the  system  configuration  file, then running _c_o_n_f_i_g(8)
+          followed by a system configuration*.
+
+               Second,  a decision as to what filesystems need to have
+          quotas applied needs to be made.  Usually, only  filesystems
+          that  house  users'  home  directories, or other user files,
+          will need to be subjected to the quota system, though it may
+          also  prove  useful to also include //uussrr.  If possible, //ttmmpp
+          should usually be free of quotas.
+
+               Having decided on which filesystems quotas need  to  be
+          set  upon, the administrator should then allocate the avail-
+          able space amongst the competing needs. How this  should  be
+          done is (way) beyond the scope of this document.
+
+               Then,  the  _e_d_q_u_o_t_a(8)  command can be used to actually
+          set the limits desired upon each user.  Where  a  number  of
+          users  are to be given the same quotas (a common occurrence)
+          the --pp switch to edquota will allow this to be easily accom-
+          plished.
+
+               Once  the  quotas are set, ready to operate, the system
+          must be informed to enforce quotas on the  desired  filesys-
+          tems.   This  is  accomplished  with the _q_u_o_t_a_o_n(8) command.
+          _Q_u_o_t_a_o_n will either enable quotas for a particular  filesys-
+          tem,  or  with  the  --aa  switch, will enable quotas for each
+          filesystem indicated in //eettcc//ffssttaabb  as  using  quotas.   See
+          _f_s_t_a_b(5)  for  details.   Most sites using the quota system,
+          will include the line
+
+                                /etc/quotaon -a
+
+          in //eettcc//rrcc..llooccaall.
+
+               Should quotas need to be disabled, the _q_u_o_t_a_o_f_f(8) com-
+          mand  will  do that, however, should the filesystem be about
+          to be dismounted, the _u_m_o_u_n_t(8) command will disable  quotas
+          immediately  before  the  filesystem  is unmounted.  This is
+          actually an effect of the  _u_m_o_u_n_t(2)  system  call,  and  it
+          guarantees that the quota system will not be disabled if the
+          -----------
+          * See also the  document  ``Building  4.2BSD  UNIX
+          Systems with Config''.
+
+
+
+
+
+
+
+
+
+          SMM:4-4                    Disc Quotas in a UNIX Environment
+
+
+          umount would fail because the filesystem is not idle.
+
+               Periodically (certainly after  each  reboot,  and  when
+          quotas  are  first  enabled  for  a filesystem), the records
+          retained in the quota file should be checked for consistency
+          with  the actual number of blocks and files allocated to the
+          user.  The _q_u_o_t_a_c_h_e_c_k(8) command can be used  to  accomplish
+          this.   It  is  not necessary to dismount the filesystem, or
+          disable the quota system to  run  this  command,  though  on
+          active  filesystems inaccurate results may occur.  This does
+          no real harm in most cases, another run of  _q_u_o_t_a_c_h_e_c_k  when
+          the  filesystem  is  idle will certainly correct any inaccu-
+          racy.
+
+               The super-user may use the _q_u_o_t_a(1) command to  examine
+          the  usage  and quotas of any user, and the _r_e_p_q_u_o_t_a(8) com-
+          mand may be used to check the  usages  and  limits  for  all
+          users on a filesystem.
+
+          33..  SSoommee iimmpplleemmeennttaattiioonn ddeettaaiill..
+
+               Disc quota usage and information is stored in a file on
+          the filesystem that the quotas are to be applied  to.   Con-
+          ventionally, this file is qquuoottaass in the root of the filesys-
+          tem.  While this name is not known to the system in any way,
+          several  of the user level utilities "know" it, and choosing
+          any other name would not be wise.
+
+               The data in the file comprises an array of  structures,
+          indexed  by  uid,  one structure for each user on the system
+          (whether the user has a quota on this  filesystem  or  not).
+          If  the uid space is sparse, then the file may have holes in
+          it, which would be lost by copying, so it is best  to  avoid
+          this.
+
+               The  system  is  informed of the existence of the quota
+          file by the _s_e_t_q_u_o_t_a(2) system  call.   It  then  reads  the
+          quota  entries  for each user currently active, then for any
+          files open owned by users  who  are  not  currently  active.
+          Each  subsequent  open  of a file on the filesystem, will be
+          accompanied by a pairing with  its  quota  information.   In
+          most cases this information will be retained in core, either
+          because the user who owns the file is running some  process,
+          because  other  files  are  open  owned by the same user, or
+          because some file (perhaps this one) was recently  accessed.
+          In  memory,  the quota information is kept hashed by user-id
+          and filesystem, and retained in an  LRU  chain  so  recently
+          released  data  can  be easily reclaimed.  Information about
+          those users whose last process has  recently  terminated  is
+          also retained in this way.
+
+               Each  time  a  block  is accessed or released, and each
+          time an inode is allocated or freed, the quota  system  gets
+          told  about  it,  and  in  the case of allocations, gets the
+
+
+
+
+
+
+
+
+
+          Disc Quotas in a UNIX Environment                    SMM:4-5
+
+
+          opportunity to object.
+
+               Measurements have shown that the quota code uses a very
+          small  percentage of the system cpu time consumed in writing
+          a new block to disc.
+
+          44..  AAcckknnoowwlleeddggmmeennttss
+
+               The current disc quota system is loosely based  upon  a
+          very early scheme implemented at the University of New South
+          Wales, and Sydney University in the mid  70's.  That  system
+          implemented  a  single  combined  limit  for  both files and
+          blocks on all filesystems.
+
+               A later system was implemented  at  the  University  of
+          Melbourne by the author, but was not kept highly accurately,
+          eg: chown's (etc) did not affect quotas, nor did  i/o  to  a
+          file other than one owned by the instigator.
+
+               The  current  system  has been running (with only minor
+          modifications) since January 82 at Melbourne.  It  is  actu-
+          ally  just  a  small part of a much broader resource control
+          scheme, which is capable of controlling almost anything that
+          is  usually  uncontrolled  in  unix. The rest of this is, as
+          yet, still in a state where it is far too subject to  change
+          to be considered for distribution.
+
+               For  the  4.2BSD  release,  much  work has been done to
+          clean up and sanely incorporate the quota code by  Sam  Lef-
+          fler  and  Kirk  McKusick at The University of California at
+          Berkeley.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

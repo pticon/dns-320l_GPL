@@ -1,0 +1,81 @@
+# translation of fr.po to French
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+# Christian Perrier <bubulle@debian.org>, 2007.
+# Olivier Gauwin <olivier.gauwin@laposte.net>, 2001-2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: fr\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2007-05-02 07:51+0200\n"
+"Last-Translator: Christian Perrier <bubulle@debian.org>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr ""
+"Faut-il configurer hosts.allow et hosts.access en mode « paranoïaque » ?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+"De nouveaux fichiers /etc/hosts.allow et /etc/hosts.deny, destinés au démon "
+"« TCP wrappers » (tcpd) vont être créés car ils n'existent pas encore."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"Vous pouvez choisir entre une configuration permissive générique qui "
+"autorise toutes les connexions entrantes, et une configuration "
+"« paranoïaque » qui refuse toute connexion de l'extérieur quelle qu'en soit "
+"l'origine. Cette dernière, plus sécurisée, bloque cependant toutes les "
+"communications y compris (par exemple) celles pouvant servir à "
+"l'administration distante."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+"Ces deux fichiers peuvent ultérieurement être modifiés pour qu'ils "
+"correspondent à vos besoins, comme expliqué dans la page de manuel "
+"host_access(5). Ces restrictions ne s'appliquent qu'aux services réseau qui "
+"utilisent la bibliothèque libwrap. Les restrictions éventuelles pour les "
+"autres services devront être établies avec des règles de pare-feu."

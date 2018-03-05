@@ -1,0 +1,44 @@
+Source: nfs-utils
+Priority: standard
+Section: net
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Uploaders: Steinar H. Gunderson <sesse@debian.org>, Daniel Baumann <daniel@debian.org>
+Build-Depends: debhelper (>= 5), libwrap0-dev, libevent-dev, libnfsidmap-dev, libkrb5-dev, libgssglue-dev (>= 0.1-1), librpcsecgss-dev (>= 0.16-1), libblkid-dev, libkeyutils-dev, pkg-config, quilt (>= 0.40), libldap2-dev
+Standards-Version: 3.7.3
+Homepage: http://nfs.sourceforge.net/
+
+Package: nfs-kernel-server
+Priority: optional
+Architecture: any
+Depends: nfs-common (>= 1:1.0.8-1), ucf, lsb-base (>= 1.3-9ubuntu3), ${shlibs:Depends}, libblkid1 (>= 1.39+1.40-WIP-2006.11.14+dfsg-2)
+Provides: knfs, nfs-server
+Conflicts: knfs, nfs-server
+Replaces: knfs, nfs-server
+Description: support for NFS kernel server
+ The NFS kernel server is currently the recommended NFS server for use
+ with Linux, featuring features such as NFSv3 and NFSv4, Kerberos
+ support via GSS, and much more. It is also significantly faster and
+ usually more reliable than the user-space NFS servers (from the
+ unfs3 and nfs-user-server packages). However, it is more difficult to
+ debug than the user-space servers, and has a slightly different
+ feature set.
+ .
+ This package contains the user-space support needed to use the
+ NFS kernel server. Most administrators wishing to set up an NFS server
+ would want to install this package.
+ .
+ Upstream: SourceForge project "nfs", CVS module nfs-utils.
+
+Package: nfs-common
+Architecture: any
+Depends: portmap | rpcbind, adduser, ucf, lsb-base (>= 1.3-9ubuntu3), netbase (>= 4.24), initscripts (>= 2.86.ds1-14.1ubuntu1), ${shlibs:Depends}
+Provides: nfs-client
+Conflicts: nfs-client
+Replaces: nfs-client, nfs-kernel-server (<< 1:1.0.7-5), mount (<< 2.13~)
+Description: NFS support files common to client and server
+ Use this package on any machine that uses NFS, either as client or
+ server.  Programs included: lockd, statd, showmount, nfsstat, gssd
+ and idmapd.
+ .
+ Upstream: SourceForge project "nfs", CVS module nfs-utils.

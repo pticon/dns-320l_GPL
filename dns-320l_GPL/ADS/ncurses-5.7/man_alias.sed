@@ -1,0 +1,13 @@
+s,@DATADIR@,/home/roy/DNS-345_GPL/packages/ncurses-5.7/_install/share,g
+s,@TERMINFO@,/home/roy/DNS-345_GPL/packages/ncurses-5.7/_install/share/terminfo,g
+s,@NCURSES_MAJOR@,5,g
+s,@NCURSES_MINOR@,7,g
+s,@NCURSES_PATCH@,20081102,g
+s,@NCURSES_OSPEED@,short,g
+s,@CAPTOINFO@,captoinfo,
+s,@CLEAR@,clear,
+s,@INFOCMP@,infocmp,
+s,@INFOTOCAP@,infotocap,
+s,@TIC@,tic,
+s,@TOE@,toe,
+s,@TPUT@,tput,

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "check ff_ready.txt"
+
+if [ -f /mnt/HD_a4/.systemfile/ff_ready.txt ]; then
+   echo "ff_ready.txt is exist" \
+   rm -f /mnt/HD_a4/.systemfile/ff_ready.txt
+else
+   echo "ff_ready.txt isn't exists"
+fi

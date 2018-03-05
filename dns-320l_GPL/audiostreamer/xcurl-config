@@ -1,0 +1,14 @@
+#!/bin/sh
+
+CURL_DIR=$PWD/../../curl-7.19.7
+
+case "$1" in
+	--libs)
+		echo "-L$CURL_DIR/lib/.libs -lcurl"
+		;;
+	--cflags)
+		echo "-I$CURL_DIR/include"
+		;;
+	*)
+		;;
+esac

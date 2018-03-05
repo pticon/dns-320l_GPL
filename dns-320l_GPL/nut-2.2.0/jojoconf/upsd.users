@@ -1,0 +1,4 @@
+[root]
+password = 123
+allowfrom = local
+upsmon master

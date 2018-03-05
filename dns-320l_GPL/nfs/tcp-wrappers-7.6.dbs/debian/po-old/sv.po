@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers 7.6.dbs-8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-05-22 13:08+0200\n"
+"PO-Revision-Date: 2005-10-13 09:41+0200\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid "Should tcpd setup paranoid hosts.allow and hosts.access?"
+msgstr "Ska tcpd sätta upp en paranoid version av filerna hosts.allow och hosts.access?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"/etc/hosts.allow and /etc/hosts.deny will be setup since you do not have "
+"have any of these files yet. You can either have a generic and permissive "
+"configuration which will allow any incoming connection or a paranoid "
+"configuration which will not allow remote connections regardless of where "
+"they originate from."
+msgstr ""
+"Filerna /etc/hosts.allow och /etc/hosts.deny kommer att sättas upp eftersom du inte "
+"har dom. Du kan antingen ha en generisk och tolerant konfiguration som tillåter alla "
+"inkommande anslutningar eller en paranoid konfiguration som inte tillåter någon "
+"extern anslutning oavsett vad de kommer från."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"The second option, even if more secure, will block out all communication, "
+"including, for example, remote administration. So if you need this don't "
+"choose it."
+msgstr ""
+"Det andra alternativet, även mer säker, kommer att blockera ute all kommunikation "
+"inkluderat, till exempel, fjärradministration. Så om du behöver detta, välj det då inte."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"Regardless of which option you select you can always manually edit both  "
+"files to suit your needs, for this, review the hosts_access(5) manpage.  "
+"This might include giving remote access of services to legitimate hosts."
+msgstr ""
+"Oavsett vilken inställning för väljer kan du alltid manuellt ändra dessa båda filer "
+"för att passa dina behov, för att göra detta, ta en titt på manualsidan hosts_access(5).  "
+"Detta kan till exempel vara att ge extern tillgång till tjänster för legitima värdmaskiner."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"Notice this only applies to internet services that use the libwrap library. "
+"Remote connections will still be possible to services that do not use this "
+"library, consider using firewall rules to block access to these."
+msgstr ""
+"Notera att detta bara gäller för Internettjänster som använder biblioteket libwrap. "
+"Fjärranslutningar kommer fortfarande vara möjliga till tjänster som inte använder "
+"detta bibliotek, tänk på att använda en brandvägg för att blockera dessa anslutningar."
+

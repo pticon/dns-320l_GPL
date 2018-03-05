@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: 582906-2-prog2-include.xsd,v 1.1 2009/10/12 05:58:26 bing Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified" attributeFormDefault="unqualified"
+           xml:lang="en">
+
+    <xs:include schemaLocation="582906-2-common.xsd"/>
+
+</xs:schema>

@@ -1,0 +1,40 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 3e94b50826015fe7ac1e769cadd656b53317d4ab Build.PL
+SHA1 1923d4e05cce842d978a78536a958388a3675873 Changes
+SHA1 066a2dba8084a0c2a7e4b6996ad21872bc16beb5 INSTALL
+SHA1 f4f533d5ba595558e925934701b6a624c1ae263a MANIFEST
+SHA1 8d450b38f6346a82944f17f0b25be8c8d2a49df7 META.yml
+SHA1 c56ae13703aa3a30404e13a4b321818fc865b8f2 Makefile.PL
+SHA1 a7b1cdcddb8679dff993b475939abcfb73076afb README
+SHA1 b40373e05544adc4447c5fad2509368fc6213b03 dist.ini
+SHA1 e3b4393203382a6a4194a6ec852942f8898c8a61 lib/Path/Class.pm
+SHA1 1aa682b45c70d04aecc6ba2b9cf7402650abbf5a lib/Path/Class/Dir.pm
+SHA1 16c0113abd50b90bb9aa739fa5ee4b549e0ffbe1 lib/Path/Class/Entity.pm
+SHA1 0ea60757f1483cb4287adcdf33c4c8233ba3fd90 lib/Path/Class/File.pm
+SHA1 212c128d87fa012c36016210e6e9213112fc3c23 t/01-basic.t
+SHA1 a42f4b07e4c42e7a59b960b13c5466d7cd82e17a t/02-foreign.t
+SHA1 ff702cdbf0bb4c25959cbc5a5c7db17772b7aa5b t/03-filesystem.t
+SHA1 a163d4cf70142b45974ed39c78571e7ce2ba5a7f t/04-subclass.t
+SHA1 2c32aa5691540466533ae7c06753160f020818e9 t/file-spec-tests
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (Darwin)
+
+iD8DBQFNF5rDgrvMBLfvlHYRAvbMAJ98sj5UZ5yLj0FkiXyu7P/NHq0vGACgnry1
+iuQgkpeJgSCL7Ljh0hfJRcQ=
+=Fky1
+-----END PGP SIGNATURE-----

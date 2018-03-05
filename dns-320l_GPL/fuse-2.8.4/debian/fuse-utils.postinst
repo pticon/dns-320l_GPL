@@ -1,0 +1,54 @@
+#!/bin/sh -e
+
+test $DEBIAN_SCRIPT_DEBUG && set -v -x
+  
+
+case "$1" in
+  configure|upgrade)
+  
+  # Create fuse group
+  echo "creating fuse group..."
+  getent group fuse >/dev/null || addgroup --system fuse
+ 
+  # Detect if udev is active
+  udev=0
+  if [ -d /dev/.udev/ ]; then
+  	udev=1
+  fi
+  # Create device node with the right perms
+  if [ ${udev} -eq 0 ]; then
+    if [ -x /sbin/MAKEDEV ]; then
+      # Call makedev and fix perms
+      cd /dev && MAKEDEV fuse
+      chgrp fuse /dev/fuse
+    else
+      echo "MAKEDEV not installed, skipping device node creation."
+    fi
+  else
+  	# Udev is active, nothing to do.
+	echo "udev active, skipping device node creation."
+  fi
+
+  test -f /etc/default/fuse-utils && rm -f /etc/default/fuse-utils
+  
+  if ! dpkg-statoverride --list /usr/bin/fusermount >/dev/null; then
+  	chown root:fuse /usr/bin/fusermount
+  	chmod 4754 /usr/bin/fusermount
+  fi
+  
+  chown root:fuse /etc/fuse.conf
+  chmod 0640 /etc/fuse.conf
+  ;;
+
+  abort-upgrade|abort-remove|abort-deconfigure)
+  ;;
+
+  *)
+    echo "postinst called with unknown argument \`$1'" >&2
+    exit 1
+  ;;
+esac
+
+#DEBHELPER#
+
+exit 0

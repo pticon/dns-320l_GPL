@@ -1,0 +1,6 @@
+GenLinkedList.lo: GenLinkedList.c GenLinkedList.h \
+  /opt_gccarm/arm-mv5sft-linux-gnueabi/bin/../lib/gcc/arm-mv5sft-linux-gnueabi/4.3.2/include/stddef.h
+
+GenLinkedList.h:
+
+/opt_gccarm/arm-mv5sft-linux-gnueabi/bin/../lib/gcc/arm-mv5sft-linux-gnueabi/4.3.2/include/stddef.h:

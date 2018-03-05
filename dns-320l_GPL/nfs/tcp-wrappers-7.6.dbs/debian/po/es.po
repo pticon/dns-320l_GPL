@@ -1,0 +1,123 @@
+# tcp-wrappers translation to spanish
+# This file is distributed under the same license as the tcp-wrappers package.
+#
+# Changes:
+# - Initial translation
+#       Jesus Aneiros , 2006
+# - Revision
+#       Fernando Cerezal
+#       César Gómez Martín
+#       Nacho Barriento
+#       David Martínez
+#       Javier Fernández-Sanguino
+#
+#  Traductores, si no conoce el formato PO, merece la pena leer la 
+#  documentación de gettext, especialmente las secciones dedicadas a este
+#  formato, por ejemplo ejecutando:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+# - El proyecto de traducción de Debian al español
+#   http://www.debian.org/intl/spanish/
+#   especialmente las notas y normas de traducción en
+#   http://www.debian.org/intl/spanish/notas
+#
+# - La guía de traducción de po's de debconf:
+#   /usr/share/doc/po-debconf/README-trans
+#   o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+# Si tiene dudas o consultas sobre esta traducción consulte con el último
+# traductor (campo Last-Translator) y ponga en copia a la lista de
+# traducción de Debian al español (<debian-l10n-spanish@lists.debian.org>)
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers 7.6.dbs-11\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2006-12-06 20:13+0100\n"
+"Last-Translator: Jesús Aneiros Sosa <jesus.aneiros@gmail.com>\n"
+"Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr ""
+"¿Debería tcpd configurar los archivos hosts.allow y hosts.access de forma "
+"«paranoica»?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"Se configurarán «/etc/hosts.allow» y «/etc/hosts.deny», ya que usted aún no "
+"tiene ninguno de esos archivos. Puede tener una configuración genérica y "
+"permisiva que permita cualquier conexión entrante o una configuración "
+"paranoica que no permita conexiones entrantes independientemente de dónde se "
+"originen las mismas."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+
+#~ msgid ""
+#~ "The second option, even if more secure, will block out all communication, "
+#~ "including, for example, remote administration. So if you need this don't "
+#~ "choose it."
+#~ msgstr ""
+#~ "La segunda opción, incluso más segura, bloqueará todas las "
+#~ "comunicaciones, incluyendo, por ejemplo, la administración remota. No "
+#~ "elija la segunda opción si necesita tener habilitadas este tipo de "
+#~ "conexiones."
+
+#~ msgid ""
+#~ "Regardless of which option you select you can always manually edit both  "
+#~ "files to suit your needs, for this, review the hosts_access(5) manpage.  "
+#~ "This might include giving remote access of services to legitimate hosts."
+#~ msgstr ""
+#~ "Sin tener en cuenta qué opción seleccione, siempre puede editar ambos "
+#~ "archivos de forma manual para ajustarlos a sus necesidades; para ello "
+#~ "revise la página de manual hosts_access(5). Lo anterior puede incluir "
+#~ "otorgar acceso remoto a servicios residentes en los equipos autorizados."
+
+#~ msgid ""
+#~ "Notice this only applies to internet services that use the libwrap "
+#~ "library. Remote connections will still be possible to services that do "
+#~ "not use this library, consider using firewall rules to block access to "
+#~ "these."
+#~ msgstr ""
+#~ "Tenga en cuenta que ésto sólo se aplica a los servicios de red que "
+#~ "utilizan la biblioteca «libwrap». Aún serán posibles las conexiones "
+#~ "remotas a los servicios que no utilicen esta biblioteca. Considere "
+#~ "utilizar reglas del cortafuegos para bloquear el acceso a dichos "
+#~ "servicios."

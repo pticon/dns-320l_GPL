@@ -1,0 +1,120 @@
+#!/bin/sh
+set -e
+
+. /usr/share/debconf/confmodule
+
+CONFFILE=/etc/default/portmap
+
+if [ "$1" = "configure" ] && [ -n "$2" ] &&
+  dpkg --compare-versions "$2" lt 5-3; then
+       err=$(update-rc.d -f portmap remove 2>&1 > /dev/null) || {
+               echo "$err" >&2
+               exit 1
+       }
+fi
+
+if [ "$1" = "configure" ] && [ -n "$2" ] && dpkg --compare-versions "$2" lt "5-7ubuntu2"; then
+    db_set portmap/loopback true
+fi
+
+# be consistent with Debian
+if [ -e "$CONFFILE" ]; then
+	sed -i -e 's/ARGS/OPTIONS/g' "$CONFFILE"
+else
+	echo -e "# By default, listen only on the loopback interface\nOPTIONS=\"-i 127.0.0.1\"" > "$CONFFILE"
+fi
+
+# Keep track of changes to the portmapper
+portmap_changed=0
+
+if [ -e "$CONFFILE" ] && [ "$1" = "configure" ] || [ "$1" = "reconfigure" ] ; then
+
+  # Read in the options
+  . $CONFFILE || true
+
+  if [ "$OPTIONS" = "-i 127.0.0.1" ] || [ -z "$OPTIONS" ] ; then
+  # The configuration matches the changes we introduce, go ahead
+  # and make the changes
+
+      db_get portmap/loopback
+
+      if [ "$RET" = true ]; then
+	  # first we need to understand if there is OPTIONS somewhere
+	  # and if not, add it with a sane default.
+          if [ "$1" = "configure" ] && [ -n "$2" ] && ! grep -qs OPTIONS "$CONFFILE"; then
+              echo "OPTIONS=\"-i 127.0.0.1\"" >> "$CONFFILE"
+              portmap_changed=1
+          fi
+	  # if OPTION is not at the beginning, make it so
+	  # XXX: only the last OPTIONS will be used, but we don't know
+	  # if the user is chaining the values, so it seems to be reasonably safe.
+          if ! grep -q ^OPTIONS "$CONFFILE" >/dev/null 2>&1; then
+              sed -i -e 's/.*OPTIONS/OPTIONS/g' "$CONFFILE"
+              portmap_changed=1
+          fi
+	  # source again the result
+          . "$CONFFILE"
+	  # check if loopback is not in the string
+          if [ -z "$(echo $OPTIONS | grep "127.0.0.1")" ]; then
+              OPTIONS="$OPTIONS -i 127.0.0.1"
+              sed -i -e 's/OPTIONS.*/OPTIONS=\"'"$OPTIONS"'\"/g' "$CONFFILE"
+              portmap_changed=1
+          fi
+      else
+          if [ "$1" = "configure" ] && [ -n "$2" ] && ! grep -qs OPTIONS "$CONFFILE"; then
+              echo "OPTIONS=\"\"" >> "$CONFFILE"
+          fi
+# Just reverse the change above in case a user wants to go from 'true'
+# to 'false' at some point.
+          OPTIONS="$(echo $OPTIONS | sed -e 's/-i 127.0.0.1//g')"
+          sed -i -e 's/^OPTIONS.*/OPTIONS=\"'"$OPTIONS"'\"/g' "$CONFFILE"
+          portmap_changed=1
+      fi
+
+      
+  else 
+      echo "Portmap options have already been configured in $CONFFILE"
+      echo "This script will not modify it, please edit this file manually."
+  fi
+fi 
+
+if [ ! -e "$CONFFILE" ] && [ "$1" = "reconfigure" ] ; then
+	echo "Cannot reconfigure portmap since $CONFFILE has been manually removed by the admin"
+fi
+
+db_stop
+
+# End of configuration
+
+#DEBHELPER#
+
+# Warn if there are services linked with the portmapper
+# but its configuration has changed. We will not automatically
+# restart them, however.
+if [ -n "$2" ] && [ "$portmap_changed" -eq 1 ] ; then
+    pid=`pidof portmap` || true
+    if [ -n "$pid" ] ; then
+	# RPCinfo might fail if the portmapper is not running
+	# (i.e. broken options...)
+	set +e
+	rpccount=`rpcinfo -p 2>/dev/null |grep "tcp\|udp" | grep -v portmapper | wc -l`
+	set -e
+	if [ "0$rpccount" -gt 0 ] ; then
+	# TODO: Turn this into a debconf note?
+	# TODO: associate common RPC services with init.d lines?
+	# i.e. : 
+	#  sgi_fam -> /etc/init.d/fam
+	#  status  -> /etc/init.d/nfs-common
+		echo "There are RPC services which were registered with the portmapper"
+		echo "before the configuration was changed."
+		echo "You need to manually restart them in order for the changes to take effect."
+		echo "Current registered services:"
+		echo "------------------------------------------------"
+		rpcinfo -p | grep "tcp\|udp" | grep -v portmapper 
+		echo "------------------------------------------------"
+	fi
+    fi
+fi
+
+
+exit 0 

@@ -1,0 +1,16 @@
+prefix=/home/patrick/nas/DNS-345_GPL/libtorrent-rasterbar-0.15.4/../xinst
+exec_prefix=${prefix}
+bindir=${exec_prefix}/bin
+libdir=${exec_prefix}/lib
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+sysconfdir=${prefix}/etc
+includedir=${prefix}/include
+package=libtorrent-rasterbar
+
+Name: libtorrent-rasterbar
+Description: Bittorrent library.
+Version: 0.15.4
+Libs: -L${libdir} -ltorrent-rasterbar
+Libs.private: -lz -lrt -lpthread   -lboost_system -lboost_filesystem -lboost_thread -lpthread  -lssl -lcrypto
+Cflags: -I${includedir} -I${includedir}/libtorrent -DTORRENT_USE_OPENSSL -DWITH_SHIPPED_GEOIP_H -DBOOST_ASIO_HASH_MAP_BUCKETS=1021 -DBOOST_EXCEPTION_DISABLE -DTORRENT_LINKING_SHARED 

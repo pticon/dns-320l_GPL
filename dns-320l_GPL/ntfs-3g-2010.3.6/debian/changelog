@@ -1,0 +1,307 @@
+ntfs-3g (1:2010.3.6-1) unstable; urgency=low
+
+  * Ack previous NMU, thanks Michael.
+  * New upstream release (Closes: #573462).
+  * Update library package name from libntfs-3g73 to libntfs-3g75.
+  * Update changes/ChangeLog for latest upstream release.
+  * Bump Standards-Version to 3.8.4.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Mon, 15 Mar 2010 16:48:43 +0100
+
+ntfs-3g (1:2010.1.16-0.1) unstable; urgency=low
+
+  * Non-maintainer upload with Adam's consent.
+  * New upstream release. (Closes: #560685)
+  * Fix watch file.
+  * Update library package name from libntfs-3g54 to libntfs-3g73.
+  * Update changes/ChangeLog for latest upstream release.
+  * Bump Standards-Version to 3.8.3. No further changes.
+  * debian/ntfs-3g.links: Create a symlink /sbin/mount.ntfs pointing to
+    /sbin/mount.ntfs-3g. This way ntfs-3g is used as default driver for
+    ntfs file systems. (Closes: #554599)
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 25 Jan 2010 23:31:20 +0100
+
+ntfs-3g (1:2009.4.4-1) unstable; urgency=low
+
+  * New upstream release (Closes: #523987).
+  * As usual, bump library package name and update upstream changelog.
+  * Bump Standards-Version.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Wed, 29 Apr 2009 10:19:28 +0200
+
+ntfs-3g (1:2009.2.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #508028, #512716).
+  * Ack Michael Biebl's NMU.
+  * Update the HAL policy file from latest Ubuntu packages.
+  * As usual, bump library package name and update upstream changelog.
+  * Add missing ${misc:Depends} to all binary packages.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Fri, 13 Mar 2009 21:57:11 +0100
+
+ntfs-3g (1:1.2918-1) experimental; urgency=low
+
+  * New upstream release.
+  * Bump library package name to match current soname.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Tue, 23 Sep 2008 10:41:47 +0200
+
+ntfs-3g (1:1.2712-1) experimental; urgency=low
+
+  * Upload to experimental because of lenny freeze.
+  * New upstream release.
+  * Bump library package name to match current soname.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Wed, 13 Aug 2008 23:49:43 +0200
+
+ntfs-3g (1:1.2531-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump library package name to match current soname.
+  * Bump Standards-Version to 3.8.0.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Mon, 23 Jun 2008 22:18:49 +0200
+
+ntfs-3g (1:1.2506-1) unstable; urgency=HIGH
+
+  * Urgency set to HIGH because it fixes a critical issue.
+  * New upstream release (Closes: #479774).
+  * Bump library package name to match current soname.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Thu, 08 May 2008 22:00:30 +0200
+
+ntfs-3g (1:1.2310-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump library package name to match current soname.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Fri, 14 Mar 2008 22:06:45 +0100
+
+ntfs-3g (1:1.2216-1) unstable; urgency=low
+
+  * New upstream release (Closes: #466161).
+  * Drop /sbin/mount.ntfs-3g symlink, fixed upstream.
+  * Bump library package name to match current soname.
+  * Install pkgconfig file in devel package.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Fri, 22 Feb 2008 20:26:48 +0100
+
+ntfs-3g (1:1.2129-2) unstable; urgency=low
+
+  * Include mount.ntfs-3g again and create a symlink in /sbin
+    (Closes: #464964).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Thu, 07 Feb 2008 22:09:18 +0100
+
+ntfs-3g (1:1.2129-1) unstable; urgency=low
+
+  * New upstream release (Closes: #463976).
+  * Drop libfuse-dev build dependency and fuse-utils runtime dependency,
+    ntfs-3g now includes its own "lite" fuse library.
+  * Bump Standards-Version to 3.7.3.
+  * Bump library package name to match current soname.
+  * Run chrpath against the new ntfs-3g.probe binary.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Wed, 06 Feb 2008 20:29:19 +0100
+
+ntfs-3g (1:1.1120-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump library package name to match current soname.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Fri, 23 Nov 2007 15:10:10 +0100
+
+ntfs-3g (1:1.1104-1) unstable; urgency=low
+
+  * New upstream release, sorry for the delay :-)
+  * Bump library package name to match current soname.
+  * Move 'Homepage' to the new dpkg field.
+  * Fix NEWS.Debian syntax.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Tue, 13 Nov 2007 11:55:58 +0100
+
+ntfs-3g (1:1.1004-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add upstream ChangeLog (from website).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Sat, 13 Oct 2007 02:38:45 +0200
+
+ntfs-3g (1:1.913-2) unstable; urgency=HIGH
+
+  * Security set to HIGH because it fixes a critical issue.
+  * Do not set ntfs-3g binary setuid with group fuse.
+    This could allows local users with fuse group membership to read from and
+    write to arbitrary block devices, possibly involving a file descriptor
+    leak. (CVE-2007-5159) (Closes: #445315).
+  * Update README.Debian and long description (Closes: #443418).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Thu, 04 Oct 2007 22:20:11 +0200
+
+ntfs-3g (1:1.913-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump library package name to match current soname.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Thu, 13 Sep 2007 11:31:59 +0200
+
+ntfs-3g (1:1.826-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump library package name to match current soname.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Tue, 28 Aug 2007 09:17:34 +0200
+
+ntfs-3g (1:1.810-1) unstable; urgency=low
+
+  * New upstream release (Closes: #434128).
+  * Bump libfuse-dev build depends to >= 2.7 (Needed to really fix #434128).
+  * Bump library package name to match current soname.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Fri, 10 Aug 2007 17:00:02 +0200
+
+ntfs-3g (1:1.710-2) unstable; urgency=low
+
+  * Update long description, ntfs-3g works fine on any architecture (Closes: #436435).
+  * ntfs-3g binary is now 4754, according to debian policy (Closes: #436658).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Wed, 08 Aug 2007 19:22:08 +0200
+
+ntfs-3g (1:1.710-1) unstable; urgency=low
+
+  * New upstream release:
+    - Bump library package name to libntfs-3g5 to match soname.
+  * Use [ ! -f Makefile ] || $(MAKE) distclean instead of -$(MAKE) distclean (fix lintian warning).
+  * Break loops with exit 1 in debian/rules if an error occurs.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Tue, 10 Jul 2007 09:15:12 +0200
+
+ntfs-3g (1:1.616-1) unstable; urgency=low
+
+  * New upstream release:
+    - Fix debian/rules to install softwares in /usr,
+    - Bump library package name to libntfs-3g4 to match soname.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Sun, 17 Jun 2007 14:17:17 +0200
+
+ntfs-3g (1:1.516-1) unstable; urgency=HIGH
+
+  * Security set to HIGH due to critical security fix.
+  * New upstream release.
+  * Bump libntfs-3g package name (libntfs-3g2).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Wed, 16 May 2007 08:55:47 +0200
+
+ntfs-3g (1:1.417-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Mon, 16 Apr 2007 10:54:41 +0200
+
+ntfs-3g (1:1.416-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop versionned shlibs, libntfs-3g is now versionned.
+  * Bump libntfs-3g package name (libntfs-3g1).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Sun, 15 Apr 2007 23:12:46 +0200
+
+ntfs-3g (1:1.328-2) unstable; urgency=low
+
+  * Uploading to unstable.
+  * Add missing epoch to versionned shlibs (Closes: #413264).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Sun, 08 Apr 2007 23:43:10 +0200
+
+ntfs-3g (1:1.328-1) experimental; urgency=low
+
+  * New upstream release.
+    - Improve large file performance in close to full and/or highly fragmented disk scenarios.
+  * Drop debconf dependency, not used anymore (Closes: #415688).
+  * Drop "000-Remove_ldconfig_call" patch, replaced by "--disable-ldconfig" configure switch.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Wed, 28 Mar 2007 08:44:30 +0200
+
+ntfs-3g (1:1.0-2) experimental; urgency=low
+
+  * Remove 'beta statement' in debian/control (Closes: #413182).
+  * Create a versionned shlibs file for libntfs-3g (Closes: #413264).
+  * Build against libfuse-dev (>= 2.6.3-1) which includes a verionned shlibs file (Closes: #412385).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Sun,  4 Mar 2007 00:02:16 +0100
+
+ntfs-3g (1:1.0-1) experimental; urgency=low
+
+  * New upstream release (First stable release).
+  * Remove debconf warning.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Wed, 21 Feb 2007 09:04:37 +0100
+
+ntfs-3g (1:0.0.0+20070207-1) experimental; urgency=low
+
+  * New upstream release (RC1 !).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Wed,  7 Feb 2007 09:44:48 +0100
+
+ntfs-3g (1:0.0.0+20070118-1) experimental; urgency=low
+
+  * New upstream release (Closes: #404240).
+  * Update libfuse-dev build dependency version from 2.5.0 to 2.6.0.
+  * Update 000-Remove_ldconfig_call patch.
+  * Merge swedish debconf translation (Closes: #407863).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Thu,  1 Feb 2007 14:47:01 +0100
+
+ntfs-3g (1:0.0.0+20061031-6) unstable; urgency=low
+
+  * Add Russian debconf translation, thanks to Yuri Kozlov (Closes: #405247).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Wed,  3 Jan 2007 09:41:29 +0100
+
+ntfs-3g (1:0.0.0+20061031-5) unstable; urgency=low
+
+  * Add Czech debconf translation, thanks to Jakub Kasparec (Closes: #402988).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Fri, 15 Dec 2006 19:56:05 +0100
+
+ntfs-3g (1:0.0.0+20061031-4) unstable; urgency=low
+
+  * Update debian/watch.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Fri, 24 Nov 2006 00:33:43 +0100
+
+ntfs-3g (1:0.0.0+20061031-3) unstable; urgency=low
+
+  * Add German debconf translation, thanks to Alwin Meschede (Closes: #399247).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Sun, 19 Nov 2006 03:13:59 +0100
+
+ntfs-3g (1:0.0.0+20061031-2) unstable; urgency=low
+
+  * Install ntfs-3g suid root with group fuse (Closes: #396681).
+  * Move fuse-utils from Depends to Pre-Depends.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Sat,  4 Nov 2006 17:10:43 +0100
+
+ntfs-3g (1:0.0.0+20061031-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add an epoch because of the new software versionning.
+  * Change homepage url.
+  * Remove 001-Log_reason_removal patch, merged in upstream.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Tue, 31 Oct 2006 21:33:11 +0100
+
+ntfs-3g (0.0.0+20070920-2) unstable; urgency=low
+
+  * Fix FTBS on aplha (Closes: #395901).
+    Thanks to Szakacsits Szabolcs <szaka@sienet.hu>.
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Sun, 29 Oct 2006 18:42:19 +0100
+
+ntfs-3g (0.0.0+20070920-1) unstable; urgency=low
+
+  * Initial release (Closes: #390778).
+
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Tue,  3 Oct 2006 01:17:00 +0200

@@ -1,0 +1,12 @@
+--- configure.0	2011-01-18 15:47:53.475000063 +0800
++++ configure	2011-01-18 15:48:18.995000062 +0800
+@@ -24200,7 +24200,8 @@
+ See \`config.log' for more details." >&5
+ echo "$as_me: error: cannot run test program while cross compiling
+ See \`config.log' for more details." >&2;}
+-   { (exit 1); exit 1; }; }
++   #{ (exit 1); exit 1; }; 
++   }
+ else
+   cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */

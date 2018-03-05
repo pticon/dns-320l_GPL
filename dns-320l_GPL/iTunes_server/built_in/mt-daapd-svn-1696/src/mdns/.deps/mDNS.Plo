@@ -1,0 +1,13 @@
+mDNS.lo: mDNS.c DNSCommon.h mDNSEmbeddedAPI.h \
+  /opt_gccarm/arm-mv5sft-linux-gnueabi/bin/../lib/gcc/arm-mv5sft-linux-gnueabi/4.3.2/include/stdarg.h \
+  mDNSDebug.h uDNS.h
+
+DNSCommon.h:
+
+mDNSEmbeddedAPI.h:
+
+/opt_gccarm/arm-mv5sft-linux-gnueabi/bin/../lib/gcc/arm-mv5sft-linux-gnueabi/4.3.2/include/stdarg.h:
+
+mDNSDebug.h:
+
+uDNS.h:

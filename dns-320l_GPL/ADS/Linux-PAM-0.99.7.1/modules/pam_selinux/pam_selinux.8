@@ -1,0 +1,78 @@
+.\"     Title: pam_selinux
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.70.1 <http://docbook.sf.net/>
+.\"      Date: 06/18/2006
+.\"    Manual: Linux\-PAM Manual
+.\"    Source: Linux\-PAM Manual
+.\"
+.TH "PAM_SELINUX" "8" "06/18/2006" "Linux\-PAM Manual" "Linux\-PAM Manual"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+pam_selinux \- PAM module to set the default security context
+.SH "SYNOPSIS"
+.HP 15
+\fBpam_selinux.so\fR [close] [debug] [multiple] [open] [nottys] [verbose]
+.SH "DESCRIPTION"
+.PP
+In a nutshell, pam_selinux sets up the default security context for the next execed shell.
+.PP
+When an application opens a session using pam_selinux, the shell that gets executed will be run in the default security context, or if the user chooses and the pam file allows the selected security context. Also the controlling tty will have it's security context modified to match the users.
+.PP
+Adding pam_selinux into a pam file could cause other pam modules to change their behavior if the exec another application. The close and open option help mitigate this problem. close option will only cause the close portion of the pam_selinux to execute, and open will only cause the open portion to run. You can add pam_selinux to the config file twice. Add the pam_selinux close as the executes the open pass through the modules, pam_selinux open_session will happen last. When PAM executes the close pass through the modules pam_selinux close_session will happen first.
+.SH "OPTIONS"
+.TP 3n
+\fBclose\fR
+Only execute the close_session portion of the module.
+.TP 3n
+\fBdebug\fR
+Turns on debugging via
+\fBsyslog\fR(3).
+.TP 3n
+\fBmultiple\fR
+Tells pam_selinux.so to allow the user to select the security context they will login with, if the user has more than one role.
+.TP 3n
+\fBopen\fR
+Only execute the open_session portion of the module.
+.TP 3n
+\fBnottys\fR
+Do not try to setup the ttys security context.
+.TP 3n
+\fBverbose\fR
+attempt to inform the user when security context is set.
+.SH "MODULE SERVICES PROVIDED"
+.PP
+Only the
+\fBsession\fR
+service is supported.
+.SH "RETURN VALUES"
+.TP 3n
+PAM_AUTH_ERR
+Unable to get or set a valid context.
+.TP 3n
+PAM_SUCCESS
+The security context was set successfull.
+.TP 3n
+PAM_USER_UNKNOWN
+The user is not known to the system.
+.SH "EXAMPLES"
+.sp
+.RS 3n
+.nf
+auth     required  pam_unix.so
+session  required  pam_permit.so    
+session  optional  pam_selinux.so
+    
+.fi
+.RE
+.SH "SEE ALSO"
+.PP
+
+\fBpam.conf\fR(5),
+\fBpam.d\fR(8),
+\fBpam\fR(8)
+.SH "AUTHOR"
+.PP
+pam_selinux was written by Dan Walsh <dwalsh@redhat.com>.

@@ -1,0 +1,79 @@
+#
+# Catalan translation for tcp-wrappers package.
+# Copyright (C) 2007 Marco d'Itri.
+# This file is distributed under the same license as the tcp-wrappers
+# package.
+#
+# Jordà Polo <jorda@ettin.org>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 7.6.dbs-13\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-02-27 04:34+0100\n"
+"PO-Revision-Date: 2007-07-01 10:48+0200\n"
+"Last-Translator: Jordà Polo <jorda@ettin.org>\n"
+"Language-Team: Català <debian-l10n-catalan@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid "Should tcpd setup paranoid hosts.allow and hosts.access?"
+msgstr ""
+"Voleu que tcpd configuri «hosts.allow» i «hosts.access» de forma paranoica?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"/etc/hosts.allow and /etc/hosts.deny will be setup since you do not have "
+"have any of these files yet. You can either have a generic and permissive "
+"configuration which will allow any incoming connection or a paranoid "
+"configuration which will not allow remote connections regardless of where "
+"they originate from."
+msgstr ""
+"Es configuraran els fitxers «/etc/hosts.allow» i «/etc/hosts.deny», ja que "
+"encara no els teniu instal·lats. Podeu fer una configuració genèrica i "
+"permissiva que permeti qualsevol connexió entrant, o una configuració "
+"paranoica que no permeti connexions remotes, independentment del seu origen."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"The second option, even if more secure, will block out all communication, "
+"including, for example, remote administration. So if you need this don't "
+"choose it."
+msgstr ""
+"La segona opció, tot i ser més segura, bloquejarà tota comunicació, incloent "
+"per exemple l'administració remota. No la trieu si necessiteu connexions "
+"d'aquest tipus."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Regardless of which option you select you can always manually edit both  "
+"files to suit your needs, for this, review the hosts_access(5) manpage.  "
+"This might include giving remote access of services to legitimate hosts."
+msgstr ""
+"Sigui quina sigui l'opció seleccionada, sempre podeu editar manualment "
+"ambdós fitxers per adaptar-los a les vostres necessitats. Abans de fer-ho, "
+"llegiu la pàgina de manual hosts_access(5). Us pot servir per permetre "
+"l'accés remot a certs serveis des de màquines legítimes."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Notice this only applies to internet services that use the libwrap library. "
+"Remote connections will still be possible to services that do not use this "
+"library, consider using firewall rules to block access to these."
+msgstr ""
+"Fixeu-vos que això només s'aplica a serveis d'Internet que utilitzin la "
+"biblioteca «libwrap». Les connexions remotes a serveis que no utilitzin "
+"aquesta biblioteca encara seran possibles; plantegeu-vos l'opció d'utilitzar "
+"regles de tallafoc per bloquejar-ne l'accés."

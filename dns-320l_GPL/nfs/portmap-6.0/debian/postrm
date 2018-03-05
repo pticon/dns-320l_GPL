@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+#DEBHELPER#
+
+if [ "$1" = "purge" ]
+then
+    # Remove all non-conffiles that portmap might have created
+    [ -f /etc/portmap.conf ] && rm -f /etc/portmap.conf
+    [ -f /etc/default/portmap ] && rm -f /etc/default/portmap
+fi
+
+exit 0
