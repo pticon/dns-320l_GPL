@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/sm_cust_bindcdr
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/sm_cust_bindcdr/Makefile.in
+END
+sm_cust_bindcdr.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/sm_cust_bindcdr/sm_cust_bindcdr.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/sm_cust_bindcdr/Makefile.am
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/sm_cust_bindcdr/Makefile
+END

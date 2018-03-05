@@ -1,0 +1,18 @@
+Port 22
+Protocol 2
+
+HostKey /etc/ssh/ssh_host_dsa_key
+
+SyslogFacility AUTHPRIV
+
+RSAAuthentication yes
+PubkeyAuthentication yes
+PermitEmptyPasswords yes
+PasswordAuthentication yes
+ChallengeResponseAuthentication no
+GSSAPIAuthentication yes
+GSSAPICleanupCredentials yes
+UsePAM yes
+X11Forwarding yes
+TCPKeepAlive yes
+

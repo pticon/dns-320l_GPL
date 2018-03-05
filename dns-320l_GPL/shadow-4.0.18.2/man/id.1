@@ -1,0 +1,44 @@
+.\"     Title: id
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 10/28/2007
+.\"    Manual: User Commands
+.\"    Source: User Commands
+.\"
+.TH "ID" "1" "10/28/2007" "User Commands" "User Commands"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+id - display current user and group ID names
+.SH "SYNOPSIS"
+.HP 3
+\fBid\fR [\-a]
+.SH "DESCRIPTION"
+.PP
+The
+\fBid\fR
+command displays the current real and effective user and group ID names or values\. If the value does not have a corresponding entry in
+\fI/etc/passwd\fR
+or
+\fI/etc/group\fR, the value will be displayed without the corresponding name\. The optional
+\fB\-a\fR
+flag will display the group set on systems which support multiple concurrent group membership\.
+.SH "FILES"
+.PP
+\fI/etc/group\fR
+.RS 4
+Group account information\.
+.RE
+.PP
+\fI/etc/passwd\fR
+.RS 4
+User account information\.
+.RE
+.SH "SEE ALSO"
+.PP
+
+\fBgetgid\fR(2),
+\fBgetgroups\fR(2),
+\fBgetuid\fR(2)

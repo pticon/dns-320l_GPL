@@ -1,0 +1,55 @@
+Source: tcp-wrappers
+Section: net
+Priority: important
+Maintainer: Marco d'Itri <md@linux.it>
+Build-Depends: debhelper (>= 4), po-debconf
+Standards-Version: 3.7.2.2
+
+Package: tcpd
+Architecture: any
+Priority: important
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: libwrap0 (<< 7.6-8)
+Description: Wietse Venema's TCP wrapper utilities
+ Wietse Venema's network logger, also known as TCPD or LOG_TCP.
+ .
+ These programs log the client host name of incoming telnet,
+ ftp, rsh, rlogin, finger etc. requests.
+ .
+ Security options are:
+  - access control per host, domain and/or service;
+  - detection of host name spoofing or host address spoofing;
+  - booby traps to implement an early-warning system.
+
+Package: libwrap0
+Section: libs
+Priority: important
+Architecture: any
+Depends: ${shlibs:Depends}
+Recommends: tcpd
+Description: Wietse Venema's TCP wrappers library
+ Wietse Venema's network logger, also known as TCPD or LOG_TCP.
+ .
+ These programs log the client host name of incoming telnet,
+ ftp, rsh, rlogin, finger etc. requests.
+ .
+ Security options are:
+  - access control per host, domain and/or service;
+  - detection of host name spoofing or host address spoofing;
+  - booby traps to implement an early-warning system.
+
+Package: libwrap0-dev
+Section: libdevel
+Priority: optional
+Architecture: any
+Depends: libwrap0 (= ${binary:Version})
+Description: Wietse Venema's TCP wrappers library, development files
+ Wietse Venema's network logger, also known as TCPD or LOG_TCP.
+ .
+ These programs log the client host name of incoming telnet,
+ ftp, rsh, rlogin, finger etc. requests.
+ .
+ Security options are:
+  - access control per host, domain and/or service;
+  - detection of host name spoofing or host address spoofing;
+  - booby traps to implement an early-warning system.

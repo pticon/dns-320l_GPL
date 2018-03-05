@@ -1,0 +1,9 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "upgrade" ]; then
+	# save portmap state; will be reread when portmap start is run
+	pmap_dump >/var/run/portmap.upgrade-state
+fi
+
+#DEBHELPER#

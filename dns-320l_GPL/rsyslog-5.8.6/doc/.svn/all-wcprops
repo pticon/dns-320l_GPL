@@ -1,0 +1,857 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc
+END
+rsyslog-example.conf
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog-example.conf
+END
+rscript_abnf.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rscript_abnf.html
+END
+manual.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/manual.html
+END
+omstdout.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/omstdout.html
+END
+rsconf1_droptrailinglfonreception.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_droptrailinglfonreception.html
+END
+imklog.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/imklog.html
+END
+v5compatibility.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/v5compatibility.html
+END
+rsconf1_fileowner.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_fileowner.html
+END
+tls_cert.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert.jpg
+END
+rsconf1_markmessageperiod.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_markmessageperiod.html
+END
+rsconf1_gssforwardservicename.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_gssforwardservicename.html
+END
+tls_cert_machine.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_machine.html
+END
+rsyslog_conf_examples.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_conf_examples.html
+END
+install.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/install.html
+END
+ns_ptcp.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/ns_ptcp.html
+END
+queueWorkerLogic.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/queueWorkerLogic.jpg
+END
+rsconf1_moddir.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_moddir.html
+END
+licensing.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/licensing.html
+END
+rsyslog_conf_filter.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_conf_filter.html
+END
+dataflow.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/dataflow.png
+END
+rsconf1_allowedsender.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_allowedsender.html
+END
+rsconf1_dirowner.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_dirowner.html
+END
+rsyslog_conf_global.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_conf_global.html
+END
+rsconf1_controlcharacterescapeprefix.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_controlcharacterescapeprefix.html
+END
+imsolaris.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/imsolaris.html
+END
+syslog_parsing.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/syslog_parsing.html
+END
+rsconf1_dynafilecachesize.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_dynafilecachesize.html
+END
+direct_queue0.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/direct_queue0.png
+END
+version_naming.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/version_naming.html
+END
+rsyslog_ng_comparison.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_ng_comparison.html
+END
+direct_queue2.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/direct_queue2.png
+END
+ipv6.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/ipv6.html
+END
+imrelp.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/imrelp.html
+END
+rfc5424layers.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rfc5424layers.png
+END
+rsconf1_rulesetparser.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_rulesetparser.html
+END
+rsconf1_gssmode.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_gssmode.html
+END
+tls_cert_summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_summary.html
+END
+rsyslog_recording_pri.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_recording_pri.html
+END
+rsconf1_umask.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_umask.html
+END
+rsyslog_conf_templates.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_conf_templates.html
+END
+rsyslog_mysql.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_mysql.html
+END
+rsyslog_conf_actions.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_conf_actions.html
+END
+rsconf1_gsslistenservicename.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_gsslistenservicename.html
+END
+rsyslog_secure_tls.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_secure_tls.html
+END
+rsyslog-vers.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog-vers.png
+END
+history.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/history.html
+END
+rsconf1_dircreatemode.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_dircreatemode.html
+END
+impstats.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/impstats.html
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/Makefile.am
+END
+rsyslog_conf.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_conf.html
+END
+rsconf1_repeatedmsgreduction.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_repeatedmsgreduction.html
+END
+rsconf1_debugprintcfsyslinehandlerlist.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_debugprintcfsyslinehandlerlist.html
+END
+omsnmp.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/omsnmp.html
+END
+rsyslog_stunnel.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_stunnel.html
+END
+rsconf1_rulesetcreatemainqueue.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_rulesetcreatemainqueue.html
+END
+imtcp.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/imtcp.html
+END
+tls_cert_client.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_client.html
+END
+ommail.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/ommail.html
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/Makefile.in
+END
+tls_cert_ca.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_ca.html
+END
+v3compatibility.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/v3compatibility.html
+END
+rsyslog_confgraph_std.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_confgraph_std.png
+END
+queue_analogy_tv.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/queue_analogy_tv.png
+END
+rsconf1_resetconfigvariables.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_resetconfigvariables.html
+END
+rsconf1_escapecontrolcharactersonreceive.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_escapecontrolcharactersonreceive.html
+END
+rsyslog_conf_modules.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_conf_modules.html
+END
+rsconf1_debugprintmodulelist.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_debugprintmodulelist.html
+END
+property_replacer.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/property_replacer.html
+END
+netstream.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/netstream.html
+END
+rsconf1_escape8bitcharsonreceive.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_escape8bitcharsonreceive.html
+END
+tls_cert_server.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_server.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/Makefile
+END
+omruleset.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/omruleset.html
+END
+rsyslog_conf_nomatch.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_conf_nomatch.html
+END
+direct_queue_rsyslog.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/direct_queue_rsyslog.png
+END
+tls_cert_errmsgs.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_errmsgs.html
+END
+dev_queue.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/dev_queue.html
+END
+rsconf1_mainmsgqueuesize.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_mainmsgqueuesize.html
+END
+rsconf1_debugprinttemplatelist.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_debugprinttemplatelist.html
+END
+gssapi.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/gssapi.html
+END
+rsconf1_filegroup.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_filegroup.html
+END
+how2help.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/how2help.html
+END
+omudpspoof.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/omudpspoof.html
+END
+imptcp.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/imptcp.html
+END
+multi_ruleset.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/multi_ruleset.html
+END
+module_workflow.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/module_workflow.png
+END
+rsyslog_confgraph_complex.png
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_confgraph_complex.png
+END
+bugs.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/bugs.html
+END
+rsconf1_includeconfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_includeconfig.html
+END
+rainerscript.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rainerscript.html
+END
+generic_design.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/generic_design.html
+END
+droppriv.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/droppriv.html
+END
+gssapi.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/gssapi.png
+END
+rsyslog_pgsql.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_pgsql.html
+END
+rsconf1_dropmsgswithmaliciousdnsptrrecords.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_dropmsgswithmaliciousdnsptrrecords.html
+END
+modules.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/modules.html
+END
+ns_gtls.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/ns_gtls.html
+END
+rsconf1_modload.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_modload.html
+END
+direct_queue1.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/direct_queue1.png
+END
+queues_analogy.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/queues_analogy.html
+END
+direct_queue3.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/direct_queue3.png
+END
+rsyslog_reliable_forwarding.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_reliable_forwarding.html
+END
+tls_cert_udp_relay.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_udp_relay.html
+END
+v4compatibility.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/v4compatibility.html
+END
+rsconf1_dirgroup.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_dirgroup.html
+END
+rsyslog_conf_output.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_conf_output.html
+END
+im3195.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/im3195.html
+END
+troubleshoot.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/troubleshoot.html
+END
+rsyslog_php_syslog_ng.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_php_syslog_ng.html
+END
+rsconf1_generateconfiggraph.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_generateconfiggraph.html
+END
+contributors.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/contributors.html
+END
+omrelp.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/omrelp.html
+END
+tls_cert_ca.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_ca.jpg
+END
+expression.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/expression.html
+END
+rsyslog_high_database_rate.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_high_database_rate.html
+END
+queueWorkerLogic_small.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/queueWorkerLogic_small.jpg
+END
+syslog_protocol.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/syslog_protocol.html
+END
+imuxsock.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/imuxsock.html
+END
+rsconf1_actionexeconlywhenpreviousissuspended.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_actionexeconlywhenpreviousissuspended.html
+END
+imfile.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/imfile.html
+END
+build_from_repo.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/build_from_repo.html
+END
+omuxsock.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/omuxsock.html
+END
+direct_queue_directq.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/direct_queue_directq.png
+END
+rsconf1_failonchownfailure.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_failonchownfailure.html
+END
+tls_cert_100.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_100.jpg
+END
+imgssapi.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/imgssapi.html
+END
+features.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/features.html
+END
+omlibdbi.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/omlibdbi.html
+END
+rsyslog_tls.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_tls.html
+END
+debug.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/debug.html
+END
+rsconf1_actionresumeinterval.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_actionresumeinterval.html
+END
+rsyslog_packages.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsyslog_packages.html
+END
+log_rotation_fix_size.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/log_rotation_fix_size.html
+END
+ommysql.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/ommysql.html
+END
+omoracle.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/omoracle.html
+END
+direct_queue_rsyslog2.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/direct_queue_rsyslog2.png
+END
+mmsnmptrapd.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/mmsnmptrapd.html
+END
+tls_cert_scenario.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/tls_cert_scenario.html
+END
+rsconf1_filecreatemode.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/rsconf1_filecreatemode.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/index.html
+END
+pmlastmsg.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/pmlastmsg.html
+END
+queues.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/doc/queues.html
+END

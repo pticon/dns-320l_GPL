@@ -1,0 +1,832 @@
+Changes in quota-tools from 3.16 to 3.17
+* do not allow setting of user's grace time when softlimit is not exceeded (Jan Kara)
+* fix reference to rpc manpage (anonymous reporter)
+* add EXT4 (not only EXT4DEV) to the list of supported filesystems (Mingming Cao)
+* fix setting of more than 31-bit block and inode limits (Gui Xiaohua)
+* fixed bug in error reporting when quota reading fails (Jan Kara)
+* added support for quota formats with hidden quota files (Jan Kara)
+* remove IMMUTABLE flag from quota file in quotacheck (Jan Kara)
+* fix bug in warnquota which could result in bogus hostname and domainname (anonymous reporter)
+* implemented writing of messages that user got below hard/soft limits to quota_nld (Jan Kara)
+* use PKG_CHECK_MODULES to check for DBUS (Ladislav Michnovic)
+* Implement setting of charset for emails sent by warnquota (Michael Meskes)
+* Added quota_nld to the list of installed programs (Jan Kara)
+* some typos fixes (Matthew Boyle)
+* fixed possible segfault when unpriviledged user run edquota (Matthew Boyle)
+* fixed format strings to use "%llu" and "%lld" instead of "%Lu" and "%Ld" (Ladislav Michnovic)
+* removed ssl, resolv, lber from the list of LDAP libraries since we don't need them directly (Jan Kara)
+* added limits.h include to quota_nld (Jan Kara)
+* fixed repquota to work with limits over 4 TB (Jan Kara, Michael Meier)
+
+Changes in quota-tools from 3.15 to 3.16
+* added information message about journaled quota to quotacheck (Jan Kara, Alex Tomas)
+* added pointers to quota_nld and warnquota to some manpages (Jan Kara)
+* ported quota_nld to libnl-1.1 (Jan Kara)
+* let setquota batch mode accept comments and blank lines, add -c option (Jacky Bruno, Jan Kara)
+* print more verbose list of compile options when --version specified (Jan Kara)
+* quotaon(8) should work only on local filesystems (Ladislav Michnovic)
+* made possible to use quota rpc in mixed NFSv3 and NFSv4 environments (Jan Kara) 
+* fixed compilation with openLDAP library versions 2.1 and 2.2 (Jan Kara)
+* always define allow_severity and deny_severity for older versions of libwrap (Martin Jacobs)
+* cleaned up host_access() handling (Jan Kara)
+* configure script now correctly reports checking of libwrap (Jan Kara)
+* added MPFS to the list of supported filesystems (Dave Boone)
+* all binaries are now stripped during installation (Jan Kara)
+* updated Polish translations (Jakub Bogusz)
+* fixed typo in a quotaon message (Jakub Bogusz)
+* fixed warnquota to check URI only if LDAP enabled (Michael Meskes)
+
+Changes in quota-tools from 3.14 to 3.15
+* added a wrapper script around setquota which also updates LDAP (Stefan Adams)
+* implemented quota netlink daemon to listen to kernel netlink messages and send them
+  to DBUS and / or write them to the console (Jan Kara)
+* modified configure scripts and warnquota to check for new LDAP library and allow use of URI (Jan Kara)
+* fix LDAP scripts to set VISUAL instead of EDITOR (Michael Meskes)
+* added ext4 filesystem to the list of supported filesystems (Jan Kara)
+* pot.o is now compiled with CFLAGS (Ladislav Michnovic)
+* use -fPIE for compilation when available (Jan Kara, Ladislav Michnovic)
+* fixed some more problems XFS quotaon (Kouta Ooizumi, Jan Kara)
+* fixed two mistakes in quotaon(8) manpage (Utako Kusaka)
+* added option -A to quota(1) to report all NFS mountpoints (Jan Kara)
+* fixed XFS handling to work with loopback mounted devices (Jan Kara)
+* fixed mountpoints scanning to make XFS -x delete command work (Jan Kara)
+* fixes of signed vs unsigned int issues (Jan Kara)
+* fixed a format string bug in reporting of raw grace times in repquota (Jan Kara)
+* added repquota(8) and quota(1) option for better parsable output (Jan Kara)
+* fixed error handling in edquota(8) when creating tmp file (Jan Kara)
+
+Changes in quota-tools from 3.13 to 3.14
+* updated Polish translations (Jakub Bogusz)
+* print user/group names in error messages when cannot get quota information (Michal Marek, Jan Kara)
+* added option --always-resolve to force resolving even names with digits only (Jan Kara)
+* minor language corrections in manpages (Jan Kara)
+* implemented long options parsing for all quota tools (Jan Kara)
+* quota(1) has -f option to specify filesystem list (Jan Kara)
+* corrected some informal language in messages (Jan Kara)
+* we cannot even stat NFS mounts in local mode as server may be unreachable (Jan Kara)
+* fixed error messages in getprivs() (Jan Kara, Brian Morris)
+* made UID/GID prints unsigned (Matthew Kent)
+* fixed very verbose printing for quotacheck (Jan Kara)
+* fixed off-by-one bug in mount options parsing (Jan Kara)
+* implemented nicer message formatting for warnquota(8) (Jan Kara)
+* quota(1) has -w option to supress line wrapping for long device names (Jan Kara)
+* quota(1) prints grace time even if hard limit is reached (Jan Kara)
+* fixed journaled quota format detection in quotacheck (Jan Kara)
+
+Changes in quota-tools from 3.12 to 3.13
+* fixed mistakes in several error messages, improved error reporting functions
+  (Dmitry V. Levin)
+* volume label and UUID support for reiserfs (Jan Kara)
+* support for LABEL= and UUID= on a command line (Jan Kara)
+* parse NFSD export table to find pseudofilesystem root for NFSv4 (Jan Kara)
+* handle better when quota file should become empty (Niu YaWei)
+* minor manpage and help-text fixes (Jan Kara)
+* fixed quotacheck(8) to check each block only once (Jan Kara)
+* fixed quotacheck(8) messages about corrupted blocks (Jan Kara)
+* fixed quotacheck(8) to rename quota files after turning quotas off (Jan Kara)
+* added sanity check to quota reporting (Jan Kara)
+* fixed check for illegal references in quotacheck(8) (Jan Kara)
+* added NFSv4 to the list of supported fs types (Jan Kara)
+* updating of progress is now less frequent - should speedup quotacheck -v a bit (Jan Kara)
+* added printing of directories to quotacheck(8) (Jan Kara, Jan Engelhardt)
+* added dynamic mountpoint array allocation (Jan Kara)
+* made quotacheck(8) more friendly to journaled quota (Jan Kara)
+* changed configure to detect whether nls is needed (Tomasz Kloczko, Jan Kara)
+* added JFS into a set of supported filesystems (David Kleikamp)
+* added French translation (Jerome Schell)
+* fixed quota tools to set of grace time only after exceeding soft limit, not
+  at reaching (Jan Kara)
+* fixed exit codes of setquota(8) and edquota(8) (Jan Kara)
+* updated Polish translations (Jakub Bogusz)
+* fixed "bashism" is Makefile (Michael Meskes)
+
+Changes in quota-tools from 3.11 to 3.12
+* fixed bug in quotaon(8) reporting (Paul Szabo)
+* added manpages for xqmstats & quotastats (Max Vozeler)
+* fixed a few memleaks (Jan Kara)
+* fixed bug when root had no usage and limits (Jan Kara)
+* added a few perl wrappers for LDAP (Stefan Adams)
+* added note about availability of -r option to manpages (Jan Kara)
+* maximal number of groups is now got via sysconf (Nathan Scott)
+* added batch mode to the setquota(8) (Jan Kara)
+* added reference to setquota(8) to manpages of other tools (Jan Kara)
+* fixed bug in --port option of rquotad (Max Kalika)
+* updated quota documentation (Jan Kara)
+* disabling nls via configure (Jan Kara)
+* fixed warning when gettext not used (Peter Breitenlohner)
+* fixed typo in rquotad.8 (Peter Breitenlohner)
+* fixed compiler warning in quotacheck.c (Peter Breitenlohner)
+* added config option for putting some important binaries to /sbin regardless
+  $(prefix) (Jan Kara)
+* added config option to warnquota(8) for CCing admin only specified amount of
+  time before grace time runs out (Jan Kara)
+
+Changes in quota-tools from 3.10 to 3.11
+* quota-tools should again use old RPC protocol when needed (Jan Kara)
+* add FIOQSIZE for x84_64 architecture (Jan Kara)
+* quotacheck(8) does not count quota files to usage (Jan Kara)
+* tools now honor journalled quota mount options (Jan Kara)
+* manpage of repquota(8) stated falsely that repquota works over RPC (Jan Kara)
+* added -T flag to quot(8) to avoid truncation of names (Andre Nathan)
+* added -q flag to quot(8) to avoid sorting of names (Andre Nathan)
+* added #include <paths.h> in quotasys.c to avoid compile problems on some systems (Jan Kara)
+* changed detection of filesystem to be able to parse comma separated list (Jan Kara)
+* fixed bug in quotacheck(8) which counted wrongly files larger than 2GB (Posta Zoltan)
+* fixed compile problem with quotacheck and new kernels (Michael Meskes, Jan Kara)
+* fixed typo in quotacheck manpage (Noel Koethe)
+* warnquota(8) can get mail addresses via LDAP (James Bourne)
+* warnquota(8) can avoid sending e-mail when user is over quota on mail partition (James Bourne)
+* fixed bug in quotacheck(8) which counted directories twice sometimes (Jan Kara)
+* edquota(8) now allows parameters in VISUAL/EDITOR env. params (Jan Kara)
+* reverted changes in detection of kernel from 3.10 - interface obsoleted in 2.6 kernel (Jan Kara)
+
+Changes in quota-tools from 3.09 to 3.10
+* alternative port can be specified to rpc.rquotad by -p option (Jan Kara)
+* Fixed processing of device-backed loop mounts (Jari Ruusu)
+* Fixed fake error messages from rpc.rquotad (Jan Kara)
+* quota(1) now does not print info for NFS filesystems without quotas (Jan Kara)
+* XFS roothack option disabled by default (Nathan Scott)
+* added option to warnquota(8) to supress details of report (Marco van Wieringen)
+* fixed problems with multiple lines values in warnquota(8) (F. Depke)
+* changed detection of kernel interface so that it works even without /proc (Jan Kara, Johan Ekenberg)
+* updated Polish messages (Jakub Bogusz)
+* updated quotactl(2) manpage (Jan Kara)
+* fixed bug in -f option of edquota(8) (Jan Kara)
+* fixed formatting bug in warnquota(8) (Jan Kara)
+* added option -s (choice of more appropriate units) to warnquota(8) (Jan Kara)
+
+Changes in quota-tools from 3.08 to 3.09
+* minor update of quota(1) manpage (Jan Kara)
+* quotacheck(8) now remembers only hardlinked files and not all inodes with
+  n_link > 1 (Jan Kara, Jan Kasprzak)
+* quotacheck(8) doesn't store structures for all users in old quota format  (Jan Kasprzak)
+* fixed minor bug in documentation (Jan Kara, Lucas Brasilino)
+* repquota(8) handles multiple entries in /etc/passwd better (Jan Kara)
+* made tools not to touch mountpoints mounted without quota options (Jan Kara)
+* added option for ignoring autofs mountpoints to quota(1), quot(8), repquota(8) and rpc.rquotad(8) (Jan Kara, Paul Szabo)
+* updated xqmstats (Nathan Scott)
+
+Changes in quota-tools from 3.07 to 3.08
+* Fixed infinite loop in quotacheck under RH7.1 (?)
+* Made quota tools aware of /etc/services (H. J. Lu)
+* Updated edquota(8) and setquota(8) to allow setting of individual grace time (Jan Kara)
+* Fixed bug in convertquota(8) when quota was turned on during converting (Jan Kara)
+* Add support for XFS filesystems without root special casing (Christoph Hellwig)
+* XFS documentation updates (Nathan Scott)
+
+Changes in quota-tools from 3.06 to 3.07
+* Added creation of bin and sbin dir during make install; removed hardcoded 
+  /sbin directory for some utilities. (Jan Kara)
+* Add support for 32 bit uid's and gid's when using EXT2_DIRECT. (Michael Meskes)
+* updated manpage of rpc.rquotad (Jan Kara)
+* setquota is disabled by default in rpc.rquotad (Jan Kara)
+* setquota using RPC is disabled by default in configure (Jan Kara)
+* rised maximal number of mountpoint to 256 (Jan Kara)
+* small fix in configure (Nathan Scott)
+* small fix in quotacheck(8) docs (Jan Kara)
+* fixed quotacheck(8) to continue when old quota files were not found (Jan Kara)
+* quota(1) now doesn't report failure to connect to rpc.rquotad server when -Q specified (Jan Kara)
+* add quota(1) option -l (report only local filesystems) (Jan Kara)
+* warnquota(8) now also mails specified member of the group about violation of the group quotas
+  when -g option is specified (Jan Kara)
+* added options by which user can specify whether repquota(8) should translate names in
+  big chunks by scanning all users or individually. Added automagic detection using nsswitch.conf
+  which behaviour should lead to faster translating. (Jan Kara)
+
+Changes in quota-tools from 3.05 to 3.06
+* fixed caching of libwrap configure result (Jan Kara)
+* fixed copying of quotafile name from mtab (?)
+* warnquota.conf is now installed in config dir (Jan Kara)
+* updated format detection to reflect changes in kernel interface in 2.5.18 (Jan Kara)
+* fixed scanning of non-mountpoint directories (Jan Kara)
+* fixed detection of XFS format (Jan Kara)
+* fixed printing of 'over softlimit sign' in quota(1) (Jan Kara)
+
+Changes in quota-tools from 3.04 to 3.05
+* quota tools should honour 'noquota' mount option (Jan Kara)
+* fixes in manpages (Arkadiusz Miskiewicz)
+* fixed detection of libwrap in configure (Arkadiusz Miskiewicz)
+* added forgotten ROOTDIR to path to gettext catalogs (Arkadiusz Miskiewicz)
+* quotacheck uses newest format supported by kernel when creating new quota files (Jan Kara)
+* fixed bug in IO initialization when -F xfs was given (Jan Kara)
+* added support for quota 6.5.1 (Jan Kara)
+* quotaon(8) now can get format parameter (Jan Kara)
+* fixed bad return value of quota(1) (Jan Kara)
+* fixed bug in quota format format detection (Jan Kara)
+
+Changes in quota-tools from 3.03 to 3.04
+* added -D_FILE_OFFSET_BITS=64 to Makefile - fixes problems with large files with some libcs (Michael Meskes)
+* added -p (print state) to quotaon (Vladimir Linek, Jan Kara)
+* made quotaon(8) write better error messages (Jan Kara)
+* make install now creates man directories (Jan Kara)
+* added -q <quotatab> and -c <configfile> options to warnquota(8) (Jan Kara)
+* added some notes about quotatab to warnquota manpage (Jan Kara) 
+* fixed bug in options parsing of warnquota(8) (Michael Meskes)
+* ignore automount mountpoints (Philippe Troin)
+* fixed minor bug in printing grace times (Jan Kara)
+* fixed quotaon(8) behaviour when it sees newer kernel then it's able to handle (Jan Kara)
+* minor formatting change in quotactl(2) manpage (Nathan Scott)
+* init_io() is now more paranoid about quota turned on in kernel (Jan Kara)
+
+Changes in quota-tools from 3.02 to 3.03
+
+* added -f <filesystem> option (perform operation only for given filesystem) for edquota (Jan Kara)
+* quotacheck now skips quota file scanning when file not found (Jan Kara)
+* repquota shouldn't show grace times when softlimit is not exceeded (Jan Kara)
+* removed bogus error message in mountpoint scanning (Jan Kara)
+* fixed mountpoint scanning initialization (solved rpc.rquotad SEGFAULT) (Jan Kara)
+* rpc.rquotad now doesn't need mountpoint for quota operations (Jan Kara)
+* fixed compilation on sparc (Michael Meskes, Jan Kara)
+
+Changes in quota-tools from 3.01 to 3.02
+
+* added -n option (don't resolve names) to repquota (Jan Kara)
+* quota tools now correctly handle zero grace times in old format (Jan Kara)
+* edquota, setquota commit just grace times and flags - fixed possible races
+  when used on live filesystem (Jan Kara)
+* another fix to quotastats (Jan Kara)
+* added check to format detection for bad endianity (Jan Kara)
+* implemented conversion of files with bad endianity (Jan Kara)
+* fixes in warnquota, warnquota now allows line splitting by '\', text of mail
+  can be specified in config file (Jan Kara)
+
+Changes in quota-tools from 3.01-final to 3.01
+
+* quotastats should now work better on old kernels (Jan Kara)
+* quotacheck is more strict in checking it's arguments (Jan Kara)
+* edquota and setquota should be now save to run for working user
+  (number of used blocks and inodes could be wrong in previous versions)
+  (Jan Kara)
+
+Changes in quota-tools from 3.01-pre9 to 3.01-final
+
+* quotacheck is using ext2_ino_t if defined (Jani Jaakkola, Jan Kara)
+* rpc.rquotad now closes stdin, stdout unless run on foreground (Jani Jaakkola)
+* setquota can be disabled in rpc.rquotad by commandline option (Jani Jaakkola)
+* quota-tools should now work well also on RH 7.1 (Anders Blomdell, Jan Kara)
+* quotacheck makes backup files only when told by option (Preston Brown)
+* quotacheck now uses vfsv0 format when no quotafile is found (Jan Kara)
+* fixed mountpoint scanning bug when bad mountpoint was specified (Jan Kara)
+* fixed bug when device was specified instead of mountpoint (Preston Brown)
+* fixed bug when scanning mountpoint NFS mounted filesystem (Jan Kara)
+* repquota now resolves more names at once which makes it
+  a lot faster (Jan Kara)
+
+
+Changes in quota-tools from 3.01-pre8 to 3.01-pre9
+
+* Improved host access handling (Jan Kara)
+* Improved RPC error reporting (Jan Kara)
+* Fixed bug in quotaon when run of kernel with XFS (Jan Kara)
+* Implemented new mtab scanning with fallback to fstab when mtab not 
+  found (Jan Kara)
+* Improved speed of repquota for old quota format (Jan Kara)
+* New Makefile style (Jan Kara)
+* Fixed bug in configure in detecting of e2fslib (Jan Kara)
+* Implemented automatic choice of units in quota(1) and repquota(8) (Jan Kara)
+
+
+Changes in quota-tools from 3.01-pre7 to 3.01-pre8
+
+* Fixed typo in option in convertquota. (Jan Kara)
+* Grace times are updated when quota limits are set. (Jan Kara)
+* Fixed possible segfault in rpc.rquotad when no filesystems with quota
+  were found. (Jan Kara)
+
+
+Changes in quota-tools from 3.01-pre6 to 3.01-pre7
+
+* Fixed a bug in quotacheck (SEGFAULT on -aR) (Jan Kara)
+* Fixed bug in rquota (grace times) (Jan Kara)
+
+
+Changes in quota-tools from 3.01-pre5 to 3.01-pre6
+
+* Fixed bug in quotacheck for new quota format (it created corrupted quota
+  files). (Jan Kara)
+* Fixed bug in version reporting for quot. (Jan Kara)
+* repquota now has -t option - when specified it will be truncating names so
+  output will be nicer (Jan Kara)
+
+
+Changes in quota-tools from 3.01-pre2 to 3.01-pre5
+
+* Fixed endian bug in the ext2 mount by LABEL or by UUID handling code, and
+  added XFS support to this code also.  (Nathan Scott)
+
+* Fix bug in handling of multiple mount points sharing the same device.
+  (Jan Kara)
+
+* Fix warnquota output for devices with long names.  (Jan Kara)
+
+* Updated man pages.  (Jan Kara, Nathan Scott)
+
+* Added a port of the BSD quot(8) utility, with XFS support.  (Nathan Scott)
+
+* Added xqmstats(8) utility for reporting activity statistics for the XFS
+  Quota Manager - XQM.  (Nathan Scott)
+
+* Fix up numerous compiler warnings and all the minor problems that revealed -
+  package now compiled with -Wall by default.  (Jan Kara, Nathan Scott)
+
+* Rewrote the error output handler (now uses errstr function) which also
+  displays the correct programname of the program issueing the error.
+
+* Additional configure option BSD_BEHAVIOUR for more the old BSD behaviour
+  as wanted by some people.
+
+* EOF -> -1, sprintf -> snprintf fixes
+
+* Don't turn quotas on on NFS
+
+* Fixed quota format detection, related bugs in quotaon
+
+* IO code now allows readonly access, doesn't open quotafile when not needed
+
+* Fixed bug in old quotaformat initialization
+
+* quota(1) now exits with nonzero exitcode when over quota
+
+* Manpage cleanup
+
+
+Changes in quota-tools from 2.00 to 3.01-pre2
+
+* This is a complete rewrite of the quota package, most importantly adding
+  support for the new Linux quota format and also support for XFS quota.
+
+* The internal data structures and algorithms were redesigned and rewritten by
+  Jan Kara (jack@ucw.cz) so that different versions and different types of
+  quota can be used with these tools.
+
+* Support for XFS quota has been added by Nathan Scott (nathans@sgi.com).
+  
+* Add options like RPC, ALT_FORMAT, RPC_SETQUOTA, EXT2_DIRECT to configure.
+  (Jan Kara)
+
+* Fix atoi() -> strtol() and detect mistakes in numeric input.  (Jan Kara)
+
+* Add '-V' option to all tools to display the version.  (Jan Kara)
+
+* Reworked time conversion routines.  (Jan Kara)
+
+* setquota - added -t parameter and allow variable number of filesystems to
+  be specified.  (Jan Kara)
+
+
+Changes in quota-tools from 1.70 to 2.00
+
+* Added patches from Steven Walker <smw8923@cmsu2.cmsu.edu> for supporting
+  rpc_setquota call and tcp-wrappers check in rquotad.
+
+* Splited quota manipulation from setquota, edquota, quota etc. to quotaops.c
+  so things are coded only once. Also added support for remote quota editing
+  and setting using rquota extensions.
+
+* Fixed problems with parsing of /etc/fstab in hasquota.c (incorrectly
+  assumed that it was the only option followed by an '='). Patch by
+  Simon Huggins <huggie@earth.li>.
+
+* Extracted quota-io into quotaio.c so we only need to update repquota.c and
+  quotaio.c when we change the way quotas are stored in the quotafile for bigger
+  uids and gids.
+
+* Added prototype user copying to setquota ala edquota -p only this
+  time only for a specific filesystem.
+
+* Fixed quota tools for quotas bigger then 4 Gb.
+  Patch by Stephen C. Tweedie <sct@redhat.com>
+
+* Changed rpc.rquotad to scan all device entries in /dev to support also devfs
+  systems and systems with special hardware RAID controllers.
+
+* Added autoconf support to the quota-utils.
+  Patches by Andreas Gruenbacher <a.gruenbacher@bestbits.at>
+
+* Added extra filesystem types to mntent to reflect the current linux filesystems
+
+* Rewrote hasquota.c to check for the MNTOPT_QUOTA option.
+  (Request from Phil Stracchino <alaric@babcom.com>)
+
+* Removed searching of /dev dir from rquota_server. Only lookup mounted filesystems.
+  (Patch by Roman Kagan <Roman.Kagan@itep.ru>)
+
+* Added gettext NLS support all credits go to the guys named in the
+  README.gettext.
+
+* Added the redhat patches to the standard tree.
+	* blocksize patch
+	* fhs patch
+	* hjl patch
+	* label patch
+	* SPARC patch
+
+* Changed Q_SETQUOTA to Q_SETQLIM in quotaops.c for the putprivs function. This fixed
+  a problem where we restore bogos usage info by edquota etc. when a user resets its
+  quota usage while running for example edquota. We should only change the limits
+  because thats the only things we can change using these kind of tools.
+  (Bug report by Dr. Michael Meskes <michael@fam-meskes.de> from the Debian bug-archive)
+
+* Added numeric option to quota and setquota to allow to set quota for users/groups not
+  in the localy known through name-services.
+  (Modified the patches send by Oscar Martín <oscar@cdrtcampos.es>)
+
+Changes in quota-tools from 1.65 to 1.70
+
+* Fixed problems when turning off one type of quota taking offline the
+  other type too.
+
+* Fixed bugs as reported on bugtraq for negative ids and problems
+  with usernames with only digits.
+
+* Added setquota (to se quotas from the commandline) as send to me by
+  Martin Bene <mb@sime.com>
+
+Changes in quota-tools from 1.60 to 1.65
+
+* Created new diffs again for the newer kernel (2.1.[78]x).
+
+* Added sample program that copies quota-settings from one user
+  to an other.
+
+* Added /etc/quotatab support as developed by Jon Lewis
+ <jlewis@inorganic5.fdt.net>
+
+* Added some changes to /usr/src/linux/fs/nfsd/vfs.c to support quotas
+  for the kernel-nfsd too. (Most other filesystems are gone and the ones
+  remaining either don't need quotas or are not used by big groups of users.)
+
+Changes in quota-tools from 1.55 to 1.60
+
+* Added new option to kernel root_squash which means when that option is
+  set the kernel system treats root as any normal user and he cannot
+  write to any file anymore without obeing the quota limits.
+
+* Added support for root_squash to quotaon and quotaoff using the new
+  rsquash option in mntent. In the run also rewrote the hasquota function.
+
+* Added patches to Makefile.std which should make it more FSSTND compliant.
+
+* Added extra check to rpc.rquotad to check the special device type when
+  scanning the /dev dir for the right device.
+
+Changes in quota-tools from 1.52 to 1.55
+
+* Added all patches and enhancements I collected the last few months.
+  (As always some have undergone some rewriting and are only a special
+   option. But they are in)
+
+* Changed check on ruid in edquota to an access-check on the quota-files.
+  If you have write permissions on the quota-files as a group its probably
+  ok to allow you to change the quotas. If not the system operator should
+  take apropriate actions. Install edquota SUID-root if you want people
+  who are able to write to your quotafiles to change quotas. If you don't
+  install it SUID root it will only update the files which can give strange
+  problems with the kernel overwriting your updates.
+
+* Added the EPS-file of the sheets from Remy Card which he used at the
+  Berlin Linux seminar. And because they describe everything in detail
+  its a nice enhancement to the current HTML docs.
+
+Changes in quota-tools from 1.50 to 1.52
+
+* Hopefully fixed some problems with makefiles and the like.
+
+* Did some rewrite on the mountlist handling, removed limit on number of
+  superblocks by allocating them within the mountlist.
+  (This code is not available within the standard kernel. Until I find the
+   time and feel like it I will put all my new enhancements in my very own
+   (just a bit different) kernel sourcetree back into the mainstream kernels.)
+
+Changes in quota-tools from 1.34 to 1.50
+
+* Wrote some new docs, right into html use Mosaic, Netscape or lynx or
+  whatever HTML-browser to see whats in. Also did the manual-pages,
+  its just a quick hack hope this helps people using quota.
+
+* Added DIRECT EXT2 access to quotacheck which should make scanning ext2
+  disks quite some faster. On the other hand you now need the ext2fs
+  libs to compile the quotacheck program. (Enhancement by Edvard Tuinder)
+
+* Added dquot_operations to include/linux/fs.h
+
+* Changed include/linux/quota.h according to new standard.
+
+* Changed fs/dquot.c according to new standard.
+
+* Added support to quotaon-systemcall for initializing the superblock
+  with a pointer to the dquot operations.
+
+* Remove fs/fileio.c and include/linux/fileio.h including all references to it.
+
+* Added support to the different filesystems to call the new dquot_alloc and
+  dquot_free functions on block/inode allocation or freeing. (currently ext2)
+
+* People can add support to any filesystem if they want, for now I have been
+  lazy and only implemented it for ext2-fs. Which by the way is probably
+  the most difficult of all the filesystems. If one feels up to it you can
+  try adding it to your favorit filesystem. I will accept patches, and
+  include them with or without changes.
+
+* Added some patches for dynamic allocation of quotafilenames in hasquota.
+  (patches by Remy Card)
+
+* Rewrote quota_transfer again, as a never ending story...
+
+* A new run off cleanups have been taking place, removed the QF_OPENING and
+  QF_CLOSING flags because we don't need them anymore. The new code uses dquot
+  pointers. If we initialize the dquot pointer after we have setup everything
+  we don't have do be afraid that we get dqget calls while we don't want them.
+
+* Fixed some bugs with not dropping dquot pointers which lead to memory leaks
+  in the long run because dquots kept being hold because the kernel thought
+  it was still being used.
+
+* Added some stats to the code which can be viewed with quotastats. Not real
+  interesting at the user level but quite handy debugging the quota system.
+
+Changes in quota-tooles from 1.33 to 1.34
+
+* Changed hasquota.c to not insert a slash when the mnt->mnt_dir already ends
+  with a slash. So something like //quota.user shouldn't happen anymore.
+
+* Cleaned up fs/fileio.c, removed some unneeded dummy_inodes in unlink and
+  rmdir vfs functions. Now rely on incrementing i_count when deleting a 
+  dir or file and release it when I iput the inode. Should work because when
+  a executable is running when it gets deleted this also happens. Also
+  renamed and cleanup the rest of the funtions. vfs_rename function should
+  now also work for a hardlinked file.
+
+* Changed vfs_chown functions to reset SUID and SGID on a chown because the
+  new kernel wants that.
+
+* Changed locking on I/O to use semaphores instead off the mnt_flags
+  used before. The old stuff could lock quota easily probably because
+  the operation wasn't atomic. This should now be fixed.
+
+* Fixed check_bdq to only give back a available blocks when the current
+  number of blocks are below the hardlimit. There was a bugfix for this
+  one so I applied that.
+
+* Changed has_quota funtion to use a static buffer instead of mallocing
+  one everytime it needs one. Hope this helps with the reported memory
+  leak on the rquotad.
+
+* Fixed some little bugs in dquot.c with the setting of the QF_OPENING
+  flag and not resseting it on failure of opening the quotafile.
+
+* Added changes needed because the VFS-layer changed to use iattr structs
+  for the notify_change function.
+
+* Fixed quota_transfer to work again with the new iattr structs, hopefully
+  it works ok now. It was brought to my attension that it wasn't working
+  the way it should in the old version. So I first checked out the fix that
+  I received, but that didn't solve the problem either so I fixed it myself.
+
+* Combined the new writeaccess stuff with the stuff I already had. Also
+  cleaned up vfs layer some more because of the use of the new
+  vfs_getwriteaccess and vfs_putwriteaccess functions. This also involved
+  the quotaon function that should now return a propper errno on failure and
+  not the standard EIO that it was in earlier versions.
+
+Changes in quota-tools from 1.32 to 1.33
+
+* Ported the stuff back to the normal kernel to make a diff-file quite easy. 
+
+* Fixed some typos that could trigger a kernel panic because the locking gets
+  killed when a quota is exeeded.
+
+* Fixed the stuff to work with the the new-tty-drivers.
+
+* This patches aren't that well tested on the machines I use because I use a
+  complete different kernel over here. But thats why this is called BETA
+  software. The bigfiles in this package are copies of the files used in my
+  kernel so some thing are tested more then others.
+
+* Fixed quotacheck not to memset the whole quota when there are no blocks
+  allocated by this user.
+
+Changes in quota-tools from 1.31 to 1.32
+
+* Fixed diff-files, the are now made as unified diffs.
+
+* Checked the specifications for the rquota service, I was correct we only need
+  to respond to udp connections. 
+
+Changes in quota-tools from 1.3 to 1.31
+
+* Changed quotacheck program to stuff directories it encounters on a 
+  directory stack and check them later on. This way there is at any
+  time one directory opened for reading. In the old situation it could
+  happen that more then one directory were open at the same time and
+  with nasty directory structures this could give to much open directories
+  at ones, leading to an error by the O.S.
+
+* Added some hooks for debugging the memory usage by the program, and make
+  the stdout used for the -v flag non-buffered for more speed.
+
+* Added variabele to mountstruct for flags, now we can mask when we are 
+  opening or closeing a quotafile, when we are we may not give out
+  pointers with the dq_get function, otherwise we run into problems
+  later on.
+
+* Ok updated fs/*.c missed patch to fs/inode.c that solves a race condition.
+
+* Added vfs_rename function that takes care of renaming files on top of already
+  existing files.  We were missing those ones, thanks to David Black for
+  reporting this. If there are still problems I will hear so and try to fix them
+  as soon as I can.
+
+Changes in quota-tools from 1.2 to 1.3
+
+* We only reply to rpc_quota_request made to the udp port of the
+  rquotad, I just removed support for the TCP service, I don't
+  think it's needed to have the TCP service for just exchanging
+  about 40 bytes of data. Too much overhead setting up a TCP connection.
+
+* Changed vfs_write function within fileio.h to be a bit smarter. If
+  the fileposition + number of bytes to be written is less then the
+  current size of the file we should even bother checking it. And if
+  the number of wanted_blocks equals to 0 why even bother checking
+  the quota no changes are made anyway.
+
+* Rewrote the quota stuff to be much more flexible, we now use pointers
+  that are located within the inode for fast lookup. This is a bit more
+  to setup but is much faster when used over and over again. Its based 
+  on the setup used for inode caching and is mostly rewritten code with
+  some extensions that were needed for the dquot structs. And of course
+  a lot extra because dquot aren't exactly inodes.
+
+* Ok file is called dquot.c again because it specific to diskquotas. If
+  we ever get process quota, we have to move the system-call interface to
+  the kernel dir.
+
+* splitted fileio header into fileio.c and fileio.h. Fileio.c contains 
+  the code for all the functions, fileio.h contains the prototypes for
+  the functions when quota is enabled and defines to the the default 
+  inode operations if it is disabled.
+
+* Moved device management code to the file fs/super.c and made it a
+  bit more general. The stuff now can also be used for other purposes.
+  For now it contains the devicename, the directory the filesystem is
+  mounted on, a pointer to the superblock and the quota expire times 
+  and filepointers, this can be extended in the future and this can be 
+  used for other purposes then only quota. Its in super.c because it
+  is related to mounting a filesystem. The rootfilesystem is a special
+  case for which I don't have a nice solution right now.
+
+* Cleaned up the file file_table.c and renamed it to file.c, otherwise 
+  we should call inode.c inode_table.c etc. More is static now, the
+  file_table isn't accesable anymore from everywhere, and the functions
+  that need the info within file.c should be located within that file.
+  A good example is the function used by the vhangup code, it now calls
+  a routine within file.c and so we don't have export any data anymore.
+
+* changed decrement quota to reset the DQ_INODES and DQ_BLKS flag on
+  a decrement of a quota. It seems that we should bark again when one
+  goes over his quota after he removed something, ok should work this
+  way.
+
+* changed set_dqblk to set the grace period when a new usage is set
+  and one exceeds his softlimit by that operation. Better then just
+  setting the graceperiod when he allocates any more inodes or blocks.
+  Only can give surprises when logging in but who cares they can ask
+  the sysadmin to give them a hand with cleaning there dirs. 
+
+* quotaoff is very simple now just reset all the pointers that point
+  to a dquot and trash the cache for all dquots that are related to
+  the device being turned of. This way the next time you put it on the
+  stuff get read again from disk and not from the cache.
+
+* changed most of the file structs to be a filepointer and request it
+  with get_empty_filp. This way we allocate it from the file_table which
+  is more the way it should be, Ok I know the dummy_inodes isn't that
+  nice either, but for that we don't have an other choice. Also it makes
+  live much easier this way. See the core dump stuff.
+
+* used some more constants for setting up the file pointers, this should
+  make it easier to read. So ok Edvard ?
+
+* rewrote most functions such as quota_alloc, quota_remove and quota_transfer
+  to use a for loop which counts from 0 to the number of quotas -1. This way
+  it should be easy to extend the quota stuff to maintain even more types of
+  quota. (At the moment I can think of one more, what about quotas for a
+  processgroups) :-)
+
+* rewrote quota_transfer, its still the most complicated function of the
+  three manipulate functions, but it looks much cleaner then the one we
+  had.
+
+* changed the system-call interface again this should be the last time, 
+  hope to have it made more intelligent now, most of the calls are quite
+  the same, so just set flags and call one functions. Saves some functions.
+
+* And more cleanups to the vfs-layer. Did a kind of indent on all the sources
+  in the fs-dir by hand. All references to file pointers are now done by a
+  variable that is called filp. This is done to be a bit more consistent all
+  through the code. Before is was called file, filp, f etc.
+
+* As of the indent I changed all tabs to be 3 spaces this makes it a bit
+  larger but much better to read.
+
+* Someone reported that there are problems with fstab when you use something
+  like usrquota=/usr/adm/quota.user,grpquota=/usr/adm/quota.grp. I don't know
+  if the problems is also in the new libs, if so I have a replacement here for
+  the entire mntent stuff. I wrote this way back and it work ok so if you
+  have problems mail me and I will send you the sources. For now I didn't
+  include it yet in the standard mainline distribution.
+
+* Ok added hooks to the fork code forgot that, ok this has cost me some
+  searching. We must doe an vfs_open_filp when a process forks and the
+  filepointers are copied or incremented.
+
+Changes in quota-tools from 1.1 to 1.2
+
+* Changed repquota.c to display at max 8 chars of username.
+
+* Changed rquota_svc.c and rquota_server.c to handle both version 1 
+  and 2 requests. Now we should be able to communicate with sun systems.
+  SUN systems send out version 1 request which we can handle now.
+
+* Changed quota.c to first send out a version 2 rquota request and if
+  that fails to try it with a version 1 request. Now we should be able to
+  query a rquotad on a sun-server exporting a NFS disk.
+
+* Changed kernel diffs, now use a header file fileio.h with vfs functions
+  for writing, truncating, creating files/nodes. This cleaned up the
+  kernel diffs quite a bit. (Should have done this way back, but it is
+  done now)
+
+* Fixed some small bugs with handling graceperiods again. Changed the code
+  in the systemcall interface all bugs should be gone now there.
+
+* Wrote a new program warnquota. No manpage yet but it has no flags so
+  that's simple. You can run this from your crontab just like you run
+  quotacheck every night from cron. This program mails a message to all
+  users that violated the quota system.
+
+* Changed fileio.h with unlinking and rmdir to make a copy of the inode.
+  Hope this fixes some problems we have seen with xiafs. It isn't to bad
+  either should have been this way from the beginning. A pointer to a
+  inode that is removed is a bit to tricky a copy in local memory is much
+  saver.
+
+* Changed fs/quota.c to not check if the quotafile is on the same device
+  as the device for which it contains info. Found that in a document but
+  it's silly and so it's removed now. Who cares where you put it as long
+  the kernel can find it and it is the right format.
+  (Now something like usrquota="/var/adm/quota_src.user" should work :-))
+
+* Changed edquota behaviour with -p flag. It now copies the current
+  usage to the new situation.
+
+Changes in quota-tools from 1.0 to 1.1
+
+* Moved check to test on quota on a certain filesystem to seperate file
+  hasquota.c
+
+* Changed hasquota.c to use quotafile given in fstab file instead
+  of the default name of a quotafile. We now can define ourself where
+  to put our quotafile. Something like "usrquota=/usr/adm/quotasrc.user"
+
+* Changed graceperiod counting was doing it the wrong way around. Now we
+  add the expiretime to the current time and that is the grace-period a user
+  has before we see a softlimit as a hardlimit.
+
+* Changed allocation when not enough blocks can be allocated from ones quota.
+  Now you get as many blocks as you can affort yourself and not as in the 
+  earlier version, nothing. This was a bit of a bitch to tackle but it seems
+  to work ok now for regular files and core-files.
+
+* Changed the quota.h file to include a prototype for a new function
+  blocks_to_isize that calculates the maximum isize for a file when allocating
+  less blocks than requested. Also included macro's for min() and max().
+
+* Added rquotad program for own convinience, this was build from scratch with
+  only the rquota.x file. It seems to work quite nice between LINUX machines
+  don't have the resources to test it with other then LINUX machines.
+  We probably need a new version number for this type of rquota.
+  Something like rquota version 2 or something like that.
+
+* Changed quota program to use a rpc-call to the rquotad on one of you
+  disk server machines. See #ifdef RPC in quota.c. Use small timeout because
+  I don't wanna wait to long when a machine is down. Increase it when you have
+  problems with slow hosts.
+
+* Rewrite of quotacheck program. This one is much faster, about 60%. Thanks
+  to Edvard for this big improvement.
+
+* Changed namei.c to iput the inode of a dir when doing a remove of a dir.
+  I never had problems with it but it seems that ext2 doesn't care to much when
+  you unlink a dir while you have the inode still open. Fixed it and it works
+  now ok also on xiafs which had problems with it, and of course the fragment
+  should have give this error because you have to iput the dir before you remove
+  it.
+
+* Changed source of quotacheck to create new quotafile with at least the
+  gracetimes. Now there should never be a problem when turning on quota with
+  the quotactl systemcall after one has run quotacheck to create the correct
+  quotafiles.
+  
+* Changed code of quota.c to read MOUNTED(mtab) instead of FSTAB(fstab) when
+  showing quotainfo.

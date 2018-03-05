@@ -1,0 +1,35 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.41.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 dd5b62ac51d1948516ae06b27d18bc3a1d1e4991 Changes
+SHA1 ccb27996fbeea9abeab3f86e0cfa53d4a689c563 Hebrew.pm
+SHA1 870900166e2f7b9f56019acdbbc56b24467fc823 Hebrew.xs
+SHA1 3d0b3739eb4a845a2474e163dc6392eeb32808bb MANIFEST
+SHA1 7d843fdd38bc53590033b1e295f2b896805fa2a0 MANIFEST.SKIP
+SHA1 007ffb1ef6da88988cde348f02b01f84be465101 META.yml
+SHA1 799ac61d4c3d1b58504a18259912926bf7c8a16a Makefile.PL
+SHA1 4b86614dd4eac92ff2f259c9c32badd9645e44fe README
+SHA1 cc6ded44327f42601c2616e418a6037a35c877ce bidi.c
+SHA1 ffe4c2e8d7be7f8c8bd964865d61f411454f344e t/0-signature.t
+SHA1 58f1588eba68af8d1fe37623808615c79efe1b04 t/1-basic.t
+SHA1 cad4e3de1e561a681ab7cb7a7f7145fad22f50d6 t/2-utf8.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.3 (FreeBSD)
+
+iD8DBQFBS+LptLPdNzw1AaARAhevAJ4+1GklAKPk69AOBzUUo19FOW1YegCeLoTt
+GpuyUrIolYdeLwHJ9u4wq6U=
+=JEy5
+-----END PGP SIGNATURE-----

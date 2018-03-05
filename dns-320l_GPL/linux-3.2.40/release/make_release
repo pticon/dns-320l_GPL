@@ -1,0 +1,46 @@
+#
+# Build Armada XP release script
+# Usage ./build_release <axp-1.x.x> <Kernel ver> <output_dir> <defconfig1> <defconfig2> <defconfig3> <defconfig4> <defconfig5>
+#
+
+echo "Building $1 Releases"
+cd $1
+REL=$1
+FLDR=$3
+rm -fr ./${FLDR}
+mkdir ./${FLDR}
+cd linux-${2}-${1}
+#
+# Build all kernel binaries
+#
+for i in $4 $5 $6 $7 $8 $9 ${10} ${11} ${12} ${13} ${14} ${15} ${16} ${17} ${18}
+do
+	DEFCONFIG=armada_${i}_defconfig
+	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+	echo "making $i image  - $DEFCONFIG"
+	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+	make mrproper
+	make $DEFCONFIG
+	mkdir ../${FLDR}/$i
+	make uImage modules -j5 -s
+	cp ./arch/arm/boot/uImage ../${FLDR}/$i/uImage-${REL}-${i}
+	cp ./System.map ../${FLDR}/$i/
+	cp .config ../${FLDR}/$i/
+	make modules_install INSTALL_MOD_PATH=../${FLDR}/$i/
+	cd cesa/openswan/openswan-2.6.37/
+	make KERNELSRC=../../../ module ARCH=arm
+	mkdir -p ../../../../${FLDR}/$i/lib/modules/${2}/kernel/ipsec
+	cp modobj26/ipsec.ko ../../../../${FLDR}/$i/lib/modules/${2}/kernel/ipsec
+	cd ../../../
+	rm -fr ../${FLDR}/$i/lib/modules/${2}/source
+	rm -fr ../${FLDR}/$i/lib/modules/${2}/build
+
+done
+cd ../
+
+
+#
+# Compress binaries
+#
+zip -r -q ${FLDR}.zip ./${FLDR}/
+cd ..

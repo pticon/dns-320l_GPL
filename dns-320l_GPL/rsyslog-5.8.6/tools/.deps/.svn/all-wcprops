@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps
+END
+rsyslogd-iminternal.Po
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-iminternal.Po
+END
+rsyslogd-omshell.Po
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-omshell.Po
+END
+rsyslogd-omdiscard.Po
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-omdiscard.Po
+END
+rsyslogd-omfile.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-omfile.Po
+END
+rsyslogd-pidfile.Po
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-pidfile.Po
+END
+rsyslogd-omusrmsg.Po
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-omusrmsg.Po
+END
+rsyslogd-omfwd.Po
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-omfwd.Po
+END
+msggen.Po
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/msggen.Po
+END
+rsyslogd-smfile.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-smfile.Po
+END
+rsyslogd-smfwd.Po
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-smfwd.Po
+END
+zpipe.Po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/zpipe.Po
+END
+rsyslogd-syslogd.Po
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-syslogd.Po
+END
+rsyslogd-pmrfc3164.Po
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-pmrfc3164.Po
+END
+rsyslogd-pmrfc5424.Po
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-pmrfc5424.Po
+END
+gethostn.Po
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/gethostn.Po
+END
+rsyslogd-ompipe.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-ompipe.Po
+END
+rsyslogd-smtradfile.Po
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-smtradfile.Po
+END
+rsyslogd-smtradfwd.Po
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tools/.deps/rsyslogd-smtradfwd.Po
+END

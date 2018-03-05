@@ -1,0 +1,55 @@
+#! /usr/bin/make -f
+
+include /usr/share/quilt/quilt.make
+
+DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
+
+# Temporary root
+DEBTMP := $(CURDIR)/debian/tmp
+
+build: patch build-stamp
+build-stamp:
+	dh_testdir
+	CFLAGS="-g -O2 -Wall" ./configure \
+		--mandir='$${prefix}/share/man' \
+		--enable-secure-statd \
+		--with-tcp-wrappers
+	$(MAKE)
+	touch build-stamp
+
+clean: unpatch
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	rm -rf $(DEBTMP)
+	[ ! -f Makefile ] || $(MAKE) distclean
+	dh_clean
+
+binary-indep: build
+binary-arch: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+	mkdir $(DEBTMP)
+	$(MAKE) DESTDIR='$(DEBTMP)' install
+	dh_install
+	dh_installdocs -A
+	dh_installdocs -pnfs-common debian/README.Debian.nfsv4
+	install -m 0755 debian/nfs-common.init debian/nfs-common/etc/init.d/nfs-common
+	install -m 0755 debian/nfs-kernel-server.init debian/nfs-kernel-server/etc/init.d/nfs-kernel-server
+	dh_installman
+	dh_link
+	dh_installchangelogs ChangeLog
+	dh_strip
+	dh_compress
+	dh_fixperms
+	chmod u+s debian/nfs-common/sbin/mount.nfs
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary

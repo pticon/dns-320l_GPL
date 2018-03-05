@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imsolaris
+END
+sun_cddl.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imsolaris/sun_cddl.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imsolaris/Makefile.in
+END
+imsolaris.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imsolaris/imsolaris.c
+END
+imsolaris.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imsolaris/imsolaris.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imsolaris/Makefile.am
+END
+sun_cddl.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imsolaris/sun_cddl.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imsolaris/Makefile
+END

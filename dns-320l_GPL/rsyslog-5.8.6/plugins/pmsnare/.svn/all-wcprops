@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/pmsnare
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/pmsnare/Makefile.in
+END
+pmsnare.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/pmsnare/pmsnare.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/pmsnare/Makefile.am
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/pmsnare/Makefile
+END

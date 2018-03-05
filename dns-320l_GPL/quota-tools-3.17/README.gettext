@@ -1,0 +1,21 @@
+If you want to generate new po file: "make pot" and look for a file named 
+pot.po. To generate mo files from po files: "make mo", it's also done when 
+you "make install", if you want to install only mo files ( no programs ) 
+"make inst_mo", mo files will be copied to:
+/usr/share/locale/'languages names'/LC_MESSAGES/quota.mo.
+
+warnquota
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+this program was modifiated to be more configurable - you can now specify
+new warning message ( also sender, cc, etc. ) without recompiling the
+program. all you need is to edit pot.po ( make pot ), you will find
+in it mail message, and etc. - create new strings, make mo with msgfmt, and copy
+mo file to /usr/share/locale/'lang'/LC_MESSAGES/quota.mo. now you have new
+warning mail message.
+
+gettext support was added by Paul Niewiadomski <lilo@free.poltronic.net>, any
+questions, suggestions are welcome.
+
+thanks to
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Roman_Kaminski@saba.com.pl

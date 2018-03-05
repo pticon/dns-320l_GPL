@@ -1,0 +1,26 @@
+--- #YAML:1.0
+name:               Test-Deep
+version:            0.108
+abstract:           ~
+author:
+    - Fergal Daly <fergal@esatclear.ie>
+license:            unknown
+distribution_type:  module
+configure_requires:
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
+requires:
+    List::Util:        1.09
+    Scalar::Util:      1.09
+    Test::More:        0
+    Test::NoWarnings:  0.02
+    Test::Tester:      0.04
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.56
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4

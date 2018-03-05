@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2009-12-16T05:56:27.570713Z"
+   url="https://toolbox-of-eric.googlecode.com/svn/libiberty/libiberty/autom4te.cache"
+   last-author="joefoxreal"
+   kind="dir"
+   uuid="d4dabd8c-ea04-11de-9d05-050bbbc75a16"
+   revision="1"/>
+<entry
+   committed-rev="8"
+   name="traces.0"
+   text-time="2009-12-18T06:00:55.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="06dc744d8f44bd98ee07d9c3ab27833f"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:30.000000Z"
+   revision="8"/>
+<entry
+   committed-rev="1"
+   name="output.1"
+   text-time="2009-12-16T06:17:35.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="e225d92afc18703d9a6615ffe73ec80a"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:32.000000Z"/>
+<entry
+   committed-rev="1"
+   name="traces.1"
+   text-time="2009-12-16T06:17:35.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="e5770253fa3491936150474975046d02"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:32.000000Z"/>
+<entry
+   committed-rev="8"
+   name="requests"
+   text-time="2009-12-18T06:00:57.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="6c22e27d89be9ead4f4740ff9e8cfc76"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:32.000000Z"
+   revision="8"/>
+<entry
+   committed-rev="8"
+   name="output.0"
+   text-time="2009-12-18T06:00:55.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="faad5e233b56ad5e4ca078570f3e4ef2"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:35.000000Z"
+   revision="8"/>
+</wc-entries>

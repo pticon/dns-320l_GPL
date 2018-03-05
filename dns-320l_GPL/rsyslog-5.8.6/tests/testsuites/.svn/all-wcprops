@@ -1,0 +1,989 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites
+END
+reallife.parse3
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/reallife.parse3
+END
+sndrcv_udp_nonstdpt_rcvr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_udp_nonstdpt_rcvr.conf
+END
+rfc5424-1.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rfc5424-1.parse1
+END
+libdbi-asyn.conf
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/libdbi-asyn.conf
+END
+Mar.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Mar.ts3164
+END
+valid.conf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/valid.conf
+END
+execonlywhenprevsuspended2.conf
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/execonlywhenprevsuspended2.conf
+END
+libdbi-basic.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/libdbi-basic.conf
+END
+imuxsock_logger_root.conf
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imuxsock_logger_root.conf
+END
+Oct.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Oct.ts3164
+END
+Sep.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Sep.ts3164
+END
+date5.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/date5.parse1
+END
+ts3339.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/ts3339.conf
+END
+dynfile_cachemiss.conf
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/dynfile_cachemiss.conf
+END
+mon1digit.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/mon1digit.ts3164
+END
+imtcp_addtlframedelim.conf
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imtcp_addtlframedelim.conf
+END
+manytcp.conf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/manytcp.conf
+END
+Feb.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Feb.ts3164
+END
+master.rfctag
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/master.rfctag
+END
+master.ts3339
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/master.ts3339
+END
+diskqueue-fsync.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/diskqueue-fsync.conf
+END
+master.tsmysql
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/master.tsmysql
+END
+failover-async.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/failover-async.conf
+END
+asynwr_tinybuf.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/asynwr_tinybuf.conf
+END
+failover-basic.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/failover-basic.conf
+END
+Jan.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Jan.ts3164
+END
+asynwr_timeout.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/asynwr_timeout.conf
+END
+manyptcp.conf
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/manyptcp.conf
+END
+parse3.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/parse3.conf
+END
+malformed1.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/malformed1.parse1
+END
+tabescape_dflt.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/tabescape_dflt.conf
+END
+samples.parse-nodate
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/samples.parse-nodate
+END
+snare_ccoff_udp2.conf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/snare_ccoff_udp2.conf
+END
+rulesetmultiqueue.conf
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rulesetmultiqueue.conf
+END
+May.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/May.ts3164
+END
+imptcp_large.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imptcp_large.conf
+END
+sndrcv_omudpspoof_rcvr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_omudpspoof_rcvr.conf
+END
+linkedlistqueue.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/linkedlistqueue.conf
+END
+date4.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/date4.parse1
+END
+Jun.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Jun.ts3164
+END
+da-mainmsg-q.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/da-mainmsg-q.conf
+END
+pipe_noreader.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/pipe_noreader.conf
+END
+failover-rptd.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/failover-rptd.conf
+END
+execonlyonce.data
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/execonlyonce.data
+END
+parse_8bit_escape.conf
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/parse_8bit_escape.conf
+END
+weird.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/weird.parse1
+END
+parse-nodate.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/parse-nodate.conf
+END
+imfile-basic.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imfile-basic.conf
+END
+sndrcv_failover_sender.conf
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_failover_sender.conf
+END
+discard-rptdmsg.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/discard-rptdmsg.conf
+END
+imptcp_addtlframedelim.conf
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imptcp_addtlframedelim.conf
+END
+inputname_imtcp.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/inputname_imtcp.conf
+END
+mark.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/mark.parse1
+END
+sndrcv_udp_nonstdpt_sender.conf
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_udp_nonstdpt_sender.conf
+END
+threadingmq.conf
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/threadingmq.conf
+END
+execonlywhenprevsuspended4.conf
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/execonlywhenprevsuspended4.conf
+END
+date3.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/date3.parse1
+END
+tcp-msgreduc-vg.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/tcp-msgreduc-vg.conf
+END
+4.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/4.parse1
+END
+discard.conf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/discard.conf
+END
+tsmysql.conf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/tsmysql.conf
+END
+dircreate_off.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/dircreate_off.conf
+END
+rfc3164.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rfc3164.parse1
+END
+mysql-truncate.sql
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/mysql-truncate.sql
+END
+wr_large.conf
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/wr_large.conf
+END
+field1.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/field1.conf
+END
+ts3164.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/ts3164.conf
+END
+date2.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/date2.parse1
+END
+3.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/3.parse1
+END
+Jul.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Jul.ts3164
+END
+asynwr_small.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/asynwr_small.conf
+END
+dircreate_dflt.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/dircreate_dflt.conf
+END
+failover-double.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/failover-double.conf
+END
+random.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/random.conf
+END
+execonlywhenprevsuspended.conf
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/execonlywhenprevsuspended.conf
+END
+tabescape_off.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/tabescape_off.conf
+END
+sndrcv_failover_rcvr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_failover_rcvr.conf
+END
+threadingmqaq.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/threadingmqaq.conf
+END
+uxsock_simple.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/uxsock_simple.conf
+END
+master.subsecond
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/master.subsecond
+END
+asynwr_deadlock2.conf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/asynwr_deadlock2.conf
+END
+parse2.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/parse2.conf
+END
+asynwr_simple.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/asynwr_simple.conf
+END
+diskqueue.conf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/diskqueue.conf
+END
+omruleset-queue.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/omruleset-queue.conf
+END
+Apr.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Apr.ts3164
+END
+date1.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/date1.parse1
+END
+2.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/2.parse1
+END
+mon2digit.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/mon2digit.ts3164
+END
+mysql-asyn.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/mysql-asyn.conf
+END
+master.nolimittag
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/master.nolimittag
+END
+imtcp_conndrop.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imtcp_conndrop.conf
+END
+omruleset.conf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/omruleset.conf
+END
+1.field1
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/1.field1
+END
+badqi.conf
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/badqi.conf
+END
+snare_ccoff_udp.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/snare_ccoff_udp.conf
+END
+samples.snare_ccoff_udp2
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/samples.snare_ccoff_udp2
+END
+dynfile_invalid2.conf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/dynfile_invalid2.conf
+END
+mysql-basic.conf
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/mysql-basic.conf
+END
+pipeaction.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/pipeaction.conf
+END
+execonlyonce.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/execonlyonce.conf
+END
+sndrcv_rcvr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_rcvr.conf
+END
+gzipwr_large.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/gzipwr_large.conf
+END
+1.tabescape_off
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/1.tabescape_off
+END
+tspgsql.conf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/tspgsql.conf
+END
+sndrcv_sender.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_sender.conf
+END
+rfc5424-4.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rfc5424-4.parse1
+END
+parse_invld_regex.conf
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/parse_invld_regex.conf
+END
+rsf_getenv.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rsf_getenv.conf
+END
+1.inputname_imtcp_12514
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/1.inputname_imtcp_12514
+END
+execonlywhenprevsuspended3.conf
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/execonlywhenprevsuspended3.conf
+END
+sndrcv_udp_rcvr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_udp_rcvr.conf
+END
+1.inputname_imtcp_12515
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/1.inputname_imtcp_12515
+END
+1.inputname_imtcp_12516
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/1.inputname_imtcp_12516
+END
+1.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/1.parse1
+END
+sndrcv_udp_sender.conf
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_udp_sender.conf
+END
+rcvr_fail_restore_sender.conf
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rcvr_fail_restore_sender.conf
+END
+Dec.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Dec.ts3164
+END
+samples.parse_invld_regex
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/samples.parse_invld_regex
+END
+mysql-select-msg.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/mysql-select-msg.sql
+END
+Nov.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Nov.ts3164
+END
+arrayqueue.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/arrayqueue.conf
+END
+sndrcv_gzip_rcvr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_gzip_rcvr.conf
+END
+invalid.conf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/invalid.conf
+END
+failover-no-rptd.conf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/failover-no-rptd.conf
+END
+asynwr_deadlock4.conf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/asynwr_deadlock4.conf
+END
+imptcp_conndrop.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imptcp_conndrop.conf
+END
+rfc5424-3.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rfc5424-3.parse1
+END
+master.tspgsql
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/master.tspgsql
+END
+empty.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/empty.parse1
+END
+rfctag.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rfctag.conf
+END
+omod-if-array.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/omod-if-array.conf
+END
+asynwr_deadlock.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/asynwr_deadlock.conf
+END
+queue-persist.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/queue-persist.conf
+END
+1.tabescape_dflt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/1.tabescape_dflt
+END
+8bit.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/8bit.parse1
+END
+diag-common2.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/diag-common2.conf
+END
+parse-3164-buggyday.conf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/parse-3164-buggyday.conf
+END
+snare.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/snare.parse1
+END
+1.omod-if-array
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/1.omod-if-array
+END
+imuxsock_traillf_root.conf
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imuxsock_traillf_root.conf
+END
+subsecond.conf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/subsecond.conf
+END
+parse1.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/parse1.conf
+END
+Aug.ts3164
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/Aug.ts3164
+END
+samples.parse-3164-buggyday
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/samples.parse-3164-buggyday
+END
+rfc5424-2.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rfc5424-2.parse1
+END
+samples.snare_ccoff_udp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/samples.snare_ccoff_udp
+END
+sndrcv_omudpspoof_nonstdpt_rcvr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_omudpspoof_nonstdpt_rcvr.conf
+END
+failover-no-basic.conf
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/failover-no-basic.conf
+END
+8bit.parse_8bit_escape
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/8bit.parse_8bit_escape
+END
+sndrcv_omudpspoof_nonstdpt_sender.conf
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_omudpspoof_nonstdpt_sender.conf
+END
+rcvr_fail_restore_rcvr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/rcvr_fail_restore_rcvr.conf
+END
+oversizeTag-1.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/oversizeTag-1.parse1
+END
+gzipwr_large_dynfile.conf
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/gzipwr_large_dynfile.conf
+END
+nolimittag.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/nolimittag.conf
+END
+imtcp-multiport.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imtcp-multiport.conf
+END
+sndrcv_omudpspoof_sender.conf
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_omudpspoof_sender.conf
+END
+complex1.conf
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/complex1.conf
+END
+sndrcv_gzip_sender.conf
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/sndrcv_gzip_sender.conf
+END
+reallife.parse1
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/reallife.parse1
+END
+imuxsock_ccmiddle_root.conf
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/imuxsock_ccmiddle_root.conf
+END
+reallife.parse2
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/reallife.parse2
+END
+diag-common.conf
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/diag-common.conf
+END
+discard-allmark.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/testsuites/discard-allmark.conf
+END

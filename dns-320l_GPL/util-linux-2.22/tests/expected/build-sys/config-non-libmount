@@ -1,0 +1,84 @@
+blkid:  libblkid libuuid 
+cfdisk:  libblkid libncursesw libtinfo libuuid 
+fdisk:  ld-linux-x86-64 libblkid libuuid 
+findfs:  libblkid libuuid 
+libblkid.so.1.1.0:  ld-linux-x86-64 libuuid 
+libuuid.so.1.3.0:  ld-linux-x86-64 
+mkswap:  libblkid libuuid 
+partx:  libblkid libuuid 
+swaplabel:  libblkid libuuid 
+uuidd:  libuuid 
+uuidgen:  libuuid 
+wipefs:  libblkid libuuid 
+addpart:  
+agetty:  
+blockdev:  
+cal:  libncursesw libtinfo 
+chcpu:  
+chrt:  
+col:  
+colcrt:  
+colrm:  
+column:  
+ctrlaltdel:  
+cytune:  
+delpart:  
+dmesg:  
+fallocate:  
+fdformat:  
+flock:  
+fsck.cramfs:  libz 
+fsck.minix:  
+fsfreeze:  
+fstrim:  
+getopt:  
+hexdump:  
+hwclock:  
+ionice:  
+ipcmk:  
+ipcrm:  
+ipcs:  
+isosize:  
+kill:  
+ldattach:  
+logger:  
+login:  libpam libpam_misc 
+look:  
+losetup:  
+lscpu:  
+lslocks:  
+mcookie:  
+mkfs:  
+mkfs.bfs:  
+mkfs.cramfs:  libz 
+mkfs.minix:  
+more:  libtinfo 
+namei:  
+pg:  libncursesw libtinfo 
+pivot_root:  
+prlimit:  
+raw:  
+readprofile:  
+rename:  
+renice:  
+resizepart:  
+rev:  
+rtcwake:  
+script:  libutil 
+scriptreplay:  
+setarch:  
+setsid:  
+setterm:  libtinfo 
+sfdisk:  
+su:  libpam libpam_misc 
+sulogin:  rypt 
+switch_root:  
+tailf:  
+taskset:  
+tunelp:  
+ul:  libtinfo 
+unshare:  
+utmpdump:  
+wall:  
+wdctl:  
+whereis:  

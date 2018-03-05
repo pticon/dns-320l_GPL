@@ -1,0 +1,50 @@
+diff -ru LLTD-PortingKit/Sample_Code/src/event.c LLTD-PortingKit.modify/Sample_Code/src/event.c
+--- LLTD-PortingKit/Sample_Code/src/event.c	2009-03-31 19:25:17.000000000 +0800
++++ LLTD-PortingKit.modify/Sample_Code/src/event.c	2010-04-19 17:22:07.000000000 +0800
+@@ -19,6 +19,7 @@
+ 
+ #include <stdio.h>
+ #include <sys/types.h>
++#include <sys/stat.h>
+ #include <unistd.h>
+ #include <string.h>
+ #include <errno.h>
+@@ -159,6 +160,7 @@
+     int ret;
+     int i;
+     int maxfd;
++    struct stat st;
+ 
+ #ifdef ADJUSTING_FOR_EARLY_WAKEUP
+     /* If your OS can wake you before the full timeout has elapsed, we
+@@ -213,12 +215,17 @@
+         }
+ 
+         ret = select(maxfd + 1, &readfds, NULL, NULL, timeout);
++
+         if (ret < 0)
+         {
+             if (errno == EINTR)
+                 continue;
+             die("event_mainloop: select: %s\n", strerror(errno));
+         }
++	if (stat("/tmp/stop_lld2d", &st) == 0) {
++	    unlink("/tmp/stop_lld2d");
++            die("event_mainloop: STOP flag: /tmp/stop_lld2d\n");
++	}
+         if (ret == 0) /* timeout */
+         {
+             bool_t did_some_work = FALSE;
+diff -ru LLTD-PortingKit/Sample_Code/src/main.c LLTD-PortingKit.modify/Sample_Code/src/main.c
+--- LLTD-PortingKit/Sample_Code/src/main.c	2009-03-31 19:25:13.000000000 +0800
++++ LLTD-PortingKit.modify/Sample_Code/src/main.c	2010-04-19 20:53:58.000000000 +0800
+@@ -179,6 +179,8 @@
+ 	}
+     }
+ 
++    unlink("/tmp/stop_lld2d");
++
+     if (isConfTest)
+     {
+         if (optind >= argc)
+Only in LLTD-PortingKit.modify/: tags

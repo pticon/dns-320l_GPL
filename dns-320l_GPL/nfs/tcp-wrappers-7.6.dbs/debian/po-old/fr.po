@@ -1,0 +1,85 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers 7.6.dbs-4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-05-22 13:08+0200\n"
+"PO-Revision-Date: 2004-05-25 18:01+0200\n"
+"Last-Translator: Olivier Gauwin <olivier.gauwin@laposte.net>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid "Should tcpd setup paranoid hosts.allow and hosts.access?"
+msgstr "Faut-il configurer hosts.allow et hosts.access en mode paranoïaque ?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"/etc/hosts.allow and /etc/hosts.deny will be setup since you do not have "
+"have any of these files yet. You can either have a generic and permissive "
+"configuration which will allow any incoming connection or a paranoid "
+"configuration which will not allow remote connections regardless of where "
+"they originate from."
+msgstr ""
+"Les fichiers /etc/hosts.allow et /etc/hosts.deny vont être mis en place car "
+"aucun d'eux n'existe pour l'instant. Vous pouvez choisir entre une "
+"configuration permissive générique qui autorise toutes les connexions "
+"entrantes, et une configuration paranoïaque qui refuse toute connexion de "
+"l'extérieur quelle qu'en soit l'origine."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"The second option, even if more secure, will block out all communication, "
+"including, for example, remote administration. So if you need this don't "
+"choose it."
+msgstr ""
+"La seconde option, même si elle est plus sûre, bloquera toutes les "
+"communications, y compris, par exemple, celles utilisées pour "
+"l'administration à distance. Donc, si vous en avez besoin, vous ne devez pas "
+"la choisir."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"Regardless of which option you select you can always manually edit both  "
+"files to suit your needs, for this, review the hosts_access(5) manpage.  "
+"This might include giving remote access of services to legitimate hosts."
+msgstr ""
+"Indépendamment de l'option choisie, vous pouvez toujours modifier vous-même "
+"ces deux fichiers pour qu'ils correspondent à vos besoins. Pour cela, "
+"veuillez consulter la page de manuel hosts_access(5). Vous pourrez, par "
+"exemple, autoriser l'accès aux services pour certaines machines."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"Notice this only applies to internet services that use the libwrap library. "
+"Remote connections will still be possible to services that do not use this "
+"library, consider using firewall rules to block access to these."
+msgstr ""
+"Veuillez noter que cela s'applique uniquement aux services Internet "
+"utilisant la bibliothèque libwrap. Les connexions de l'extérieur à des "
+"services n'utilisant pas cette bibliothèque seront toujours possibles. Pour "
+"en refuser l'accès, veuillez utiliser des règles de pare-feu."

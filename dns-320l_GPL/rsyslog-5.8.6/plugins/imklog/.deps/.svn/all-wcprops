@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imklog/.deps
+END
+imklog_la-linux.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imklog/.deps/imklog_la-linux.Plo
+END
+imklog_la-imklog.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imklog/.deps/imklog_la-imklog.Plo
+END
+imklog_la-ksym_mod.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imklog/.deps/imklog_la-ksym_mod.Plo
+END
+imklog_la-ksym.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imklog/.deps/imklog_la-ksym.Plo
+END
+imklog_la-bsd.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imklog/.deps/imklog_la-bsd.Plo
+END

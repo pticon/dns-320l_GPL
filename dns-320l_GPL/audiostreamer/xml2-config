@@ -1,0 +1,12 @@
+#!/bin/sh
+
+XML2_DIR=$PWD/../../libxml2-2.7.4
+
+case "$1" in
+	--libs)
+		echo "-L${XML2_DIR}/.libs -L${XML2_DIR}/../zlib-1.2.3 -lxml2 -lz -lm"
+		;;
+	--cflags)
+		echo "-I${XML2_DIR}/include/libxml2"
+		;;
+esac

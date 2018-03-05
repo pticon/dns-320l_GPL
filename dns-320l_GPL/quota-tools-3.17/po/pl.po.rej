@@ -1,0 +1,51 @@
+***************
+*** 208,214 ****
+  msgstr "Nie mo¿na zapisaæ okresów pob³a¿liwo¶ci do pliku.\n"
+  
+  #: edquota.c:262
+- msgid "Error while editting grace times.\n"
+  msgstr "B³±d podczas edycji okresów pob³a¿liwo¶ci.\n"
+  
+  #: edquota.c:266
+--- 208,214 ----
+  msgstr "Nie mo¿na zapisaæ okresów pob³a¿liwo¶ci do pliku.\n"
+  
+  #: edquota.c:262
++ msgid "Error while editing grace times.\n"
+  msgstr "B³±d podczas edycji okresów pob³a¿liwo¶ci.\n"
+  
+  #: edquota.c:266
+***************
+*** 220,226 ****
+  msgstr "Nie mo¿na zapisaæ do pliku pojedynczych okresów pob³a¿liwo¶ci.\n"
+  
+  #: edquota.c:280
+- msgid "Error while editting individual grace times.\n"
+  msgstr "B³±d podczas edycji pojedynczych okresów pob³a¿liwo¶ci.\n"
+  
+  #: edquota.c:285
+--- 220,226 ----
+  msgstr "Nie mo¿na zapisaæ do pliku pojedynczych okresów pob³a¿liwo¶ci.\n"
+  
+  #: edquota.c:280
++ msgid "Error while editing individual grace times.\n"
+  msgstr "B³±d podczas edycji pojedynczych okresów pob³a¿liwo¶ci.\n"
+  
+  #: edquota.c:285
+***************
+*** 232,238 ****
+  msgstr "Nie mo¿na zapisaæ limitów do pliku.\n"
+  
+  #: edquota.c:304
+- msgid "Error while editting quotas.\n"
+  msgstr "B³±d podczas edycji limitów.\n"
+  
+  #: edquota.c:310
+--- 232,238 ----
+  msgstr "Nie mo¿na zapisaæ limitów do pliku.\n"
+  
+  #: edquota.c:304
++ msgid "Error while editing quotas.\n"
+  msgstr "B³±d podczas edycji limitów.\n"
+  
+  #: edquota.c:310

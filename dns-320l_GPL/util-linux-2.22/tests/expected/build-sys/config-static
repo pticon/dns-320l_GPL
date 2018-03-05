@@ -1,0 +1,100 @@
+blkid:  libblkid libuuid 
+cfdisk:  libblkid libncursesw libtinfo libuuid 
+eject:  libblkid libmount libuuid 
+fdisk:  ld-linux-x86-64 libblkid libuuid 
+findfs:  libblkid libuuid 
+findmnt:  libblkid libmount libuuid 
+fsck:  libblkid libmount libuuid 
+libblkid.so.1.1.0:  ld-linux-x86-64 libuuid 
+libmount.so.1.1.0:  ld-linux-x86-64 libblkid libuuid 
+libuuid.so.1.3.0:  ld-linux-x86-64 
+lsblk:  libblkid libmount libudev libuuid 
+mkswap:  libblkid libuuid 
+mount:  libblkid libmount libuuid 
+mountpoint:  libblkid libmount libuuid 
+partx:  libblkid libuuid 
+swaplabel:  libblkid libuuid 
+swapoff:  libblkid libmount libuuid 
+swapon:  libblkid libmount libuuid 
+umount:  libblkid libmount libuuid 
+uuidd:  libuuid 
+uuidgen:  libuuid 
+wipefs:  libblkid libuuid 
+addpart:  
+agetty:  
+blkid.static: STATIC
+blockdev:  
+cal:  libncursesw libtinfo 
+chcpu:  
+chrt:  
+col:  
+colcrt:  
+colrm:  
+column:  
+ctrlaltdel:  
+cytune:  
+delpart:  
+dmesg:  
+fallocate:  
+fdformat:  
+fdisk.static: STATIC
+flock:  
+fsck.cramfs:  libz 
+fsck.minix:  
+fsfreeze:  
+fstrim:  
+getopt:  
+hexdump:  
+hwclock:  
+ionice:  
+ipcmk:  
+ipcrm:  
+ipcs:  
+isosize:  
+kill:  
+ldattach:  
+logger:  
+login:  libpam libpam_misc 
+look:  
+losetup:  
+losetup.static: STATIC
+lscpu:  
+lslocks:  
+mcookie:  
+mkfs:  
+mkfs.bfs:  
+mkfs.cramfs:  libz 
+mkfs.minix:  
+more:  libtinfo 
+mount.static: STATIC
+namei:  
+pg:  libncursesw libtinfo 
+pivot_root:  
+prlimit:  
+raw:  
+readprofile:  
+rename:  
+renice:  
+resizepart:  
+rev:  
+rtcwake:  
+script:  libutil 
+scriptreplay:  
+setarch:  
+setsid:  
+setterm:  libtinfo 
+sfdisk:  
+sfdisk.static: STATIC
+su:  libpam libpam_misc 
+sulogin:  rypt 
+switch_root:  
+tailf:  
+taskset:  
+tunelp:  
+ul:  libtinfo 
+umount.static: STATIC
+unshare:  
+utmpdump:  
+wall:  
+wdctl:  
+whereis:  

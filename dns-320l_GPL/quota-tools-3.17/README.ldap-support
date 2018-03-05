@@ -1,0 +1,42 @@
+LDAP support for warnquota by James Bourne <jbourne@hardrock.org>
+
+The LDAP support added to warnquota allows you to retreive mail routing
+information from an LDAP server so that you can send mail to the correct
+addresses.  So for example if usera has the email address usera@foo.bar.com
+and userb has userb@baz.bar.com you can have the attributes as follows
+(obvious things missing here):
+
+dn: uid=usera,ou=People,dc=bar,dc=com
+uid: usera
+mail: usera@foo.bar.com
+
+dn: uid=userb,ou=People,dc=bar,dc=com
+uid: userb
+mail: userb@baz.bar.com
+
+warnquota.conf should be set like this (if you allow anonymous binds and
+reads of the mail attribute:
+
+LDAP_MAIL = true
+LDAP_HOST = ldap.bar.com
+LDAP_PORT = 389
+LDAP_BASEDN = ou=People,dc=bar,dc=com
+LDAP_SEARCH_ATTRIBUTE = uid
+LDAP_MAIL_ATTRIBUTE = mail
+LDAP_DEFAULT_MAIL_DOMAIN = bar.com
+
+If not, just add:
+
+LDAP_BINDDN = uid=readonly,dc=bar,dc=com
+LDAP_BINDPW = it'sapasswd
+
+and you will bind as the user readonly and search that way.
+
+If you need to do lookups using a different attribute (Novell eDir for
+example uses cn=username) change the LDAP_SEARCH_ATTRIBUTE to cn.  
+
+Same with LDAP_MAIL_ATTRIBUTE.  If you use mail routing in LDAP (roughly
+following the Laser Draft) you can set this to mailLocalAddress and
+warnquota will send to that address.  This will guarentee that your quota
+mail will be delivered to the correct address.
+

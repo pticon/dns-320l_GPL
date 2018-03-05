@@ -1,0 +1,16 @@
+all: all-no
+
+all-yes:
+	echo "You need to install the gettext package"
+	echo "See the ABOUT-NLS.LPRng file in the source code"
+
+all-no:
+
+# define default target
+TARGETS= all warn TAGS clean uninstall install  info dvi check \
+	realclean mostlyclean distclean dist update ci cifiles FRC \
+	cifast fixpostinstall all-yes all-no
+
+.PHONY: ${TARGETS}
+
+$(TARGETS):

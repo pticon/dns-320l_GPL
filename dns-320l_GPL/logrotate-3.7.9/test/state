@@ -1,0 +1,2 @@
+logrotate state -- version 1
+"/opt/DNS-357/trunk/modules/gpl/logrotate-3.7.9/test/test.log" 2000-1-1

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imrelp
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imrelp/Makefile.in
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imrelp/Makefile.am
+END
+imrelp.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imrelp/imrelp.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imrelp/Makefile
+END

@@ -1,0 +1,86 @@
+#!/usr/bin/make -f
+SHELL+= -e
+
+include debian/scripts/vars
+
+BUILD_DIR := $(SOURCE_DIR)/$(TAR_DIR)
+B := $(BUILD_DIR)
+D := $(CURDIR)/debian/tcpd
+W := $(CURDIR)/debian/libwrap0
+WD := $(CURDIR)/debian/libwrap0-dev
+
+
+DEB_BUILD_ARCH := $(shell dpkg --print-installation-architecture)
+ifeq ($(filter-out hurd-%,$(DEB_BUILD_ARCH)),)
+  DEB_BUILD_GNU_SYSTEM := gnu
+else
+  DEB_BUILD_GNU_SYSTEM := linux
+endif
+
+
+all: build
+
+diff:
+	$(MAKE) -f debian/sys-build.mk make-diff
+
+clean:
+	dh_testdir
+	$(MAKE) -f debian/sys-build.mk source.clean
+	dh_clean
+
+# target used by the maintainer
+source: 
+	$(MAKE) -f debian/sys-build.mk source.build
+
+unpack: $(STAMP_DIR)/unpack
+$(STAMP_DIR)/unpack:
+	$(MAKE) -f debian/sys-build.mk source.make
+	touch $@
+
+build: $(STAMP_DIR)/build
+$(STAMP_DIR)/build: $(STAMP_DIR)/unpack
+	dh_testdir
+	NOISY=1 \
+	$(MAKE) -f debian/sys-build.mk source.command SOURCE_CMD=" \
+		$(MAKE) $(DEB_BUILD_GNU_SYSTEM) \
+	"
+	touch $@
+
+binary-arch: checkroot $(STAMP_DIR)/build
+	dh_testdir
+	dh_clean -k
+
+	dh_installdirs -a
+	dh_install -a --sourcedir=$B
+
+	dh_installdocs $(addprefix $B/,README README.NIS)
+	dh_installchangelogs -a $B/CHANGES
+	dh_installman -p tcpd extra/try-from.8 extra/safe_finger.8 \
+		$(addprefix $B/,tcpd.8 tcpdchk.8 tcpdmatch.8 hosts_access.5 \
+		  hosts_options.5)
+	dh_installman -p libwrap0-dev $B/hosts_access.3
+	dh_link -a
+
+	cp $B/shared/libwrap.so.0.7.6 $W/lib/
+	ln -s libwrap.so.0.7.6 $W/lib/libwrap.so.0
+
+	ln -s /lib/libwrap.so.0 $(WD)/usr/lib/libwrap.so
+
+	dh_link -a
+	dh_strip -a
+	dh_compress -a
+	dh_fixperms -a
+	dh_installdebconf -a
+	dh_makeshlibs -a
+	dh_installdeb -a
+	dh_shlibdeps -a
+	dh_gencontrol -a
+	dh_md5sums -a
+	dh_builddeb -a
+
+binary: binary-arch
+
+checkroot:
+	test root = "`whoami`"
+
+.PHONY: build clean binary-indep binary-arch binary

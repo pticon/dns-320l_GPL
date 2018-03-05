@@ -1,0 +1,116 @@
+librsyslog_la-hashtable.lo: hashtable.c hashtable.h hashtable_private.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/types.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/time.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/endian.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/endian.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/byteswap.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/select.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/select.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigset.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/time.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/sysmacros.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/pthreadtypes.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/alloca.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/math.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/huge_val.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/mathdef.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sgidefs.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/mathcalls.h \
+  /opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/mathinline.h
+
+hashtable.h:
+
+hashtable_private.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/types.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/time.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/endian.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/endian.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/byteswap.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/select.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/select.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigset.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/time.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/sysmacros.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/pthreadtypes.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/alloca.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/math.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/huge_val.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/mathdef.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sgidefs.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/mathcalls.h:
+
+/opt/DNS-357/toolchain/SDK2.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/mathinline.h:

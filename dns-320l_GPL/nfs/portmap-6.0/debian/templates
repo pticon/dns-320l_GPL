@@ -1,0 +1,15 @@
+Template: portmap/loopback
+Type: boolean
+Default: false
+_Description: Should portmap be bound to the loopback address?
+ Portmap by default listens to all IP addresses. However, if you are
+ not providing network RPC services to remote clients (you are if you are
+ setting up a NFS or NIS server) you can safely bind it to the loopback 
+ IP address (127.0.0.1) 
+ .
+ This will allow RPC local services (like FAM) to work properly, while
+ preventing remote systems from accessing your RPC services.
+ .
+ You can also change this configuration by editing the OPTIONS
+ line in the /etc/default/portmap file. If you just don't specify
+ the -i option it will bind to all interfaces.

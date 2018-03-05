@@ -1,0 +1,26 @@
+CSI staggered spin-up support
+Overview
+Hard drive spin-up was always the highest power consuming stage. Embedded devices mostly use low power suppliers that sometimes needs to drive numerous hard drives.
+This feature developed in order to prevent the power supply’s overloading when numerous hard drives spin-up.
+
+Usage
+Apply the staggered spin-up kernel patch.
+Compile the kernel with the config CONFIG_MV_STAGGERED_SPINUP enabled.
+
+Pass the following parameter in the kernel line:
+spinup_config=<spinup_max>,<spinup_timeout>
+For example: spinup_config=2,6 will config the module for 2 maximum disks spinning-up with 6 seconds timeout.
+Parameters explanation:
+	1.	<spinup_max> - The maximum spinning-up disks(can be between 1 and 8)  will be like this:
+		a.	0 = feature off.
+		b.	1 – 8 = number of disks
+		c.	<0,>8 = invalid parameter (will behave like feature off)
+	2.	<spinup_timeout> - The spin-up timeout (can be between 1 and 6) will be like this:
+		a.	0 = feature off.
+		b.	1 – 6 = in seconds
+		c.	<0,>6 = invalid parameter (will behave like feature off)
+
+Any parsing error will cause an invalid parameters print and will behave as feature off.
+
+EXPERIMANTAL kernel config:
+CONFIG_MV_DISKS_POWERUP_TO_STANDBY – on boot initialization all hard drives will assume to be in standby.

@@ -1,0 +1,7 @@
+include/master-slave.inc
+[connection master]
+START SLAVE;
+include/wait_for_slave_sql_error.inc [errno=12]
+include/stop_slave_io.inc
+RESET SLAVE;
+include/rpl_end.inc

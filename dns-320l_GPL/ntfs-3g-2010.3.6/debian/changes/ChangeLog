@@ -1,0 +1,563 @@
+STABLE Version 2010.3.6 (March 7, 2010)
+	New: Support Object Identifiers which are used by Windows for shortcuts
+	and caused CHKDSK warnings when the target was deleted.
+	New: Nanosecond resolution file timestamps support.
+	New: Selective file timestamp modification by utimensat(2).
+	New: Make non-resident TXF_DATA attribute of root directory resident so
+	Vista and later won’t complain about RAW partition.
+	New: Caching inodes.
+	New: More efficient UTF8/UTF16 translations.
+	Fixed setting archive bit on file and alternated data stream creation.
+	Fixed setting reparse tags in parent directories.
+	Fixed enabling permissions when no UserMapping file is found.
+	Fixed an error return code in the main mount function.
+	Fixed setting timestamp via extended attributes to be consistent between
+	Windows and Linux view.
+	Fixed option processing when uid, gid, fmask or dmask are present.
+
+TEST Version 2010.2.6-RC (February 7, 2010)
+	New: Support Object Identifiers which are used by Windows for shortcuts and
+	caused CHKDSK warnings when the target was deleted.
+	New: Nanosecond resolution file timestamps support.
+	New: Selective file timestamp modification by utimensat(2).
+	New: Make non-resident TXF_DATA attribute of root directory resident so
+	Vista and later won’t complain about RAW partition.
+	New: Caching inodes.
+	New: More efficient UTF8/UTF16 translations.
+	Fix: Setting timestamp via extended attributes was not consistent between
+	Windows and Linux view.
+
+STABLE Version 2010.1.16 (January 16, 2010)
+
+	Fix: Vista, Windows Server 2008 and Windows 7 couldn’t access a volume,
+	file or directory if it had a non-resident TXF_DATA attribute despite being
+	allowed by the NTFS $AttrDef attribute specification file. Solution is also
+	available from Microsoft, please see KB974729. Upgrade is recommended!
+	Fix: NTFS-3G may crashed if a junction point referred to a non-ASCII filename.
+	Fix: Compilation errors on Mac OS X, OpenSolaris and openSUSE.
+
+STABLE Version 2009.11.14 (November 15, 2009)
+
+	New: Full file ownership and permissions support. The ownership and
+	permissions of files are interoperable with Windows and conforms to the POSIX
+	rules.
+	New: POSIX ACL support. The ACLs are an extension to ownership and
+	permissions as defined in POSIX.
+	New: Optional Windows-type inheritance of ACLs.
+	New: Full extended attributes support for all namespaces: user, system,
+	security and trusted.
+	New: Junction points support. The junction points and symbolic links created
+	by Windows are seen as symbolic links.
+	New: Access is possible to NTFS internal data like Windows style archive bit
+	and file attributes. They are mapped to extended attributes for easier access.
+	New: Compression write support: sequential writing to compressed files is
+	supported.
+	New: Support copying and restoring encrypted files without decrypting them.
+	New: Support getting and setting high-resolution file timestamps.
+	New: Support to get, set and remove DOS filenames.
+	New: Tools for managing ownership, permissions and ACLs: ntfs-3g.secaudit
+	checks the integrity of ownership, permissions and ACL, ntfs-3g.usermap gives
+	help to configure ownership.
+	New: Implemented setchgtime() on Mac OS X.
+	Fix: Improved Windows junction and symlink handling.
+	Fix: Improved ACL handling.
+	Fix: Unicode normalization on Mac OS X.
+	Fix: Implemented true fsync() on Mac OS X
+	Change: Performance optimizations. Frequently used data are cached to improve
+	speed. Space allocation for fragmented and sparse files has been improved.
+
+TEST Version 2009.10.5-RC (October 10, 2009)
+
+	New: Full file ownership and permissions support. The ownership and
+	permissions of files are interoperable with Windows and conforms to the POSIX
+	rules.
+	New: POSIX ACL support. The ACLs are an extension to ownership and
+	permissions as defined in POSIX.
+	New: Optional Windows-type inheritance of ACLs.
+	New: Full extended attributes support for all namespaces: user, system,
+	security and trusted.
+	New: Junction points support. The junction points and symbolic links created
+	by Windows are seen as symbolic links.
+	New: Access is possible to NTFS internal data like Windows style archive bit
+	and file attributes. They are mapped to extended attributes for easier access.
+	New: Compression write support: sequential writing to compressed files is
+	supported.
+	New: Support copying and restoring encrypted files without decrypting them.
+	New: Support getting and setting high-resolution file timestamps.
+	New: Support to get, set and remove DOS filenames.
+	New: Tools for managing ownership, permissions and ACLs: secaudit checks the
+	integrity of ownership, permissions and ACL, usermap gives help to configure
+	ownership.
+	Change: Performance optimizations. Frequently used data are cached to improve
+	speed. Space allocation for fragmented and sparse files has been improved.
+
+STABLE Version 2009.4.4 (April 2, 2009)
+	Fix: Mount and system boot could hang if Linux kernel audit was enabled.
+	Fix: Volume could be potentially corrupted or the driver crashed after a
+	partial write or hardware error.
+	Fix: The driver could crash handling highly fragmented files.
+
+STABLE Version 2009.3.8 (March 26, 2009)
+	Fix: Some defragmenters reported NTFS-3G created directories unmovable.
+	Fix: The Windows NTFS file system checker, CHKDSK, may reported "free space
+	marked as allocated in the master file table (MFT) bitmap".
+	Fix: The driver may returned "No space left on device" error when there was
+	still free space on the NTFS volume.
+	Fix: A file may got corrupted when the STANDARD INFORMATION attribute was
+	moved to an extent MFT record. Only the already fixed Advanced NTFS-3G
+	Driver had this problem, not the Stable NTFS-3G Driver.
+	Change: 10-50% faster file and directory creation, removal, copy,
+	unpackaging performance.
+	Change: 500-1000% faster mount time. This is mostly noticable on multi-TB
+	volumes and embedded devices. Please note, a generally 10-20 times faster
+	performing NTFS-3G driver is available for embedded devices separately.
+	Change: Improved multi-cluster allocation, non-aligned file write
+	performance.
+	Change: Improved volume consistency and recovery if the storage device was
+	unsafely detached or powered down.
+	Change: Less disk space usage.
+	New: The version/-V command line option has been added.
+
+STABLE Version 2009.2.1 (February 12, 2009) -- Release Notes
+	New: The 'recover' and 'norecover' mount options were introduced. The former
+	option will casue the driver to recover and repair a corrupted or
+	inconsistent NTFS volume if it's possible. The default behaviour is
+	'recover'.
+	Fix: The driver may crashed when it tried to read a highly fragmented file
+	or directory which was either corrupted or it was unreadable due to a
+	hardware error. Upgrade is recommended.
+	Fix: The driver incorrectly returned 'Permission denied' error message if a
+	requested extended attribute namespace wasn't supported.
+	Fix: The lack of file backup timestamp support confused some applications on
+	OS X.
+	Change: The user extended attribute namespace is supported by default on
+	Linux.
+	Change: A volume having unclean journal file is recovered and mounted by
+	default. The 'norecover' mount option can be used to disable this behavior.
+
+STABLE Version 2009.1.1 (January 22, 2009) -- Release Notes
+	New: Built-in, transparent UTF-8 conversion support. This solves all the
+	problems, described here, and even more with hidden and inaccessible
+	filenames having national characters.
+	New: Support getting/setting the file creation timestamp on OS X.
+	Fix: An extended attribute got corrupted if the new attribute size was
+	smaller than the original size.
+	Fix: Memory leaked if an extended attribute or alternate data stream
+	couldn't be opened.
+	Fix: Report an error if a filename can not be listed during reading a
+	directory.
+	Change: The 'locale=' mount option is not used anymore for filename
+	characterset conversion. Instead filenames are always converted to UTF-8.
+
+TEST Version 1.5222-RC (December 22, 2008) -- Release Notes
+	New: Built-in, transparent UTF-8 conversion support.
+	Fix: Report an error if a filename can not be listed during reading a
+	directory.
+	Change: The 'locale=' mount option is not used anymore for filename
+	characterset conversion. Instead filenames are always converted to UTF-8.
+
+STABLE Version 1.5130 (November 30, 2008) -- Release Notes
+	Fix: Reading a data storage with permanent or temporary physical damage,
+	or a partial read(2) system call could result ignoring the low level
+	hardware error and returning invalid data. Upgrade is recommended.
+
+STABLE Version 1.5012 (October 12, 2008) -- Release Notes
+	Version 1.2926-RC is released unchanged as stable. The NTFS-3G driver is
+	able for unlimited file and directory creation and removal as the result of
+	13 years continuous development with the help of hundreds of contributors
+	over these years. Congratulations And Thank You To Everybody Who Made It
+	Happen!
+
+TEST Version 1.2926-RC (September 19, 2008) -- Release Notes
+	New: Support unlimited file and directory creation. Successfully tested the
+	creation of 54 million (54,000,000) files in a single directory, besides the
+	other test cases.
+
+STABLE Version 1.2918 (September 18, 2008) -- Release Notes
+	Fix: A corrupted directory index entry could hang the driver instead of
+	returning "I/O error".
+
+STABLE Version 1.2812 (August 15, 2008) -- Release Notes
+	Fix: The allocation size of an attribute may got corrupted if the attribute
+	size change failed.
+	Fix: An MFT record could leak on big-endian CPUs if adding a new attribute
+	failed.
+	Fix: The system log was flooded if a transparently compressed or encypted
+	file was tried to be updated repeatedly.
+	New: Solaris support.
+	New: Libtool-2 support.
+	Change: No external dependency on librt anymore when internal FUSE is used
+	(default on Linux).
+	Change: The default compiler is gcc.
+	Change: Internal FUSE further shrank by 10%.
+
+STABLE Version 1.2712 (July 12, 2008) -- Release Notes
+	Fix: A corrupted size directory or a directory over tens of million files
+	may hang the driver. If NTFS-3G is compiled with an external FUSE library
+	(non-default on Linux) then FUSE CVS is needed until FUSE 2.8.0 is released.
+	Fix: Removing alternate data streams and extended attributes leaked memory.
+	Fix: Mount could fail with some mount(8) utilities (e.g. busybox one) if the
+	/etc/mtab file didn't exist or was on a read-only file system. This fix
+	should solve most of the "/bin/mount: invalid option -i" mount problems.
+	If NTFS-3G is compiled with an external FUSE library (non-default on Linux)
+	then FUSE CVS is needed until FUSE 2.8.0 is released.
+	Fix: The driver always returned "I/O errors" if the standard file
+	descriptors were closed during mount, e.g. via some usage of udev, hotplug,
+	etc.
+	Fix: Building the driver failed if the --prefix=/ configure option was used.
+	Fix: Driver compilation may failed with 'PATH_MAX undeclared' error mesage
+	in some (cross)-compilation environments.
+
+STABLE Version 1.2531 (May 29, 2008) -- Release Notes
+	Fix: Mount failed with "Invalid argument" error message if the mountpoint
+	was a symlink. If NTFS-3G is compiled with an external FUSE library
+	(non-default on Linux) then FUSE CVS is needed until FUSE 2.8.0 is released.
+	Fix: A corrupted directory could hang the driver.
+	Fix: Mount could hang if the block allocation map was corrupted.
+	Fix: The driver could hang or misbehave when compressed, sparse or encrypted
+	file attribute flags were corrupted.
+	Fix: The driver could crash when both an MFT attribute offset and the
+	allocated bytes were corrupted.
+	Fix: Building the driver failed if the --exec-prefix configure option was
+	used without --sbindir=/sbin.
+	Fix: Parallel 'make install' may failed.
+	New: Support building the driver in a separate directory.
+	New: Added --enable-mount-helper configure option which installs
+	/sbin/mount.ntfs-3g, so mount via mount(8) and /etc/fstab can work on Linux.
+	The default is enabled on Linux and disabled on all other operating systems.
+
+STABLE Version 1.2506 (May 6, 2008) -- Release Notes
+	Fix: In certain, rare circumstances, any area of the NTFS volume, except the
+	NTFS boot sector, could get corrupted. The chance for this to happen is
+	higher for close to full disk utilization and using one of the more
+	uncommon, less than 4096 byte cluster sizes. The cluster size is logged
+	under the /var/logs directory usually in the 'messages' or 'daemon.log' log
+	file, as the blksize mount parameter. All stable releases have this issue
+	since version 1.328.
+	Upgrade is strongly recommended from all NTFS-3G releases.
+
+STABLE Version 1.2412 (April 12, 2008) -- Release Notes
+	Fix: The total file system depth was limited to 4095 characters by FUSE and
+	trying to access files and directories deeper gave "No such file or
+	directory" error. If NTFS-3G is compiled with an external FUSE library
+	(non-default), then FUSE CVS is needed until FUSE 2.8.0 is released.
+	Fix: The symlink(2) system call failed or the size was truncated at modulo
+	256 if the old path was over 255 bytes.
+	Fix: Unprivileged mount may have been denied because supplementary groups
+	were dropped too early as a security measure.
+	Fix: Unprivileged mount may have been denied if the /etc/fuse.conf file
+	wasn't properly configured. This was redundant and the /etc/fuse.conf file
+	is not required anymore.
+	Fix: Updating hard link attributes was delayed by one second which resulted
+	softwares seeing their file sizes and timestamps incorrectly during this
+	time interval.
+	Fix: The 'noatime' mount option additionally and unconditionally was passed
+	to FUSE.
+
+STABLE Version 1.2310 (March 10, 2008) -- Release Notes
+	Fix: the driver crashed when one tried to open a non-existent file which had
+	at least twice as long file name as the one allowed by the NTFS
+	specification.
+	Fix: Windows CHKDSK may reported minor inconsistencies because the data and
+	allocation size of some special purpose resident unnamed $DATA attribute in
+	the index and inode FILE_NAME attributes could be incorrect.
+	Fix: unprivileged mount failed if user had rights for everything except the
+	FUSE device file.
+	Fix: the 'dev' and 'suid' mount options didn't work.
+	Change: rmdir(2) returns ENOTEMPTY instead of EEXIST because the GNOME glib
+	library and the Nautilus file browser can't handle the also standard EEXIST
+	value which resulted an error message when for instance one tried to remove
+	a directory containing files.
+	Change: the 'dev' and 'suid' mount options are the default from now on for
+	root mounts, similarly as other file systems behave. These options are
+	always denied for setuid-root and unprivileged mounts.
+
+STABLE Version 1.2216 (February 16, 2008) -- Release Notes
+	Fix: file and directory removal, rename and move may have been denied with
+	an "Operation not supported" error message.
+	Fix: setuid-root ntfs-3g had a local root exploit and other security
+	problems.
+	From now on unprivileged mounts of block devices are possible only with
+	using the integrated FUSE library (default) which has no known security
+	problem.
+	Fix: unprivileged unmount didn't always work.
+	Fix: create mount.ntfs-3g symlink always in /sbin where mount(8) needs it.
+	New: added 'remove_hiberfile' mount option to be able to read/write mount
+	hibernated volumes for recovery and troubleshooting purposes.
+	Change: keep shrinking driver size.
+
+STABLE Version 1.2129 (January 29, 2008) -- Release Notes
+	Version 1.2125-RC is released unchanged as stable.
+
+Version 1.2125-RC (January 24, 2008) -- Release Notes
+	Fix: the 1.2121-RC test release didn't compile on 64-bit architectures.
+
+Version 1.2121-RC (January 21, 2008) -- Release Notes
+	New: added ntfs-3g.probe utility which probes a volume for read-only or
+	read-write mountability.
+	New: to facilitate the use of the NTFS-3G driver in scripts, an exit code is
+	returned to give an indication of the mountability status of the volume.
+	Zero value means success, and all other ones mean an error. The unique error
+	codes are documented in the ntfs-3g.probe manual page.
+	New: built-in FUSE support by using a stripped down, integrated FUSE
+	library. Linux uses this by default which means NTFS-3G doesn't require the
+	installation of the FUSE package, only FUSE kernel support.
+	New: the --with-fuse=external configure option makes NTFS-3G to be compiled
+	with an external FUSE library. For non-Linux operating systems this is the
+	default and the only compilation option.
+	New: README file is installed as documentation.
+	New: the --enable-ldscript configure option uses ldscript instead of .so
+	symlink.
+	New: added libntfs-3g.pc.in pkg-config and libntfs-3g.script.so.in ldconfig
+	files.
+	Change: rewritten, backwards compatible build system.
+	Change: use 'make install-strip' instead of 'make strip'.
+	Fix: the SIGTERM signal may caused deadlock which could block for instance
+	the shutdown process. If NTFS-3G is used with an external FUSE library,
+	which is not the default, then FUSE 2.7.2 package is required.
+
+STABLE Version 1.1120 (November 20, 2007) -- Release Notes
+	Fix: successful hard link removal may reported "Input/Output error".
+	Fix: listing the content of a single directory having over 600,000 files
+	and subdirectories may returned "Input/Output error" or truncated directory
+	listing.
+	Fix: atime mount option didn't work.
+	Fix: POSIX file time updates (file access and modification times, inode
+	change time). Please note, though NTFS-3G updates the times correctly now,
+	FUSE may keep caching old, invalid time attributes for a short time after
+	rename(2), creat(2), and some file operations which involve hard links. FUSE
+	has fixed already the first two cases and they may be included in the Linux
+	kernel 2.6.24 release.
+	New: relatime support was added and made the default atime update method.
+
+STABLE Version 1.1104 (November 4, 2007) -- Release Notes
+	Fix: reads over the end of a file could return "invalid argument" error
+	using some recent kernels. This problem may have caused Thunderbird to
+	hang.
+	Fix: some faulty versions of the gcc compiler have crashed during
+	compilation.
+	Fix: the utimes(2) system call may incorrectly updated the last status
+	change filestamp.
+	Change: the ntfs.streams.list extended attribute enumerates Alternate
+	Data Streams (ADS) '\0' separated.
+
+STABLE Version 1.1030 (October 29, 2007) -- Release Notes
+	Fix: big-endian problems exposed by the NTFS-3G Test Suite.
+	Fix: free space calculation may was wrong for >1 TB volumes.
+	Fix: some faulty Thunderbird versions caused system log flooding.
+	Fix: uClibc and uClinux improvements.
+	Fix: logging improvements.
+	Fix: many other minor fixes.
+
+STABLE Version 1.1004 (October 4, 2007) -- Release Notes
+	fix: unwritten sparse file regions could get corrupted if the end of a write
+	wasn't aligned to cluster boundary. Sparse files are very rarely used, most
+	typically by bittorent clients.
+	fix: creation of read-only files failed.
+	change: free inode calculation was CPU intensive during write activity. This
+	could reduce write performance when millions of files are used if a file
+	manager or desktop applet regularly polled for disk space usage. Now the
+	statfs() system call is constant time.
+	change: file creation performance is improved by 40-80%.
+	change: smart directory traversal is 20-200% faster for disk based and
+	300-600% faster for memory cache based traversals.
+
+STABLE Version 1.913 (September 13, 2007) -- Release Notes
+	fix: hibernation check was too rigid and mount was refused in read/write
+	mode unnecessarily in some cases.
+	change: free disk space calculation was highly CPU intensive during write
+	activity. This could reduce write performance severely, especially for huge
+	volumes if a file manager or desktop applet regularly polled for disk space
+	usage. Now the calculation is constant time, around only 10 microseconds on
+	a typical desktop, and it's completely independent of the volume size.
+	all performance improvements included unchanged from the 1.910-RC test
+	release. Please see those details below.
+
+Version 1.910-RC (September 10, 2007) -- Release Notes
+	change: significantly improved the performance of writing many files,
+	typically by 50-1000% (copying files, unpacking, untarring packages,
+	compilation, directory synchronization, ...).
+	change: improved the performance of writing multi-GB size files,
+	particularly after the creation of many thousands of other files. Previous
+	disk space defragmentation is highly advised for the best possible speed.
+	File level defragmentation is not enough.
+	change: improved concurrent write performance.
+
+STABLE Version 1.826 (August 26, 2007) -- Release Notes
+	fix: utime() also updated the timestamp of the parent directory but it
+	shouldn't have (rsync, backup tool problems).
+	fix: ignore the "volume dirty" bit because its real meaning is "check the
+	volume". The fact of the real dirtiness is stored in the NTFS logfile which
+	is already checked for.
+	fix: compilation failed with glibc 2.7
+	new: the --disable-library 'configure' option can be used not to install but
+	link libntfs-3g into the ntfs-3g binary. This decreases the binary size by
+	about 10-15% and increases performance by about 2-5%.
+
+STABLE Version 1.810 (August 10, 2007) -- Release Notes
+	fix: file rename may updated the modification time of some files and
+	directories which caused some backup tools, like rsync, not to preserve
+	always this timestamp
+	fix: unmount (fusermount -u) was denied for an unprivileged user who was
+	allowed to mount a block device. FUSE 2.7.0+ user space package is required
+	for the full fix.
+	fix: the driver could hang if there wasn't enough memory during reading a
+	large directory
+	fix: reading a directory may reported success when there was an error
+	fix: metadata update error was ignored in some very rare cases during
+	writing a file
+	fix: permissions checking was turned on if umask, fmask and dmask was set to
+	the default 000 value
+	change: manual update, added Windows filename compatibility section
+	change: lots of logging improvements
+
+STABLE Version 1.710 (July 10, 2007) -- Release Notes
+	fix: move, rename and hard link could return "input/output error"
+	fix: very rare, recoverable directory corruption
+	fix: portability improvements
+	change: more troubleshooting hints if a volume can't be mounted
+	change: logging improvements
+
+STABLE Version 1.616 (June 17, 2007) -- Release Notes
+	Version 1.612-RC is released as stable
+
+Version 1.612-RC (June 12, 2007) Release Notes
+	new: install executables to the root file system otherwise mount could fail
+	during boot
+	fix: any kind of file size change failure returned "Operation not
+	permitted"
+	fix: file close failure was not always reported
+	fix: unmount failure was not always reported
+	fix: file creation always gave "input/output error" if the $MFT Bitmap
+	wasn't up-to-date
+	fix: converting very long file names to Unicode may failed
+	fix: syslog messages didn't show the low level error detail
+	fix: compilation improvements on OS X and NetBSD
+
+STABLE Version 1.516 (May 16, 2007) -- Release Notes
+	fix: Linux security exploit if ntfs-3g was setuid and the FUSE kernel driver
+	wasn't loaded yet during mount
+
+STABLE Version 1.417 (April 16, 2007) -- Release Notes
+	fix: mount failed if the -v (verbose) command line option was passed by
+	mount(8)
+
+STABLE Version 1.416 (April 16, 2007) -- Release Notes
+	fix: parsing of the first mount option could fail in the 1.411-RC test release
+
+Version 1.411-RC (April 11, 2007) -- Release Notes
+	new: read-write mount is supported using the "force" mount option if the
+	logfile is unclean
+	new: libntfs-3g is versioned
+	fix: default ownership of files weren't always set to the mounting user
+	fix: mount was denied if the NTFS Master File Table copy had non-standard
+	size
+	fix: catch and deny all junction/reparse point write operations
+	fix: multiply -o options weren't allowed (FreeBSD's mount(8) requires this)
+	fix: don't try to run Linux specific code on non-Linux OSes
+
+STABLE Version 1.328 (March 28, 2007) -- Release Notes
+	change: document and release version update to stable status
+
+Version 1.320-RC (March 20, 2007) -- Release Notes
+	fix: fakeraid/softraid detection was incorrect
+	change: major performance improvement for writing large files (new block
+	allocator)
+	change: manual update, added access handling, security section
+	new: use the 'nonempty' FUSE mount option by default, so the driver behaves
+	as the in-kernel file systems
+	new: --disable-ldconfig configure option
+
+STABLE Version 1.0 (February 21, 2007) -- Release Notes
+	change: document and release version update to stable status
+
+Version 0.20070207-RC1: -- Release Notes
+	new: the driver is in release candidate status
+	new: warn if the deficient FUSE 2.6.2 kernel module is used
+	fix: a bug in chkdsk could result the removal of highly fragmented, valid
+	files
+	fix: Mac OS X portability improvements
+	change: full file permission checking if any of the uid, gid, umask, fmask,
+	or dmask mount option is used
+
+Version 0.20070118-BETA: -- Release Notes
+	new: top request: setuid root support, the driver can run unprivileged
+	fix: the 'user' and 'users' fstab mount options didn't work (requires setuid
+	root ntfs-3g)
+	fix: time of last file modification and status change weren't updated
+
+Version 0.20070116-BETA: -- Release Notes
+	new: top request: support old FUSE kernel modules
+	fix: ActiveSync didn't work via Samba 3.0
+
+Version 0.20070102-BETA: -- Release Notes
+	fix: writing large files could be very slow
+	fix: writing several files at the same time could be very slow
+	fix: writing at several places into a file at the same time could be very
+	slow
+	fix: invalid argument error when writing randomly into sparse files
+
+Version 0.20061218-BETA: -- Release Notes
+	fix: heavy memory usage with sparse files (p2p, bittorrent client problems)
+	fix: inode number wasn't filled in the dirent structures (CVS, getcwd,
+	gnulib problems)
+	fix: 2-8% speed increase due to using pread/pwrite instead of lseek+
+	read/write
+	fix: fuse 2.6.x kernel module detection wasn't reliable
+
+Version 0.20061212-BETA: -- Release Notes
+	fix: directories were inaccessible on Windows if the cluster size was
+	bigger than 4kB
+	fix: static linking failed with FUSE 2.6.0
+	fix: 'make install' failed if ldconfig wasn't in the $PATH
+	change: more verbose error reporting, explanations, hints for solutions
+
+Version 0.20061115-BETA: -- Release Notes
+	fix: unmount was unsafe for removable devices
+	fix: the code wasn't endian safe
+	fix: mount arguments were omitted on the 2nd fuse mount attempt
+	new: FUSE 2.6.0 is required to ensure maximum reliability
+	new: bmap() implemented: safe swap file support, LILO bootability
+	change: the file system type is 'fuseblk' instead of 'fuse' for block
+	devices
+
+Version 0.20061031-BETA: -- Release Notes
+	fix: unmount was asynchronous; full fix requires FUSE 2.6.0 as well
+	fix: mount was denied if $MFTMirr was too small
+	fix: option parsing was incorrect if there was no space between name
+	& argument
+	change: new software versioning
+
+2006.09.20 -- Release Notes
+	fix: file creation at disk-full may lead to i/o errors
+	fix: statistic of inodes and free inodes was incorrect (df -i)
+	fix: the 'umask' option wasn't always parsed as an octal number
+	fix: "too long filename" handling wasn't POSIX compliant
+	fix: mount was denied if $MFTMirr had unused garbage at the file end
+
+2006.09.10 -- Release Notes
+	fix: rename was always denied if the target file or directory existed
+	fix: renaming like 'foo' -> 'FOO' was denied in the WIN32 namespace
+	fix: fuse kernel module is automatically loaded, no need for config
+	fix: verbose mount error messages with hints for solutions
+	fix: compilation failed with gcc 2.96
+	change: top request: full read-write access to everybody by default
+	change: file lookups are always case-sensitive
+
+2006.08.22 -- Release Notes
+	fix: case-insensitive directory rename to itself may failed
+	fix: some regular files weren't accessible on Linux
+	fix: files created on Linux may not had enough permissions on Windows
+
+2006.08.11 -- Release Notes
+	fix: directory couldn't be renamed if it had both WIN32 and DOS name
+	fix: collision with ntfsprogs header files
+
+2006.08.03 -- Release Notes
+	fix: improved large file write performance
+	fix: better consistency if NTFS wasn't cleanly unmounted
+	fix: write(2) may created holes
+	fix: show mounted device names instead of /dev/fuse
+
+2006.07.14 -- Release Notes
+	first ntfs-3g BETA release

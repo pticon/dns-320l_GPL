@@ -1,0 +1,283 @@
+------------------------------------------------------------
+revno: 3560 [merge]
+tags: clone-5.1.56-build
+committer: Georgi Kodinov <Georgi.Kodinov@Oracle.com>
+branch nick: merge-5.1-security
+timestamp: Thu 2011-02-10 12:10:28 +0200
+message:
+  null weave merge mysql-5.0-security->mysql-5.1-security
+    ------------------------------------------------------------
+    revno: 1810.3997.9 [merge]
+    committer: Georgi Kodinov <Georgi.Kodinov@Oracle.com>
+    branch nick: merge-5.0-security
+    timestamp: Thu 2011-02-10 12:07:16 +0200
+    message:
+      merge 5.0->5.0-security
+------------------------------------------------------------
+revno: 3559 [merge]
+committer: Georgi Kodinov <Georgi.Kodinov@Oracle.com>
+branch nick: merge-5.1-security
+timestamp: Thu 2011-02-10 12:08:54 +0200
+message:
+  merge 5.1->5.1-security
+    ------------------------------------------------------------
+    revno: 3452.51.25 [merge]
+    committer: Joerg Bruehe <joerg@mysql.com>
+    branch nick: mysql-5.1
+    timestamp: Wed 2011-02-09 14:37:27 +0100
+    message:
+      Merge bugfix 56581 into main.
+        ------------------------------------------------------------
+        revno: 3452.57.1
+        committer: Joerg Bruehe <joerg@mysql.com>
+        branch nick: bug56581-5.1
+        timestamp: Thu 2011-02-03 18:16:22 +0100
+        message:
+          Fix  Bug #56581  	RPM scripts use hardcoded datadir location
+          
+          When fixing the 27072 bug, the shell snippets running before/after
+          a RPM upgrade got expanded to look at files in the data directory
+          and at the PID file.
+          In this expansion, the standard locations were used.
+          
+          There are users who configure their installations to use non-standard
+          locations for the data directory, the PID file, and other objects.
+          For these users, the fix of 27072 did not work.
+          As a result, the fact that a server was running at upgrade start was
+          not noticed, and the new server was not started after the upgrade.
+          
+          With this patch, the shell snippets now try to get these locations
+          from "my_print_defaults" before falling back to the defaults.
+          Now, the fact that the old server is running is again noticed (even
+          with non-standard locations), and the new server is started.
+          
+          Also, the upgrade log is written to the correct data directory.
+    ------------------------------------------------------------
+    revno: 3452.51.24
+    committer: Dmitry Shulga <Dmitry.Shulga@oracle.com>
+    branch nick: mysql-5.1-bug57450
+    timestamp: Wed 2011-02-09 17:13:17 +0600
+    message:
+      Follow up fix for bug#57450.
+      
+      batch_readline_init() was modified - make check for 
+      type of file for input stream unless target platform
+      is WINDOWS since on this platform S_IFBLK is undefined.
+    ------------------------------------------------------------
+    revno: 3452.51.23 [merge]
+    committer: John H. Embretsen <john.embretsen@oracle.com>
+    branch nick: mysql-5.1-bugfix
+    timestamp: Wed 2011-02-09 11:13:23 +0100
+    message:
+      Null merge from mysql-5.0
+        ------------------------------------------------------------
+        revno: 1810.3998.13
+        committer: John H. Embretsen <john.embretsen@oracle.com>
+        branch nick: mysql-5.0
+        timestamp: Wed 2011-02-09 10:50:09 +0100
+        message:
+          Backport to 5.0: Fix for Bug#52060 - test udf fails on Snow Leopard.
+          Reverse DNS lookup of "localhost" returns "broadcasthost" on Snow Leopard (Mac), and NULL on most others.
+          Simply ignore the output, as this is not an essential part of UDF testing.
+------------------------------------------------------------
+revno: 3558 [merge]
+committer: Georgi Kodinov <Georgi.Kodinov@Oracle.com>
+branch nick: merge-5.1-security
+timestamp: Wed 2011-02-09 10:52:37 +0200
+message:
+  empty weave merge of 5.0-security->5.1-security
+    ------------------------------------------------------------
+    revno: 1810.3997.8 [merge]
+    committer: Georgi Kodinov <Georgi.Kodinov@Oracle.com>
+    branch nick: merge-5.0-security
+    timestamp: Wed 2011-02-09 10:16:32 +0200
+    message:
+      merge 5.0->5.0-security
+------------------------------------------------------------
+revno: 3557 [merge]
+committer: Georgi Kodinov <Georgi.Kodinov@Oracle.com>
+branch nick: merge-5.1-security
+timestamp: Wed 2011-02-09 10:30:44 +0200
+message:
+  weave merge mysql-5.1->mysql-5.1-security
+    ------------------------------------------------------------
+    revno: 3452.51.22
+    committer: Dmitry Shulga <Dmitry.Shulga@oracle.com>
+    branch nick: mysql-5.1-bug57450
+    timestamp: Wed 2011-02-09 12:46:12 +0600
+    message:
+      Follow up fix for bug#57450.
+      
+      batch_readline_init() was modified - return an error
+      if the input source is a directory or a block device.
+      
+      This follow-up is necessary because on some platforms,
+      such as Solaris, call to read() from directory may be
+      successful.
+    ------------------------------------------------------------
+    revno: 3452.51.21 [merge]
+    committer: Vasil Dimov <vasil.dimov@oracle.com>
+    branch nick: mysql-5.1
+    timestamp: Tue 2011-02-08 19:26:42 +0200
+    message:
+      Merge mysql-5.1-innodb -> mysql-5.1
+        ------------------------------------------------------------
+        revno: 3351.14.340
+        committer: Vasil Dimov <vasil.dimov@oracle.com>
+        branch nick: mysql-5.1-innodb
+        timestamp: Mon 2011-02-07 16:45:37 +0200
+        message:
+          Backport the fix for Bug#59875 Valgrind warning in buf0buddy.c from 5.5
+          
+          This warning also happens in 5.1 with a slightly different codepath.
+        ------------------------------------------------------------
+        revno: 3351.14.339
+        committer: Vasil Dimov <vasil.dimov@oracle.com>
+        branch nick: mysql-5.1-innodb
+        timestamp: Mon 2011-02-07 11:13:54 +0200
+        message:
+          Use fun:* instead of obj:*/libz.so* because when the bundled zlib is
+          used (--with-zlib-dir=bundled) then there is no libz.so involved.
+        ------------------------------------------------------------
+        revno: 3351.14.338
+        committer: Vasil Dimov <vasil.dimov@oracle.com>
+        branch nick: mysql-5.1-innodb
+        timestamp: Fri 2011-02-04 12:46:47 +0200
+        message:
+          Fix Bug#59874 Valgrind warning in InnoDB compression code
+          
+          Add suppressions for a bogus valgrind warnings.
+        ------------------------------------------------------------
+        revno: 3351.14.337
+        committer: Marko M?kel? <marko.makela@oracle.com>
+        branch nick: 5.1-innodb
+        timestamp: Wed 2011-02-02 15:51:08 +0200
+        message:
+          Bug #55284 diagnostics: Introduce UNIV_BLOB_LIGHT_DEBUG, enabled by UNIV_DEBUG
+          
+          btr_rec_get_field_ref_offs(), btr_rec_get_field_ref(): New functions.
+          Get the pointer to an externally stored field.
+          
+          btr_cur_set_ownership_of_extern_field(): Assert that the BLOB has not
+          already been disowned.
+          
+          btr_store_big_rec_extern_fields(): Rename to
+          btr_store_big_rec_extern_fields_func() and add the debug parameter
+          update_in_place. All pointers to externally stored columns in the
+          record must either be zero or they must be pointers to inherited
+          columns, owned by this record or an earlier record version. For any
+          BLOB that is stored, the BLOB pointer must previously have been
+          zero. When the function completes, all BLOB pointers must be nonzero
+          and owned by the record.
+          
+          rb://549 approved by Jimmy Yang
+        ------------------------------------------------------------
+        revno: 3351.14.336
+        committer: Marko M?kel? <marko.makela@oracle.com>
+        branch nick: 5.1-innodb
+        timestamp: Wed 2011-02-02 14:12:49 +0200
+        message:
+          Non-functional changes (cleanup) made while narrowing down Bug #55284:
+          
+          row_purge(): Change the return type to void. (The return value always
+          was DB_SUCCESS.) Remove some local variables.
+          
+          row_undo_mod_remove_clust_low(): Remove some local variables.
+          
+          rb://547 approved by Jimmy Yang
+        ------------------------------------------------------------
+        revno: 3351.14.335
+        committer: Marko M?kel? <marko.makela@oracle.com>
+        branch nick: 5.1-innodb
+        timestamp: Wed 2011-02-02 14:10:12 +0200
+        message:
+          Bug #55284 diagnostics: When UNIV_DEBUG, do not tolerate garbage in
+          Antelope files in btr_check_blob_fil_page_type(). Unfortunately, we
+          must keep the check in production builds, because InnoDB wrote
+          uninitialized garbage to FIL_PAGE_TYPE until fairly recently (5.1.x).
+          
+          rb://546 approved by Jimmy Yang
+        ------------------------------------------------------------
+        revno: 3351.14.334
+        committer: Marko M?kel? <marko.makela@oracle.com>
+        branch nick: 5.1-innodb
+        timestamp: Wed 2011-02-02 14:05:12 +0200
+        message:
+          Bug #55284 diagnostics: Enable UNIV_DEBUG_FILE_ACCESSES by UNIV_DEBUG
+          
+          It was the enabling of UNIV_DEBUG_FILE_ACCESSES that caught Bug #55284
+          in the first place. This is a very light piece of of debug code, and
+          there really is no reason why it is not enabled in all debug builds.
+          
+          rb://551 approved by Jimmy Yang
+        ------------------------------------------------------------
+        revno: 3351.14.333
+        committer: Marko M?kel? <marko.makela@oracle.com>
+        branch nick: 5.1-innodb
+        timestamp: Mon 2011-01-31 09:56:51 +0200
+        message:
+          Bug#59230 assert 0 row_upd_changes_ord_field_binary() in post-crash
+          trx rollback or purge
+          
+          This patch does not relax the failing debug assertion during purge.
+          That will be revisited once we have managed to repeat the assertion failure.
+          
+          row_upd_changes_ord_field_binary_func(): Renamed from
+          row_upd_changes_ord_field_binary(). Add the parameter que_thr_t* in
+          UNIV_DEBUG builds. When the off-page column cannot be retrieved,
+          assert that the current transaction is a recovered one and that it is
+          the one that is currently being rolled back.
+          
+          row_upd_changes_ord_field_binary(): A wrapper macro for
+          row_upd_changes_ord_field_binary_func() that discards the que_thr_t*
+          parameter unless UNIV_DEBUG is defined.
+          
+          row_purge_upd_exist_or_extern_func(): Renamed from
+          row_purge_upd_exist_or_extern(). Add the parameter que_thr_t* in
+          UNIV_DEBUG builds.
+          
+          row_purge_upd_exist_or_extern(): A wrapper macro for
+          row_purge_upd_exist_or_extern_func() that discards the que_thr_t*
+          parameter unless UNIV_DEBUG is defined.
+          
+          Make trx_roll_crash_recv_trx const. If there were a 'do not
+          dereference' attribute, it would be appropriate as well.
+          
+          rb://588 approved by Jimmy Yang
+        ------------------------------------------------------------
+        revno: 3351.14.332 [merge]
+        committer: Vasil Dimov <vasil.dimov@oracle.com>
+        branch nick: mysql-5.1-innodb
+        timestamp: Sun 2011-01-30 19:15:52 +0200
+        message:
+          Merge mysql-5.1 -> mysql-5.1-innodb
+    ------------------------------------------------------------
+    revno: 3452.51.20 [merge]
+    committer: Georgi Kodinov <Georgi.Kodinov@Oracle.com>
+    branch nick: merge-5.1
+    timestamp: Tue 2011-02-08 17:02:04 +0200
+    message:
+      weave merge of mysql-5.0 to mysql-5.1.
+        ------------------------------------------------------------
+        revno: 1810.3998.12 [merge]
+        committer: Jonathan Perkin <jonathan.perkin@oracle.com>
+        branch nick: mysql-5.0
+        timestamp: Tue 2011-02-08 14:43:27 +0100
+        message:
+          Merge from mysql-5.0.92-release
+    ------------------------------------------------------------
+    revno: 3452.51.19 [merge]
+    author: karen.langford@oracle.com
+    committer: Karen Langford <karen.langford@oracle.com>
+    branch nick: mysql-5.1
+    timestamp: Tue 2011-02-08 12:52:33 +0100
+    message:
+      Merge from mysql-5.1.55-release
+        ------------------------------------------------------------
+        revno: 3551.1.1
+        tags: mysql-5.1.55
+        committer: Karen Langford <karen.langford@oracle.com>
+        branch nick: mysql-5.1.55-release
+        timestamp: Tue 2011-01-25 15:42:40 +0100
+        message:
+          Updating header copyright/README in source for 2011

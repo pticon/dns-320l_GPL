@@ -1,0 +1,6 @@
+./configure --host=arm-marvell-linux-gnu --prefix=/home/vincent/4bay/iTunesServer/libid3tag-0.15.1b/mylib/
+
+./configure --disable-debugging --prefix=/opt_arm/uclibc-toolchain-src-20040
+609/gcc-3.3.x/toolchain_arm --host=arm-linux CPPFLAGS=-I/opt_arm/uclibc-toolchai
+n-src-20040609/gcc-3.3.x/toolchain_arm/include/
+

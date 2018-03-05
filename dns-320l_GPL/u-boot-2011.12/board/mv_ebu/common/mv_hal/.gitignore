@@ -1,0 +1,6 @@
+*.o
+*.o.*
+*.orig
+*.rej
+*.su
+nfc/

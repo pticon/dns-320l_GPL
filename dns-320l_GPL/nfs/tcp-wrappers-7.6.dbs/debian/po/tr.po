@@ -1,0 +1,91 @@
+# Turkish translation of tcpd.
+# This file is distributed under the same license as the tcpd package.
+# Recai Oktaş <roktas@omu.edu.tr>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcpd\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2004-05-10 16:43+0300\n"
+"Last-Translator: Recai Oktaş <roktas@omu.edu.tr>\n"
+"Language-Team:  Turkish<debian-l10n-turkish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr "Tcpd, hosts.allow ve hosts.access'i paranoya seviyesinde ayarlasın mı?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"Henüz bu dosyalardan herhangi birine sahip olmadığınızdan tcpd, /etc/hosts."
+"allow ve /etc/hosts.deny dosyalarını ayarlayacak. Bu ayarın genel amaçlı ve "
+"gelen her bağlantıya izin verecek şekilde veya kaynağı ayırt edilmeksizin "
+"uzaktan yapılan bütün bağlantıları reddecek şekilde paranoya seviyesinde "
+"yapılmasını seçebilirsiniz."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "The second option, even if more secure, will block out all communication, "
+#~ "including, for example, remote administration. So if you need this don't "
+#~ "choose it."
+#~ msgstr ""
+#~ "İkinci seçenek daha güvenli olmakla birlikte, uzaktan sistem yönetimi de "
+#~ "dahil, bütün iletişimi bloke edecektir. Uzaktan sistem yönetimine "
+#~ "ihtiyacınız varsa, öntanımlı seçeneği değiştirmeyin."
+
+#~ msgid ""
+#~ "Regardless of which option you select you can always manually edit both  "
+#~ "files to suit your needs, for this, review the hosts_access(5) manpage.  "
+#~ "This might include giving remote access of services to legitimate hosts."
+#~ msgstr ""
+#~ "Hangi seçeneği seçerseniz seçin, her iki dosyayı da ihtiyaçlarınıza uygun "
+#~ "şekilde elle düzenlemeniz her zaman mümkündür. Bu işlem için hosts_access"
+#~ "(5) kılavuz sayfasına göz atın. Yapılabilecek ayarlar arasında, "
+#~ "hizmetlere uzaktan erişim izninin yetkilendirilmiş makinelere verilmesi "
+#~ "de bulunabilir."
+
+#~ msgid ""
+#~ "Notice this only applies to internet services that use the libwrap "
+#~ "library. Remote connections will still be possible to services that do "
+#~ "not use this library, consider using firewall rules to block access to "
+#~ "these."
+#~ msgstr ""
+#~ "Tcpd üzerinden sağlanan erişim denetiminin sadece libwrap kitaplığını "
+#~ "kullanan Internet hizmetleri için geçerli olduğunu unutmayın. Bu "
+#~ "kitaplığı kullanmayan hizmetlere uzaktan erişim hâlâ mümkün olacaktır.  "
+#~ "Bu hizmetlere erişimi engellemek için bir güvenlik duvarı (firewall) "
+#~ "kullanmayı düşünebilirsiniz."

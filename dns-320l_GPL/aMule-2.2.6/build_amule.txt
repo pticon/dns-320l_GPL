@@ -1,0 +1,19 @@
+Amule module build progress (for marvell 6282)
+
+1. build libpng-1.2.35 (~ DNS323-D1_GPL/libpng-1.2.35)
+	$ ./configure --host=arm-mv5sft-linux-gnueabi
+	$ make clean;make;make install prefix=`pwd`/../
+	
+2. build wxWidgets-2.8.9 (~ DNS323-D1_GPL/wxWidgets-2.8.9)
+	$ ./configure --host=arm-mv5sft-linux-gnueabi --enable-unicode --disable-gui --enable-optimize --enable-shared
+	$ make clean;make;make install prefix=`pwd`/../
+	
+3. build cryptopp552 (~ DNS323-D1_GPL/cryptopp552)
+	$ make clean;make
+	
+4. build aMule-2.2.5 (~ DNS323-D1_GPL/aMule-2.2.5)
+	$ ./configure --host=arm-mv5sft-linux-gnueabi --enable-amulecmd --enable-ed2k --enable-amule-daemon --enable-webserver --disable-amule-gui --disable-monolithic --with-wx-config=../wxWidgets-2.8.9/wx-config --with-libpng-config=../libpng-1.2.35/libpng-config --with-crypto-prefix="`pwd`/../cryptopp552" CPPFLAGS="-I${PWD}/../include" LDFLAGS="-L${PWD}/../lib"
+	$ make clean;make CRYPTOPP_LIBS=`pwd`/../cryptopp552/libcryptopp.a CPPFLAGS=-I`pwd`/../include LDFLAGS=-L`pwd`/../lib -lpng12
+		
+	
+	

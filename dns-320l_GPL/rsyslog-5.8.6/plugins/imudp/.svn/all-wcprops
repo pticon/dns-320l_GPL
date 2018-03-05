@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imudp
+END
+imudp.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imudp/imudp.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imudp/Makefile.in
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imudp/Makefile.am
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins/imudp/Makefile
+END

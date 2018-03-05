@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2009-12-16T05:56:27.570713Z"
+   url="https://toolbox-of-eric.googlecode.com/svn/libiberty/libiberty/config"
+   last-author="joefoxreal"
+   kind="dir"
+   uuid="d4dabd8c-ea04-11de-9d05-050bbbc75a16"
+   revision="1"/>
+<entry
+   committed-rev="1"
+   name="mh-openedition"
+   text-time="2009-12-16T06:17:27.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="904bdcd9daf97fa55a9ca8901ffe7435"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:27.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-cxux7"
+   text-time="2009-12-16T06:17:27.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="7b65854f594c84e80295173de277b3dc"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:27.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-aix"
+   text-time="2009-12-16T06:17:27.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="4004fdcde347fda58406b4b84a995c66"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:27.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-fbsd21"
+   text-time="2009-12-16T06:17:27.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="044204f5b4bcac5eae2face0602129ae"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:27.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-windows"
+   text-time="2009-12-16T06:17:27.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="38e76da568ab25260754fdb9d5080513"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:27.000000Z"/>
+</wc-entries>

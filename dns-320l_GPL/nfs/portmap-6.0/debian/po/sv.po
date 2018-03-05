@@ -1,0 +1,48 @@
+# Translators, if you are not familiar with the PO format, gettext
+# documentation is worth reading, especially sections dedicated to
+# this format, e.g. by running:
+# info -n '(gettext)PO Files'
+# info -n '(gettext)Header Entry'
+# Some information specific to po-debconf are available at
+# /usr/share/doc/po-debconf/README-trans
+# or http://www.debian.org/intl/l10n/po-debconf/README-trans
+# Developers do not need to manually edit POT or PO files.
+# , fuzzy
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: portmap 5-15\n"
+"Report-Msgid-Bugs-To: anibal@debian.org\n"
+"POT-Creation-Date: 2006-02-25 23:17+0100\n"
+"PO-Revision-Date: 2006-12-22 10:16+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid "Should portmap be bound to the loopback address?"
+msgstr "Ska portmap bindas till \"loopback\"-adressen?"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid "Portmap by default listens to all IP addresses. However, if you are not providing network RPC services to remote clients (you are if you are setting up a NFS or NIS server) you can safely bind it to the loopback  IP address (127.0.0.1)"
+msgstr "Portmap lyssnar som standard på alla IP-adresser. Om du inte tillhandahåller RPC-tjänster till fjärrklienter (om du till exempel tillhandahåller NFS- och NIS-tjänster) kan du med säkerhet binda den till IP-adressen för \"loopback\" (127.0.0.1)"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid "This will allow RPC local services (like FAM) to work properly, while preventing remote systems from accessing your RPC services."
+msgstr "Detta kommer att tillåta lokala RPC-tjänster (som FAM) att fungera korrekt medans fjärrsystem hindras att komma åt dina RPC-tjänster."
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid "You can also change this configuration by editing the OPTIONS line in the /etc/default/portmap file. If you just don't specify the -i option it will bind to all interfaces."
+msgstr "Du kan även ändra denna konfiguration genom att redigera OPTIONS-raden i filen /etc/default/portmap. Om du inte anger flaggan -i kommer den att binda till alla gränssnitt."
+

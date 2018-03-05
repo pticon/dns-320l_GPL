@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/resultdata
+END
+imuxsock_traillf.log
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/resultdata/imuxsock_traillf.log
+END
+imuxsock_logger.log
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/resultdata/imuxsock_logger.log
+END
+imuxsock_ccmiddle.log
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/resultdata/imuxsock_ccmiddle.log
+END

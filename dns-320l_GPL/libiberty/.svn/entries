@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2009-12-16T05:56:27.570713Z"
+   url="https://toolbox-of-eric.googlecode.com/svn/libiberty"
+   last-author="joefoxreal"
+   kind="dir"
+   uuid="d4dabd8c-ea04-11de-9d05-050bbbc75a16"
+   revision="1"/>
+<entry
+   committed-rev="8"
+   name="mkinstalldirs"
+   text-time="2009-12-18T03:13:07.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="766574f467c38d27fc7604ca8eb6734c"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-18T06:05:30.000000Z"
+   revision="8"/>
+<entry
+   committed-rev="8"
+   name="configure"
+   text-time="2009-12-18T03:10:15.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="3ab3d9856a4f624360773dc7f875ae6e"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-18T06:05:30.000000Z"
+   revision="8"/>
+<entry
+   committed-rev="8"
+   name="Makefile.in"
+   text-time="2009-12-18T03:32:29.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="3499a3e6913fe2be8feb1c1b955c089e"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   name="include"
+   kind="dir"/>
+<entry
+   committed-rev="8"
+   name="AUTHORS"
+   text-time="2009-12-18T03:01:03.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   name="libiberty"
+   kind="dir"/>
+<entry
+   committed-rev="8"
+   name="ChangeLog"
+   text-time="2009-12-18T03:01:03.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="1"
+   name="config.guess"
+   text-time="2009-12-16T06:17:39.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="750ac5e3ea012afd503db973cb076f70"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:39.000000Z"/>
+<entry
+   committed-rev="8"
+   name="README"
+   text-time="2009-12-18T03:01:03.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="8"
+   name="autoscan.log"
+   text-time="2009-12-18T02:58:26.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="1"
+   name="config.sub"
+   text-time="2009-12-16T06:17:39.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="21e1bf1c3580193cf0906851326a0d64"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:39.000000Z"/>
+<entry
+   committed-rev="8"
+   name="config.h.in"
+   text-time="2009-12-18T03:06:06.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="08774fd82c6bd359c807f5866a9a0b83"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="8"
+   name="configure.ac"
+   text-time="2009-12-18T03:10:00.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="2a176438f9fdf76e0f4d02d3505337bd"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   name="autom4te.cache"
+   kind="dir"/>
+<entry
+   name="config"
+   kind="dir"/>
+<entry
+   committed-rev="13"
+   name="INSTALL"
+   text-time="2009-12-21T05:51:05.000000Z"
+   committed-date="2009-12-21T05:39:58.984959Z"
+   checksum="5d4638159851671944108691f23e4f28"
+   last-author="joefoxreal"
+   kind="file"
+   revision="13"/>
+<entry
+   committed-rev="13"
+   name="COPYING"
+   text-time="2009-12-21T05:51:10.000000Z"
+   committed-date="2009-12-21T05:39:58.984959Z"
+   checksum="94d55d512a9ba36caa9b7df079bae19f"
+   last-author="joefoxreal"
+   kind="file"
+   revision="13"/>
+<entry
+   committed-rev="8"
+   name="Makefile.am"
+   text-time="2009-12-18T02:57:46.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="b7766f5401283f46da24b6b0268a97a6"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="13"
+   name="missing"
+   text-time="2009-12-21T05:50:54.000000Z"
+   committed-date="2009-12-21T05:39:58.984959Z"
+   checksum="fd5dd60aa8cefab9462677280ea74a61"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-21T05:51:24.000000Z"
+   revision="13"/>
+<entry
+   committed-rev="8"
+   name="NEWS"
+   text-time="2009-12-18T03:01:03.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="8"
+   name="aclocal.m4"
+   text-time="2009-12-18T03:10:13.000000Z"
+   committed-date="2009-12-18T06:00:00.650699Z"
+   checksum="07a2f4bd214a51b876d54395c67a1a42"
+   last-author="joefoxreal"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="13"
+   name="install-sh"
+   text-time="2009-12-21T05:51:00.000000Z"
+   committed-date="2009-12-21T05:39:58.984959Z"
+   checksum="2947b9daa4c6c8bddac15717f3548ab6"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-21T05:51:24.000000Z"
+   revision="13"/>
+</wc-entries>

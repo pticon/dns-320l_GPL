@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/.deps
+END
+lmtcpsrv_la-tcps_sess.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/.deps/lmtcpsrv_la-tcps_sess.Plo
+END
+lmgssutil_la-gss-misc.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/.deps/lmgssutil_la-gss-misc.Plo
+END
+lmtcpclt_la-tcpclt.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/.deps/lmtcpclt_la-tcpclt.Plo
+END
+lmtcpsrv_la-tcpsrv.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/.deps/lmtcpsrv_la-tcpsrv.Plo
+END

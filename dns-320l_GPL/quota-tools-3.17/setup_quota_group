@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ $# -lt 2 ]; then
+   echo "Usage: $0 proto_type_user group"
+   exit 1
+fi
+
+gid=`cat /etc/group | grep "^$2" | cut -d: -f3`
+for user in `cat /etc/passwd | grep ".*:.*:$gid:" | cut -d: -f1`
+do
+   edquota -p $1 $user
+done

@@ -1,0 +1,34 @@
+.TH RQUOTAD 8
+.SH NAME
+quota_nld \- quota netlink message daemon
+.SH SYNOPSIS
+.B quota_nld
+[
+.B \-DCn
+]
+.SH DESCRIPTION
+.BR quota_nld
+is a daemon that listens on netlink socket and processes received quota
+warnings. Note, that you have to enable the kernel support for sending quota
+messages over netlink (in Filesystems->Quota menu). The daemon supports
+forwarding warning messages to the system's DBUS (so that desktop manager
+can display a dialog) and writing them to the terminal user has last accessed.
+
+.SH OPTIONS
+.TP
+.B \-V, \-\-version
+Shows version of quota tools.
+.TP
+.B \-D, \-\-no-dbus
+Do not forward quota warnings to DBUS.
+.TP
+.B \-C, \-\-no-console
+Do not print quota warnings to the terminal.
+.TP
+.B \-F, \-\-foreground
+Run daemon in foreground (may be useful for debugging purposes).
+
+.SH "SEE ALSO"
+.BR quota (1),
+.BR netlink (7),
+.BR dbus.freedesktop.org

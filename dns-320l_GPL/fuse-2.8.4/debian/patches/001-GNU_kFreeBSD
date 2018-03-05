@@ -1,0 +1,116 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 001-GNU_kFreeBSD
+## by Aurelien Jarno <aurel32@debian.org>
+##
+## DP: GNU/kFreeBSD support
+
+@DPATCH@
+
+diff --git a/include/fuse_common.h b/include/fuse_common.h
+index c263f6f..2d18346 100644
+--- a/include/fuse_common.h
++++ b/include/fuse_common.h
+@@ -261,7 +261,7 @@ void fuse_remove_signal_handlers(struct fuse_session *se);
+  * ----------------------------------------------------------- */
+ 
+ #if FUSE_USE_VERSION < 26
+-#    ifdef __FreeBSD__
++#    if defined(__FreeBSD__) || defined(__FreeBSD_kernel__)
+ #	 if FUSE_USE_VERSION < 25
+ #	     error On FreeBSD API version 25 or greater must be used
+ #	 endif
+diff --git a/include/fuse_compat.h b/include/fuse_compat.h
+index 225276f..56b6c13 100644
+--- a/include/fuse_compat.h
++++ b/include/fuse_compat.h
+@@ -65,7 +65,7 @@ struct fuse *fuse_setup_compat25(int argc, char *argv[],
+ 
+ void fuse_teardown_compat22(struct fuse *fuse, int fd, char *mountpoint);
+ 
+-#ifndef __FreeBSD__
++#if !defined(__FreeBSD__) && !defined(__FreeBSD_kernel__)
+ #include <sys/statfs.h>
+ 
+ struct fuse_operations_compat22 {
+diff --git a/include/fuse_lowlevel_compat.h b/include/fuse_lowlevel_compat.h
+index aba45e6..d8c7108 100644
+--- a/include/fuse_lowlevel_compat.h
++++ b/include/fuse_lowlevel_compat.h
+@@ -72,7 +72,7 @@ size_t fuse_dirent_size(size_t namelen);
+ char *fuse_add_dirent(char *buf, const char *name, const struct stat *stbuf,
+ 		      off_t off);
+ 
+-#ifndef __FreeBSD__
++#if !defined(__FreeBSD__) && !defined(__FreeBSD_kernel__)
+ 
+ #include <sys/statfs.h>
+ 
+diff --git a/lib/fuse.c b/lib/fuse.c
+index 95cf50b..83c406c 100644
+--- a/lib/fuse.c
++++ b/lib/fuse.c
+@@ -954,7 +954,7 @@ static inline void fuse_prepare_interrupt(struct fuse *f, fuse_req_t req,
+ 		fuse_do_prepare_interrupt(req, d);
+ }
+ 
+-#ifndef __FreeBSD__
++#if !defined(__FreeBSD__) && !defined(__FreeBSD_kernel__)
+ 
+ static int fuse_compat_open(struct fuse_fs *fs, const char *path,
+ 			    struct fuse_file_info *fi)
+@@ -3721,7 +3721,7 @@ struct fuse *fuse_new_common(struct fuse_chan *ch, struct fuse_args *args,
+ 	if (!f->conf.ac_attr_timeout_set)
+ 		f->conf.ac_attr_timeout = f->conf.attr_timeout;
+ 
+-#ifdef __FreeBSD__
++#if defined(__FreeBSD__) || defined(__FreeBSD_kernel__)
+ 	/*
+ 	 * In FreeBSD, we always use these settings as inode numbers
+ 	 * are needed to make getcwd(3) work.
+@@ -3897,7 +3897,7 @@ void fuse_register_module(struct fuse_module *mod)
+ 	fuse_modules = mod;
+ }
+ 
+-#ifndef __FreeBSD__
++#if !defined(__FreeBSD__) && !defined(__FreeBSD_kernel__)
+ 
+ static struct fuse *fuse_new_common_compat(int fd, const char *opts,
+ 					   const struct fuse_operations *op,
+diff --git a/lib/fuse_lowlevel.c b/lib/fuse_lowlevel.c
+index c519bfb..40d7293 100644
+--- a/lib/fuse_lowlevel.c
++++ b/lib/fuse_lowlevel.c
+@@ -1734,7 +1734,7 @@ int fuse_req_getgroups(fuse_req_t req, int size, gid_t list[])
+ }
+ #endif
+ 
+-#ifndef __FreeBSD__
++#if !defined(__FreeBSD__) && !defined(__FreeBSD_kernel__)
+ 
+ static void fill_open_compat(struct fuse_open_out *arg,
+ 			     const struct fuse_file_info_compat *f)
+diff --git a/lib/fuse_session.c b/lib/fuse_session.c
+index 3758627..dd1311f 100644
+--- a/lib/fuse_session.c
++++ b/lib/fuse_session.c
+@@ -200,6 +200,6 @@ void fuse_chan_destroy(struct fuse_chan *ch)
+ 	free(ch);
+ }
+ 
+-#ifndef __FreeBSD__
++#if !defined(__FreeBSD__) && !defined(__FreeBSD_kernel__)
+ FUSE_SYMVER(".symver fuse_chan_new_compat24,fuse_chan_new@FUSE_2.4");
+ #endif
+diff --git a/lib/helper.c b/lib/helper.c
+index 3d0db4a..107174e 100644
+--- a/lib/helper.c
++++ b/lib/helper.c
+@@ -357,7 +357,7 @@ int fuse_version(void)
+ 
+ #include "fuse_compat.h"
+ 
+-#ifndef __FreeBSD__
++#if !defined(__FreeBSD__) && !defined(__FreeBSD_kernel__)
+ 
+ struct fuse *fuse_setup_compat22(int argc, char *argv[],
+ 				 const struct fuse_operations_compat22 *op,

@@ -1,0 +1,61 @@
+# Russian translation of portmap.
+# Copyright (C) 2006
+# This file is distributed under the same license as the portmap package.
+# Aleksandr Bouksha <abook@purpe.ru>, 2006.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: portmap_5-19\n"
+"Report-Msgid-Bugs-To: anibal@debian.org\n"
+"POT-Creation-Date: 2006-02-25 23:17+0100\n"
+"PO-Revision-Date: 2006-06-17 00:57+0600\n"
+"Last-Translator: Aleksandr Bouksha <abook@purpe.ru>\n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8bit"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid "Should portmap be bound to the loopback address?"
+msgstr "Следует ли ограничить portmap работой только с локальным интерфейсом?"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid ""
+"Portmap by default listens to all IP addresses. However, if you are not "
+"providing network RPC services to remote clients (you are if you are setting "
+"up a NFS or NIS server) you can safely bind it to the loopback  IP address "
+"(127.0.0.1)"
+msgstr ""
+"По умолчанию portmap ожидает соединений на всех интерфейсах. Однако, "
+"если вы не предоставляете сетевых RPC сервисов (таких как NFS и NIS) для "
+"других компьютеров, вы можете ограничить работу portmap только локальным "
+"интерфейсом (127.0.0.1)"
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid ""
+"This will allow RPC local services (like FAM) to work properly, while "
+"preventing remote systems from accessing your RPC services."
+msgstr ""
+"Это позволит локальным RPC сервисам (например FAM) работать корректно, "
+"в то же время не позволяя другим компьютерам иметь доступ к вашим "
+"RPC сервисам."
+
+#. Type: boolean
+#. Description
+#: ../templates:4
+msgid ""
+"You can also change this configuration by editing the OPTIONS line in the /"
+"etc/default/portmap file. If you just don't specify the -i option it will "
+"bind to all interfaces."
+msgstr ""
+"Вы можете поменять эту настройку, отредактировав строку OPTIONS в файле "
+"/etc/default/portmap. Если вы не укажете ключ -i, то программа будет ожидать "
+"соединений на всех интерфейсах."
+

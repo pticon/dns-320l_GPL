@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TCP wrappers\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2007-04-22 10:51+0100\n"
+"Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
+"Language-Team: Hungarian <debian-l10n-hungarian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr ""
+"Paranoid beállításokat használsz a hosts.allow és hosts.access fájlokban?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+"Új /etc/hosts.allow és /etc/hosts.deny fájlokat készítünk a TCP wrappers "
+"démon (tcpd) számára, mert még nincsenek."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"Választhatsz egy általános és minden bejövő kapcsolatot engedő és egy "
+"paranoid beállítás közt, mely tiltja a kapcsolatokat eredetüktől "
+"függetlenül. Utóbbi nyilván biztonságosabb, de tilt minden kommunikációt, "
+"például a táv-felügyeletet."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+"Minden fájlt módosíthatsz később a hosts_access(5) kézikönyv oldal szerint. "
+"E beállítások csak a libwrap könyvtárat használó hálózati szolgáltatásokra "
+"hatnak. Más szolgáltatások például tűzfal szabályokkal korlátozhatók."

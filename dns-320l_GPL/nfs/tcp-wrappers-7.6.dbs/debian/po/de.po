@@ -1,0 +1,65 @@
+# Translation of tcp-wrappers debconf templates to German
+# Copyright (C) Helge Kreutzmann <debian@helgefjell.de>, 2004, 2007.
+# This file is distributed under the same license as the tcp-wrappers package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers 7.6.dbs-13\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2007-05-21 18:15+0200\n"
+"Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
+"Language-Team: German <debian-l10n-german@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr "Paranoide Einstellungen in hosts.allow und hosts.deny verwenden?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+"Es werden neue Dateien /etc/hosts.allow und /etc/hosts.deny für die TCP-"
+"Wrappers-Programme (tcpd) und die libwrap-Bibliothek erstellt, da sie noch "
+"nicht existieren."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"Sie können zwischen einer generische und freizügige Konfiguration, die jede "
+"eingehende Verbindungen erlaubt, oder einer paranoiden Konfiguration, die "
+"keine eingehende Verbindung erlaubt, egal woher sie kommt, wählen. Letztere, "
+"obwohl auch sicherer, wird alle Kommunikation, darunter beispielsweise "
+"Administration aus der Ferne, blocken."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+"Beide Dateien können später nach Ihren Bedürfnissen angepasst werden, wie "
+"dies in der Handbuchseite hosts_access(5) erklärt ist. Diese Einstellungen "
+"betreffen nur Netz-Anwendungen, die die libwrap-Bibliothek verwenden. "
+"Begrenzungen für andere Dienste können über Paket-spezifische "
+"Konfigurationsanweisungen oder mittels Firewall-Regeln eingerichtet "
+"werden."

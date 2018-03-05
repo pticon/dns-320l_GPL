@@ -1,0 +1,40 @@
+Revision history for Perl extension Tie::RegexpHash.
+
+0.15    11 Feb 2006
+	- updated notes on Storable use in documentation
+	- support serialization with Storable, but do not require
+	  Storable
+	- skip serialization tests if Storable is not available
+
+0.14_03 10 Feb 2006
+	- noted use of Storable in documentation
+	- fix for MANIFEST
+
+0.14_02 10 Feb 2006
+	- fix for freeze subroutine (from Russell Harrison)
+	- tests for serialization hooks (from Russell Harrison)
+
+0.14_01 9 Feb 2006
+	- updated test suite to use Test::More
+	- added serialization hooks with Storable
+	  (patch from Russell Harrison)
+	- README built with Pod::Readme
+
+0.13   3 Jan 2005
+	- added Build.PL, META.yml etc. to distro
+	- fixed typos in warning message
+	- reorganized/updated POD
+	- added more modules to SEE ALSO section
+
+0.12  22 Nov 2002
+	- fixed bug with logic in _find() routine
+
+0.11  27 Jan 2001
+	- added SEE ALSO in POD about Tie::Hash::Regex
+	- should run on Perl 5.005
+	- no longer an Exporter
+	- added stub for test suite
+
+0.10  22 Jan 2001
+	- original version
+

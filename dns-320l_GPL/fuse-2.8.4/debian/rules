@@ -1,0 +1,100 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+# Dpatch system
+include /usr/share/dpatch/dpatch.make
+
+# Some variables I'll use below
+DESTDIR	 = $(CURDIR)/debian/tmp
+DOCS	 = Filesystems FAQ NEWS README README.NFS doc/* debian/README.Debian debian/NEWS.Debian
+
+DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+DEB_HOST_ARCH_OS    ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+
+CFLAGS += -Wall -g
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+	CFLAGS += -O0
+else
+	CFLAGS += -O2
+endif
+
+config.status: configure patch-stamp
+	dh_testdir
+ifneq "$(wildcard /usr/share/misc/config.sub)" ""
+	cp -f /usr/share/misc/config.sub config.sub
+endif
+ifneq "$(wildcard /usr/share/misc/config.guess)" ""
+	cp -f /usr/share/misc/config.guess config.guess
+endif
+	CFLAGS="$(CFLAGS)" \
+	./configure --host=$(DEB_HOST_GNU_TYPE) \
+	            --build=$(DEB_BUILD_GNU_TYPE) \
+		    --prefix=/usr \
+		    --mandir=\$${prefix}/share/man \
+		    --infodir=\$${prefix}/share/info \
+		    --disable-kernel-module \
+		    --disable-example
+
+build: build-stamp
+build-stamp: config.status
+	$(MAKE)
+	touch $@
+
+clean: unpatch
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp config.log
+	[ ! -f example/Makefile ] || $(MAKE) distclean -C example
+	[ ! -f Makefile ] || $(MAKE) distclean
+	dh_clean config.guess config.sub
+
+install-arch:
+	dh_testdir
+	dh_testroot
+	dh_clean -k -s
+	dh_installdirs -s
+	$(MAKE) install DESTDIR=$(DESTDIR)
+	dh_install -s --source=debian/tmp
+ifeq ($(DEB_HOST_ARCH_OS),linux)
+	install -D -m0640 $(CURDIR)/debian/fuse.conf \
+			  $(CURDIR)/debian/fuse-utils/etc/fuse.conf
+endif
+
+binary-arch: build install-arch
+	dh_testdir -s
+	dh_testroot -s
+	dh_installchangelogs -s ChangeLog
+	dh_installdocs -plibfuse2 $(DOCS)
+	dh_installdocs -plibfuse-dev $(DOCS)
+	dh_installexamples -s
+ifeq ($(DEB_HOST_ARCH_OS),linux)
+	for PKG in fuse-utils; do \
+		rm -rf debian/$$PKG/usr/share/doc/$$PKG; \
+		cd debian/$$PKG/usr/share/doc/ && ln -s libfuse2 $$PKG; \
+	done
+endif
+	dh_installman -s
+	dh_installudev
+	dh_link -s
+	dh_strip -s
+	dh_compress -s -Xusr/share/doc/libfuse-dev/examples/
+	dh_fixperms -s
+	dh_installdebconf -s
+	dh_installinit -s --name=fuse -- start 34 S . stop 41 0 6 .
+	dh_makeshlibs -s -V "libfuse2 (>= 2.8.1)"
+	dh_installdeb -s
+	dh_shlibdeps -s
+	dh_gencontrol -s
+	dh_md5sums -s
+ifeq ($(DEB_HOST_ARCH_OS),linux)
+	chmod 0755 debian/fuse-utils/usr/bin/fusermount
+endif
+	dh_builddeb -s
+
+binary-indep:
+
+binary: binary-arch binary-indep
+.PHONY: build clean binary-indep binary-arch binary install

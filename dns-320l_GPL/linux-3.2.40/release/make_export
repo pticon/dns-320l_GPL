@@ -1,0 +1,46 @@
+#
+# Build Armada XP release script
+# Usage ./build_release <axp-1.x.x>
+#
+
+echo "Building $1 Releases"
+cd $1
+DIR=linux-${2}-${1}
+# Build tools
+#
+#mkdir ./bin_tools
+#cd ./$DIR/tools
+#make
+#cp ./mv_neta_tool ../../bin_tools
+#cp ./mv_cesa_tool ../../bin_tools
+#cd ./perf
+#make
+#cp  ./perf ../../../bin_tools
+#cd ../
+#zip -r ../../bin_tools.zip ../../bin_tools/
+#cd ../../
+
+
+#
+# Remove internal sources
+#
+echo "Removing third party SLIC source code"
+rm -fr export-${3}
+mkdir export-${3}
+cd export-${3}
+unzip ../${DIR}_release
+mkdir temp
+mv ./$DIR/arch/arm/plat-armada/mv_hal/voiceband/slic/zarlink/api_lib/includes ./temp/
+rm -rf ./$DIR/arch/arm/plat-armada/mv_hal/voiceband/slic/zarlink/api_lib/*
+mv ./temp/includes ./$DIR/arch/arm/plat-armada/mv_hal/voiceband/slic/zarlink/api_lib/
+rm -rf ./temp/includes
+mv ./$DIR/arch/arm/plat-armada/mv_hal/voiceband/slic/zarlink/vp792_api_lib/includes ./temp/
+rm -rf ./$DIR/arch/arm/plat-armada/mv_hal/voiceband/slic/zarlink/vp792_api_lib/*
+mv ./temp/includes ./$DIR/arch/arm/plat-armada/mv_hal/voiceband/slic/zarlink/vp792_api_lib/
+rm -rf ./$DIR/arch/arm/plat-armada/mv_hal/voiceband/slic/silabs
+rm -rf ./temp
+zip -r -q ./$DIR.zip ./$DIR/
+rm -fr ./$DIR
+#mv ../bin*.zip ./
+cd ../../
+

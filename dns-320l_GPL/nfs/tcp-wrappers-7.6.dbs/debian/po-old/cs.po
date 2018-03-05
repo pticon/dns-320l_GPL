@@ -1,0 +1,80 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-05-22 13:08+0200\n"
+"PO-Revision-Date: 2004-05-29 16:41+0200\n"
+"Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
+"Language-Team: Czech <provoz@debian.cz>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid "Should tcpd setup paranoid hosts.allow and hosts.access?"
+msgstr "Má tcpd nastavit hosts.allow a hosts.deny paranoidním zpùsobem?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"/etc/hosts.allow and /etc/hosts.deny will be setup since you do not have "
+"have any of these files yet. You can either have a generic and permissive "
+"configuration which will allow any incoming connection or a paranoid "
+"configuration which will not allow remote connections regardless of where "
+"they originate from."
+msgstr ""
+"Proto¾e zatím neexistují, tcpd vytvoøí soubory /etc/hosts.allow a /etc/hosts."
+"deny. Mù¾ete mít buï obecné a otevøené nastavení, které povolí pøíchozí "
+"spojení, nebo nastavení paranoidní, které zaká¾e ve¹kerá vzdálená spojení."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"The second option, even if more secure, will block out all communication, "
+"including, for example, remote administration. So if you need this don't "
+"choose it."
+msgstr ""
+"Druhá volba je sice bezpeènìj¹í, ale na druhou stranu také zablokuje "
+"ve¹kerou komunikaci vèetnì napø. vzdálené správy. Potøebujete-li vzdálenou "
+"správu, tuto mo¾nost zamítnìte."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"Regardless of which option you select you can always manually edit both  "
+"files to suit your needs, for this, review the hosts_access(5) manpage.  "
+"This might include giving remote access of services to legitimate hosts."
+msgstr ""
+"Nezávisle na tom, kterou volbu si vyberete, v¾dycky mù¾ete oba soubory "
+"upravit ruènì a pøizpùsobit si je podle potøeb, napøíklad povolit spojení "
+"pro urèité slu¾by. Více viz manálová stránka hosts_access(5). "
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"Notice this only applies to internet services that use the libwrap library. "
+"Remote connections will still be possible to services that do not use this "
+"library, consider using firewall rules to block access to these."
+msgstr ""
+"Nezapomeòte, ¾e toto nastavení se vztahuje pouze na programy, které "
+"vyu¾ívají knihovnu libwrap. Chcete-li blokovat i vzdálená spojení na slu¾by, "
+"které knihovnu libwrap nepou¾ívají, zva¾te pou¾ití firewallu."

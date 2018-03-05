@@ -1,0 +1,14 @@
+#!/bin/sh
+
+CURL_DIR="$PWD/../../_xinstall/${PROJECT_NAME}"
+
+case "$1" in
+	--libs)
+		echo "-L$CURL_DIR/lib -L$CURL_DIR/usr/lib -lcurl -lssl -lcrypto"
+		;;
+	--cflags)
+		echo "-I$CURL_DIR/include -I$CURL_DIR/usr/include"
+		;;
+	*)
+		;;
+esac

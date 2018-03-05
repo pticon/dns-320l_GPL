@@ -1,0 +1,144 @@
+.\"     Title: groupadd
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 10/28/2007
+.\"    Manual: System Management Commands
+.\"    Source: System Management Commands
+.\"
+.TH "GROUPADD" "8" "10/28/2007" "System Management Commands" "System Management Commands"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+groupadd - create a new group
+.SH "SYNOPSIS"
+.HP 9
+\fBgroupadd\fR [\-g\ \fIGID\fR\ [\-o]] [\-f] [\-K\ \fIKEY\fR=\fIVALUE\fR] \fIgroup\fR
+.SH "DESCRIPTION"
+.PP
+The
+\fBgroupadd\fR
+command creates a new group account using the values specified on the command line plus the default values from the system\. The new group will be entered into the system files as needed\.
+.SH "OPTIONS"
+.PP
+The options which apply to the
+\fBgroupadd\fR
+command are:
+.PP
+\fB\-f\fR
+.RS 4
+This option causes the command to simply exit with success status if the specified group already exists\. When used with
+\fB\-g\fR, and the specified GID already exists, another (unique) GID is chosen (i\.e\.
+\fB\-g\fR
+is turned off)\.
+.RE
+.PP
+\fB\-g\fR \fIGID\fR
+.RS 4
+The numerical value of the group\'s ID\. This value must be unique, unless the
+\fB\-o\fR
+option is used\. The value must be non\-negative\. The default is to use the smallest ID value greater than 999 and greater than every other group\. Values between 0 and 999 are typically reserved for system accounts\.
+.RE
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Display help message and exit\.
+.RE
+.PP
+\fB\-K \fR\fB\fIKEY\fR\fR\fB=\fR\fB\fIVALUE\fR\fR
+.RS 4
+Overrides
+\fI/etc/login\.defs\fR
+defaults (GID_MIN, GID_MAX and others)\. Multiple
+\fB\-K\fR
+options can be specified\.
+.sp
+Example:
+\fB\-K \fR\fIGID_MIN\fR=\fI100\fR
+\fB \-K \fR\fIGID_MAX\fR=\fI499\fR
+.sp
+Note:
+\fB\-K \fR
+\fIGID_MIN\fR=\fI10\fR,\fIGID_MAX\fR=\fI499\fR
+doesn\'t work yet\.
+.RE
+.PP
+\fB\-o\fR
+.RS 4
+This option permits to add a group with a non\-unique GID\.
+.RE
+.SH "FILES"
+.PP
+\fI/etc/group\fR
+.RS 4
+Group account information\.
+.RE
+.PP
+\fI/etc/gshadow\fR
+.RS 4
+Secure group account information\.
+.RE
+.PP
+\fI/etc/login\.defs\fR
+.RS 4
+Shadow password suite configuration\.
+.RE
+.SH "CAVEATS"
+.PP
+Groupnames must begin with a lower case letter or an underscore, and only lower case letters, underscores, dashes, and dollar signs may follow\. In regular expression terms: [a\-z_][a\-z0\-9_\-]*[$]
+.PP
+If the groupname already exists in an external group database such as NIS,
+\fBgroupadd\fR
+will deny the group creation request\.
+.PP
+Groupnames may only be up to 16 characters long\.
+.SH "EXIT VALUES"
+.PP
+The
+\fBgroupadd\fR
+command exits with the following values:
+.PP
+\fI0\fR
+.RS 4
+success
+.RE
+.PP
+\fI2\fR
+.RS 4
+invalid command syntax
+.RE
+.PP
+\fI3\fR
+.RS 4
+invalid argument to option
+.RE
+.PP
+\fI4\fR
+.RS 4
+GID not unique (when
+\fB\-o\fR
+not used)
+.RE
+.PP
+\fI9\fR
+.RS 4
+group name not unique
+.RE
+.PP
+\fI10\fR
+.RS 4
+can\'t update group file
+.RE
+.SH "SEE ALSO"
+.PP
+\fBchfn\fR(1),
+\fBchsh\fR(1),
+\fBpasswd\fR(1),
+\fBgpasswd\fR(8),
+\fBgroupdel\fR(8),
+\fBgroupmod\fR(8),
+\fBlogin.defs\fR(5),
+\fBuseradd\fR(8),
+\fBuserdel\fR(8),
+\fBusermod\fR(8)\.

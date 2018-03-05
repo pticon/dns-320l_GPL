@@ -1,0 +1,26 @@
+--- #YAML:1.0
+name:               Tie-Cache-LRU
+version:            20110205
+abstract:           A Least-Recently Used cache
+author:
+    - Michael G Schwern <schwern@pobox.com>
+license:            perl
+distribution_type:  module
+configure_requires:
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
+requires:
+    Carp::Assert:         0
+    Class::Data::Inheritable:  0
+    Class::Virtual:       0
+    enum:                 0
+    Test::More:           0.82
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.57_06
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4

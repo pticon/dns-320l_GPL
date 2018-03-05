@@ -1,0 +1,70 @@
+# Translators, if you are not familiar with the PO format, gettext
+# documentation is worth reading, especially sections dedicated to
+# this format, e.g. by running:
+# info -n '(gettext)PO Files'
+# info -n '(gettext)Header Entry'
+# Some information specific to po-debconf are available at
+# /usr/share/doc/po-debconf/README-trans
+# or http://www.debian.org/intl/l10n/po-debconf/README-trans
+# Developers do not need to manually edit POT or PO files.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers 7.6.dbs-4\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2004-08-29 18:53+0200\n"
+"Last-Translator: Marco d'Itri <md@linux.it>\n"
+"Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr "Configurare hosts.allow e hosts.deny in modo paranoico?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+"Poiché non esistono ancora, saranno creati i file /etc/hosts.allow e "
+"/etc/hosts.deny usati dai programmi TCP wrapper e dalla libreria libwrap."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"Si può scegliere tra una configurazione generica e permissiva che permetta "
+"qualsiasi connessione in ingresso e una paranoica che non permetta nessuna "
+"connessione remota indipentemente dalla sua origine. Anche se è più sicura, "
+"la seconda impedirà ogni tipo di comunicazione, compresa per esempio "
+"l'amministrazione remota."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+"È comunque possibile modificare in seguito i file come spiegato nella man "
+"page hosts_access(5). Queste impostazioni avranno effetto solo sui servizi "
+"di rete che usano la libreria libwrap: è possibile configurare restrizioni "
+"per gli altri servizi usando direttive specifiche dei pacchetti o regole "
+"del firewall."

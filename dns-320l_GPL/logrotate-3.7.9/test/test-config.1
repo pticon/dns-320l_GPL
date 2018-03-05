@@ -1,0 +1,9 @@
+create
+
+/opt/DNS-357/trunk/modules/gpl/logrotate-3.7.9/test/test.log {
+    daily
+    # note the white space after this line
+    rotate 2 
+    mail user@myhost.org
+    maillast
+}

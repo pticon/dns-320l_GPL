@@ -1,0 +1,20 @@
+Source: portmap
+Section: net
+Priority: standard
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Uploaders: Javier Fernandez-Sanguino Pen~a <jfs@computer.org>
+Standards-Version: 3.7.2
+Build-Depends: libwrap0-dev, debhelper (>= 5)
+
+Package: portmap
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, lsb-base (>= 1.3-9)
+Replaces: netbase (<< 4.00)
+Description: The RPC portmapper
+ Portmap is a server that converts RPC (Remote Procedure Call) program
+ numbers into DARPA protocol port numbers.  It must be running in order
+ to make RPC calls.
+ .
+ Services that use RPC include NFS and NIS.
+ .
+  Homepage: http://neil.brown.name/portmap/

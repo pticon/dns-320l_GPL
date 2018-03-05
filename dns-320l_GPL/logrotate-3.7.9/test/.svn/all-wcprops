@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test
+END
+state
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/state
+END
+test-config.1
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.1
+END
+test-config.1.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.1.in
+END
+test-config.2.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.2.in
+END
+test-config.3.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.3.in
+END
+test-config.4.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.4.in
+END
+test-config.5.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.5.in
+END
+test-config.6.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.6.in
+END
+test-config.7.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.7.in
+END
+test-config.8.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.8.in
+END
+test-config.9.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.9.in
+END
+test.log.1
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test.log.1
+END
+test.log
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test.log
+END
+test-config.10.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.10.in
+END
+test-config.11.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.11.in
+END
+test-config.12.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.12.in
+END
+test-config.13.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.13.in
+END
+mailer
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/mailer
+END
+test-config.14.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/test/test-config.14.in
+END

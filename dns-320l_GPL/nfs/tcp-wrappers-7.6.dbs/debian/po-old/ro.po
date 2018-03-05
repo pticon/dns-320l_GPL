@@ -1,0 +1,66 @@
+# Romanian translation of tcp-wrappers.
+# Copyright (C) 2006 THE tcp-wrappers'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the tcp-wrappers package.
+# Stan Ioan-Eugen <stan.ieugen@gmail.com>, 2006.
+# , fuzzy
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers 7.6.dbs-11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-09-09 13:49-0600\n"
+"PO-Revision-Date: 2006-10-14 16:53+0300\n"
+"Last-Translator: Stan Ioan-Eugen <stan.ieugen@gmail.com>\n"
+"Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid "Should tcpd setup paranoid hosts.allow and hosts.access?"
+msgstr "Doriţi să configuraţi hosts.allow şi hosts.acces pentru modul de securitate extremă?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"/etc/hosts.allow and /etc/hosts.deny will be setup since you do not have "
+"have any of these files yet. You can either have a generic and permissive "
+"configuration which will allow any incoming connection or a paranoid "
+"configuration which will not allow remote connections regardless of where "
+"they originate from."
+msgstr "/etc/hosts.allow şi /etc/hosts.deny vor fi configurate deoarece nu aveţi încă nici unul din aceste fişiere. Puteţi opta pentru un model general şi permisiv de securitate care va primi orice conexiune sau un model paranoic securitate ce nu va permite nici o conexiune, indiferent de unde a fost făcută."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"The second option, even if more secure, will block out all communication, "
+"including, for example, remote administration. So if you need this don't "
+"choose it."
+msgstr ""
+"A doua opţiune, chiar dacă este mai sigură, va bloca toate comunicaţiile, inclusiv cele pentru adminstrare la distanţă. Aşa că, dacă aveţi nevoie de aşa ceva, nu alegeţi această opţiune."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Regardless of which option you select you can always manually edit both  "
+"files to suit your needs, for this, review the hosts_access(5) manpage.  "
+"This might include giving remote access of services to legitimate hosts."
+msgstr ""
+"Indiferent de ce opţiune alegeţi puteţi să editaţi manual ambele fişiere pentru propriile dumneavoastră nevoi, aflaţi cum citind pagina de manual hosts_acces(5).  Acest lucru poate însemna să oferiţi acces de la distanţă pentru gazdele autorizate la serviciile oferite de dumneavoastră. "
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Notice this only applies to internet services that use the libwrap library. "
+"Remote connections will still be possible to services that do not use this "
+"library, consider using firewall rules to block access to these."
+msgstr ""
+"De remarcat că acest lucru se aplică doar serviciilor internet care folosesc biblioteca libwrap. Conexiunile de la distanţă vor fi posibile către serviciile care nu folosesc această bibliotecă, folosiţi reguli de firewall pentru a bloca accesul la acestea."
+

@@ -1,0 +1,128 @@
+.\"     Title: groupmod
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 10/28/2007
+.\"    Manual: System Management Commands
+.\"    Source: System Management Commands
+.\"
+.TH "GROUPMOD" "8" "10/28/2007" "System Management Commands" "System Management Commands"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+groupmod - modify a group definition on the system
+.SH "SYNOPSIS"
+.HP 9
+\fBgroupmod\fR [\fIoptions\fR] \fIGROUP\fR
+.SH "DESCRIPTION"
+.PP
+The
+\fBgroupmod\fR
+command modifies the definition of the specified
+\fIGROUP\fR
+by modifying the appropriate entry in the group database\.
+.SH "OPTIONS"
+.PP
+The options which apply to the
+\fBgroupmod\fR
+command are:
+.PP
+\fB\-g\fR, \fB\-\-gid\fR \fIGID\fR
+.RS 4
+The group ID of the given
+\fIGROUP\fR
+will be changed to
+\fIGID\fR\. The value of
+\fIGID\fR
+must be a non\-negative decimal integer\. This value must be unique, unless the
+\fB\-o\fR
+option is used\. Values between 0 and 999 are typically reserved for system groups\. Any files that have the old group ID and must continue to belong to
+\fIGROUP\fR, must have their group ID changed manually\.
+.RE
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Display help message and exit\.
+.RE
+.PP
+\fB\-n\fR, \fB\-\-new\-name\fR \fINEW_GROUP\fR
+.RS 4
+The name of the group will be changed from
+\fIGROUP\fR
+to
+\fINEW_GROUP\fR
+name\.
+.RE
+.PP
+\fB\-o\fR, \fB\-\-non\-unique\fR
+.RS 4
+When used with the
+\fB\-g\fR
+option, allow to change the group
+\fIGID\fR
+to a non\-unique value\.
+.RE
+.SH "FILES"
+.PP
+\fI/etc/group\fR
+.RS 4
+Group account information\.
+.RE
+.PP
+\fI/etc/gshadow\fR
+.RS 4
+Secure group account information\.
+.RE
+.SH "EXIT VALUES"
+.PP
+The
+\fBgroupmod\fR
+command exits with the following values:
+.PP
+\fI0\fR
+.RS 4
+success
+.RE
+.PP
+\fI2\fR
+.RS 4
+invalid command syntax
+.RE
+.PP
+\fI3\fR
+.RS 4
+invalid argument to option
+.RE
+.PP
+\fI4\fR
+.RS 4
+specified group doesn\'t exist
+.RE
+.PP
+\fI6\fR
+.RS 4
+specified group doesn\'t exist
+.RE
+.PP
+\fI9\fR
+.RS 4
+group name already in use
+.RE
+.PP
+\fI10\fR
+.RS 4
+can\'t update group file
+.RE
+.SH "SEE ALSO"
+.PP
+
+\fBchfn\fR(1),
+\fBchsh\fR(1),
+\fBpasswd\fR(1),
+\fBgpasswd\fR(8),
+\fBgroupadd\fR(8),
+\fBgroupdel\fR(8),
+\fBuseradd\fR(8),
+\fBuserdel\fR(8),
+\fBusermod\fR(8)\.

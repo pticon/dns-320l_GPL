@@ -1,0 +1,315 @@
+rsyslogd-omusrmsg.o: omusrmsg.c ../config.h ../runtime/rsyslog.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/pthread.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/features.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/predefs.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/endian.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/endian.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/byteswap.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sched.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/types.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../lib/gcc/arm-marvell-linux-gnueabi/4.6.4/include/stddef.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/time.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sched.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/time.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/timex.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/xlocale.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/setjmp.h \
+ ../runtime/typedefs.h ../runtime/debug.h ../runtime/obj-types.h \
+ ../runtime/stringbuf.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/assert.h \
+ ../runtime/syslogd-types.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/param.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../lib/gcc/arm-marvell-linux-gnueabi/4.6.4/include-fixed/limits.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../lib/gcc/arm-marvell-linux-gnueabi/4.6.4/include-fixed/syslimits.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/limits.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/posix1_lim.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/local_lim.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/linux/limits.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/posix2_lim.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/xopen_lim.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/stdio_lim.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/linux/param.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm/param.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/types.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/select.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/select.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigset.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/sysmacros.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/syslog.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/syslog.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../lib/gcc/arm-marvell-linux-gnueabi/4.6.4/include/stdarg.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/syslog-path.h \
+ ../runtime/modules.h ../runtime/objomsr.h ../runtime/obj.h \
+ ../runtime/var.h ../runtime/stream.h ../runtime/glbl.h ../runtime/prop.h \
+ ../runtime/atomic.h ../runtime/zlibw.h \
+ /opt/unic/unic/module/include/zlib.h \
+ /opt/unic/unic/module/include/zconf.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/unistd.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/posix_opt.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/environments.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/confname.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/getopt.h \
+ ../runtime/apc.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/stdio.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/libio.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/_G_config.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/wchar.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sys_errlist.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/stdlib.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/waitflags.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/waitstatus.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/alloca.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/string.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/signal.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/signum.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/siginfo.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigaction.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigcontext.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm/sigcontext.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigstack.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/ucontext.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigthread.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/utmp.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/utmp.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/paths.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/time.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/uio.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/uio.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/stat.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/stat.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/errno.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/errno.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/linux/errno.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm/errno.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm-generic/errno.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/fcntl.h \
+ /opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/fcntl.h \
+ ../runtime/srUtils.h ../runtime/stringbuf.h ../runtime/syslogd-types.h \
+ ../runtime/conf.h omusrmsg.h ../runtime/module-template.h ../threads.h \
+ ../runtime/errmsg.h ../runtime/errmsg.h
+
+../config.h:
+
+../runtime/rsyslog.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/pthread.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/features.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/endian.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/endian.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/byteswap.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sched.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../lib/gcc/arm-marvell-linux-gnueabi/4.6.4/include/stddef.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/time.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sched.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/timex.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/xlocale.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/setjmp.h:
+
+../runtime/typedefs.h:
+
+../runtime/debug.h:
+
+../runtime/obj-types.h:
+
+../runtime/stringbuf.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/assert.h:
+
+../runtime/syslogd-types.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/param.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../lib/gcc/arm-marvell-linux-gnueabi/4.6.4/include-fixed/limits.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../lib/gcc/arm-marvell-linux-gnueabi/4.6.4/include-fixed/syslimits.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/limits.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/posix1_lim.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/local_lim.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/linux/limits.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/posix2_lim.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/xopen_lim.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/stdio_lim.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/linux/param.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm/param.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/types.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/sysmacros.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/syslog.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/syslog.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../lib/gcc/arm-marvell-linux-gnueabi/4.6.4/include/stdarg.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/syslog-path.h:
+
+../runtime/modules.h:
+
+../runtime/objomsr.h:
+
+../runtime/obj.h:
+
+../runtime/var.h:
+
+../runtime/stream.h:
+
+../runtime/glbl.h:
+
+../runtime/prop.h:
+
+../runtime/atomic.h:
+
+../runtime/zlibw.h:
+
+/opt/unic/unic/module/include/zlib.h:
+
+/opt/unic/unic/module/include/zconf.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/unistd.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/posix_opt.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/environments.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/confname.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/getopt.h:
+
+../runtime/apc.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/stdio.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/libio.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/_G_config.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/wchar.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sys_errlist.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/stdlib.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/waitflags.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/waitstatus.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/alloca.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/string.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/signal.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/signum.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/siginfo.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigaction.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigcontext.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm/sigcontext.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigstack.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/ucontext.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/sigthread.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/utmp.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/utmp.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/paths.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/time.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/uio.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/uio.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/sys/stat.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/stat.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/errno.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/errno.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/linux/errno.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm/errno.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm-generic/errno.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/fcntl.h:
+
+/opt_gccarm/Marvell_toolchain_201301/armv7-marvell-linux-gnueabi-softfp_i686/bin/../arm-marvell-linux-gnueabi/libc/usr/include/bits/fcntl.h:
+
+../runtime/srUtils.h:
+
+../runtime/stringbuf.h:
+
+../runtime/syslogd-types.h:
+
+../runtime/conf.h:
+
+omusrmsg.h:
+
+../runtime/module-template.h:
+
+../threads.h:
+
+../runtime/errmsg.h:
+
+../runtime/errmsg.h:

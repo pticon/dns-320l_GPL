@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2009-12-16T05:56:27.570713Z"
+   url="https://toolbox-of-eric.googlecode.com/svn/libiberty/libiberty/testsuite"
+   last-author="joefoxreal"
+   kind="dir"
+   uuid="d4dabd8c-ea04-11de-9d05-050bbbc75a16"
+   revision="1"/>
+<entry
+   committed-rev="1"
+   name="test-pexecute.c"
+   text-time="2009-12-16T06:17:21.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="e9e958dbfc45a08dbbbbe48c83d3987e"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="Makefile.in"
+   text-time="2009-12-16T06:17:21.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="8f24f8939540ed6d58ad0dcdf1132562"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="test-demangle.c"
+   text-time="2009-12-16T06:17:21.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="260c6daa082aed2403b1a5b12d233f27"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:20.000000Z"/>
+<entry
+   committed-rev="1"
+   name="demangle-expected"
+   text-time="2009-12-16T06:17:21.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="53add024c45b2df9472fe9b1884783f7"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:21.000000Z"/>
+<entry
+   committed-rev="1"
+   name="test-expandargv.c"
+   text-time="2009-12-16T06:17:21.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="9c8adfe97eb319577a25393de6ee66c8"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:21.000000Z"/>
+</wc-entries>

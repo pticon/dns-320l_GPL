@@ -1,0 +1,33 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.55.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 fa207befb96fd78c0d512a50c409ae98fab96759 Changes
+SHA1 4eedbc4370c3e7678216958e9a3835db6a4b3aab INSTALL
+SHA1 f3cd54455aab61f263f03774d6a9e69181eeda83 MANIFEST
+SHA1 7a7b4887b1945d4cad2e723ad57046ad3081e07c META.yml
+SHA1 9228b9220fc9d07bfb59a0723d6e93b3abe7316f Makefile.PL
+SHA1 cc4ebb817ca5386d16f96db4b53d67440bc6129e README
+SHA1 81c95ac909d3b3cf10e93929b242223dfea10f99 lib/Carp/Assert.pm
+SHA1 c2fac3e9053e10041c3b310a915c3ea1946f6a22 t/10enabled.t
+SHA1 7f2b5e5a67b472d76585872f8f7bbaffa9b58a3c t/20disabled.t
+SHA1 b5fead6ab75f727abd8571bfaad9ff21201f92c2 t/embedded-Carp-Assert.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.5 (Darwin)
+
+iD8DBQFFncFNWMohlhD1QycRAm86AJ4qDdi94m6dZQZF6S35P8P36U53NgCgy1mi
+kC8OUhZKrcvRzOjIXWTtQak=
+=pt/J
+-----END PGP SIGNATURE-----

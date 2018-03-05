@@ -1,0 +1,113 @@
+.\"     Title: gpasswd
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 10/28/2007
+.\"    Manual: User Commands
+.\"    Source: User Commands
+.\"
+.TH "GPASSWD" "1" "10/28/2007" "User Commands" "User Commands"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+gpasswd - administer the /etc/group file
+.SH "SYNOPSIS"
+.HP 8
+\fBgpasswd\fR [\fIoption\fR] \fIgroup\fR
+.SH "DESCRIPTION"
+.PP
+The
+\fBgpasswd\fR
+command is used to administer the
+\fI/etc/group\fR
+file (and
+\fI/etc/gshadow\fR
+file if compiled with SHADOWGRP defined)\. Every group can have administrators, members and a password\. System administrator can use the
+\fB\-A\fR
+option to define group administrator(s) and the
+\fB\-M\fR
+option to define members and has all rights of group administrators and members\.
+.PP
+
+\fBgpasswd\fR
+called by a group administrator with a group name only prompts for the group password\. If a password is set the members can still
+\fBnewgrp\fR(1)
+without a password, and non\-members must supply the password\.
+.SS "Notes about group passwords"
+.PP
+Group passwords are an inherent security problem since more than one person is permitted to know the password\. However, groups are a useful tool for permitting co\-operation between different users\.
+.SH "OPTIONS"
+.PP
+Except for the
+\fB\-A\fR
+and
+\fB\-M\fR
+options, the options cannot be combined\. The options which apply to the
+\fBgpasswd\fR
+command are:
+.PP
+\fB\-a\fR \fIuser\fR
+.RS 4
+Add the
+\fIuser\fR
+to the named
+\fIgroup\fR\.
+.RE
+.PP
+\fB\-d\fR \fIuser\fR
+.RS 4
+Remove the
+\fIuser\fR
+from the named
+\fIgroup\fR\.
+.RE
+.PP
+\fB\-r\fR
+.RS 4
+Remove the password from the named
+\fIgroup\fR\. Only group members will be allowed to use
+\fBnewgrp\fR
+to join the named
+\fIgroup\fR\.
+.RE
+.PP
+\fB\-R\fR
+.RS 4
+Restrict the access to the named
+\fIgroup\fR\. Only group members will be allowed to use
+\fBnewgrp\fR
+to join the named
+\fIgroup\fR\.
+.RE
+.PP
+\fB\-A\fR \fIuser\fR,\.\.\.
+.RS 4
+Set the list of administrative users\.
+.RE
+.PP
+\fB\-M\fR \fIuser\fR,\.\.\.
+.RS 4
+Set the list of group members\.
+.RE
+.SH "FILES"
+.PP
+\fI/etc/group\fR
+.RS 4
+Group account information\.
+.RE
+.PP
+\fI/etc/gshadow\fR
+.RS 4
+Secure group account information\.
+.RE
+.SH "SEE ALSO"
+.PP
+
+\fBnewgrp\fR(1),
+\fBgshadow\fR(5),
+\fBgroupadd\fR(8),
+\fBgroupdel\fR(8),
+\fBgroupmod\fR(8),
+\fBgrpck\fR(8),
+\fBgroup\fR(5)\.

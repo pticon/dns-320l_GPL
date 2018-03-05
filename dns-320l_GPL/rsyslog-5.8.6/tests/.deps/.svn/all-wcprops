@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps
+END
+syslog_caller.Po
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/syslog_caller.Po
+END
+diagtalker.Po
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/diagtalker.Po
+END
+uxsockrcvr.Po
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/uxsockrcvr.Po
+END
+rscript-rscript.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/rscript-rscript.Po
+END
+randomgen.Po
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/randomgen.Po
+END
+rscript-getline.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/rscript-getline.Po
+END
+syslog_inject.Po
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/syslog_inject.Po
+END
+nettester.Po
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/nettester.Po
+END
+chkseq.Po
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/chkseq.Po
+END
+ourtail.Po
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/ourtail.Po
+END
+rt_init-runtime-dummy.Po
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/rt_init-runtime-dummy.Po
+END
+tcpflood-tcpflood.Po
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/tcpflood-tcpflood.Po
+END
+msleep.Po
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/msleep.Po
+END
+getline.Po
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/getline.Po
+END
+inputfilegen.Po
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/inputfilegen.Po
+END
+rt_init-rt-init.Po
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/rt_init-rt-init.Po
+END
+rscript-runtime-dummy.Po
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tests/.deps/rscript-runtime-dummy.Po
+END

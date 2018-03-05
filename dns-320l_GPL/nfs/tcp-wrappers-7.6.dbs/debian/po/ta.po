@@ -1,0 +1,66 @@
+# translation of tcp-wrappers.po to TAMIL
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2007-04-17 12:00+0530\n"
+"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
+"Language-Team: TAMIL <ubuntu-l10n-tam@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr ""
+"அதி ஜாக்கிரதை அமைப்பை hosts.allow மற்றும் hosts.access ஆகியவற்றில் பயன்படுத்தவா?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+"டிசிபி ராப்பர் கிங்கரன் (tcpd) க்கு /etc/hosts.allow மற்றும் /etc/hosts.deny "
+"கோப்புகள் இன்மையால் புதியன உருவாக்கப் படும். "
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"நீங்கள் பாரம்பரிய உள்வரும் எந்த இணப்பையும் அனுமதிக்கும் தளர்ந்த வடிவமைப்பு அல்லது "
+"அதிஜாக்கிரதையான எங்கிருந்து வந்தாலும் எந்த இணப்பை அனுமதிக்காத வடிவமைப்பு ஆகிய இரண்டில் "
+"ஏதேனும் தேர்வு செய்யலாம். இரண்டாவதில் மிக பாதுகாப்பானதானாலும் தொலை நிர்வாகம் உள்ளிட்ட "
+"அனைத்து தொடர்புகளும் துண்டிக்கப் படும்."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+"இரண்டு கோப்புகளும் தேவைக்கேற்ப கைமுறையேடு hosts_access(5) இல் கண்டபடி பின்னால் "
+"மாற்றப்படலாம். இந்த வடிவமைப்பு libwrap நூலகத்தை பயன்படுத்தும் வலையமைப்பை மட்டுமே "
+"கட்டுப்படுத்தும். மற்ற சேவைகளுக்கான கட்டுப்பாடுகள் தீச்சுவர் விதிகளை பொறுத்தது. "

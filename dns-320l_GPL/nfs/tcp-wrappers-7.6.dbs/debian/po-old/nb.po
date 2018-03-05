@@ -1,0 +1,75 @@
+# translation of tcp-wrappers_7.6.dbs-12_templates.po to Norwegian Bokmål
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Bjørn Steensrud <bjornst@powertech.no>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers_7.6.dbs-12_templates\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-13 20:20+0100\n"
+"PO-Revision-Date: 2007-02-25 14:40+0100\n"
+"Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
+"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid "Should tcpd setup paranoid hosts.allow and hosts.access?"
+msgstr "Skal tcpd sette opp paranoide hosts.allow og hosts.access?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"/etc/hosts.allow and /etc/hosts.deny will be setup since you do not have "
+"have any of these files yet. You can either have a generic and permissive "
+"configuration which will allow any incoming connection or a paranoid "
+"configuration which will not allow remote connections regardless of where "
+"they originate from."
+msgstr ""
+"Siden du ikke har /etc/hosts.allow og /etc/hosts.deny ennå blir disse filene "
+"satt opp. Du kan få enten et alminnelig og tolerant oppsett som tillater "
+"alle innkommende tilkoblinger, eller et paranoid oppsett som ikke tillater "
+"fjerntilkobling uansett hvor de kommer fra."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"The second option, even if more secure, will block out all communication, "
+"including, for example, remote administration. So if you need this don't "
+"choose it."
+msgstr ""
+"Selv om det andre valget er tryggere vil det sperre all kommunikasjon, også "
+"for eksempel administrasjon over nettverket. Så hvis du trenger dette, så "
+"ikke bruk valg nr. 2"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Regardless of which option you select you can always manually edit both  "
+"files to suit your needs, for this, review the hosts_access(5) manpage.  "
+"This might include giving remote access of services to legitimate hosts."
+msgstr ""
+"Uansett hva som velges kan begge filene redigeres manuelt slik det passer "
+"for dette systemet. Se man-sida hosts_access(5). Dette kan omfatte å gi "
+"tillatte vertsmaskiner tilgang til tjenester."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Notice this only applies to internet services that use the libwrap library. "
+"Remote connections will still be possible to services that do not use this "
+"library, consider using firewall rules to block access to these."
+msgstr ""
+"Merk at dette bare gjelder internett-tjenester som bruker libwrap-biblioteket. "
+"Tjenester som ikke bruker dette biblioteket kan fremdeles nås over nettverket, "
+"så brannmur-regler kan settes opp til å stenge tilgang til disse."
+

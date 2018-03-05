@@ -1,0 +1,80 @@
+.\"     Title: groupdel
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 10/28/2007
+.\"    Manual: System Management Commands
+.\"    Source: System Management Commands
+.\"
+.TH "GROUPDEL" "8" "10/28/2007" "System Management Commands" "System Management Commands"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+groupdel - delete a group
+.SH "SYNOPSIS"
+.HP 9
+\fBgroupdel\fR \fIgroup\fR
+.SH "DESCRIPTION"
+.PP
+The
+\fBgroupdel\fR
+command modifies the system account files, deleting all entries that refer to
+\fIgroup\fR\. The named group must exist\.
+.PP
+You must manually check all file systems to insure that no files remain with the named group as the file group ID\.
+.SH "CAVEATS"
+.PP
+You may not remove the primary group of any existing user\. You must remove the user before you remove the group\.
+.SH "FILES"
+.PP
+\fI/etc/group\fR
+.RS 4
+Group account information\.
+.RE
+.PP
+\fI/etc/gshadow\fR
+.RS 4
+Secure group account information\.
+.RE
+.SH "EXIT VALUES"
+.PP
+The
+\fBgroupdel\fR
+command exits with the following values:
+.PP
+\fI0\fR
+.RS 4
+success
+.RE
+.PP
+\fI2\fR
+.RS 4
+invalid command syntax
+.RE
+.PP
+\fI6\fR
+.RS 4
+specified group doesn\'t exist
+.RE
+.PP
+\fI8\fR
+.RS 4
+can\'t remove user\'s primary group
+.RE
+.PP
+\fI10\fR
+.RS 4
+can\'t update group file
+.RE
+.SH "SEE ALSO"
+.PP
+\fBchfn\fR(1),
+\fBchsh\fR(1),
+\fBpasswd\fR(1),
+\fBgpasswd\fR(8),
+\fBgroupadd\fR(8),
+\fBgroupmod\fR(8),
+\fBuseradd\fR(8),
+\fBuserdel\fR(8),
+\fBusermod\fR(8)

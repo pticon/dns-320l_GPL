@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9
+END
+basenames.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/basenames.c
+END
+README.HPUX
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/README.HPUX
+END
+logrotate.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/logrotate.c
+END
+basenames.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/basenames.h
+END
+config.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/config.c
+END
+Makefile_mipsel
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/Makefile_mipsel
+END
+logrotate.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/logrotate.h
+END
+logrotate.conf.5
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/logrotate.conf.5
+END
+logrotate.spec
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/logrotate.spec
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/config.h
+END
+log.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/log.c
+END
+logrotate.8
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/logrotate.8
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/log.h
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/build.sh
+END
+README.Solaris
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/README.Solaris
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/COPYING
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/CHANGES
+END
+install_rootfs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/install_rootfs.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/25201/OStore/DNS-356/trunk/modules/gpl/logrotate-3.7.9/Makefile
+END

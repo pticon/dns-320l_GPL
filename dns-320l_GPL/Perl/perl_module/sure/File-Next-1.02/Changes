@@ -1,0 +1,142 @@
+Revision history for File-Next
+
+Please note that as of version 1.02, File::Next no longer uses
+rt.cpan.org for bug tracking.  Please report problems at
+http://code.google.com/p/file-next/.
+
+1.02    Mon Jan 14 14:01:40 CST 2008
+    [SPEED ENHANCEMENTS]
+    Don't do a directory stat call if we've already done one to
+    check for a symlink.
+
+    Be smarter about building a list of candidate files that we're
+    going to have to sort anyway.
+
+
+1.00    Mon Jun 18 10:06:14 CDT 2007
+
+    [ENHANCEMENTS]
+    Added File::Next::everything() to get back everything regardless
+    of being file or directory.
+
+
+0.40    Fri Mar  9 21:32:15 CST 2007
+
+    [ENHANCEMENTS]
+    Minimizing the number of stat calls necessary.  May make some
+    teeny speed boost.
+
+
+    [DOCUMENTATION]
+    Fixed the constructor example of File::Next->files, which is wrong.
+
+    Updated the examples to show that you need to check definedness
+    of the return from the iterator, in case you get a file "0".
+
+
+0.38    Sun Jan  7 01:23:43 CST 2007
+
+    [ENHANCEMENTS]
+    Added the ability to skip symlinks.  By default, symlinks are
+    treated as the files or dirs they point to, but now you can
+    tell File::Next to ignore them.
+
+    Added a dirs() function to return an iterator that only finds
+    directories.
+
+    [DOCUMENTATION]
+    Fixed some little errors here and there.
+
+
+0.36    Thu Dec 21 15:50:13 CST 2006
+
+    There is no new functionality between 0.34 and 0.36.  It's
+    entirely a speedup.
+
+    [ENHANCEMENTS]
+    I sped up the internals of passing around the queue and building
+    paths, and it should now be 20% faster than 0.34 in the simplest
+    case.
+
+    [DOCUMENTATION]
+    Now it explains what the iterator returns in list context.
+
+0.34    Sat Dec 16 00:21:10 CST 2006
+
+    [ENHANCEMENTS]
+    The reslash() function is now publicly usable, although not via
+    export.  This is mostly convenience for ack.
+
+    Minor speedups when there's no file_filter parameter.
+
+    Speedups when there's no descend_filter, too.  We were doing
+    checks to see if a given file was a directory, even though we
+    didn't do anything with that fact if there's no descend_filter.
+
+
+0.32    Wed Dec  6 19:36:51 CST 2006
+
+    No functionality changes, except as seen below.  For most of
+    you using File::Next, there are no changes in this version.
+
+    [INTERNALS]
+    Initialize package arrays in BEGIN blocks.  This is so ack's
+    standalone version will initialize correctly.
+
+
+0.30    Fri Nov 10 11:24:50 CST 2006
+
+    [FIXES]
+    Explicitly declare $File::Find::name and $File::Find::dir.
+
+    Made the updir/curdir stuff into a hash.
+
+    [FEATURES]
+    Added a sort_files parm to allow you to sort the results.
+
+    [INTERNALS]
+    Added a perlcriticrc for "make critic".
+
+
+0.28    Tue Sep  5 23:51:41 CDT 2006
+
+    [FIXES]
+    Wrapped the CORE::die in a real function.  Also added a
+    test to make sure that we die properly.
+
+    [INTERNALS]
+    Using proper File::Spec function to get the list of special
+    directories.
+
+
+0.26    Sat Sep  2 10:10:12 CDT 2006
+
+    No functionality changes.  Making the tests actually worki
+    under Windows this time.  Thanks, Audrey!
+
+0.24    Fri Sep  1 23:38:43 CDT 2006
+
+    No functionality changes.  Only making the tests run under
+    Windows.
+
+0.22    Wed Aug 16 14:08:39 CDT 2006
+
+    [FIXES]
+    The file_filter was getting called incorrectly.  I was
+    setting $File::Next::file instead of $File::Next::name.
+
+    I've now also added tests to make sure that it's getting
+    set correctly.
+
+0.20    Tue Aug 15 02:28:42 CDT 2006
+
+    First real version.  Don't use 0.01 any more.
+
+    Iterator now returns separate file & directory components
+    in array context.
+
+    Rewrote internals.
+
+0.01    Sat Jul 29 22:29:46 CDT 2006
+    First version, released on an unsuspecting world.
+

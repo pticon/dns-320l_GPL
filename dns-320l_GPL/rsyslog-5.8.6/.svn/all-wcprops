@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/configure
+END
+outchannel.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/outchannel.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/Makefile.in
+END
+config.log
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/config.log
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/AUTHORS
+END
+outchannel.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/outchannel.h
+END
+rsyslog.conf
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/rsyslog.conf
+END
+depcomp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/depcomp
+END
+compile
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/compile
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/config.guess
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/config.h
+END
+template.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/template.c
+END
+ltmain.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/ltmain.sh
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/config.sub
+END
+action.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/action.c
+END
+template.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/template.h
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/configure.ac
+END
+action.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/action.h
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/INSTALL
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/COPYING
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/build.sh
+END
+tcpclt.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tcpclt.c
+END
+threads.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/threads.c
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/NEWS
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/Makefile
+END
+tcpclt.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tcpclt.h
+END
+threads.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/threads.h
+END
+dirty.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/dirty.h
+END
+config.status
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/config.status
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/ChangeLog
+END
+tcps_sess.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tcps_sess.c
+END
+stamp-h1
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/stamp-h1
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/parse.c
+END
+tcps_sess.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tcps_sess.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/README
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/config.h.in
+END
+parse.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/parse.h
+END
+tcpsrv.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tcpsrv.c
+END
+libtool
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/libtool
+END
+COPYING.LESSER
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/COPYING.LESSER
+END
+gss-misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/gss-misc.c
+END
+rsyslog.service.in
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/rsyslog.service.in
+END
+tcpsrv.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/tcpsrv.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/Makefile.am
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/missing
+END
+install_rootfs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/install_rootfs.sh
+END
+gss-misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/gss-misc.h
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/aclocal.m4
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/install-sh
+END
+ylwrap
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/ylwrap
+END

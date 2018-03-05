@@ -1,0 +1,67 @@
+# translation of tcpwrapper_nb.po to Norwegian Bokmål
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcpwrapper_nb\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2007-04-17 19:21+0200\n"
+"Last-Translator: Bjørn Steensrud <bjornst@powertech.no>\n"
+"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr "Skal «paranoide» innstillinger brukes i hosts.allow og hosts.access?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+"Siden filene /etc/hosts.allow og /etc/hosts.deny for tcpwrappers-nissen tcpd "
+"ikke finnes, så vil de bli laget."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"En kan velge mellom et generisk tolerant oppsett som tillater alle "
+"innkommende tilkoblinger, eller et paranoid oppsett som ikke tillater "
+"nettverkstilkoblinger uansett hvor de kommer fra. Det siste oppsettet er "
+"mest sikkert, men blokkerer all kommunikasjon, deriblant for eksempel "
+"administrasjon over nettverket."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+"Begge filer kan endres senere for å passe til det lokale behovet, slik det "
+"forklares i man-siden hosts_access(5). Disse innstillingene påvirker bare "
+"nettverkstjenester som bruker biblioteket libwrap. Restriksjoner for andre "
+"tjenester bør settes opp ved å bruke brannmurregler."

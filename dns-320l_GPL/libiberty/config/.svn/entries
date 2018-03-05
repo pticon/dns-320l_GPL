@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2009-12-16T05:56:27.570713Z"
+   url="https://toolbox-of-eric.googlecode.com/svn/libiberty/config"
+   last-author="joefoxreal"
+   kind="dir"
+   uuid="d4dabd8c-ea04-11de-9d05-050bbbc75a16"
+   revision="1"/>
+<entry
+   committed-rev="1"
+   name="mh-interix"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="9240a2b84d379e3feff49d8311072dc7"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:35.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-ncr3000"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="1970cc16887b91d667b9bbfb0f6e67af"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:35.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-sde"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="23e56715f4bf1219d8fe216560c4f3ee"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:35.000000Z"/>
+<entry
+   committed-rev="1"
+   name="override.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="dad482bf874c7e5e40de5087477ff38c"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:35.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-pa"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="cd7034dccd04e50150b14c597dd545a5"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="inttypes_h.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="0b63117973333c343e0d0819012b8187"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-djgpp"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="625bacc09b9992290d94831bd7506bd0"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="warnings.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="3510459bb8dffa5ea06682a29bcdbfa9"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="multi.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="33624cdc9c21800a4fbb3bd88ab4b7e4"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="futex.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="8e54553a2c063659a749e0ef9e5348e4"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="gettext-sister.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="1282ef4331970c26224afd363968e276"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="nls.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="120ec56e3aa27739a2945bc1c8a2530a"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-solaris"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="e4353fd5127f79d601d85fde3925ac76"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="lib-prefix.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="4455537cdae70977a1283180062a2d8d"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="depstand.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="b5a5c394536a15e50be1998bd341fd02"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="lib-ld.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="77931c860806547ce9fc56097a731c6f"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="gxx-include-dir.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="c385066b0fe61ef55d44cf2619e79b26"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="ulonglong.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="6b1c349fb182e74fbc464c50c88fe2ee"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="stdint.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="df27a65f2a918654d5a273616b54dda6"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-spu"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="9af153786999225732c95595da5ebd52"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="ChangeLog"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="69f385e3354c9adbea6b3517f2e160a5"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="ld-symbolic.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="cbcbd9977ef1239ccac0c5c54d214302"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-mep"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="2033f1e2eaf00ab221523e98108ea2c4"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:36.000000Z"/>
+<entry
+   committed-rev="1"
+   name="tcl.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="8eb64d3b1d3173da21d6ed20665a8a23"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-cygwin"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="56ea886123fa64f6efa0edf0ce550786"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-ppc-darwin"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="a2628132e60b0492f8c93ce6ad8c9fea"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-v810"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="9c67d61b28da389337cfaba76ac581ee"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="extensions.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="2320cc5ae54cf9affe129c73817ea0ef"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="lib-link.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="50120e7fff340d87578219756e55a5e3"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-necv4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="fb9d7448a6dab87d4da003658fb4d66d"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-netware"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="2067ce86494ccb89791fe169eee8c198"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-pa-hpux10"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="48d5107b991a0cdbe7eb7022b0dfecb2"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="uintmax_t.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="5e1e75893989d0ae3c0452451cf80280"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-ospace"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="5aa8f75c6588d513ce199e2e44c206e2"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-cxux"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="7b266c44c8a74cfd3aa47c7408b1d9d5"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="acx.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="a925fa6ab8c1f62bc4b4d1421516deaf"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-d30v"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="96289d06809692c31d71e69c4bedb6d7"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="no-executables.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="2ca9a51841dae7be00e1969166c7e06a"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="iconv.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="998940a8ee25ca89805ed7da63536782"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="inttypes.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="b17ad59a69316040fae6c3b09187bcbc"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-lynxrs6k"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="4025142ef79311b861a05eed3e417a4a"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="glibc21.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="29c9c3d57667bc9e6f14d625b2cd5894"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="codeset.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="04bdbef77f5fd2e282f7dee0bde60444"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-gnu"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="48fa3bdb98c0bf781a96764d777db6ac"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="lead-dot.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="1cbbc8830601bf43a3c42ee10a01eecd"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="proginstall.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="b2d511a8a77414eda79bdee0daccfea8"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:37.000000Z"/>
+<entry
+   committed-rev="1"
+   name="tls.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="cd3fbac36bf83aca788388d678508c98"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="lcmessage.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="db111161c56fa9d53a03abfb188ad1d0"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-mingw"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="8b13198ee29dcffb6b9367d596e8cd7d"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-wince"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="12b3030d3d59526c374c15af4f5944dd"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-mips-elfoabi"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="1d7419534d43fda437ce0a4f0719ee5f"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="progtest.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="d3cecf02bb97035177818aefbb0e0833"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="inttypes-pri.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="e32906a3177f3b368bcd56f9e86a620c"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-sco"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="ecf7a936c35e3c5a0e8d2b0721243b85"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="unwind_ipinfo.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="49305b421244035f19bdccb38a800d5f"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-sysv4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="2415a4da9726792701f226bdb0e5ac3f"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-sysv5"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="2415a4da9726792701f226bdb0e5ac3f"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="stdint_h.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="761497fd3445beb86a90919955d5aa20"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-alphaieee"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="3755b5b077053b5de54ff0f781ca9295"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="intdiv0.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="7cdde9f19fc614304e49342c660e2d47"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="po.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="08ac6e38b61b5cee2fa4129284da8fb9"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-decstation"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="1a368defd90f5893cad171786ee20569"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-ppc-aix"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="a3394c8d52cfd70acd75e214e9909eb3"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="gettext.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="2056dbab474e474ab2ae01a42ad5359a"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="enable.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="042203b305962ba9a8f8474ef80edeee"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-x86omitfp"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="a1f1f0d6fa6e5e849b918f091babef21"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="acinclude.m4"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="0fcd4badfe2a2191778bdf5ab94aa40c"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mh-dgux386"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="8b594c219d32fc33f367d70ea30239a1"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-mips-gnu"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="8d6647b6e881a11ae46d9bcaeaa0bd0f"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mt-mips16-compat"
+   text-time="2009-12-16T06:17:38.000000Z"
+   committed-date="2009-12-16T05:56:27.570713Z"
+   checksum="e5f16579c830ccc42e238b49e8409e99"
+   last-author="joefoxreal"
+   kind="file"
+   prop-time="2009-12-16T06:17:38.000000Z"/>
+</wc-entries>

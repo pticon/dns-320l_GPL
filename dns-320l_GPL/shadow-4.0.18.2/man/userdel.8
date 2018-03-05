@@ -1,0 +1,154 @@
+.\"     Title: userdel
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 10/28/2007
+.\"    Manual: System Management Commands
+.\"    Source: System Management Commands
+.\"
+.TH "USERDEL" "8" "10/28/2007" "System Management Commands" "System Management Commands"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+userdel - delete a user account and related files
+.SH "SYNOPSIS"
+.HP 8
+\fBuserdel\fR [options] \fILOGIN\fR
+.SH "DESCRIPTION"
+.PP
+The
+\fBuserdel\fR
+command modifies the system account files, deleting all entries that refer to the user name
+\fILOGIN\fR\. The named user must exist\.
+.SH "OPTIONS"
+.PP
+The options which apply to the
+\fBuserdel\fR
+command are:
+.PP
+\fB\-f\fR, \fB\-\-force\fR
+.RS 4
+This option forces the removal of the user account, even if the user is still logged in\. It also forces
+\fBuserdel\fR
+to remove the user\'s home directory and mail spool, even if another user uses the same home directory or if the mail spool is not owned by the specified user\. If
+\fIUSERGROUPS_ENAB\fR
+is defined to
+\fIyes\fR
+in
+\fI/etc/login\.defs\fR
+and if a group exists with the same name as the deleted user, then this group will be removed, even if it is still the primary group of another user\.
+.sp
+
+\fINote:\fR
+This option is dangerous and may leave your system in an inconsistent state\.
+.RE
+.PP
+\fB\-h\fR, \fB\-\-help\fR
+.RS 4
+Display help message and exit\.
+.RE
+.PP
+\fB\-r\fR, \fB\-\-remove\fR
+.RS 4
+Files in the user\'s home directory will be removed along with the home directory itself and the user\'s mail spool\. Files located in other file systems will have to be searched for and deleted manually\.
+.sp
+The mail spool is defined by the
+\fIMAIL_DIR\fR
+variable in the
+\fIlogin\.defs\fR
+file\.
+.RE
+.SH "FILES"
+.PP
+\fI/etc/group\fR
+.RS 4
+Group account information\.
+.RE
+.PP
+\fI/etc/login\.defs\fR
+.RS 4
+Shadow password suite configuration\.
+.RE
+.PP
+\fI/etc/passwd\fR
+.RS 4
+User account information\.
+.RE
+.PP
+\fI/etc/shadow\fR
+.RS 4
+Secure user account information\.
+.RE
+.SH "EXIT VALUES"
+.PP
+The
+\fBuserdel\fR
+command exits with the following values:
+.PP
+\fI0\fR
+.RS 4
+success
+.RE
+.PP
+\fI1\fR
+.RS 4
+can\'t update password file
+.RE
+.PP
+\fI2\fR
+.RS 4
+invalid command syntax
+.RE
+.PP
+\fI6\fR
+.RS 4
+specified user doesn\'t exist
+.RE
+.PP
+\fI8\fR
+.RS 4
+user currently logged in
+.RE
+.PP
+\fI10\fR
+.RS 4
+can\'t update group file
+.RE
+.PP
+\fI12\fR
+.RS 4
+can\'t remove home directory
+.RE
+.SH "CAVEATS"
+.PP
+
+\fBuserdel\fR
+will not allow you to remove an account if the user is currently logged in\. You must kill any running processes which belong to an account that you are deleting\.
+.PP
+You may not remove any NIS attributes on a NIS client\. This must be performed on the NIS server\.
+.PP
+If
+\fIUSERGROUPS_ENAB\fR
+is defined to
+\fIyes\fR
+in
+\fI/etc/login\.defs\fR,
+\fBuserdel\fR
+will delete the group with the same name as the user\. To avoid inconsistencies in the passwd and group databases,
+\fBuserdel\fR
+will check that this group is not used as a primary group for another user, and will just warn without deleting the user otherwise\. The
+\fB\-f\fR
+option can force the deletion of this group\.
+.SH "SEE ALSO"
+.PP
+\fBchfn\fR(1),
+\fBchsh\fR(1),
+\fBpasswd\fR(1),
+\fBlogin.defs\fR(5),
+\fBgpasswd\fR(8),
+\fBgroupadd\fR(8),
+\fBgroupdel\fR(8),
+\fBgroupmod\fR(8),
+\fBuseradd\fR(8),
+\fBusermod\fR(8)\.

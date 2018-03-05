@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps
+END
+lmnsd_ptcp_la-nsd_ptcp.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnsd_ptcp_la-nsd_ptcp.Plo
+END
+lmstrmsrv_la-strms_sess.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmstrmsrv_la-strms_sess.Plo
+END
+librsyslog_la-debug.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-debug.Plo
+END
+lmnetstrms_la-nspoll.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnetstrms_la-nspoll.Plo
+END
+librsyslog_la-threads.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-threads.Plo
+END
+lmnsd_gtls_la-nsd_gtls.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnsd_gtls_la-nsd_gtls.Plo
+END
+librsyslog_la-vmprg.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-vmprg.Plo
+END
+librsyslog_la-parser.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-parser.Plo
+END
+librsyslog_la-datetime.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-datetime.Plo
+END
+lmnetstrms_la-netstrms.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnetstrms_la-netstrms.Plo
+END
+lmnsd_gtls_la-nsdsel_gtls.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnsd_gtls_la-nsdsel_gtls.Plo
+END
+librsyslog_la-outchannel.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-outchannel.Plo
+END
+librsyslog_la-ctok.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-ctok.Plo
+END
+lmstrmsrv_la-strmsrv.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmstrmsrv_la-strmsrv.Plo
+END
+librsyslog_la-linkedlist.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-linkedlist.Plo
+END
+librsyslog_la-wti.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-wti.Plo
+END
+lmnetstrms_la-nssel.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnetstrms_la-nssel.Plo
+END
+librsyslog_la-vmstk.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-vmstk.Plo
+END
+librsyslog_la-srutils.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-srutils.Plo
+END
+librsyslog_la-rule.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-rule.Plo
+END
+librsyslog_la-modules.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-modules.Plo
+END
+librsyslog_la-parse.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-parse.Plo
+END
+librsyslog_la-wtp.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-wtp.Plo
+END
+librsyslog_la-template.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-template.Plo
+END
+lmnsd_ptcp_la-nsdpoll_ptcp.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnsd_ptcp_la-nsdpoll_ptcp.Plo
+END
+lmnet_la-net.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnet_la-net.Plo
+END
+librsyslog_la-action.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-action.Plo
+END
+librsyslog_la-glbl.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-glbl.Plo
+END
+librsyslog_la-ruleset.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-ruleset.Plo
+END
+librsyslog_la-queue.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-queue.Plo
+END
+lmregexp_la-regexp.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmregexp_la-regexp.Plo
+END
+librsyslog_la-conf.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-conf.Plo
+END
+librsyslog_la-msg.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-msg.Plo
+END
+librsyslog_la-sysvar.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-sysvar.Plo
+END
+librsyslog_la-var.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-var.Plo
+END
+lmnsd_ptcp_la-nsdsel_ptcp.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnsd_ptcp_la-nsdsel_ptcp.Plo
+END
+librsyslog_la-statsobj.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-statsobj.Plo
+END
+librsyslog_la-stream.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-stream.Plo
+END
+librsyslog_la-hashtable.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-hashtable.Plo
+END
+librsyslog_la-cfsysline.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-cfsysline.Plo
+END
+librsyslog_la-errmsg.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-errmsg.Plo
+END
+librsyslog_la-ctok_token.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-ctok_token.Plo
+END
+librsyslog_la-strgen.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-strgen.Plo
+END
+librsyslog_la-rsyslog.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-rsyslog.Plo
+END
+librsyslog_la-apc.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-apc.Plo
+END
+librsyslog_la-stringbuf.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-stringbuf.Plo
+END
+librsyslog_la-sd-daemon.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-sd-daemon.Plo
+END
+librsyslog_la-hashtable_itr.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-hashtable_itr.Plo
+END
+librsyslog_la-obj.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-obj.Plo
+END
+librsyslog_la-objomsr.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-objomsr.Plo
+END
+lmnetstrms_la-netstrm.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmnetstrms_la-netstrm.Plo
+END
+librsyslog_la-sync.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-sync.Plo
+END
+librsyslog_la-expr.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-expr.Plo
+END
+lmzlibw_la-zlibw.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/lmzlibw_la-zlibw.Plo
+END
+librsyslog_la-prop.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-prop.Plo
+END
+librsyslog_la-vmop.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-vmop.Plo
+END
+librsyslog_la-vm.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/31107/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/runtime/.deps/librsyslog_la-vm.Plo
+END

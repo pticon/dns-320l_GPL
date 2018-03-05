@@ -1,0 +1,145 @@
+10
+
+dir
+31107
+http://172.19.2.150/svn/OStore/DNS-356/trunk/modules/gpl/rsyslog-5.8.6/plugins
+http://172.19.2.150/svn
+
+
+
+2011-12-27T08:13:37.868463Z
+31107
+casper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f9bbf619-707c-40cd-bc6c-a263a9d0a7a5
+
+immark
+dir
+
+omgssapi
+dir
+
+im3195
+dir
+
+imptcp
+dir
+
+cust1
+dir
+
+imsolaris
+dir
+
+sm_cust_bindcdr
+dir
+
+mmsnmptrapd
+dir
+
+omprog
+dir
+
+impstats
+dir
+
+imfile
+dir
+
+pmsnare
+dir
+
+omdbalerting
+dir
+
+omtesting
+dir
+
+imtcp
+dir
+
+pmrfc3164sd
+dir
+
+omstdout
+dir
+
+ommail
+dir
+
+omruleset
+dir
+
+omhdfs
+dir
+
+omlibdbi
+dir
+
+pmcisconames
+dir
+
+imklog
+dir
+
+ompgsql
+dir
+
+imrelp
+dir
+
+imdiag
+dir
+
+omudpspoof
+dir
+
+omrelp
+dir
+
+pmaixforwardedfrom
+dir
+
+ommysql
+dir
+
+omoracle
+dir
+
+imtemplate
+dir
+
+imuxsock
+dir
+
+omtemplate
+dir
+
+pmlastmsg
+dir
+
+omuxsock
+dir
+
+omsnmp
+dir
+
+imgssapi
+dir
+
+imudp
+dir
+

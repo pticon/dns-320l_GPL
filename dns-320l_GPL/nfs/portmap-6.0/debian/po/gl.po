@@ -1,0 +1,57 @@
+# Galician translation of portmap's debconf templates.
+# This file is distributed under the same license as the portmap package.
+# Jacobo Tarrio <jtarrio@debian.org>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: portmap\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-12-30 04:32+0100\n"
+"PO-Revision-Date: 2007-01-03 10:12+0100\n"
+"Last-Translator: Jacobo Tarrio <jtarrio@debian.org>\n"
+"Language-Team: Galician <trasno@ceu.fi.udc.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Should portmap be bound to the loopback address?"
+msgstr "¿Debería vincularse portmap ao enderezo \"loopback\"?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"Portmap by default listens to all IP addresses. However, if you are not "
+"providing network RPC services to remote clients (you are if you are setting "
+"up a NFS or NIS server) you can safely bind it to the loopback  IP address "
+"(127.0.0.1)"
+msgstr ""
+"Portmap, por defecto, escoita en tódolos enderezos IP. Nembargantes, se non "
+"fornece servizos de rede RPC a clientes remotos (está a o facer se configura "
+"un servidor NFS ou NIS) pode vinculalo sen problemas ao enderezo IP "
+"\"loopback\" (127.0.0.1)."
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"This will allow RPC local services (like FAM) to work properly, while "
+"preventing remote systems from accessing your RPC services."
+msgstr ""
+"Isto permite aos servizos RPC locais (coma FAM) funcionar correctamente, ao "
+"mesmo tempo que impide aos sistemas remotos acceder aos seus servizos RPC."
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"You can also change this configuration by editing the OPTIONS line in the /"
+"etc/default/portmap file. If you just don't specify the -i option it will "
+"bind to all interfaces."
+msgstr ""
+"Tamén pode cambiar esta configuración editando a liña OPTIONS do ficheiro /"
+"etc/default/portmap. Se non especifica a opción -i, hase vincular a tódalas "
+"interfaces."

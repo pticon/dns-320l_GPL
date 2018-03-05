@@ -1,0 +1,10 @@
+This example of user space agent connectiong to error interrupts handler and getting netlink messages about DRAM ECC errors.
+
+To see the message, compile the agent "cc netlink-user.c -o netlink-user" and run it on kernel compiled with ERROR_HANDLING_DRAM_ECC enabled.
+After cause DRAM ECC error and check dmesg.
+
+General flow of the agent:
+1. Establish netink to kernel agent.
+2. Wait for messages from armadaxp_error_event in kernel.
+3. Get the message, cast it to appropriate structure and analize the data sent from kernel.
+.

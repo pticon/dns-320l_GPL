@@ -1,0 +1,10 @@
+mount: fstab path: "/etc/fstab"
+mount: mtab path:  "/etc/mtab"
+mount: lock path:  "/etc/mtab~"
+mount: temp path:  "/etc/mtab.tmp"
+mount: no LABEL=, no UUID=, going to mount /dev/dummy by path
+mount: spec:  "/dev/dummy"
+mount: node:  "/mnt"
+mount: types: "(null)"
+mount: opts:  "(null)"
+/dev/dummy on /mnt type unknown (rw)

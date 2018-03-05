@@ -1,0 +1,37 @@
+wiper.sh-3.1
+	- updated contrib/raid1ext4trim.sh script to v1.4, courtesy of Chris Caputo
+	- new flag to enable unattended operation, and handle SIGPIPE
+	- basic compatibility with latest Redhat/Fedora systems that lack the rdev command
+	- support hfsplus and ntfs filesystem types, courtesy of Heiko Wegeler
+	- hfsplus/ntfs notes from Heiko Wegeler:
+
+	n-7 tests from a kvm installation: ok: "ntfs" raw ssd attached as 2nd drive,
+	copy sleuthkit source files with w7 on a 100MB gpt partition. from linux
+	compiletest, w7-chkdsk after trim ok "ntfs 8k cluster" same test ok: "ntfs with
+	compressed files" same test ok: "ntfs with encrypted files" raw ssd attached as
+	2nd drive, chkdsk after trim on a 100MB gpt partition. compiletest and chkdsk
+	after unencryption and trim
+
+	macos 10.4.5 from 2/2006 secret tests from the macos-installer (in kvm) with
+	this wiper 2.5 patched with loopdevice, hfsplus,ntfs support (because attaching
+	my raw boot ssd to macos is too risky for me) ok: fstype "mac os extended
+	(journaled)" ssd partition sda7 100MB attached as 2nd disk then format, copy
+	sleuthkit source files, quit installer. then from linux trim, mount readonly
+	(formatted with macos needs a "force" option for readwrite, normal), copy files
+	back to btrfs  for compile, works. verify disk with the macos installer, works
+	ok: fstype "mac os extended" same test ok: fstype "mac os extended (case
+	sensitive, journaled)"  same test ok: fstype "mac os extended (case sensitive)"
+	same test ok: fstype "mac os standard" wiper says:offline TRIM not supported
+	for hfs filesystems, aborting.  ok: fstype "unix file system" wiper says:
+	offline TRIM not supported for ufs filesystems, aborting.  not tested: "msdos
+	filesystem" and raids
+
+	other checks in the source:
+	* check if filesystem is properly unmounted sleuthkit checks and messages:
+	* check for fsstat, which is only in sleuthkit. a outdated icat is in debian
+	* package tct, the right icat is a link in package sleuthkit to
+	* ->/etc/alternatives/icat->/usr/bin/icat-sleuthkit. ubuntu 10.4 LTS needs a
+	* local build sleuthkit in /usr/local/bin because ubuntu lts sleuthkit is too
+	* old.ubuntu 10.10 works with distribution package, fedora14 has /usr/bin/icat
+	* from sleuthkit 3.1.1 and works, fedora13+updates should work (exept rdev)
+	* other exit clauses which will never happen

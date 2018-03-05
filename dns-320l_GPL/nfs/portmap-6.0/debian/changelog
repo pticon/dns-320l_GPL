@@ -1,0 +1,487 @@
+portmap (6.0-4) unstable; urgency=low
+
+  * Portmap now build-depends on libwrap0-dev. Closes: #436309.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Tue, 07 Aug 2007 08:33:22 +1000
+
+portmap (6.0-3) unstable; urgency=low
+
+  * Enabled "-pie" link option. Closes: #427997.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 15 Jul 2007 08:46:00 +1000
+
+portmap (6.0-2) unstable; urgency=low
+
+  * Fixed typo in debian/rules. Closes: #423499.
+  * Fixed the following lintian messages:
+    - W: portmap source: debian-rules-ignores-make-clean-error line 24
+    - W: portmap: manpage-has-errors-from-man usr/share/man/man8/portmap.8.gz
+         Empty input line #156
+    - W: portmap: init.d-script-missing-lsb-keyword /etc/init.d/portmap
+         short-description
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Wed, 04 Jul 2007 08:53:23 +1000
+
+portmap (6.0-1) unstable; urgency=low
+
+  * Build portmap without the "-pie" option. Closes: #424029.
+  * Fixed typo in portmap.8 manpage. Closes: #418482.
+  * Fixed "Fails to find local interfaces on Debian/kFreeBSD".
+    Closes: #423499.
+  * Fixed the following lintian message:
+    - W: portmap source: debian-rules-sets-DH_COMPAT
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Fri, 01 Jun 2007 18:09:42 +1000
+
+portmap (6.0-0) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch: added.
+  * debian/control: added homepage to description.
+  * debian/rules: portmap starts at level 17. Closes: #400952.
+  * debian/postinst: fixed typo.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Fri, 11 May 2007 18:22:42 +1000
+
+portmap (5-26) unstable; urgency=low
+
+  * Really fix the encoding issues in the Spanish debconf translation
+    (there was still one char in latin1)
+  [ New translations ]
+  * Basque po-debconf translation, provided by Piarres Beobide 
+  (Closes: #404178)
+  * Portuguese translation, provided by Miguel Figueiredo (Closes: #404552)
+  * Galician translation, provided by Jacobo Tarrio (Closes: #405401)
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Sun, 11 Feb 2007 17:31:24 +0100
+
+portmap (5-25) unstable; urgency=low
+
+  * Fixed encoding in Spanish manpage, thanks to Christian Perrier for
+    spotting this and providing a patch (Closes: #404166)
+  [ Translation updates ]
+  * Spanish po-debconf review by Javier Fernandez-Sanguino.
+  * Brazilian Portuguese update by André Luís Lopes (Closes: #403826)
+  * Swedish updated by Daniel Nylander.
+  * Vietnamese updated by Clytie Siddall.
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Fri, 22 Dec 2006 09:16:14 +0100
+
+portmap (5-24) unstable; urgency=medium
+
+  * Fixed "subprocess post-installation script returned error exit
+    status 1". Closes: #402220.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 10 Dec 2006 11:50:26 +1100
+
+portmap (5-23) unstable; urgency=low
+
+  * Adapt patch from Ubuntu to prevent rpcinfo from being executed if
+    portmap is not running for some reason. This prevents this script
+    from stalling in some installations (was reported at Ubuntu
+    Malone bug #61668: Building LTSP chroot stops during portmap installation)
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Thu,  7 Dec 2006 11:21:20 +0100
+
+portmap (5-22) unstable; urgency=low
+
+  * Add German debconf translation provided by Mathias Klein (Closes: #397043)
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Thu,  7 Dec 2006 10:19:30 +0100
+
+portmap (5-21) unstable; urgency=low
+
+  * Add a note in the manpage related to the use of IP addresses in
+    /etc/hosts.{allow,deny} when protecting portmapper. (Closes: #361019)
+  * Updated translations:
+    - Spanish translation update provided by Javier Fernandez-Sanguino 
+      (Closes: #382962)
+    - Japanese translation update provided by Kenshi Muto (Closes: #379933)
+  [ debian/postinst ]
+  * Modify postinst so it does not run 'rpcinfo -p' for new installs of the
+    package as suggested by Joey Hess, this solves a problem with new d-i
+    installations since rpcinfo stalls when the package is being installed, a
+    static IP address has been assigned, 'lo' is down and portmap tries
+    to list the RPC services available. (Closes: #383941)
+  [ debian/rules ]
+  * Re-add the 'start' sentences in runlevels 2-5 (revert the change
+    introduced in -17 and reopens #340158, #334758). This is needed because if
+    someone goes to runlevel 1 (stops portmapper and NFS) and then back to
+    runlevel 2 portmapper would not start and NFS would fail. 
+  [ debian/init.d ]
+  * Reorder the "Starting portmap" message so it is presented before we say
+    "Already running"
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Wed, 11 Oct 2006 12:12:10 +0200
+
+portmap (5-20) unstable; urgency=low
+
+  * Resynchronise with Ubuntu.
+  * Set Standards-Version to 3.7.2.
+  * Set DH_COMPAT to 5.
+  * Dutch Debconf templates translation, closes: #367961.
+    Patch by Vincent Zweije <zweije@xs4all.nl>.
+  * Russian debconf templates translation, closes: #374007.
+    Patch by Alexander Bouksha <abook@purpe.ru>.
+  * Fixed "typo in postinst script", closes: #357248.
+  * Fixed "unused function in postinst", closes: #376120.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 09 Jul 2006 20:23:16 +1000
+
+portmap (5-19ubuntu2) edgy; urgency=low
+
+  * Source debconf confmodule at top of postinst.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 30 Jun 2006 18:39:11 +0100
+
+portmap (5-19ubuntu1) edgy; urgency=low
+
+  * Sync with Debian.
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Fri, 30 Jun 2006 13:18:57 +0200
+
+portmap (5-19) unstable; urgency=low
+
+  * Remove duplicate LSB info and fix the stop argument in runlevel 1
+    (Closes: #361053)
+  * Translation updates:
+    - Dutch, provided by Vincent Zweije (Closes: #356278)
+    - Danish, provided by Claus Hindsgaul (Closes: #357425)
+    - Italian, provided by Luca Monducci (Closes: #357583)
+    - Czech, provided by Miroslav Kure (Closes: #360314)
+    - French, provided by Jean-Christophe Champarnaud (Closes: #360629)
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Tue, 25 Apr 2006 00:55:41 +0200
+
+portmap (5-18) unstable; urgency=low
+
+  * Use the LSB init.d script provided by Ubuntu
+  * Rephrase the template to make it clear that only those *not* providing RPC
+    services to the network should bind only to loopback (#316607)
+  * Included patch provided by Gerrit Pape which adds an '-f' option to make
+    it work in foreground mode (Closes: #351625)
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Sat, 25 Feb 2006 23:13:07 +0100
+
+portmap (5-17) unstable; urgency=low
+
+  * Fixed "Portmap dies w/ SIGPIPE during heavy I/O", closes: #342709.
+    Patch by Michael S. Peek <peek@tiem.utk.edu>.
+  * Fixed "init script needlessly executed twice (and it informs the
+    user about it too)", closes: #340158, #334758. Patch by Joey Hess
+    <joeyh@debian.org>.
+  * Added Swedish debconf translation, closes: #333125. Patch by
+    Daniel Nylander <yeager@lidkoping.net>.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Tue, 17 Jan 2006 08:59:01 +1100
+
+portmap (5-16ubuntu2) dapper; urgency=low
+
+  * Actually exit 0 if the portmap is already running.  Malone #6717
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Fri, 13 Jan 2006 09:24:49 +0100
+
+portmap (5-16ubuntu1) dapper; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Thu,  1 Dec 2005 14:00:51 +0100
+
+portmap (5-16) unstable; urgency=low
+
+  * Fixed "Speed up the boot by not sleeping in init.d/portmap
+    twice", closes: #326100. Patch by Petter Reinholdtsen
+    <pere@hungry.com>.
+  * Fixed "Please add dependency info to init.d script", closes:
+    #326125. Patch by Petter Reinholdtsen <pere@hungry.com>.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 09 Oct 2005 01:16:11 +1000
+
+portmap (5-15) unstable; urgency=low
+
+  * Create the configuration file (if it does not exit) on preinst
+    instead of in config (Closes: #309987)
+  * Remove unused check_md5 code from config and preinst
+  * It's portmap(8) and not rpc.portmap(8) in the pmap_dump and pmap_set
+    manpages
+  * Minor changes to the portmap(8) based on Fedora's changes
+  * Addd myself as Co-maintainer
+  * Po-debconf translations:
+    - Vietnamese translation provided by Clytie Siddall  (Closes: #316982)
+    - French translation provided by Jean-Christophe (Closes: #317089)
+    - Italian update provided by Luca Monducci (Closes: #317994)
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Mon,  4 Jul 2005 21:38:43 +0200
+
+portmap (5-14) unstable; urgency=low
+
+  * Updated Czech debconf translation, closes: #313254.
+    Patch by Miroslav Kure <kurem@upcase.inf.upol.cz>.
+  * Updated Danish debconf translation, closes: #315394.
+    Patch by Claus Hindsgaul <claus_h@image.dk>.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Thu, 23 Jun 2005 22:04:00 +1000
+
+portmap (5-13) unstable; urgency=high
+
+  * Patch by Javier Fernández-Sanguino Peña <jfs@computer.org>,
+    closes: #309310. All the 5-13 change entries are addressed
+    by the patch for #309310.
+  * Reverted the configuration file change introduced in -11, the
+    configuration file is now /etc/default/portmap, it is handled 
+    properly through maintainer scripts. I.e. the maintainer scripts 
+    will not touch it if the user modifies it.
+    This prevents upgrades from sarge to etch from breaking, and fixes
+    the broken configuration file handling of previous releases thus the 
+    high priority.
+    Note: Not implemented MD5 sum checks since there were at least
+    3 different valid MD5sums, made more sense to parse the file
+    and read in the $OPTIONS value.
+  * Handle configuration file properly (both old and new):
+    * If upgrading from any version from 5-10 to 5-12 (included) then
+      move the configuration to the proper location.
+    * If upgrading from any version prior to 5-6 or installing first time
+      then generate the configuration file.
+    * Remove both configuration files (old and new) if present when
+      purging in postrm.
+  [ debian/postinst ]
+  * Warn the user that probably he has to restart other RPC services if 
+    they are running and he has changed the OPTIONS
+    of the portmapper.
+  * Start and stop debconf invocation in postinst outside of if/then
+    condition or otherwise the 'init.d start' messages of portmap will not 
+    be shown to standard output (the user might think it was stopped but 
+    not started when --reconfiguring it)
+  * Added a debian/TODO file
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Thu, 09 Jun 2005 09:05:52 +1000
+
+portmap (5-12) unstable; urgency=high
+
+  * Changed default of debconf question to correspond to the value
+    in the config file.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Mon, 16 May 2005 21:18:41 +1000
+
+portmap (5-11) unstable; urgency=high
+
+  * Changed all references of '/etc/default/portmap' to '/etc/portmap.conf'
+    in postinst, init.d, templates and po/*. Created postrm. Removed default.
+    This fixes RC bug "Portmap modifies conffile from postinst", closes: #305505.
+  * Fixed "SIGCHLD handler doesn't preserve errno", closes: #306929.
+    Patch by Alexander Achenbach <xela@slit.de>.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Tue, 10 May 2005 21:54:21 +1000
+
+portmap (5-10ubuntu3) breezy; urgency=low
+
+  * Set portmap/loopback default to false, as it should have been at the start
+    of Breezy
+
+ -- Matt Zimmerman <mdz@ubuntu.com>  Tue, 16 Aug 2005 14:36:32 -0700
+
+portmap (5-10ubuntu2) breezy; urgency=low
+
+  * Fix handling of /etc/default/portmap.
+
+ -- Fabio M. Di Nitto <fabbione@ubuntu.com>  Fri, 15 Apr 2005 17:26:06 +0200
+
+portmap (5-10ubuntu1) breezy; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Scott James Remnant <scott@ubuntu.com>  Thu, 14 Apr 2005 22:46:59 +0100
+
+portmap (5-10) unstable; urgency=high
+
+  * Re-added the debconf configuration, although the default for this is now
+    to have portamp listening in all interfaces. The debconf setting
+    allows system administrators, base-config and cdd developers to preseed
+    this value to 'true' (link only to the loopback interface) if needed.
+    Patch by Javier Fernández-Sanguino Peña <jfs@computer.org>.
+    Closes: #301130, #286301.
+  * Thanks to the following translators for their contribution:
+    cs      Miroslav Kure <kurem@debian.cz>
+    da      Claus Hindsgaul <claus_h@image.dk>
+    es      Javier Fernández-Sanguino Peña <jfs@debian.org>
+    fr      Stephane Fombonne <s.fombonne@laposte.net>
+    it      Luca Monducci <luca.mo@tiscali.it>
+    ja      Kenshi Muto <kmuto@debian.org>
+    pt_BR   André Luís Lopes <andrelop@debian.org>
+    uk      Eugeniy Meshcheryakov <eugen@univ.kiev.ua>
+  * Fixed "incomplete chroot patch from #274178", closes: #301535.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Mon, 11 Apr 2005 14:03:26 +1000
+
+portmap (5-9) unstable; urgency=high
+
+  * The following patch was applied to portmap.c:
+    -       while ((c = getopt(argc, argv, "dtvi:")) != EOF) {
+    +       while ((c = getopt(argc, argv, "dt:vi:")) != EOF) {
+    See bug #274178.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 20 Mar 2005 19:00:54 +1100
+
+portmap (5-8) unstable; urgency=low
+
+  * Fixed "discards port mappings on stop; start" (Closes: #293743).
+  * Compilation warnings cleanup (Closes: #266481).
+    Patch by Mark Ferlatte <ferlatte@cryptio.net>
+  * Option to chroot portmap (Closes: #274178).
+    Patch by Mark Ferlatte <ferlatte@cryptio.net>
+  * New maintainer's email address.
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Mon, 07 Feb 2005 21:47:42 +1100
+
+portmap (5-7ubuntu3) hoary; urgency=low
+
+  * Really ensure portmap only listens to localhost on upgrades from warty
+
+ -- Thom May <thom@planetarytramp.net>  Mon, 13 Dec 2004 15:33:10 +0100
+
+portmap (5-7ubuntu2) hoary; urgency=low
+
+  * Listen on all interfaces by default. (Ubuntu #4140)
+
+ -- Thom May <thom@planetarytramp.net>  Mon, 13 Dec 2004 14:29:31 +0100
+
+portmap (5-7ubuntu1) hoary; urgency=low
+
+  * Resynchronise with Debian.
+
+ -- Matthias Klose <m@klose.in-berlin.de>  Mon, 15 Nov 2004 15:05:56 +0000
+
+portmap (5-7) unstable; urgency=high
+
+  * Fixed "Silently changes to bind to localhost only" (Closes: #280026, #280128, #280553).
+    Commented out the OPTION line in /etc/default/portmap.
+  * Removed debconf note (Closes: #280371, #280554, #280414).
+    Patches supplied (but not applied) by:
+    Andre Luis Lopes <andrelop@debian.org>
+    Kenshi Muto <kmuto@debian.org>
+    Jose Carlos Garcia Sogo <jsogo@debian.org>
+  * Fixed "Manpage is wrong" (Closes: #280421).
+    Changed portmap.8.
+
+ -- Anibal Monsalve Salazar <A.Monsalve.Salazar@IEEE.org>  Wed, 10 Nov 2004 20:34:44 +1100
+
+portmap (5-6) unstable; urgency=high
+
+  * Fixed "Silently changes to bind to localhost only" (Closes: #280026).
+    Display a medium debconf note to let users know about portmap's
+    binding to the loopback address by default.
+
+ -- Anibal Monsalve Salazar <A.Monsalve.Salazar@IEEE.org>  Mon, 08 Nov 2004 07:23:19 +1100
+
+portmap (5-5) unstable; urgency=high
+
+  * Implemented -i option to allow binding to a particular address (Closes: #246935).
+    Patch by Matt Zimmerman <mdz@canonical.com>.
+    Soeren Sonnenburg <bugreports@nn7.de> supplied the original version of the
+    patch.
+  * Bind to the loopback address by default.
+    Patch by Matt Zimmerman <mdz@canonical.com>.
+  * debian/init.d: added --oknodo to make sure portmap script returns 0
+    Patch by Matt Zimmerman <mdz@canonical.com>.
+
+ -- Anibal Monsalve Salazar <A.Monsalve.Salazar@IEEE.org>  Fri, 05 Nov 2004 06:57:29 +1100
+
+portmap (5-4ubuntu5) warty; urgency=low
+
+  * Fix s/OPTIONS/ARGS/ in /etc/default/portmap
+
+ -- Fabio M. Di Nitto <fabbione@fabbione.net>  Thu, 14 Oct 2004 08:28:18 +0200
+
+portmap (5-4ubuntu4) warty; urgency=low
+
+  * Implement -i option to allow binding to a particular address
+  * Bind to the loopback address by default
+
+ -- Matt Zimmerman <mdz@canonical.com>  Tue, 12 Oct 2004 21:57:58 -0700
+
+portmap (5-4ubuntu3) warty; urgency=low
+
+  * debian/init.d: added --oknodo to make sure portmap script returns 0
+    when portmap is already running (#995)
+
+ -- Nathaniel McCallum <npmccallum@canonical.com>  Fri,  3 Sep 2004 18:01:24 -0400
+
+portmap (5-4ubuntu2) warty; urgency=low
+
+  * Added versioned depend on lsb-base
+
+ -- Nathaniel McCallum <npmccallum@canonical.com>  Fri,  3 Sep 2004 15:13:38 -0400
+
+portmap (5-4ubuntu1) warty; urgency=low
+
+  * debian/init.d: pretty initscript
+
+ -- Nathaniel McCallum <npmccallum@canonical.com>  Fri,  3 Sep 2004 11:43:05 -0400
+
+portmap (5-4) unstable; urgency=low
+
+  * New maintainer.
+
+ -- Anibal Monsalve Salazar <A.Monsalve.Salazar@IEEE.org>  Thu, 20 May 2004 09:52:29 +1000
+
+portmap (5-3) unstable; urgency=low
+
+  * New maintainer (closes: #210768, #241674).
+  * Fixed hosts.allow example in portmap(8) (closes: #29142, #229004).
+  * Moved rcS script to 43 from 41 (closes: #196150).
+
+ -- Herbert Xu <herbert@debian.org>  Sat,  3 Apr 2004 20:32:41 +1000
+
+portmap (5-2.3) unstable; urgency=low
+
+  * Non maintainer upload.
+  * Call setgroups instead of initgroup (closes: #226681).
+  * Removed emacs trailer in changelog.
+
+ -- Herbert Xu <herbert@debian.org>  Sat, 27 Mar 2004 09:47:23 +1100
+
+portmap (5-2.2) unstable; urgency=low
+
+  * NMU
+  * Update to debhelper mode 4, cleanups in debian/ (closes: #162586).
+  * Standards-version is 3.6.1.
+  * Start portmap in runlevels 2 to 5, at priority 18. Also stop it for
+    runlevel 1 before it is killed by `single'
+    (closes: #159925, #216107, #60367, #93599, #101726, #130360).
+  * Stop it at S32 in runlevels 0 and 6, after umountnfs.sh (closes: #138023).
+  * Force the symlink update for older versions so that all packages don't
+    have to start portmap before their own daemon.
+  * Don't ship README's content in portmapper.txt.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 20 Feb 2004 17:11:03 +0100
+
+portmap (5-2.1) unstable; urgency=low
+
+  * NMU
+  * [pmap_check.c] Drop group privileges as well. (Closes: #58864)
+  * [portmap.c] Corrected error message for failure to bind with tcp. 
+    (Closes: #61876)
+  * [portmap.c, Makefile] Use glibc's strerror() and daemon(). (Closes: #106380)
+  * [portmap.c] Don't declare extern int errno but #include <errno.h> so as
+    not to reference the deprecated errno@GLIBC_2.0 symbol. (Closes: #168530)
+  * New upload, built using newer binutils which should fix the prelinking
+    issue on powerpc. (Closes: #176352)
+  * [debian/copyright] Updated the upstream location. (Closes: #181807)
+  * [debian/rules] Removed obsolete dh_suidregister.
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Sat, 13 Sep 2003 17:08:22 +0200
+
+portmap (5-2) unstable; urgency=low
+
+  * Fix from_local.c to declare some functions it uses correctly. Thanks
+    to Bdale Garbee. (Closes: Bug#90090)
+  * Add -Wall to CFLAGS, and fix most of the warnings it comes up with.
+
+ -- Anthony Towns <aj@azure.humbug.org.au>  Sun, 18 Mar 2001 19:04:25 +1000
+
+portmap (5-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Anthony Towns <ajt@debian.org>  Sat,  5 Aug 2000 22:08:49 +1000
+

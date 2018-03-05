@@ -1,0 +1,9 @@
+ntfs-3g (1:1.913-2) unstable; urgency=HIGH
+  
+  * User from group fuse cannot mount ntfs-3g anymore.
+    This feature could allow any user from this group to read from and write
+    to arbitrary block devices, possibly involving a file descriptor leak.
+    
+    See Debian bug #445315 or CVE-2007-5159 for more information.
+  
+ -- Adam Cécile (Le_Vert) <gandalf@le-vert.net>  Thu, 04 Oct 2007 22:20:11 +0200

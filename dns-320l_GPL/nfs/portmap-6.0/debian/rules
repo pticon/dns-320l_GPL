@@ -1,0 +1,61 @@
+#!/usr/bin/make -f
+# Sample debian/rules that uses debhelper.
+# GNU copyright 1997 to 1999 by Joey Hess.
+# Copyright (C) 2004-2007 by Anibal Monsalve Salazar <anibal@debian.org>
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+ifeq (kfreebsd,$(DEB_HOST_ARCH_OS))
+	CPPFLAGS=-DHAS_SA_LEN $(MAKE)
+else
+	$(MAKE)
+endif
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	[ ! -f Makefile ] || $(MAKE) clean
+	dh_clean build-stamp
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+	$(MAKE) install BASEDIR=`pwd`/debian/portmap
+
+# Build architecture-independent files here.
+binary-indep: build install
+# We have nothing to do by default.
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installdebconf
+	dh_installdocs
+	dh_installexamples
+	dh_installinit -- start 43 S . start 32 0 6 . start 17 2 3 4 5 . stop 81 1 .
+	dh_installcron
+	dh_installman
+	dh_installinfo
+	dh_installchangelogs CHANGES
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install

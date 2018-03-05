@@ -1,0 +1,75 @@
+# Portuguese translation for tcp-wrappers
+# Luís Matos <gass@otiliamatos.ath.cx>, 2005
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers 7.6.dbs-8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-05-22 13:08+0200\n"
+"PO-Revision-Date: 2006-01-15 18:20+0000\n"
+"Last-Translator: Luis Matos <gass@otiliamatos.ath.cx>\n"
+"Language-Team: Portuguese <traduz@debianpt.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid "Should tcpd setup paranoid hosts.allow and hosts.access?"
+msgstr "Deverá o tcpd configurar o hosts.allow e o hosts.access de forma paranoica?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"/etc/hosts.allow and /etc/hosts.deny will be setup since you do not have "
+"have any of these files yet. You can either have a generic and permissive "
+"configuration which will allow any incoming connection or a paranoid "
+"configuration which will not allow remote connections regardless of where "
+"they originate from."
+msgstr ""
+"Os /etc/hosts.allow e /etc/hosts.deny serão configurados, uma vez que "
+"ainda não possui qualquer um destes ficheiros. Pode ter uma configuração "
+"genérica, ou permissiva onde irá permitir qualquer ligação ou uma "
+"configuração paranoica que não irá permitir ligações remotas venham elas "
+"de onde vierem."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"The second option, even if more secure, will block out all communication, "
+"including, for example, remote administration. So if you need this don't "
+"choose it."
+msgstr ""
+"A segunda opção, mesmo que mais segura, bloqueará todas as comunicações, "
+"incluindo, por exemplo, administração remota. Se precisa disso, então não "
+"seleccione esta opção."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"Regardless of which option you select you can always manually edit both  "
+"files to suit your needs, for this, review the hosts_access(5) manpage.  "
+"This might include giving remote access of services to legitimate hosts."
+msgstr ""
+"Qualquer das opções que seleccione, pode sempre editar manualmente "
+"ambos os ficheiros para servir as suas necessidades, devendo, para tal, "
+"consultar a manpage hosts_access(5)."
+"Isto pode incluir dar acesso remoto a serviços a hosts legítimos."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:4
+msgid ""
+"Notice this only applies to internet services that use the libwrap library. "
+"Remote connections will still be possible to services that do not use this "
+"library, consider using firewall rules to block access to these."
+msgstr ""
+"Atenção que isto só se aplica a serviços de internet que utilizam a "
+"biblioteca libwrap."
+"As ligações remotas podem ainda ser possíveis para serviços que não utilizem "
+"a referida biblioteca, considere a utilização de regras de firewall para "
+"bloquear o acesso dessas."

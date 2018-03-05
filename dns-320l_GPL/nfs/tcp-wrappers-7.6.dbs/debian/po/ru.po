@@ -1,0 +1,78 @@
+# Translation of tcp-wrappers to Russian
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
+#    Developers do not need to manually edit POT or PO files.
+# Yuriy Talakan' <yt@amur.elektra.ru>, 2006.
+# Yuriy Talakan' <yt@drsk.ru>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers_7.6.dbs-14_ru\n"
+"Report-Msgid-Bugs-To: debian-l10n-russian@lists.debian.org\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2007-05-21 11:35+0300\n"
+"Last-Translator: Sergey Alyoshin <alyoshin.s@gmail.com>\n"
+"Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr "Использовать параноидальные настройки в hosts.allow и hosts.deny?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+"Будут созданы новые файлы /etc/hosts.allow и /etc/hosts.deny для программ "
+"TCP-оболочек (tcpd) и библиотеки libwrap, так как эти файлы ещё не существуют."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"Вы можете выбрать между общей (generic) и разрешающей (permissive) "
+"настройками, которые позволят любые входящие соединения, или параноидальной "
+"(paranoid) настройкой, которая не позволит удалённые соединения вне "
+"зависимости от их происхождения. Последняя настройка, хотя и более "
+"безопасная, будет блокировать все соединения, включая, например, удалённое "
+"администрирование."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+"Оба файла могут быть изменены позже в соответствии с вашими требованиями "
+"так, как объясняется в man-странице hosts_access(5). Эти настройки повлияют "
+"только на сетевые сервисы, которые используют библиотеку libwrap; ограничения "
+"для прочих сервисов могут быть установлены с использованием специфических для "
+"пакета команд настройки или правил межсетевого экрана (firewall)."
+

@@ -1,0 +1,60 @@
+---
+abstract: 'Extensible and flexible object <-> relational mapper.'
+author:
+  - 'mst: Matt S. Trout <mst@shadowcatsystems.co.uk>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  File::Temp: 0.22
+  Test::Builder: 0.33
+  Test::Deep: 0
+  Test::Exception: 0
+  Test::More: 0.92
+  Test::Warn: 0.11
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.90'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: DBIx-Class
+no_index:
+  DBIx::Class::SQLAHacks: []
+  DBIx::Class::SQLAHacks::MSSQL: []
+  DBIx::Class::Storage::DBI::AmbiguousGlob: []
+  DBIx::Class::Storage::DBI::Sybase::Base: []
+  DBIx::Class::Storage::DBI::Sybase::Microsoft_SQL_Server: []
+  DBIx::Class::Storage::DBI::Sybase::Microsoft_SQL_Server::NoBindVars: []
+  directory:
+    - examples
+    - inc
+    - t
+recommends:
+  SQL::Translator: 0.09004
+requires:
+  Carp::Clan: 6
+  Class::Accessor::Grouped: 0.08003
+  Class::C3::Componentised: 1.0005
+  Class::Inspector: 1.24
+  DBD::SQLite: 1.25
+  DBI: 1.605
+  Data::Page: 2
+  JSON::Any: 1.18
+  List::Util: 0
+  MRO::Compat: 0.09
+  Module::Find: 0.06
+  Path::Class: 0.16
+  SQL::Abstract: 1.56
+  SQL::Abstract::Limit: 0.13
+  Scalar::Util: 0
+  Scope::Guard: 0.03
+  Storable: 0
+  Sub::Name: 0.04
+  perl: 5.6.1
+resources:
+  IRC: irc://irc.perl.org/#dbix-class
+  MailingList: http://lists.scsys.co.uk/cgi-bin/mailman/listinfo/dbix-class
+  license: http://dev.perl.org/licenses/
+  repository: http://dev.catalyst.perl.org/svnweb/bast/browse/DBIx-Class/
+version: 0.08109

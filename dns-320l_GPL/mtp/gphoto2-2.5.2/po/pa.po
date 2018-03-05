@@ -1,0 +1,1684 @@
+# translation of gphoto2-2.1.6rc1.po to Punjabi
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005.
+# Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2006,2007
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gphoto2-2.1.6rc1\n"
+"Report-Msgid-Bugs-To: gphoto-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-05-05 21:52+0200\n"
+"PO-Revision-Date: 2007-06-23 08:36+0530\n"
+"Last-Translator: Amanpreet Singh Alam <amanpreetalam@yahoo.com>\n"
+"Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gphoto2/actions.c:168
+#, c-format
+msgid "Number of files in folder '%s': %i\n"
+msgstr "ਫੋਲਡਰ '%s' ਵਿੱਚ ਫਾਇਲਾਂ ਦੀ ਗਿਣਤੀ: %i\n"
+
+#: gphoto2/actions.c:189
+#, fuzzy, c-format
+msgid "There is %d folder in folder '%s'.\n"
+msgid_plural "There are %d folders in folder '%s'.\n"
+msgstr[0] "'%2$s' ਫੋਲਡਰ ਵਿੱਚ %1$d ਫਾਇਲ ਹੈ।\n"
+msgstr[1] "'%2$s' ਫੋਲਡਰ ਵਿੱਚ %1$d ਫਾਇਲਾਂ ਹਨ।\n"
+
+#: gphoto2/actions.c:238
+#, fuzzy, c-format
+msgid "There is no file in folder '%s'.\n"
+msgstr "'%2$s' ਫੋਲਡਰ ਵਿੱਚ %1$d ਫਾਇਲ ਹੈ।\n"
+
+#: gphoto2/actions.c:241
+#, c-format
+msgid "There is %d file in folder '%s'.\n"
+msgid_plural "There are %d files in folder '%s'.\n"
+msgstr[0] "'%2$s' ਫੋਲਡਰ ਵਿੱਚ %1$d ਫਾਇਲ ਹੈ।\n"
+msgstr[1] "'%2$s' ਫੋਲਡਰ ਵਿੱਚ %1$d ਫਾਇਲਾਂ ਹਨ।\n"
+
+#: gphoto2/actions.c:263
+#, c-format
+msgid "Information on file '%s' (folder '%s'):\n"
+msgstr "ਫਾਇਲ '%s' (ਫੋਲਡਰ '%s') ਉੱਤੇ ਜਾਣਕਾਰੀ:\n"
+
+#: gphoto2/actions.c:265
+#, c-format
+msgid "File:\n"
+msgstr "ਫਾਇਲ:\n"
+
+#: gphoto2/actions.c:267 gphoto2/actions.c:299 gphoto2/actions.c:315
+#, c-format
+msgid "  None available.\n"
+msgstr "  ਉਪਲੱਬਧ ਨਹੀਂ।\n"
+
+#: gphoto2/actions.c:270 gphoto2/actions.c:302
+#, c-format
+msgid "  Mime type:   '%s'\n"
+msgstr " ਮਾਈਮ ਕਿਸਮ:   '%s'\n"
+
+#: gphoto2/actions.c:272 gphoto2/actions.c:304
+#, fuzzy, c-format
+msgid "  Size:        %lu byte(s)\n"
+msgstr "  ਅਕਾਰ:         %li ਬਾਈਟ\n"
+
+#: gphoto2/actions.c:274 gphoto2/actions.c:306
+#, c-format
+msgid "  Width:       %i pixel(s)\n"
+msgstr "  ਚੌੜਾਈ:       %i ਪਿਕਸਲ\n"
+
+#: gphoto2/actions.c:276 gphoto2/actions.c:308
+#, c-format
+msgid "  Height:      %i pixel(s)\n"
+msgstr "  ਉਚਾਈ:      %i ਪਿਕਸਲ\n"
+
+#: gphoto2/actions.c:278 gphoto2/actions.c:310
+#, c-format
+msgid "  Downloaded:  %s\n"
+msgstr "  ਡਾਊਨਲੋਡ ਕੀਤੇ:  %s\n"
+
+#: gphoto2/actions.c:279 gphoto2/actions.c:311 gphoto2/actions.c:323
+#: gphoto2/actions.c:676 gphoto2/actions.c:678 gphoto2/actions.c:706
+#: gphoto2/actions.c:709 gphoto2/actions.c:712 gphoto2/actions.c:715
+#: gphoto2/actions.c:718 gphoto2/actions.c:1731 gphoto2/actions.c:1958
+msgid "yes"
+msgstr "ਹਾਂ"
+
+#: gphoto2/actions.c:279 gphoto2/actions.c:311 gphoto2/actions.c:323
+#: gphoto2/actions.c:676 gphoto2/actions.c:678 gphoto2/actions.c:706
+#: gphoto2/actions.c:709 gphoto2/actions.c:712 gphoto2/actions.c:715
+#: gphoto2/actions.c:718 gphoto2/actions.c:1725 gphoto2/actions.c:1952
+msgid "no"
+msgstr "ਨਹੀਂ"
+
+#: gphoto2/actions.c:281
+#, c-format
+msgid "  Permissions: "
+msgstr "  ਅਧਿਕਾਰ: "
+
+#: gphoto2/actions.c:284
+#, c-format
+msgid "read/delete"
+msgstr "ਪੜੋ/ਹਟਾਓ"
+
+#: gphoto2/actions.c:286
+#, c-format
+msgid "read"
+msgstr "ਪੜੋ"
+
+#: gphoto2/actions.c:288
+#, c-format
+msgid "delete"
+msgstr "ਹਟਾਓ"
+
+#: gphoto2/actions.c:290
+#, c-format
+msgid "none"
+msgstr "ਕੋਈ ਨਹੀਂ"
+
+#: gphoto2/actions.c:294
+#, c-format
+msgid "  Time:        %s"
+msgstr "  ਸਮਾਂ:        %s"
+
+#: gphoto2/actions.c:297
+#, c-format
+msgid "Thumbnail:\n"
+msgstr "ਥੰਮਨੇਲ:\n"
+
+#: gphoto2/actions.c:313
+#, c-format
+msgid "Audio data:\n"
+msgstr "ਆਡੀਓ ਡਾਟਾ:\n"
+
+#: gphoto2/actions.c:318
+#, c-format
+msgid "  Mime type:  '%s'\n"
+msgstr "  Mime ਕਿਸਮ:  '%s'\n"
+
+#: gphoto2/actions.c:320
+#, fuzzy, c-format
+msgid "  Size:       %lu byte(s)\n"
+msgstr "  ਅਕਾਰ:       %li ਬਾਇਟ\n"
+
+#: gphoto2/actions.c:322
+#, c-format
+msgid "  Downloaded: %s\n"
+msgstr "  ਡਾਊਨਲੋਡ: %s\n"
+
+#: gphoto2/actions.c:498
+msgid "Could not parse EXIF data."
+msgstr "EXIF ਡਾਟਾ ਪਾਰਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: gphoto2/actions.c:502
+#, c-format
+msgid "EXIF tags:"
+msgstr "EXIF ਟੈਗ:"
+
+#: gphoto2/actions.c:505
+msgid "Tag"
+msgstr "ਟੈਗ"
+
+#: gphoto2/actions.c:507
+msgid "Value"
+msgstr "ਮੁੱਲ"
+
+#: gphoto2/actions.c:528
+#, c-format
+msgid "EXIF data contains a thumbnail (%i bytes)."
+msgstr ""
+
+#: gphoto2/actions.c:537
+msgid "gphoto2 has been compiled without EXIF support."
+msgstr ""
+
+#: gphoto2/actions.c:555
+#, c-format
+msgid "Number of supported cameras: %i\n"
+msgstr "ਸਹਾਇਕ ਕੈਮਰਿਆਂ ਦੀ ਗਿਣਤੀ: %i\n"
+
+#: gphoto2/actions.c:556
+#, c-format
+msgid "Supported cameras:\n"
+msgstr "ਸਹਾਇਕ ਕੈਮਰੇ:\n"
+
+#: gphoto2/actions.c:569
+#, c-format
+msgid "\t\"%s\" (TESTING)\n"
+msgstr "\t\"%s\" (ਜਾਂਚ ਜਾਰੀ)\n"
+
+#: gphoto2/actions.c:572
+#, c-format
+msgid "\t\"%s\" (EXPERIMENTAL)\n"
+msgstr "\t\"%s\" (ਤਜਰਬੇ ਅਧੀਨ)\n"
+
+#: gphoto2/actions.c:577
+#, c-format
+msgid "\t\"%s\"\n"
+msgstr "\t\"%s\"\n"
+
+#: gphoto2/actions.c:621
+#, c-format
+msgid "Devices found: %i\n"
+msgstr "ਜੰਤਰ ਮਿਲਿਆ: %i\n"
+
+#: gphoto2/actions.c:622
+#, c-format
+msgid ""
+"Path                             Description\n"
+"--------------------------------------------------------------\n"
+msgstr ""
+"ਮਾਰਗ                             ਵੇਰਵਾ\n"
+"--------------------------------------------------------------\n"
+
+#: gphoto2/actions.c:655 gphoto2/actions.c:660
+#, c-format
+msgid "%-30s %-16s\n"
+msgstr "%-30s %-16s\n"
+
+#: gphoto2/actions.c:655
+msgid "Model"
+msgstr "ਮਾਡਲ"
+
+#: gphoto2/actions.c:655
+msgid "Port"
+msgstr "ਪੋਰਟ"
+
+#: gphoto2/actions.c:656
+#, c-format
+msgid "----------------------------------------------------------\n"
+msgstr "----------------------------------------------------------\n"
+
+#: gphoto2/actions.c:674
+#, c-format
+msgid "Abilities for camera             : %s\n"
+msgstr "ਕੈਮਰੇ ਲਈ ਯੋਗਤਾ             : %s\n"
+
+#: gphoto2/actions.c:675
+#, c-format
+msgid "Serial port support              : %s\n"
+msgstr "ਸੀਰੀਅਲ ਪੋਰਟ ਸਹਿਯੋਗ               : %s\n"
+
+#: gphoto2/actions.c:677
+#, c-format
+msgid "USB support                      : %s\n"
+msgstr "USB ਸਹਾਇਕ                      : %s\n"
+
+#: gphoto2/actions.c:680
+#, c-format
+msgid "Transfer speeds supported        :\n"
+msgstr "ਸਹਾਇਕ ਸੰਚਾਰ ਗਤੀ        :\n"
+
+#: gphoto2/actions.c:682
+#, c-format
+msgid "                                 : %i\n"
+msgstr "                                 : %i\n"
+
+#: gphoto2/actions.c:685
+#, c-format
+msgid "Capture choices                  :\n"
+msgstr "ਕੈਪਚਰ ਚੋਣ                  :\n"
+
+#: gphoto2/actions.c:687
+#, c-format
+msgid "                                 : Image\n"
+msgstr "                                 : ਤਸਵੀਰ\n"
+
+#: gphoto2/actions.c:691
+#, c-format
+msgid "                                 : Video\n"
+msgstr "                                 : ਵੀਡਿਓ\n"
+
+#: gphoto2/actions.c:695
+#, c-format
+msgid "                                 : Audio\n"
+msgstr "                                 : ਆਡੀਓ\n"
+
+#: gphoto2/actions.c:699
+#, c-format
+msgid "                                 : Preview\n"
+msgstr "                                  : ਝਲਕ\n"
+
+#: gphoto2/actions.c:703
+#, c-format
+msgid ""
+"                                 : Capture not supported by the driver\n"
+msgstr ""
+
+#: gphoto2/actions.c:705
+#, c-format
+msgid "Configuration support            : %s\n"
+msgstr "ਸੰਰਚਨਾ ਸਹਾਇਕ                  : %s\n"
+
+#: gphoto2/actions.c:707
+#, c-format
+msgid "Delete selected files on camera  : %s\n"
+msgstr "ਕੈਮਰੇ ਤੋਂ ਚੁਣੀਆਂ ਫਾਇਲਾਂ ਹਟਾਓ  : %s\n"
+
+#: gphoto2/actions.c:710
+#, fuzzy, c-format
+msgid "Delete all files on camera       : %s\n"
+msgstr "ਕੈਮਰੇ ਤੋਂ ਸਭ ਫਾਇਲਾਂ ਹਟਾਓ             : %s\n"
+
+#: gphoto2/actions.c:713
+#, c-format
+msgid "File preview (thumbnail) support : %s\n"
+msgstr "ਫਾਇਲ ਝਲਕ (ਥੰਮਨੇਲ) ਸਹਿਯੋਗ: %s\n"
+
+#: gphoto2/actions.c:716
+#, c-format
+msgid "File upload support              : %s\n"
+msgstr "ਫਾਇਲ ਅੱਪਲੋਡ ਸਹਿਯੋਗ              : %s\n"
+
+#: gphoto2/actions.c:733
+#, c-format
+msgid ""
+"Ports must look like 'serial:/dev/ttyS0' or 'usb:', but '%s' is missing a "
+"colon so I am going to guess what you mean."
+msgstr ""
+"ਪੋਰਟ 'serial:/dev/ttyS0' ਜਾਂ 'usb:' ਵਾਂਗ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ, ਪਰ '%s' ਵਿੱਚ ਕਾਲਨ ਨਹੀਂ ਹੈ, "
+"ਇਸਕਰਕੇ ਮੈਂ ਤੁਹਾਡੇ ਲਈ ਅੰਦਾਜ਼ਾ ਲਗਾਉਦਾ ਹਾਂ।"
+
+#: gphoto2/actions.c:767
+#, c-format
+msgid ""
+"The port you specified ('%s') can not be found. Please specify one of the "
+"ports found by 'gphoto2 --list-ports' and make sure the spelling is correct "
+"(i.e. with prefix 'serial:' or 'usb:')."
+msgstr ""
+"ਪੋਰਟ, ਜੋ ਤੁਸੀਂ ਦਿੱਤੀ ਹੈ ('%s'), ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ। ਉਹ ਪੋਰਟ ਦਿਓ ਜੀ, ਜੋ ਕਿ 'gphoto2 --"
+"list-ports' ਰਾਹੀਂ ਲੱਭੀ ਗਈ ਹੈ ਅਤੇ ਇਹ ਜਾਂਚ ਲਵੋ ਕਿ ਸ਼ਬਦ ਠੀਕ ਤਰ੍ਹਾਂ ਲਿਖੇ ਗਏ ਹਨ (ਭਾਵ ਕਿ "
+"'serial:' ਜਾਂ 'usb:' ਅੱਗੇ ਲਿਖਿਆ ਗਿਆ ਹੈ)।"
+
+#: gphoto2/actions.c:800
+#, c-format
+msgid "About the camera driver:"
+msgstr "ਕੈਮਰਾ ਮਾਡਲ ਬਾਰੇ:"
+
+#: gphoto2/actions.c:813
+#, c-format
+msgid "Camera summary:"
+msgstr "ਕੈਮਰਾ ਸੰਖੇਪ:"
+
+#: gphoto2/actions.c:826
+#, c-format
+msgid "Camera manual:"
+msgstr "ਕੈਮਰਾ ਦਸਤਾਵੇਜ਼:"
+
+#: gphoto2/actions.c:843
+#, c-format
+msgid "You can only specify speeds for serial ports."
+msgstr "ਤੁਸੀਂ ਸੀਰੀਅਲ ਪੋਰਟ ਦੀ ਸਪੀਡ ਹੀ ਦੇ ਸਕਦੇ ਹੋ।"
+
+#: gphoto2/actions.c:893
+msgid "OS/2 port by Bart van Leeuwen\n"
+msgstr "OS/2 ਲਈ Bart van Leeuwen ਨੇ ਤਿਆਰ ਕੀਤਾ\n"
+
+#: gphoto2/actions.c:897
+#, c-format
+msgid ""
+"gphoto2 %s\n"
+"\n"
+"Copyright (c) 2000-%d Lutz Mueller and others\n"
+"%s\n"
+"gphoto2 comes with NO WARRANTY, to the extent permitted by law. You may\n"
+"redistribute copies of gphoto2 under the terms of the GNU General Public\n"
+"License. For more information about these matters, see the files named "
+"COPYING.\n"
+"\n"
+"This version of gphoto2 is using the following software versions and "
+"options:\n"
+msgstr ""
+
+#: gphoto2/actions.c:997
+#, fuzzy
+msgid "Could not open 'movie.mjpg'."
+msgstr "ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਹੋ ਨਹੀਂ ਸਕੀ ਹੈ।"
+
+#: gphoto2/actions.c:1004
+#, c-format
+msgid "Capturing preview frames as movie to '%s'. Press Ctrl-C to abort.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1008
+#, c-format
+msgid "Capturing preview frames as movie to '%s' for %d seconds.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1013
+#, c-format
+msgid "Capturing %d preview frames as movie to '%s'.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1023
+msgid "Movie capture error... Exiting."
+msgstr ""
+
+#: gphoto2/actions.c:1028
+#, c-format
+msgid "Movie capture error... Unhandled MIME type '%s'."
+msgstr ""
+
+#: gphoto2/actions.c:1035
+#, c-format
+msgid "Ctrl-C pressed ... Exiting.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1049
+#, c-format
+msgid "Movie capture finished (%d frames)\n"
+msgstr ""
+
+#: gphoto2/actions.c:1079
+#, fuzzy, c-format
+msgid "Waiting for events from camera. Press Ctrl-C to abort.\n"
+msgstr "ਕੈਮਰੇ ਵਲੋਂ ਜਵਾਬ ਦੀ ਉਡੀਕ"
+
+#: gphoto2/actions.c:1085
+#, c-format
+msgid "Waiting for %d frames from the camera. Press Ctrl-C to abort.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1090
+#, c-format
+msgid ""
+"Waiting for %d milliseconds for events from camera. Press Ctrl-C to abort.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1095
+#, c-format
+msgid "Waiting for %d seconds for events from camera. Press Ctrl-C to abort.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1099
+#, fuzzy, c-format
+msgid "Waiting for %d events from camera. Press Ctrl-C to abort.\n"
+msgstr "ਕੈਮਰੇ ਵਲੋਂ ਜਵਾਬ ਦੀ ਉਡੀਕ"
+
+#: gphoto2/actions.c:1163 gphoto2/main.c:750
+msgid "Could not set folder."
+msgstr "ਫੋਲਡਰ ਦਿੱਤਾ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ।"
+
+#: gphoto2/actions.c:1169 gphoto2/main.c:757
+msgid "Could not get image."
+msgstr "ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਹੋ ਨਹੀਂ ਸਕੀ ਹੈ।"
+
+#: gphoto2/actions.c:1176 gphoto2/main.c:764
+msgid "Buggy libcanon.so?"
+msgstr "ਬੱਗੀ libcanon.so ਹੈ?"
+
+#: gphoto2/actions.c:1186 gphoto2/main.c:776
+msgid "Could not delete image."
+msgstr "ਤਸਵੀਰ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ।"
+
+#: gphoto2/actions.c:1210
+#, c-format
+msgid "Getting storage information not supported for this camera.\n"
+msgstr ""
+
+#: gphoto2/actions.c:1225
+#, c-format
+msgid "Read-Write"
+msgstr ""
+
+#: gphoto2/actions.c:1228
+#, c-format
+msgid "Read-Only"
+msgstr ""
+
+#: gphoto2/actions.c:1231
+#, c-format
+msgid "Read-only with delete"
+msgstr ""
+
+#: gphoto2/actions.c:1234 gphoto2/actions.c:1244
+#, c-format
+msgid "Unknown"
+msgstr ""
+
+#: gphoto2/actions.c:1247
+#, c-format
+msgid "Fixed ROM"
+msgstr ""
+
+#: gphoto2/actions.c:1250
+#, c-format
+msgid "Removable ROM"
+msgstr ""
+
+#: gphoto2/actions.c:1253
+#, c-format
+msgid "Fixed RAM"
+msgstr ""
+
+#: gphoto2/actions.c:1256
+#, c-format
+msgid "Removable RAM"
+msgstr ""
+
+#: gphoto2/actions.c:1266
+#, c-format
+msgid "Undefined"
+msgstr ""
+
+#: gphoto2/actions.c:1269
+#, c-format
+msgid "Generic Flat"
+msgstr ""
+
+#: gphoto2/actions.c:1272
+#, c-format
+msgid "Generic Hierarchical"
+msgstr ""
+
+#: gphoto2/actions.c:1275
+#, c-format
+msgid "Camera layout (DCIM)"
+msgstr ""
+
+#: gphoto2/actions.c:1313
+#, c-format
+msgid "Overriding USB vendor/product id 0x%x/0x%x with 0x%x/0x%x"
+msgstr "USB ਵਿਕਰੇਤਾ/ਉਤਪਾਦ id 0x%x/0x%x with 0x%x/0x%x ਨੂੰ ਅਣਡਿੱਠੀ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: gphoto2/actions.c:1371
+msgid ""
+"ALWAYS INCLUDE THE FOLLOWING LINES WHEN SENDING DEBUG MESSAGES TO THE "
+"MAILING LIST:"
+msgstr ""
+"ALWAYS INCLUDE THE FOLLOWING LINES WHEN SENDING DEBUG MESSAGES TO THE "
+"MAILING LIST:"
+
+#: gphoto2/actions.c:1386
+#, c-format
+msgid "%s has been compiled with the following options:"
+msgstr "%s ਨੂੰ ਅੱਗੇ ਦਿੱਤੇ ਚੋਣਾਂ ਨਾਲ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ:"
+
+#: gphoto2/actions.c:1517
+#, c-format
+msgid "%s not found in configuration tree."
+msgstr "%s ਸੰਰਚਨਾ ਲੜੀ ਵਿੱਚ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ।"
+
+#: gphoto2/actions.c:1566
+#, c-format
+msgid "Failed to retrieve value of text widget %s."
+msgstr "ਪਾਠ ਸਹਾਇਕ %s ਦਾ ਮੁੱਲ ਲੈਣ ਲਈ ਫੇਲ੍ਹ ਹੋਇਆ।"
+
+#: gphoto2/actions.c:1583
+#, c-format
+msgid "Failed to retrieve values of range widget %s."
+msgstr "%s ਰੇਜ਼ ਸਹਾਇਕ ਦਾ ਮੁੱਲ ਲੈਣ ਲਈ ਫੇਲ੍ਹ"
+
+#: gphoto2/actions.c:1595
+#, c-format
+msgid "Failed to retrieve values of toggle widget %s."
+msgstr "%s ਟਾਗਲ ਸਹਾਇਕ ਦਾ ਮੁੱਲ ਲੈਣ ਲਈ ਫੇਲ੍ਹ"
+
+#: gphoto2/actions.c:1607
+#, c-format
+msgid "Failed to retrieve values of date/time widget %s."
+msgstr "%s ਮਿਤੀ/ਸਮਾਂ ਸਹਾਇਕ ਦਾ ਮੁੱਲ ਲੈਣ ਲਈ ਫੇਲ੍ਹ"
+
+#: gphoto2/actions.c:1637
+#, c-format
+msgid "Failed to retrieve values of radio widget %s."
+msgstr "%s ਰੇਡੀਓ ਸਹਾਇਕ ਦਾ ਮੁੱਲ ਲੈਣ ਲਈ ਫੇਲ੍ਹ"
+
+#: gphoto2/actions.c:1681
+#, c-format
+msgid "Property %s is read only."
+msgstr ""
+
+#: gphoto2/actions.c:1695 gphoto2/actions.c:1922
+#, c-format
+msgid "Failed to set the value of text widget %s to %s."
+msgstr ""
+
+#: gphoto2/actions.c:1705 gphoto2/actions.c:1932
+#, c-format
+msgid "The passed value %s is not a floating point value."
+msgstr ""
+
+#: gphoto2/actions.c:1710 gphoto2/actions.c:1937
+#, c-format
+msgid "The passed value %f is not within the expected range %f - %f."
+msgstr ""
+
+#: gphoto2/actions.c:1716 gphoto2/actions.c:1943
+#, c-format
+msgid "Failed to set the value of range widget %s to %f."
+msgstr ""
+
+#: gphoto2/actions.c:1725 gphoto2/actions.c:1952
+msgid "off"
+msgstr "ਬੰਦ"
+
+#: gphoto2/actions.c:1726 gphoto2/actions.c:1953
+msgid "false"
+msgstr "ਗਲਤ"
+
+#: gphoto2/actions.c:1731 gphoto2/actions.c:1958
+msgid "on"
+msgstr "ਚਾਲੂ"
+
+#: gphoto2/actions.c:1732 gphoto2/actions.c:1959
+msgid "true"
+msgstr "ਠੀਕ"
+
+#: gphoto2/actions.c:1737 gphoto2/actions.c:1964
+#, c-format
+msgid "The passed value %s is not a valid toggle value."
+msgstr ""
+
+#: gphoto2/actions.c:1743 gphoto2/actions.c:1970
+#, c-format
+msgid "Failed to set values %s of toggle widget %s."
+msgstr ""
+
+#: gphoto2/actions.c:1750
+#, fuzzy
+msgid "now"
+msgstr "ਨਹੀਂ"
+
+#: gphoto2/actions.c:1758 gphoto2/actions.c:1983
+#, c-format
+msgid "The passed value %s is neither a valid time nor an integer."
+msgstr ""
+
+#: gphoto2/actions.c:1765 gphoto2/actions.c:1990
+#, c-format
+msgid "Failed to set new time of date/time widget %s to %s."
+msgstr ""
+
+#: gphoto2/actions.c:1812 gphoto2/actions.c:1876 gphoto2/actions.c:2020
+#, c-format
+msgid "Choice %s not found within list of choices."
+msgstr ""
+
+#: gphoto2/actions.c:1820 gphoto2/actions.c:2028
+#, c-format
+msgid "The %s widget is not configurable."
+msgstr ""
+
+#: gphoto2/actions.c:1827 gphoto2/actions.c:1895 gphoto2/actions.c:2035
+#, c-format
+msgid "Failed to set new configuration value %s for configuration entry %s."
+msgstr ""
+
+#: gphoto2/actions.c:1888
+#, c-format
+msgid ""
+"The %s widget has no indexed list of choices. Use --set-config-value instead."
+msgstr ""
+
+#: gphoto2/foreach.c:260
+#, c-format
+msgid ""
+"Bad file number. You specified %i, but there are only %i files available in "
+"'%s' or its subfolders. Please obtain a valid file number from a file "
+"listing first."
+msgstr ""
+
+#: gphoto2/foreach.c:285
+#, c-format
+msgid "There are no files in folder '%s'."
+msgstr "ਫੋਲਡਰ '%s' ਵਿੱਚ ਕੋਈ ਫਾਇਲ ਨਹੀਂ ਹੈ।"
+
+#: gphoto2/foreach.c:291
+#, c-format
+msgid ""
+"Bad file number. You specified %i, but there is only 1 file available in "
+"'%s'."
+msgstr "ਗਲਤ ਫਾਇਲ ਨੰਬਰ ਹੈ। ਤੁਸੀਂ %i ਦਿੱਤਾ ਹੈ, ਪਰ '%s' ਵਿੱਚ ਸਿਰਫ਼ ਇੱਕ ਹੀ ਫਾਇਲ ਹੈ।"
+
+#: gphoto2/foreach.c:299
+#, c-format
+msgid ""
+"Bad file number. You specified %i, but there are only %i files available in "
+"'%s'. Please obtain a valid file number from a file listing first."
+msgstr ""
+"ਗਲਤ ਫਾਇਲ ਨੰਬਰ ਹੈ। ਤੁਸੀਂ %1$i ਦਿੱਤਾ ਹੈ, ਪਰ '%3$s' ਵਿੱਚ ਸਿਰਫ਼ %2$i ਹੀ ਫਾਇਲਾਂ ਹਨ। ਫਾਇਲ "
+"ਲਿਸਟ ਤੋਂ ਪਹਿਲਾਂ ਠੀਕ ਫਾਇਲਾਂ ਦੀ ਗਿਣਤੀ ਲਵੋ ਜੀ।"
+
+#: gphoto2/gp-params.c:62
+#, c-format
+msgid "*** Error ***              \n"
+msgstr "*** ਗਲਤੀ ***              \n"
+
+#: gphoto2/gp-params.c:237
+#, c-format
+msgid "Press any key to continue.\n"
+msgstr "ਜਾਰੀ ਰੱਖਣ ਲਈ ਕੋਈ ਵੀ ਸਵਿੱਚ ਦਬਾਉ।\n"
+
+#: gphoto2/gp-params.c:259
+#, c-format
+msgid "Not enough memory."
+msgstr "ਲੋੜੀਦੀ ਮੈਮੋਰੀ ਨਹੀਂ ਹੈ।"
+
+#: gphoto2/gphoto2-cmd-capture.c:211
+msgid "Operation cancelled"
+msgstr "ਕਾਰਵਾਈ ਰੱਦ ਕੀਤੀ ਗਈ"
+
+#: gphoto2/gphoto2-cmd-config.c:55
+msgid "</B/24>Continue"
+msgstr "</B/24>ਜਾਰੀ ਰੱਖੋ"
+
+#: gphoto2/gphoto2-cmd-config.c:55
+msgid "</B16>Cancel"
+msgstr "</B16>ਰੱਦ ਕਰੋ"
+
+#: gphoto2/gphoto2-cmd-config.c:61
+msgid "<C></5>Error"
+msgstr "<C></5>ਗਲਤੀ"
+
+#: gphoto2/gphoto2-cmd-config.c:63
+msgid "Could not set configuration:"
+msgstr "ਸੰਰਚਨਾ ਸੈੱਟ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ:"
+
+#: gphoto2/gphoto2-cmd-config.c:107
+msgid "Exit"
+msgstr "ਬੰਦ ਕਰੋ"
+
+#: gphoto2/gphoto2-cmd-config.c:109
+msgid "Back"
+msgstr "ਪਿੱਛੇ"
+
+#: gphoto2/gphoto2-cmd-config.c:254
+msgid "Time: "
+msgstr "ਸਮਾਂ: "
+
+#: gphoto2/gphoto2-cmd-config.c:313 gphoto2/gphoto2-cmd-config.c:341
+#: gphoto2/gphoto2-cmd-config.c:400 gphoto2/gphoto2-cmd-config.c:463
+msgid "Value: "
+msgstr "ਮੁੱਲ: "
+
+#: gphoto2/gphoto2-cmd-config.c:362
+msgid "Yes"
+msgstr "ਹਾਂ"
+
+#: gphoto2/gphoto2-cmd-config.c:362
+msgid "No"
+msgstr "ਨਹੀਂ"
+
+#: gphoto2/main.c:213
+#, c-format
+msgid "Zero padding numbers in file names is only possible with %%n."
+msgstr ""
+
+#: gphoto2/main.c:222
+#, c-format
+msgid "You cannot use %%n zero padding without a precision value!"
+msgstr ""
+
+#: gphoto2/main.c:255
+#, c-format
+msgid "The filename provided by the camera ('%s') does not contain a suffix!"
+msgstr ""
+
+#: gphoto2/main.c:310
+#, c-format
+msgid "Invalid format '%s' (error at position %i)."
+msgstr "ਗਲਤ ਫਾਰਮੈਟ '%s' (%i ਸਥਿਤੀ ਉੱਤੇ ਗਲਤੀ)।"
+
+#: gphoto2/main.c:360
+#, c-format
+msgid "File %s exists. Overwrite? [y|n] "
+msgstr "ਫਾਇਲ %s ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਉੱਤੇ ਲਿਖਣਾ ਹੈ? [y|n] "
+
+#: gphoto2/main.c:372
+#, c-format
+msgid "Specify new filename? [y|n] "
+msgstr "ਕੀ ਨਵਾਂ ਫਾਇਲ ਨਾਂ ਦੇਣਾ ਹੈ? [y|n] "
+
+#: gphoto2/main.c:384
+#, c-format
+msgid "Enter new filename: "
+msgstr "ਨਵਾਂ ਫਾਇਲ ਨਾਂ ਦਿਓ: "
+
+#: gphoto2/main.c:390
+#, c-format
+msgid "Saving file as %s\n"
+msgstr "ਫਾਇਲ %s ਦੇ ਤੌਰ ਉੱਤੇ ਸੰਭਾਲੀ ਜਾ ਰਹੀ ਹੈ\n"
+
+#: gphoto2/main.c:549
+#, fuzzy
+msgid "Permission denied"
+msgstr "  ਅਧਿਕਾਰ: "
+
+#: gphoto2/main.c:711
+#, fuzzy
+msgid "Could not trigger capture."
+msgstr "ਕੈਪਚਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: gphoto2/main.c:741
+#, c-format
+msgid "New file is in location %s%s%s on the camera\n"
+msgstr "ਕੈਮਰੇ ਉੱਤੇ ਨਵੀਂ ਫਾਇਲ %s%s%s ਟਿਕਾਣੇ ਉੱਤੇ ਹੈ\n"
+
+#: gphoto2/main.c:771
+#, c-format
+msgid "Deleting file %s%s%s on the camera\n"
+msgstr "ਕੈਮਰੇ ਉੱਤੇ ਫਾਇਲ %s%s%s ਨੂੰ ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ\n"
+
+#: gphoto2/main.c:781
+#, fuzzy, c-format
+msgid "Keeping file %s%s%s on the camera\n"
+msgstr "ਕੈਮਰੇ ਉੱਤੇ ਫਾਇਲ %s%s%s ਨੂੰ ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ\n"
+
+#: gphoto2/main.c:814
+#, c-format
+msgid "Event FOLDER_ADDED %s/%s during wait, ignoring.\n"
+msgstr ""
+
+#: gphoto2/main.c:824
+#, c-format
+msgid "Event UNKNOWN %s during wait, ignoring.\n"
+msgstr ""
+
+#: gphoto2/main.c:830
+#, c-format
+msgid "Unknown event type %d during bulb wait, ignoring.\n"
+msgstr ""
+
+#: gphoto2/main.c:848
+#, fuzzy
+msgid "Could not get capabilities?"
+msgstr "ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਹੋ ਨਹੀਂ ਸਕੀ ਹੈ।"
+
+#: gphoto2/main.c:856
+#, c-format
+msgid "Time-lapse mode enabled (interval: %ds).\n"
+msgstr ""
+
+#: gphoto2/main.c:859
+#, c-format
+msgid "Standing by waiting for SIGUSR1 to capture.\n"
+msgstr ""
+
+#: gphoto2/main.c:865
+#, c-format
+msgid "Bulb mode enabled (exposure time: %ds).\n"
+msgstr ""
+
+#: gphoto2/main.c:878
+#, c-format
+msgid "Capturing frame #%d...\n"
+msgstr "ਫਰੇਮ #%d ਕੈਪਚਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...\n"
+
+#: gphoto2/main.c:880
+#, c-format
+msgid "Capturing frame #%d/%d...\n"
+msgstr "ਫਰੇਮ #%d/%d ਕੈਪਚਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...\n"
+
+#: gphoto2/main.c:890
+#, fuzzy, c-format
+msgid "Could not set bulb capture, result %d."
+msgstr "ਕੈਪਚਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: gphoto2/main.c:904
+#, fuzzy
+msgid "Could not end capture (bulb mode)."
+msgstr "ਕੈਪਚਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: gphoto2/main.c:915
+#, fuzzy
+msgid "Could not trigger image capture."
+msgstr "ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਹੋ ਨਹੀਂ ਸਕੀ ਹੈ।"
+
+#: gphoto2/main.c:921
+#, fuzzy
+msgid "Could not capture image."
+msgstr "ਕੈਪਚਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: gphoto2/main.c:928
+#, c-format
+msgid "Capture failed (auto-focus problem?)...\n"
+msgstr "ਕੈਪਚਰ ਫੇਲ੍ਹ ਹੋਇਆ (ਆਟੋ-ਫੋਕਸ ਸਮੱਸਿਆ ਹੈ?)...\n"
+
+#: gphoto2/main.c:939
+msgid "Could not capture."
+msgstr "ਕੈਪਚਰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
+
+#: gphoto2/main.c:970
+#, c-format
+msgid "Waiting for next capture slot %ld seconds...\n"
+msgstr ""
+
+#: gphoto2/main.c:979 gphoto2/main.c:1020
+#, c-format
+msgid "Awakened by SIGUSR1...\n"
+msgstr ""
+
+#: gphoto2/main.c:992
+#, c-format
+msgid "not sleeping (%ld seconds behind schedule)\n"
+msgstr ""
+
+#: gphoto2/main.c:1124
+#, c-format
+msgid "ERROR: "
+msgstr "ਗਲਤੀ: "
+
+#: gphoto2/main.c:1147
+#, c-format
+msgid ""
+"\n"
+"Aborting...\n"
+msgstr ""
+"\n"
+"ਅਧੂਰਾ ਛੱਡਿਆ ਜਾ ਰਿਹਾ ਹੈ...\n"
+
+#: gphoto2/main.c:1153
+#, c-format
+msgid "Aborted.\n"
+msgstr "ਅਧੂਰਾ ਛੱਡਿਆ।\n"
+
+#: gphoto2/main.c:1158
+#, c-format
+msgid ""
+"\n"
+"Cancelling...\n"
+msgstr ""
+"\n"
+"ਰੱਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...\n"
+
+#: gphoto2/main.c:1306
+#, c-format
+msgid ""
+"Use the following syntax a:b=c:d to treat any USB device detected as a:b as "
+"c:d instead. a b c d should be hexadecimal numbers beginning with '0x'.\n"
+msgstr ""
+
+#: gphoto2/main.c:1474
+msgid "gphoto2 has been compiled without support for CDK."
+msgstr ""
+
+#: gphoto2/main.c:1738
+#, c-format
+msgid "Operation cancelled.\n"
+msgstr "ਕਾਰਵਾਈ ਰੱਦ ਕੀਤੀ ਗਈ।\n"
+
+#: gphoto2/main.c:1742
+#, c-format
+msgid ""
+"*** Error: No camera found. ***\n"
+"\n"
+msgstr ""
+
+#: gphoto2/main.c:1744
+#, c-format
+msgid ""
+"*** Error (%i: '%s') ***       \n"
+"\n"
+msgstr ""
+"*** ਗਤੀ (%i: '%s') ***       \n"
+"\n"
+
+#: gphoto2/main.c:1749
+#, c-format
+msgid ""
+"For debugging messages, please use the --debug option.\n"
+"Debugging messages may help finding a solution to your problem.\n"
+"If you intend to send any error or debug messages to the gphoto\n"
+"developer mailing list <gphoto-devel@lists.sourceforge.net>, please run\n"
+"gphoto2 as follows:\n"
+"\n"
+msgstr ""
+
+#: gphoto2/main.c:1770
+#, c-format
+msgid ""
+"Please make sure there is sufficient quoting around the arguments.\n"
+"\n"
+msgstr ""
+
+#: gphoto2/main.c:1837
+msgid "Print complete help message on program usage"
+msgstr ""
+
+#: gphoto2/main.c:1839
+msgid "Print short message on program usage"
+msgstr ""
+
+#: gphoto2/main.c:1841
+msgid "Turn on debugging"
+msgstr ""
+
+#: gphoto2/main.c:1843
+msgid "Name of file to write debug info to"
+msgstr ""
+
+#: gphoto2/main.c:1843 gphoto2/main.c:1848 gphoto2/main.c:1854
+#: gphoto2/main.c:1978
+msgid "FILENAME"
+msgstr "FILENAME"
+
+#: gphoto2/main.c:1845
+msgid "Quiet output (default=verbose)"
+msgstr ""
+
+#: gphoto2/main.c:1847
+msgid "Hook script to call after downloads, captures, etc."
+msgstr ""
+
+#: gphoto2/main.c:1854
+#, fuzzy
+msgid "Specify device port"
+msgstr "ਪੋਰਟ ਜੰਤਰ ਦਿਓ"
+
+#: gphoto2/main.c:1856
+msgid "Specify serial transfer speed"
+msgstr "ਲੜੀ ਸੰਚਾਰ ਗਤੀ ਦਿਓ"
+
+#: gphoto2/main.c:1856
+msgid "SPEED"
+msgstr "SPEED"
+
+#: gphoto2/main.c:1858
+msgid "Specify camera model"
+msgstr "ਕੈਮਰਾ ਮਾਡਲ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:1858
+msgid "MODEL"
+msgstr "MODEL"
+
+#: gphoto2/main.c:1860
+msgid "(expert only) Override USB IDs"
+msgstr ""
+
+#: gphoto2/main.c:1860
+msgid "USBIDs"
+msgstr "USBIDs"
+
+#: gphoto2/main.c:1866
+msgid "Display version and exit"
+msgstr "ਵਰਜਨ ਵੇਖਾਓ ਅਤੇ ਬੰਦ ਕਰੋ"
+
+#: gphoto2/main.c:1868
+msgid "List supported camera models"
+msgstr "ਸਹਾਇਕ ਕੈਮਰਾ ਮਾਡਲ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:1870
+msgid "List supported port devices"
+msgstr "ਸਹਾਇਕ ਪੋਰਟ ਜੰਤਰ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:1872
+#, fuzzy
+msgid "Display camera/driver abilities"
+msgstr "ਕੈਮਰਾ/ਡਰਾਇਵਰ ਯੋਗਤਾ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:1879
+msgid "Configure"
+msgstr "ਸੰਰਚਨਾ"
+
+#: gphoto2/main.c:1882
+msgid "List configuration tree"
+msgstr "ਸੰਰਚਨਾ ਲੜੀ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:1884
+#, fuzzy
+msgid "Dump full configuration tree"
+msgstr "ਸੰਰਚਨਾ ਲੜੀ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:1886
+msgid "Get configuration value"
+msgstr "ਸੰਰਚਨਾ ਮੁੱਲ ਲਵੋ"
+
+#: gphoto2/main.c:1888
+#, fuzzy
+msgid "Set configuration value or index in choices"
+msgstr "ਸੰਰਚਨਾ ਮੁੱਲ ਦਿਓ"
+
+#: gphoto2/main.c:1890
+#, fuzzy
+msgid "Set configuration value index in choices"
+msgstr "ਸੰਰਚਨਾ ਮੁੱਲ ਦਿਓ"
+
+#: gphoto2/main.c:1892
+msgid "Set configuration value"
+msgstr "ਸੰਰਚਨਾ ਮੁੱਲ ਦਿਓ"
+
+#: gphoto2/main.c:1894
+msgid "Reset device port"
+msgstr ""
+
+#: gphoto2/main.c:1900
+msgid "Keep images on camera after capturing"
+msgstr ""
+
+#: gphoto2/main.c:1902
+msgid "Remove images from camera after capturing"
+msgstr ""
+
+#: gphoto2/main.c:1904
+#, fuzzy
+msgid "Wait for event(s) from camera"
+msgstr "ਕੈਮਰੇ ਵਲੋਂ ਜਵਾਬ ਦੀ ਉਡੀਕ"
+
+#: gphoto2/main.c:1904 gphoto2/main.c:1906 gphoto2/main.c:1913
+#: gphoto2/main.c:1929
+msgid "COUNT"
+msgstr "COUNT"
+
+#: gphoto2/main.c:1906
+#, fuzzy
+msgid "Wait for event(s) from the camera and download new images"
+msgstr "ਕੈਮਰੇ ਵਲੋਂ ਜਵਾਬ ਦੀ ਉਡੀਕ"
+
+#: gphoto2/main.c:1909
+msgid "Capture a quick preview"
+msgstr "ਇੱਕ ਤੁਰੰਤ ਝਲਕ ਕੈਪਚਰ ਕਰੋ"
+
+#: gphoto2/main.c:1911
+msgid "Set bulb exposure time in seconds"
+msgstr ""
+
+#: gphoto2/main.c:1911 gphoto2/main.c:1915
+msgid "SECONDS"
+msgstr "SECONDS"
+
+#: gphoto2/main.c:1913
+msgid "Set number of frames to capture (default=infinite)"
+msgstr ""
+
+#: gphoto2/main.c:1915
+msgid "Set capture interval in seconds"
+msgstr ""
+
+#: gphoto2/main.c:1917
+msgid "Reset capture interval on signal (default=no)"
+msgstr ""
+
+#: gphoto2/main.c:1919
+msgid "Capture an image"
+msgstr "ਇੱਕ ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#: gphoto2/main.c:1921
+#, fuzzy
+msgid "Trigger capture of an image"
+msgstr "ਇੱਕ ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#: gphoto2/main.c:1923
+#, fuzzy
+msgid "Capture an image and download it"
+msgstr "ਇੱਕ ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#: gphoto2/main.c:1925
+msgid "Capture a movie"
+msgstr "ਇੱਕ ਫਿਲਮ ਲਵੋ"
+
+#: gphoto2/main.c:1925
+#, fuzzy
+msgid "COUNT or SECONDS"
+msgstr "SECONDS"
+
+#: gphoto2/main.c:1927
+msgid "Capture an audio clip"
+msgstr "ਇੱਕ ਆਡੀਓ ਕਲਿੱਪ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#: gphoto2/main.c:1929
+msgid "Wait for shutter release on the camera and download"
+msgstr ""
+
+#: gphoto2/main.c:1931
+msgid "Trigger image capture"
+msgstr ""
+
+#: gphoto2/main.c:1937
+msgid "List folders in folder"
+msgstr "ਫੋਲਡਰ ਵਿੱਚ ਫੋਲਡਰ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:1939
+msgid "List files in folder"
+msgstr "ਫੋਲਡਰ ਵਿੱਚ ਫਾਇਲਾਂ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:1941
+msgid "Create a directory"
+msgstr "ਇੱਕ ਡਾਇਰੈਕਟਰੀ ਬਣਾਓ"
+
+#: gphoto2/main.c:1941 gphoto2/main.c:1943
+msgid "DIRNAME"
+msgstr "DIRNAME"
+
+#: gphoto2/main.c:1943
+msgid "Remove a directory"
+msgstr "ਇੱਕ ਡਾਇਰੈਕਟਰੀ ਹਟਾਓ"
+
+#: gphoto2/main.c:1945
+msgid "Display number of files"
+msgstr "ਫਾਇਲਾਂ ਦੀ ਗਿਣਤੀ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:1947
+msgid "Get files given in range"
+msgstr ""
+
+#: gphoto2/main.c:1947 gphoto2/main.c:1951 gphoto2/main.c:1956
+#: gphoto2/main.c:1963 gphoto2/main.c:1969 gphoto2/main.c:1974
+msgid "RANGE"
+msgstr "RANGE"
+
+#: gphoto2/main.c:1949
+msgid "Get all files from folder"
+msgstr "ਫੋਲਡਰ ਤੋਂ ਸਭ ਫਾਇਲਾਂ ਲਵੋ"
+
+#: gphoto2/main.c:1951
+msgid "Get thumbnails given in range"
+msgstr "ਰੇਜ਼ ਵਿੱਚ ਦਿੱਤੇ ਥੰਮਨੇਲ ਲਵੋ"
+
+#: gphoto2/main.c:1954
+msgid "Get all thumbnails from folder"
+msgstr "ਫੋਲਡਰ ਤੋਂ ਸਭ ਥੰਮਨੇਲ ਲਵੋ"
+
+#: gphoto2/main.c:1956
+msgid "Get metadata given in range"
+msgstr "ਰੇਜ਼ ਵਿੱਚ ਮੇਟਾਡਾਟਾ ਲਵੋ"
+
+#: gphoto2/main.c:1958
+msgid "Get all metadata from folder"
+msgstr "ਫੋਲਡਰ ਤੋਂ ਸਭ ਮੇਟਾ-ਡਾਟਾ ਲਵੋ"
+
+#: gphoto2/main.c:1960
+msgid "Upload metadata for file"
+msgstr "ਫਾਇਲ ਤੋਂ ਮੇਟਾਡਾਟਾ ਅੱਪਲੋਡ ਕਰੋ"
+
+#: gphoto2/main.c:1963
+msgid "Get raw data given in range"
+msgstr ""
+
+#: gphoto2/main.c:1966
+msgid "Get all raw data from folder"
+msgstr ""
+
+#: gphoto2/main.c:1969
+msgid "Get audio data given in range"
+msgstr ""
+
+#: gphoto2/main.c:1972
+msgid "Get all audio data from folder"
+msgstr "ਫੋਲਡਰ ਤੋਂ ਸਭ ਆਡੀਓ ਡਾਟਾ ਲਵੋ"
+
+#: gphoto2/main.c:1974
+msgid "Delete files given in range"
+msgstr ""
+
+#: gphoto2/main.c:1976
+#, fuzzy
+msgid "Delete all files in folder (--no-recurse by default)"
+msgstr "ਫੋਲਡਰ ਵਿੱਚ ਸਭ ਫਾਇਲ ਹਟਾਓ"
+
+#: gphoto2/main.c:1978
+msgid "Upload a file to camera"
+msgstr "ਇੱਕ ਫਾਇਲ ਕੈਮਰੇ ਉੱਤੇ ਅੱਪਲੋਡ ਕਰੋ"
+
+#: gphoto2/main.c:1980
+msgid "Specify a filename or filename pattern"
+msgstr "ਇੱਕ ਫਾਇਲ ਨਾਂ ਜਾਂ ਫਾਇਲ-ਨਾਂ ਪੈਟਰਨ ਦਿਓ"
+
+#: gphoto2/main.c:1980
+msgid "FILENAME_PATTERN"
+msgstr "FILENAME_PATTERN"
+
+#: gphoto2/main.c:1982
+msgid "Specify camera folder (default=\"/\")"
+msgstr "ਕੈਮਰਾ ਫੋਲਡਰ ਦਿਓ (ਮੂਲ=\"/\")"
+
+#: gphoto2/main.c:1982
+msgid "FOLDER"
+msgstr "FOLDER"
+
+#: gphoto2/main.c:1984
+msgid "Recursion (default for download)"
+msgstr ""
+
+#: gphoto2/main.c:1986
+msgid "No recursion (default for deletion)"
+msgstr ""
+
+#: gphoto2/main.c:1988
+msgid "Process new files only"
+msgstr "ਨਵੀਆਂ ਫਾਇਲਾਂ ਉੱਤੇ ਕਾਰਵਾਈ"
+
+#: gphoto2/main.c:1990
+msgid "Overwrite files without asking"
+msgstr "ਬਿਨਾਂ ਪੁੱਛੇ ਫਾਇਲ ਉੱਪਰ ਲਿਖੋ"
+
+#: gphoto2/main.c:1996
+msgid "Send file to stdout"
+msgstr ""
+
+#: gphoto2/main.c:1998
+msgid "Print filesize before data"
+msgstr "ਡਾਟੇ ਤੋਂ ਪਹਿਲਾਂ ਫਾਇਲ-ਆਕਾਰ ਛਾਪੋ"
+
+#: gphoto2/main.c:2000
+msgid "List auto-detected cameras"
+msgstr "ਆਟੋ-ਖੋਜੇ ਕੈਮਰੇ ਦਿਓ"
+
+#: gphoto2/main.c:2004 gphoto2/shell.c:138
+msgid "Show EXIF information"
+msgstr "EXIF ਜਾਣਕਾਰੀ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:2007 gphoto2/shell.c:132
+msgid "Show info"
+msgstr "ਜਾਣਕਾਰੀ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:2009
+msgid "Show summary"
+msgstr "ਸੰਖੇਪ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:2011
+msgid "Show camera driver manual"
+msgstr "ਕੈਮਰਾ ਡਰਾਇਵਰ ਦਸਤਾਵੇਜ਼ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:2013
+msgid "About the camera driver manual"
+msgstr "ਕੈਮਰਾ ਡਰਾਇਵਰ ਦਸਤਾਵੇਜ਼ ਬਾਰੇ"
+
+#: gphoto2/main.c:2015
+#, fuzzy
+msgid "Show storage information"
+msgstr "EXIF ਜਾਣਕਾਰੀ ਵੇਖਾਓ"
+
+#: gphoto2/main.c:2017
+msgid "gPhoto shell"
+msgstr "gPhoto ਸ਼ੈੱਲ"
+
+#: gphoto2/main.c:2023
+msgid "Common options"
+msgstr "ਆਮ ਚੋਣਾਂ"
+
+#: gphoto2/main.c:2025
+msgid "Miscellaneous options (unsorted)"
+msgstr "ਫੁਟਕਲ ਚੋਣਾਂ (ਨਾ-ਲੜੀਬੱਧ)"
+
+#: gphoto2/main.c:2027
+msgid "Get information on software and host system (not from the camera)"
+msgstr "ਸਾਫਵੇਅਰ ਅਤੇ ਹੋਸਟ ਸਿਸਟਮ ਤੋਂ ਜਾਣਕਾਰੀ ਲਵੋ (ਕੈਮਰੇ ਤੋਂ ਨਹੀਂ)"
+
+#: gphoto2/main.c:2029
+msgid "Specify the camera to use"
+msgstr "ਵਰਤਣ ਲਈ ਕੈਮਰਾ ਦਿਓ"
+
+#: gphoto2/main.c:2031
+msgid "Camera and software configuration"
+msgstr "ਕੈਮਰਾ ਅਤੇ ਸਾਫਟਵੇਅਰ ਸੰਰਚਨਾ"
+
+#: gphoto2/main.c:2033
+msgid "Capture an image from or on the camera"
+msgstr "ਕੈਮਰੇ ਤੋਂ ਇੱਕ ਚਿੱਤਰ ਲਵੋ"
+
+#: gphoto2/main.c:2035
+msgid "Downloading, uploading and manipulating files"
+msgstr ""
+
+#: gphoto2/range.c:104 gphoto2/range.c:158
+#, c-format
+msgid ""
+"%s\n"
+"Image IDs must be a number greater than zero."
+msgstr ""
+
+#: gphoto2/range.c:110 gphoto2/range.c:164
+#, c-format
+msgid ""
+"%s\n"
+"Image ID %i too high."
+msgstr ""
+
+#: gphoto2/range.c:126
+#, c-format
+msgid ""
+"%s\n"
+"Ranges must be separated by ','."
+msgstr ""
+
+#: gphoto2/range.c:140
+#, c-format
+msgid ""
+"%s\n"
+"Ranges need to start with a number."
+msgstr ""
+
+#: gphoto2/range.c:180
+#, c-format
+msgid ""
+"%s\n"
+"Unexpected character '%c'."
+msgstr ""
+"%s\n"
+"ਵਿਲੱਖਣ ਅੱਖਰ '%c' ਹੈ।"
+
+#: gphoto2/range.c:204
+#, c-format
+msgid ""
+"%s\n"
+"Decreasing ranges are not allowed. You specified a range from %i to %i."
+msgstr ""
+
+#: gphoto2/shell.c:65
+#, c-format
+msgid "*** Error (%i: '%s') ***"
+msgstr "*** ਗਲਤੀ (%i: '%s') ***"
+
+#: gphoto2/shell.c:121
+msgid "Change to a directory on the camera"
+msgstr "ਕੈਮਰੇ ਉੱਤੇ ਇੱਕ ਡਾਇਰੈਕਟਰੀ ਤਬਦੀਲ"
+
+#: gphoto2/shell.c:122 gphoto2/shell.c:124 gphoto2/shell.c:135
+#: gphoto2/shell.c:136
+msgid "directory"
+msgstr "ਡਾਇਰੈਕਟਰੀ"
+
+#: gphoto2/shell.c:123
+msgid "Change to a directory on the local drive"
+msgstr "ਸਥਾਨਕ ਡਰਾਇਵ ਉੱਤੇ ਇੱਕ ਡਾਇਰੈਕਟਰੀ ਤਬਦੀਲ"
+
+#: gphoto2/shell.c:125 gphoto2/shell.c:156 gphoto2/shell.c:157
+msgid "Exit the gPhoto shell"
+msgstr ""
+
+#: gphoto2/shell.c:126
+msgid "Download a file"
+msgstr "ਇੱਕ ਫਾਇਲ ਡਾਊਨਲੋਡ"
+
+#: gphoto2/shell.c:126 gphoto2/shell.c:127 gphoto2/shell.c:129
+#: gphoto2/shell.c:131 gphoto2/shell.c:133 gphoto2/shell.c:134
+#: gphoto2/shell.c:139
+msgid "[directory/]filename"
+msgstr "[ਡਾਇਰੈਕਟਰੀ/]ਫਾਇਲ ਨਾਂ"
+
+#: gphoto2/shell.c:127
+msgid "Upload a file"
+msgstr "ਇੱਕ ਫਾਇਲ ਅੱਪਲੋਡ ਕਰੋ"
+
+#: gphoto2/shell.c:128
+msgid "Download a thumbnail"
+msgstr "ਇੱਕ ਥੰਮਨੇਲ ਡਾਊਨਲੋਡ ਕਰੋ"
+
+#: gphoto2/shell.c:130
+msgid "Download raw data"
+msgstr "ਕੱਚਾ ਡਾਟਾ ਡਾਊਨਲੋਡ"
+
+#: gphoto2/shell.c:134
+msgid "Delete"
+msgstr "ਹਟਾਓ"
+
+#: gphoto2/shell.c:135
+msgid "Create Directory"
+msgstr "ਡਾਇਰੈਕਟਰੀ ਬਣਾਓ"
+
+#: gphoto2/shell.c:136
+msgid "Remove Directory"
+msgstr "ਡਾਇਰੈਕਟਰੀ ਹਟਾਓ"
+
+#: gphoto2/shell.c:141 gphoto2/shell.c:158
+msgid "Displays command usage"
+msgstr "ਕਮਾਂਡ ਵੇਖਾਓ"
+
+#: gphoto2/shell.c:142 gphoto2/shell.c:158
+msgid "[command]"
+msgstr "[ਕਮਾਂਡ]"
+
+#: gphoto2/shell.c:143
+msgid "List the contents of the current directory"
+msgstr "ਮੌਜੂਦਾ ਡਾਇਰੈਕਟਰੀ ਦੇ ਭਾਗ ਵੇਖਾਓ"
+
+#: gphoto2/shell.c:144
+msgid "[directory/]"
+msgstr "[ਡਾਇਰੈਕਟਰੀ/]"
+
+#: gphoto2/shell.c:145
+msgid "List configuration variables"
+msgstr "ਸੰਰਚਨਾਯੋਗ ਮੁੱਲ ਲਿਸਟ ਕਰੋ"
+
+#: gphoto2/shell.c:146
+#, fuzzy
+msgid "Get configuration variable"
+msgstr "ਸੰਰਚਨਾ ਮੁੱਲ ਲਵੋ"
+
+#: gphoto2/shell.c:146
+msgid "name"
+msgstr "ਨਾਂ"
+
+#: gphoto2/shell.c:147 gphoto2/shell.c:149
+#, fuzzy
+msgid "Set configuration variable"
+msgstr "ਸੰਰਚਨਾ ਮੁੱਲ ਦਿਓ"
+
+#: gphoto2/shell.c:147 gphoto2/shell.c:149
+msgid "name=value"
+msgstr "name=value"
+
+#: gphoto2/shell.c:148
+#, fuzzy
+msgid "Set configuration variable index"
+msgstr "ਸੰਰਚਨਾ ਮੁੱਲ ਦਿਓ"
+
+#: gphoto2/shell.c:148
+#, fuzzy
+msgid "name=valueindex"
+msgstr "name=value"
+
+#: gphoto2/shell.c:150
+msgid "Capture a single image"
+msgstr "ਇੱਕ ਇੱਕਲੀ ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#: gphoto2/shell.c:151
+#, fuzzy
+msgid "Capture a single image and download it"
+msgstr "ਇੱਕ ਇੱਕਲੀ ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#: gphoto2/shell.c:152
+#, fuzzy
+msgid "Capture a preview image"
+msgstr "ਇੱਕ ਇੱਕਲੀ ਤਸਵੀਰ ਪ੍ਰਾਪਤ ਕਰੋ"
+
+#: gphoto2/shell.c:153
+#, fuzzy
+msgid "Wait for an event"
+msgstr "ਕੈਮਰੇ ਵਲੋਂ ਜਵਾਬ ਦੀ ਉਡੀਕ"
+
+#: gphoto2/shell.c:153 gphoto2/shell.c:154 gphoto2/shell.c:155
+msgid "count or seconds"
+msgstr ""
+
+#: gphoto2/shell.c:154
+msgid "Wait for images to be captured and download it"
+msgstr ""
+
+#: gphoto2/shell.c:155
+msgid "Wait for events and images to be captured and download it"
+msgstr ""
+
+#: gphoto2/shell.c:480
+msgid "Invalid command."
+msgstr "ਗਲਤ ਕਮਾਂਡ ਹੈ।"
+
+#: gphoto2/shell.c:489
+#, c-format
+msgid "The command '%s' requires an argument."
+msgstr "ਕਮਾਂਡ '%s' ਲਈ ਇੱਕ ਮੁੱਲ ਦੀ ਲੋੜ ਹੈ।"
+
+#: gphoto2/shell.c:542
+msgid "Invalid path."
+msgstr "ਗਲਤ ਮਾਰਗ ਹੈ।"
+
+#: gphoto2/shell.c:588
+msgid "Could not find home directory."
+msgstr "ਘਰ ਡਾਇਰੈਕਟਰੀ ਨਹੀਂ ਮਿਲੀ ਸਕੀ ਹੈ।"
+
+#: gphoto2/shell.c:597
+#, c-format
+msgid "Could not change to local directory '%s'."
+msgstr "ਸਥਾਨਕ ਡਾਇਰੈਕਟਰੀ '%s' ਨੂੰ ਬਦਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ ਹੈ।"
+
+#: gphoto2/shell.c:600
+#, c-format
+msgid "Local directory now '%s'."
+msgstr "ਸਥਾਨਕ ਡਾਇਰੈਕਟਰੀ ਹੁਣ '%s' ਹੈ।"
+
+#: gphoto2/shell.c:638
+#, c-format
+msgid "Remote directory now '%s'."
+msgstr "ਰਿਮੋਟ ਡਾਇਰੈਕਟਰੀ ਹੁਣ '%s' ਹੈ।"
+
+#: gphoto2/shell.c:854
+#, c-format
+msgid "set-config needs a second argument.\n"
+msgstr ""
+
+#: gphoto2/shell.c:875
+#, c-format
+msgid "set-config-value needs a second argument.\n"
+msgstr ""
+
+#: gphoto2/shell.c:896
+#, c-format
+msgid "set-config-index needs a second argument.\n"
+msgstr ""
+
+#: gphoto2/shell.c:948
+#, c-format
+msgid "Command '%s' not found. Use 'help' to get a list of available commands."
+msgstr ""
+
+#: gphoto2/shell.c:955
+#, c-format
+msgid "Help on \"%s\":"
+msgstr "\"%s\" ਲਈ ਸਹਾਇਤਾ:"
+
+#: gphoto2/shell.c:957
+#, c-format
+msgid "Usage:"
+msgstr "ਵਰਤੋਂ:"
+
+#: gphoto2/shell.c:960
+#, c-format
+msgid "Description:"
+msgstr "ਵੇਰਵਾ:"
+
+#: gphoto2/shell.c:962
+#, c-format
+msgid "* Arguments in brackets [] are optional"
+msgstr "* ਬਰੈਕਟਾਂ [] ਵਿੱਚ ਦਿੱਤੇ ਮੁੱਲ ਚੋਣਵੇਂ ਹਨ"
+
+#: gphoto2/shell.c:983
+#, c-format
+msgid "Available commands:"
+msgstr "ਉਪਲੱਬਧ ਕਮਾਂਡਾਂ:"
+
+#: gphoto2/shell.c:988
+#, c-format
+msgid "To get help on a particular command, type in 'help command-name'."
+msgstr "ਇੱਕ ਖਾਸ ਕਮਾਂਡ ਤੋਂ ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ, ਲਿਖੋ 'help command-name'।"
+
+#, fuzzy
+#~ msgid "There are no folders in folder '%s'."
+#~ msgstr "ਫੋਲਡਰ '%s' ਵਿੱਚ ਕੋਈ ਫਾਇਲ ਨਹੀਂ ਹੈ।"
+
+#, fuzzy
+#~ msgid "There is one folder in folder '%s':"
+#~ msgstr "'%2$s' ਫੋਲਡਰ ਵਿੱਚ %1$d ਫੋਲਡਰ ਹੈ।\n"
+
+#, fuzzy
+#~ msgid "There are %i folders in folder '%s':"
+#~ msgstr "ਫੋਲਡਰ '%s' ਵਿੱਚ ਕੋਈ ਫਾਇਲ ਨਹੀਂ ਹੈ।"
+
+#, fuzzy
+#~ msgid "There is one file in folder '%s':"
+#~ msgstr "ਫੋਲਡਰ '%s' ਵਿੱਚ ਕੋਈ ਫਾਇਲ ਨਹੀਂ ਹੈ।\n"
+
+#, fuzzy
+#~ msgid "There are %i files in folder '%s':"
+#~ msgstr "ਫੋਲਡਰ '%s' ਵਿੱਚ ਕੋਈ ਫਾਇਲ ਨਹੀਂ ਹੈ।"
+
+#~ msgid "  Name:        '%s'\n"
+#~ msgstr "  ਨਾਂ:           '%s'\n"
+
+#, fuzzy
+#~ msgid "Specify a filename"
+#~ msgstr "ਕੀ ਨਵਾਂ ਫਾਇਲ ਨਾਂ ਦੇਣਾ ਹੈ? [y|n] "
+
+#, fuzzy
+#~ msgid "List the configuration tree"
+#~ msgstr "ਸੰਰਚਨਾ ਲੜੀ ਵੇਖਾਓ"
+
+#, fuzzy
+#~ msgid "Capture a movie "
+#~ msgstr "ਇੱਕ ਫਿਲਮ ਲਵੋ"
+
+#, fuzzy
+#~ msgid "Camera driver manual"
+#~ msgstr "ਕੈਮਰਾ ਡਰਾਇਵਰ ਦਸਤਾਵੇਜ਼ ਵੇਖਾਓ"
+
+#, fuzzy
+#~ msgid "About the camera driver"
+#~ msgstr "ਕੈਮਰਾ ਮਾਡਲ ਬਾਰੇ:"
+
+#~ msgid "Could not close camera connection."
+#~ msgstr "ਕੈਮਰਾ ਕੁਨੈਕਸ਼ਨ ਬੰਦ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ ਹੈ।"
+
+#~ msgid "Sleeping for %d second(s)...\n"
+#~ msgstr "%d ਸਕਿੰਟ ਲਈ ਸਲੀਪ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...\n"
+
+#, fuzzy
+#~ msgid "model"
+#~ msgstr "ਮਾਡਲ"
+
+#~ msgid "filename"
+#~ msgstr "ਫਾਇਲ ਨਾਂ"
+
+#~ msgid "Usage:\n"
+#~ msgstr "ਵਰਤੋਂ:\n"
+
+#~ msgid "%-38s %s\n"
+#~ msgstr "%-38s %s\n"
+
+#~ msgid "[name]"
+#~ msgstr "[ਨਾਂ]"

@@ -1,0 +1,63 @@
+.\"     Title: gshadow
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 10/28/2007
+.\"    Manual: File Formats and Conversions
+.\"    Source: File Formats and Conversions
+.\"
+.TH "GSHADOW" "5" "10/28/2007" "File Formats and Conversions" "File Formats and Conversions"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+gshadow - shadowed group file
+.SH "DESCRIPTION"
+.PP
+
+\fI/etc/gshadow\fR
+contains the shadowed information for group accounts\. It contains lines with the following colon\-separated fields:
+.sp
+.RS 4
+\h'-04'\(bu\h'+03'group name
+.RE
+.sp
+.RS 4
+\h'-04'\(bu\h'+03'encrypted password
+.RE
+.sp
+.RS 4
+\h'-04'\(bu\h'+03'comma\-separated list of group administrators
+.RE
+.sp
+.RS 4
+\h'-04'\(bu\h'+03'comma\-separated list of group members
+.RE
+.PP
+The group name and password fields must be filled\. The encrypted password consists of characters from the 64\-character alphabet a thru z, A thru Z, 0 thru 9, \e\. and /\. Refer to
+\fBcrypt\fR(3)
+for details on how this string is interpreted\. If the password field contains some string that is not valid result of
+\fBcrypt\fR(3), for instance ! or *, the user will not be able to use a unix password to log in, subject to
+\fBpam\fR(7)\.
+.PP
+This information supersedes any password present in
+\fI/etc/group\fR\.
+.PP
+This file must not be readable by regular users if password security is to be maintained\.
+.SH "FILES"
+.PP
+\fI/etc/group\fR
+.RS 4
+Group account information\.
+.RE
+.PP
+\fI/etc/gshadow\fR
+.RS 4
+Secure group account information\.
+.RE
+.SH "SEE ALSO"
+.PP
+
+\fBgroup\fR(5),
+\fBgpasswd\fR(5),
+\fBnewgrp\fR(5)\.

@@ -1,0 +1,160 @@
+.\"     Title: login.defs
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 10/28/2007
+.\"    Manual: File Formats and Conversions
+.\"    Source: File Formats and Conversions
+.\"
+.TH "LOGIN\.DEFS" "5" "10/28/2007" "File Formats and Conversions" "File Formats and Conversions"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+login.defs - shadow password suite configuration
+.SH "DESCRIPTION"
+.PP
+The
+\fI/etc/login\.defs\fR
+file defines the site\-specific configuration for the shadow password suite\. This file is required\. Absence of this file will not prevent system operation, but will probably result in undesirable operation\.
+.PP
+This file is a readable text file, each line of the file describing one configuration parameter\. The lines consist of a configuration name and value, separated by whitespace\. Blank lines and comment lines are ignored\. Comments are introduced with a "#" pound sign and the pound sign must be the first non\-white character of the line\.
+.PP
+Parameter values may be of four types: strings, booleans, numbers, and long numbers\. A string is comprised of any printable characters\. A boolean should be either the value "yes" or "no"\. An undefined boolean parameter or one with a value other than these will be given a "no" value\. Numbers (both regular and long) may be either decimal values, octal values (precede the value with "0") or hexadecimal values (precede the value with "0x")\. The maximum value of the regular and long numeric parameters is machine\-dependent\.
+.PP
+The following configuration items are provided:
+.PP
+CHFN_AUTH (boolean)
+.RS 4
+If
+\fIyes\fR, the
+\fBchfn\fR
+and
+\fBchsh\fR
+programs will require authentication before making any changes, unless run by the superuser\.
+.RE
+.PP
+CHFN_RESTRICT (string)
+.RS 4
+This parameter specifies which values in the
+\fIgecos\fR
+field of the
+\fI/etc/passwd\fR
+file may be changed by regular users using the
+\fBchfn\fR
+program\. It can be any combination of letters
+\fIf\fR
+,\fIr\fR,
+\fIw\fR,
+\fIh\fR, for Full name, Room number, Work phone, and Home phone, respectively\. For backward compatibility, "yes" is equivalent to "rwh" and "no" is equivalent to "frwh"\. If not specified, only the superuser can make any changes\. The most restrictive setting is better achieved by not installing
+\fIchfn\fR
+SUID\.
+.RE
+.PP
+GID_MAX (number), GID_MIN (number)
+.RS 4
+Range of group IDs to choose from for the
+\fBuseradd\fR
+and
+\fBgroupadd\fR
+programs\.
+.RE
+.PP
+MAIL_DIR (string)
+.RS 4
+The mail spool directory\. This is needed to manipulate the mailbox when its corresponding user account is modified or deleted\. If not specified, a compile\-time default is used\.
+.RE
+.PP
+PASS_MAX_DAYS (number)
+.RS 4
+The maximum number of days a password may be used\. If the password is older than this, a password change will be forced\. If not specified, \-1 will be assumed (which disables the restriction)\.
+.RE
+.PP
+PASS_MIN_DAYS (number)
+.RS 4
+The minimum number of days allowed between password changes\. Any password changes attempted sooner than this will be rejected\. If not specified, \-1 will be assumed (which disables the restriction)\.
+.RE
+.PP
+PASS_WARN_AGE (number)
+.RS 4
+The number of days warning given before a password expires\. A zero means warning is given only upon the day of expiration, a negative value means no warning is given\. If not specified, no warning will be provided\.
+.RE
+.PP
+PASS_MAX_DAYS, PASS_MIN_DAYS and PASS_WARN_AGE are only used at the time of account creation\. Any changes to these settings won\'t affect existing accounts\.
+.PP
+UID_MAX (number), UID_MIN (number)
+.RS 4
+Range of user IDs to choose from for the
+\fBuseradd\fR
+program\.
+.RE
+.PP
+UMASK (number)
+.RS 4
+The permission mask is initialized to this value\. If not specified, the permission mask will be initialized to 022\.
+.RE
+.PP
+USERDEL_CMD (string)
+.RS 4
+If defined, this command is run when removing a user\. It should remove any at/cron/print jobs etc\. owned by the user to be removed (passed as the first argument)\.
+.RE
+.SH "CROSS REFERENCE"
+.PP
+The following cross reference shows which programs in the shadow password suite use which parameters\.
+.PP
+chfn
+.RS 4
+CHFN_AUTH CHFN_RESTRICT
+.RE
+.PP
+chsh
+.RS 4
+CHFN_AUTH
+.RE
+.PP
+groupadd
+.RS 4
+GID_MAX GID_MIN
+.RE
+.PP
+newusers
+.RS 4
+PASS_MAX_DAYS PASS_MIN_DAYS PASS_WARN_AGE UMASK
+.RE
+.PP
+pwconv
+.RS 4
+PASS_MAX_DAYS PASS_MIN_DAYS PASS_WARN_AGE
+.RE
+.PP
+useradd
+.RS 4
+GID_MAX GID_MIN PASS_MAX_DAYS PASS_MIN_DAYS PASS_WARN_AGE UID_MAX UID_MIN UMASK
+.RE
+.PP
+userdel
+.RS 4
+MAIL_DIR USERDEL_CMD
+.RE
+.PP
+usermod
+.RS 4
+MAIL_DIR
+.RE
+.SH "BUGS"
+.PP
+Much of the functionality that used to be provided by the shadow password suite is now handled by PAM\. Thus,
+\fI/etc/login\.defs\fR
+is no longer used by programs such as:
+\fBlogin\fR(1),
+\fBpasswd\fR(1),
+\fBsu\fR(1)\. Please refer to the corresponding PAM configuration files instead\.
+.SH "SEE ALSO"
+.PP
+
+\fBlogin\fR(1),
+\fBpasswd\fR(1),
+\fBsu\fR(1),
+\fBpasswd\fR(5),
+\fBshadow\fR(5),
+\fBpam\fR(8)\.

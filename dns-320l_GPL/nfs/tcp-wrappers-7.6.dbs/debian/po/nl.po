@@ -1,0 +1,97 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tcp-wrappers 7.6.dbs-5\n"
+"Report-Msgid-Bugs-To: md@linux.it\n"
+"POT-Creation-Date: 2007-05-20 17:32+0200\n"
+"PO-Revision-Date: 2004-08-01 18:40+0100\n"
+"Last-Translator: Luk Claes <luk.claes@ugent.be>\n"
+"Language-Team: Debian l10n Dutch <debian-l10n-dutch@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid "Use paranoid settings in hosts.allow and hosts.deny?"
+msgstr "Moet tcpd paranoia zijn betreffende hosts.allow en hosts.access?"
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"New /etc/hosts.allow and /etc/hosts.deny files for the TCP wrapper programs "
+"(tcpd) and the libwrap library will be created as they do not exist yet."
+msgstr ""
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+#, fuzzy
+msgid ""
+"You can choose between a generic and permissive configuration which will "
+"allow any incoming connection or a paranoid configuration which will not "
+"allow remote connections regardless of where they originate from. The "
+"latter, even if more secure, will block out all communication, including, "
+"for example, remote administration."
+msgstr ""
+"/etc/hosts.allow en /etc/hosts.deny zullen worden aangemaakt omdat u nog "
+"geen van deze bestanden heeft. U kunt ofwel een algemene en permissieve "
+"configuratie hebben die alle inkomende verbindingen toelaat, ofwel een "
+"paranoia configuratie die geen inkomende verbindingen toelaat ongeacht waar "
+"ze vandaan komen."
+
+#. Type: boolean
+#. description
+#: ../tcpd.templates:1001
+msgid ""
+"Both files can be modified later to suit your needs as explained in the "
+"hosts_access(5) manpage. These settings will only affect network services "
+"that use the libwrap library: restrictions for other services may be "
+"established by using package-specific configuration directives or firewall "
+"rules."
+msgstr ""
+
+#~ msgid ""
+#~ "The second option, even if more secure, will block out all communication, "
+#~ "including, for example, remote administration. So if you need this don't "
+#~ "choose it."
+#~ msgstr ""
+#~ "De tweede optie, zelfs als ze veiliger is, zal alle communicatie "
+#~ "blokkeren, inclusief bij voorbeeld 'remote' beheer. Dus als u dit nodig "
+#~ "hebt, kies dit dan niet."
+
+#~ msgid ""
+#~ "Regardless of which option you select you can always manually edit both  "
+#~ "files to suit your needs, for this, review the hosts_access(5) manpage.  "
+#~ "This might include giving remote access of services to legitimate hosts."
+#~ msgstr ""
+#~ "Ongeacht welke optie u selecteert, u kan beide bestanden altijd handmatig "
+#~ "wijzigen om aan uw behoeften te voldoen, bekijk hiervoor de hosts_access"
+#~ "(5)-manpagina. Dit kan betekenen dat u toegang verleent of diensten "
+#~ "aanbiedt aan legitieme hosts."
+
+#~ msgid ""
+#~ "Notice this only applies to internet services that use the libwrap "
+#~ "library. Remote connections will still be possible to services that do "
+#~ "not use this library, consider using firewall rules to block access to "
+#~ "these."
+#~ msgstr ""
+#~ "Merk op dat dit enkel geldt voor internetdiensten die de libwrap-"
+#~ "bibliotheek gebruiken. 'Remote' verbindingen met diensten die deze "
+#~ "bibliotheek niet gebruiken, zullen nog altijd mogelijk zijn, overweeg om "
+#~ "firewall-regels te gebruiken om deze toegang te blokkeren."

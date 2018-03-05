@@ -1,0 +1,402 @@
+--
+-- WDMYCLOUDEX2.mib
+--
+
+-- Copyright (c) 2013 WD Inc.,
+-- Module Name: WDMYCLOUDEX2.mib
+-- Abstract:
+-- Defines the WDMYCLOUDEX2 MIBs .
+--
+
+	WDMYCLOUDEX2-MIB DEFINITIONS ::= BEGIN
+
+
+	IMPORTS
+		OBJECT-TYPE, Integer32, enterprises,
+		NOTIFICATION-TYPE
+			FROM SNMPv2-SMI
+		DisplayString
+			FROM SNMPv2-TC;
+
+--
+--  OID definitions
+--
+
+	WD		OBJECT IDENTIFIER ::= { enterprises 5127}
+	productID	OBJECT IDENTIFIER ::= { WD 1}
+	projectID	OBJECT IDENTIFIER ::= { productID 1}
+	modelID 	OBJECT IDENTIFIER ::= { projectID 1}
+	submodelID	OBJECT IDENTIFIER ::= { modelID 2}
+	nasAgent	OBJECT IDENTIFIER ::= { submodelID 1}
+
+
+--
+-- Node definitions
+--
+			wdmycloudex2AgentVer OBJECT-TYPE
+				SYNTAX DisplayString
+				MAX-ACCESS read-only
+				STATUS current
+				DESCRIPTION
+					"Version information for the agent of SNMP of WDMYCLOUDEX2."
+				::= { nasAgent 1 }
+
+-- ============================================================================
+
+--
+-- system information definitions
+--
+			wdmycloudex2SoftwareVersion OBJECT-TYPE
+				SYNTAX DisplayString
+				MAX-ACCESS read-only
+				STATUS current
+				DESCRIPTION
+					"The device software version."
+				::= { nasAgent 2 }
+
+			wdmycloudex2HostName OBJECT-TYPE
+				SYNTAX DisplayString
+				MAX-ACCESS read-only
+				STATUS current
+				DESCRIPTION
+					"The device host name."
+				::= { nasAgent 3 }
+
+
+			wdmycloudex2FTPServer OBJECT-TYPE
+				SYNTAX DisplayString
+				MAX-ACCESS read-only
+				STATUS current
+				DESCRIPTION
+					"Ftp Server status.
+					1 : enable
+					0 : disable
+					"
+				::= { nasAgent 5 }
+
+			wdmycloudex2NetType OBJECT-TYPE
+				SYNTAX DisplayString
+				MAX-ACCESS read-only
+				STATUS current
+				DESCRIPTION
+					"The Network type.
+					0 : Workgroup
+					1 : Active Directory"
+				::= { nasAgent 6 }
+
+			wdmycloudex2Temperature OBJECT-TYPE
+				SYNTAX DisplayString
+				MAX-ACCESS read-only
+				STATUS current
+				DESCRIPTION
+					"The temperature of the system."
+				::= { nasAgent 7 }
+
+			wdmycloudex2FanStatus OBJECT-TYPE
+				SYNTAX DisplayString
+				MAX-ACCESS read-only
+				STATUS current
+				DESCRIPTION
+					"The status of the fan0."
+				::= { nasAgent 8 }
+
+-- ============================================================================
+
+			wdmycloudex2VolumeTable OBJECT-TYPE
+			SYNTAX SEQUENCE OF Wdmycloudex2VolumeEntry
+			MAX-ACCESS not-accessible
+			STATUS current
+			DESCRIPTION
+				"A table of active volumes on the NAS device."
+			::= { nasAgent 9 }
+
+			wdmycloudex2VolumeEntry OBJECT-TYPE
+			SYNTAX Wdmycloudex2VolumeEntry
+			MAX-ACCESS not-accessible
+			STATUS current
+			DESCRIPTION
+				"An entry in the volume table."
+			INDEX { wdmycloudex2VolumeNum }
+			::= { wdmycloudex2VolumeTable 1 }
+
+			Wdmycloudex2VolumeEntry ::=
+			SEQUENCE {
+				wdmycloudex2VolumeNum
+					Integer32,
+				wdmycloudex2VolumeName
+					DisplayString,
+				wdmycloudex2VolumeFsType
+					DisplayString,
+				wdmycloudex2VolumeRaidLevel
+					DisplayString,
+				wdmycloudex2VolumeSize
+					DisplayString,
+				wdmycloudex2VolumeFreeSpace
+					DisplayString
+			 }
+
+			wdmycloudex2VolumeNum OBJECT-TYPE
+			SYNTAX Integer32
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"Instance number of the volume entry."
+			::= { wdmycloudex2VolumeEntry 1 }
+
+			wdmycloudex2VolumeName OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The name of the volume."
+			::= { wdmycloudex2VolumeEntry 2 }
+
+			wdmycloudex2VolumeFsType OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The type of file system of the volume.
+				Example : ext3 or ext4"
+			::= { wdmycloudex2VolumeEntry 3 }
+
+			wdmycloudex2VolumeRaidLevel OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The RAID level of the volume. (JBOD SPANNING RAID0 RAID1 RAID5 RAID10 RAID5+SPARE)"
+			::= { wdmycloudex2VolumeEntry 4 }
+
+			wdmycloudex2VolumeSize OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The size of the volume in bytes."
+			::= { wdmycloudex2VolumeEntry 5 }
+
+			wdmycloudex2VolumeFreeSpace OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"Free space on the volume in bytes."
+			::= { wdmycloudex2VolumeEntry 6 }
+
+-- ============================================================================
+
+		wdmycloudex2DiskTable OBJECT-TYPE
+			SYNTAX SEQUENCE OF Wdmycloudex2DiskEntry
+			MAX-ACCESS not-accessible
+			STATUS current
+			DESCRIPTION
+				"A table of physical disks attached to the NAS device."
+			::= { nasAgent 10 }
+
+		wdmycloudex2DiskEntry OBJECT-TYPE
+			SYNTAX Wdmycloudex2DiskEntry
+			MAX-ACCESS not-accessible
+			STATUS current
+			DESCRIPTION
+				"An entry in the physical disk table."
+			INDEX { wdmycloudex2DiskNum }
+			::= { wdmycloudex2DiskTable 1 }
+
+		Wdmycloudex2DiskEntry ::=
+			SEQUENCE {
+				wdmycloudex2DiskNum
+					Integer32,
+				wdmycloudex2DiskVendor
+					DisplayString,
+				wdmycloudex2DiskModel
+					DisplayString,
+				wdmycloudex2DiskSerialNumber
+					DisplayString,
+        		wdmycloudex2DiskTemperature
+					DisplayString,
+				wdmycloudex2DiskCapacity
+					DisplayString
+			 }
+
+		wdmycloudex2DiskNum OBJECT-TYPE
+			SYNTAX Integer32
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"Instance number of the disk entry."
+			::= { wdmycloudex2DiskEntry 1 }
+
+		wdmycloudex2DiskVendor OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The vendor of the disk drive."
+			::= { wdmycloudex2DiskEntry 2 }
+
+		wdmycloudex2DiskModel OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The disk drive's model name."
+			::= { wdmycloudex2DiskEntry 3 }
+
+		wdmycloudex2DiskSerialNumber OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The disk drive's serial number."
+			::= { wdmycloudex2DiskEntry 4 }
+
+		wdmycloudex2DiskTemperature OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The centigrade temperature of this disk."
+			::= { wdmycloudex2DiskEntry 5 }
+
+		wdmycloudex2DiskCapacity OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The capacity of the disk in GB."
+			::= { wdmycloudex2DiskEntry 6 }
+
+
+-- ============================================================================
+
+		wdmycloudex2UPSTable OBJECT-TYPE
+			SYNTAX SEQUENCE OF Wdmycloudex2UPSEntry
+			MAX-ACCESS not-accessible
+			STATUS current
+			DESCRIPTION
+				"A table of UPS attached to the NAS device."
+			::= { nasAgent 11 }
+
+		wdmycloudex2UPSEntry OBJECT-TYPE
+			SYNTAX Wdmycloudex2UPSEntry
+			MAX-ACCESS not-accessible
+			STATUS current
+			DESCRIPTION
+				"An entry in the UPS table."
+			INDEX { wdmycloudex2UPSNum }
+			::= { wdmycloudex2UPSTable 1 }
+
+		Wdmycloudex2UPSEntry ::=
+			SEQUENCE {
+				wdmycloudex2UPSNum
+					Integer32,
+				wdmycloudex2UPSMode
+					DisplayString,
+				wdmycloudex2UPSManufacturer
+					DisplayString,
+				wdmycloudex2UPSProduct
+					DisplayString,
+				wdmycloudex2UPSBatteryCharge
+					DisplayString,
+				wdmycloudex2UPSStatus
+					DisplayString,
+			 }
+
+		wdmycloudex2UPSNum OBJECT-TYPE
+			SYNTAX Integer32
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"Instance number of the UPS entry."
+			::= { wdmycloudex2UPSEntry 1 }
+
+		wdmycloudex2UPSMode OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The mode of the UPS "
+			::= { wdmycloudex2UPSEntry 2 }
+
+		wdmycloudex2UPSManufacturer OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The manufacturer of the UPS."
+			::= { wdmycloudex2UPSEntry 3 }
+
+		wdmycloudex2UPSProduct OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The product name of the UPS."
+			::= { wdmycloudex2UPSEntry 4 }
+
+		wdmycloudex2UPSBatteryCharge OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The battery charge of the UPS."
+			::= { wdmycloudex2UPSEntry 5 }
+
+		wdmycloudex2UPSStatus OBJECT-TYPE
+			SYNTAX DisplayString
+			MAX-ACCESS read-only
+			STATUS current
+			DESCRIPTION
+				"The status of this UPS."
+			::= { wdmycloudex2UPSEntry 6 }
+
+
+
+-- ============================================================================
+--
+--  Notifications
+--
+
+	notifyEvts OBJECT IDENTIFIER ::= { nasAgent 200 }
+
+	notifyPasswdChanged        NOTIFICATION-TYPE
+    STATUS      current
+    DESCRIPTION
+        "An indication that the Administrator's password has been changed."
+    ::= { notifyEvts 1 }
+
+    notifyFirmwareUpgraded     NOTIFICATION-TYPE
+    STATUS      current
+    DESCRIPTION
+        "An indication that firmware has been upgraded."
+    ::= { notifyEvts 2 }
+
+    notifyNetworkChanged        NOTIFICATION-TYPE
+    STATUS      current
+    DESCRIPTION
+        "An indication that the network settings has been changed."
+    ::= { notifyEvts 3 }
+
+    notifyTemperatureExceeded        NOTIFICATION-TYPE
+    STATUS      current
+    DESCRIPTION
+        "An indication that system temperature has exceeded."
+    ::= { notifyEvts 4 }
+
+
+
+
+
+
+
+--              ******************************************************
+
+--              ******************************************************
+
+
+	END
+
+--
+-- WDMYCLOUDEX2.mib
+--

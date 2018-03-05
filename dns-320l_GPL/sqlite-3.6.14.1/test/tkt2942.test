@@ -1,0 +1,84 @@
+# 2008 February 15
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+#
+# Ticket #2942.  
+#
+# Queries of the form:
+#
+#     SELECT group_concat(x) FROM (SELECT * FROM table ORDER BY 1);
+#
+# The ORDER BY would be dropped by the query flattener.  This used
+# to not matter because aggregate functions sum(), min(), max(), avg(),
+# and so forth give the same result regardless of the order of inputs.
+# But with the addition of the group_concat() function, suddenly the
+# order does matter.
+#
+# $Id: tkt2942.test,v 1.1.1.1 2009/10/09 02:54:18 jack Exp $
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+ifcapable !subquery {
+  finish_test
+  return
+}
+
+do_test tkt2942.1 {
+  execsql {
+    create table t1(num int);
+    insert into t1 values (2);
+    insert into t1 values (1);
+    insert into t1 values (3);
+    insert into t1 values (4);
+    SELECT group_concat(num) FROM (SELECT num FROM t1 ORDER BY num DESC);
+  }
+} {4,3,2,1}
+do_test tkt2942.2 {
+  execsql {
+    SELECT group_concat(num) FROM (SELECT num FROM t1 ORDER BY num);
+  }
+} {1,2,3,4}
+do_test tkt2942.3 {
+  execsql {
+    SELECT group_concat(num) FROM (SELECT num FROM t1);
+  }
+} {2,1,3,4}
+do_test tkt2942.4 {
+  execsql {
+    SELECT group_concat(num) FROM (SELECT num FROM t1 ORDER BY rowid DESC);
+  }
+} {4,3,1,2}
+
+do_test tkt2942-3841.1 {
+  execsql {
+    CREATE TABLE table2 (key TEXT, x TEXT);
+    CREATE TABLE list (key TEXT, value TEXT);
+  
+    INSERT INTO table2 VALUES ("a", "alist");
+    INSERT INTO table2 VALUES ("b", "blist");
+    INSERT INTO list VALUES ("a", 1);
+    INSERT INTO list VALUES ("a", 2);
+    INSERT INTO list VALUES ("a", 3);
+    INSERT INTO list VALUES ("b", 4);
+    INSERT INTO list VALUES ("b", 5);
+    INSERT INTO list VALUES ("b", 6);
+
+    SELECT
+      table2.x,
+      (SELECT group_concat(list.value)
+        FROM list
+        WHERE list.key = table2.key)
+    FROM table2;
+  }
+} {alist 1,2,3 blist 4,5,6}
+
+finish_test
