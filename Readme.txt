@@ -14,8 +14,8 @@
 Step 1. Prepare a working environment
 
   1) Change the ownership from an ordinary user to the root user
-    ~# su
-    Password: ******** (Enter the root's password)
+   ~#sudo su -
+   [sudo] password for "current user": 
 
   2) Create a temporary directory:
     ~# cd /tmp
@@ -26,7 +26,7 @@ Step 1. Prepare a working environment
 
   4) untar the archive file
     ~# cd /tmp/works
-    ~# tar zxf DNS320L_Ax_GPL10906.tar.gz
+    ~# tar zxf DNS320L_Ax_GPL11003.tar.gz
 
 Step 2. Building a working f/w
 

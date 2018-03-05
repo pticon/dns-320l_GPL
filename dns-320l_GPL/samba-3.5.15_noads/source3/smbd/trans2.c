@@ -4701,6 +4701,9 @@ NTSTATUS smbd_do_qfilepathinfo(connection_struct *conn,
 					   nt_errstr(status)));
 				return status;
 			}
+			
+			//elton chang alloc size  to  fix issue size of disk is allways 4GB on win10
+			streams->alloc_size = SMB_VFS_GET_ALLOC_SIZE2(conn, fsp, psbuf);
 
 			status = marshall_stream_info(num_streams, streams,
 						      pdata, max_data_bytes,

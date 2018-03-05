@@ -233,6 +233,7 @@ struct vfs_fn_pointers {
 	int (*fstat)(struct vfs_handle_struct *handle, struct files_struct *fsp, SMB_STRUCT_STAT *sbuf);
 	int (*lstat)(struct vfs_handle_struct *handle, struct smb_filename *smb_filename);
 	uint64_t (*get_alloc_size)(struct vfs_handle_struct *handle, struct files_struct *fsp, const SMB_STRUCT_STAT *sbuf);
+	uint64_t (*get_alloc_size2)(struct vfs_handle_struct *handle, struct files_struct *fsp, const SMB_STRUCT_STAT *sbuf);
 	int (*unlink)(struct vfs_handle_struct *handle,
 		      const struct smb_filename *smb_fname);
 	int (*chmod)(struct vfs_handle_struct *handle, const char *path, mode_t mode);
@@ -576,6 +577,9 @@ int smb_vfs_call_fstat(struct vfs_handle_struct *handle,
 int smb_vfs_call_lstat(struct vfs_handle_struct *handle,
 		       struct smb_filename *smb_filename);
 uint64_t smb_vfs_call_get_alloc_size(struct vfs_handle_struct *handle,
+				     struct files_struct *fsp,
+				     const SMB_STRUCT_STAT *sbuf);
+uint64_t smb_vfs_call_get_alloc_size2(struct vfs_handle_struct *handle,
 				     struct files_struct *fsp,
 				     const SMB_STRUCT_STAT *sbuf);
 int smb_vfs_call_unlink(struct vfs_handle_struct *handle,

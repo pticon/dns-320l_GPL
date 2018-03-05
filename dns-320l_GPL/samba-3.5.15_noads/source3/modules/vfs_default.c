@@ -706,9 +706,13 @@ static uint64_t vfswrap_get_alloc_size(vfs_handle_struct *handle,
 		if (get_remote_arch() ==  RA_MAC)
 			result = (uint64_t)get_file_size_stat(sbuf);//MAC display size
 		else
-			//result = 0xFFFFFFFF; //Cavium
+			/*
+			** elton restore result = 0xFFFFFFFF and fix issue size of disk is allways 4GB
+			** in trans2.c
+			*/
+			result = 0xFFFFFFFF; //Cavium
 			//nelson restore original opensource code to fix issue size of disk is allways 4GB
-			result = (uint64_t)STAT_ST_BLOCKSIZE * (uint64_t)sbuf->st_ex_blocks;
+			//result = (uint64_t)STAT_ST_BLOCKSIZE * (uint64_t)sbuf->st_ex_blocks;
 #else
 	result = (uint64_t)STAT_ST_BLOCKSIZE * (uint64_t)sbuf->st_ex_blocks;
 #endif
@@ -725,6 +729,47 @@ static uint64_t vfswrap_get_alloc_size(vfs_handle_struct *handle,
 	END_PROFILE(syscall_get_alloc_size);
 	return result;
 }
+
+static uint64_t vfswrap_get_alloc_size2(vfs_handle_struct *handle,
+				       struct files_struct *fsp,
+				       const SMB_STRUCT_STAT *sbuf)
+{
+	uint64_t result;
+
+	START_PROFILE(syscall_get_alloc_size);
+
+	if(S_ISDIR(sbuf->st_ex_mode)) {
+		result = 0;
+		goto out;
+	}
+
+#if defined(HAVE_STAT_ST_BLOCKS) && defined(STAT_ST_BLOCKSIZE)
+//20121018 roy
+#if 1
+		if (get_remote_arch() ==  RA_MAC)
+			result = (uint64_t)get_file_size_stat(sbuf);//MAC display size
+		else
+			//result = 0xFFFFFFFF; //Cavium
+			//nelson restore original opensource code to fix issue size of disk is allways 4GB
+			result = (uint64_t)STAT_ST_BLOCKSIZE * (uint64_t)sbuf->st_ex_blocks;		
+		
+#else
+	result = (uint64_t)STAT_ST_BLOCKSIZE * (uint64_t)sbuf->st_ex_blocks;
+#endif
+#else
+	result = get_file_size_stat(sbuf);
+#endif
+
+	if (fsp && fsp->initial_allocation_size)
+		result = MAX(result,fsp->initial_allocation_size);
+
+	result = smb_roundup(handle->conn, result);
+
+ out:
+	END_PROFILE(syscall_get_alloc_size);
+	return result;
+}
+
 
 static int vfswrap_unlink(vfs_handle_struct *handle,
 			  const struct smb_filename *smb_fname)
@@ -1804,6 +1849,7 @@ static struct vfs_fn_pointers vfs_default_fns = {
 	.fstat = vfswrap_fstat,
 	.lstat = vfswrap_lstat,
 	.get_alloc_size = vfswrap_get_alloc_size,
+	.get_alloc_size2 = vfswrap_get_alloc_size2,
 	.unlink = vfswrap_unlink,
 	.chmod = vfswrap_chmod,
 	.fchmod = vfswrap_fchmod,

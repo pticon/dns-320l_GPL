@@ -194,6 +194,9 @@
 	smb_vfs_call_get_alloc_size((conn)->vfs_handles, (fsp), (sbuf))
 #define SMB_VFS_NEXT_GET_ALLOC_SIZE(conn, fsp, sbuf) \
 	smb_vfs_call_get_alloc_size((conn)->next, (fsp), (sbuf))
+//elton add to  fix issue size of disk is allways 4GB on win10
+#define SMB_VFS_GET_ALLOC_SIZE2(conn, fsp, sbuf) \
+	smb_vfs_call_get_alloc_size2((conn)->vfs_handles, (fsp), (sbuf))
 
 #define SMB_VFS_UNLINK(conn, path) \
 	smb_vfs_call_unlink((conn)->vfs_handles, (path))

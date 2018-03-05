@@ -1399,6 +1399,15 @@ uint64_t smb_vfs_call_get_alloc_size(struct vfs_handle_struct *handle,
 	return handle->fns->get_alloc_size(handle, fsp, sbuf);
 }
 
+//elton add to  fix issue size of disk is allways 4GB on win10
+uint64_t smb_vfs_call_get_alloc_size2(struct vfs_handle_struct *handle,
+				     struct files_struct *fsp,
+				     const SMB_STRUCT_STAT *sbuf)
+{
+	VFS_FIND(get_alloc_size2);
+	return handle->fns->get_alloc_size2(handle, fsp, sbuf);
+}
+
 int smb_vfs_call_unlink(struct vfs_handle_struct *handle,
 			const struct smb_filename *smb_fname)
 {
